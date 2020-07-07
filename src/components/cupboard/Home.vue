@@ -2,9 +2,9 @@
   <div id="app">
     <HomeTop></HomeTop>
     <HomeNav>
-        <template slot="Swipe">
-            <Swipe></Swipe>
-        </template>
+      <template slot="Swipe">
+        <Swipe></Swipe>
+      </template>
     </HomeNav>
   </div>
 </template>

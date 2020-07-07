@@ -5,13 +5,12 @@
 </template>
 
 <script>
-import Cupboard from "@/cupboard/Home"
+import Cupboard from "@/cupboard/Home";
 export default {
-  components : {
+  components: {
     Cupboard
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
-</style>
+<style lang="stylus" scoped></style>
