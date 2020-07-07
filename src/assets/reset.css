@@ -30,6 +30,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #f6f6f6;
   font-family: PingFangSC-Regular, Hiragino Sans GB, sans-serif;
 }
 

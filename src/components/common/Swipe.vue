@@ -2,6 +2,7 @@
   <van-swipe width="1.395833rem" class="my-swipe" :autoplay="3000" indicator-color="white">
   <van-swipe-item class="swipe-item" v-for="(item, index) in swiperImgs" :key="index">
         <img class="swipe-img" :src="item" />
+
   </van-swipe-item>
 </van-swipe>
 </template>
@@ -33,7 +34,7 @@ export default {
         padding 0 10px
     .swipe-img
         margin 0 auto
-        border-radius 10px
+        border-radius .32rem
         width 355px
         height 130px
 </style>
