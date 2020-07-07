@@ -33,7 +33,6 @@ export default {
 <style lang="stylus" scoped>
 header
     background-color #f20c59
-    // height .183333rem
     height 44px
     display flex
     .location-box

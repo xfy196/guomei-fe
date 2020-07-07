@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <van-tabs @change="handleChange" color="#ffffff" background="#f20c59">
+        <van-tabs class="tabs" @change="handleChange" :border=border color="#ffffff" background="#f20c59">
         <van-tab title-style="color:#fff" v-for="(item, index) in navlist" :title="item" :key="index">
           <slot name="Swipe"></slot>
         </van-tab>
@@ -30,8 +30,9 @@ export default {
         "国美家电",
         "舒适家",
         "超市百货",
-        "家居家装"
+        "家居家装",
       ],
+      border: false
     }
   },
   methods: {
@@ -44,11 +45,11 @@ export default {
 <style lang="stylus" scoped>
 nav 
     position relative
+    /deep/.van-tabs__wrap
+      padding-right 51px !important
     .category
-        // height .183333rem
         height 44px
         background-color #f20c59
-        // line-height .183333rem
         line-height 44px
         color #fff 
         display flex
@@ -56,7 +57,6 @@ nav
         align-items center
         right 0
         top 0
-        // padding-right .0125rem
         padding-right 5px
         .c-text
           font-size 14px
@@ -64,7 +64,4 @@ nav
         .icon
           width 18px
           height 18px
-            // width .083333rem
-            // height .083333rem
-            
 </style>

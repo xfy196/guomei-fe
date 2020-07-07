@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <HomeTop></HomeTop>
     <HomeNav>
         <template slot="Swipe">
