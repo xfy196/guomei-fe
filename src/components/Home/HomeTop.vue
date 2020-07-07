@@ -2,7 +2,7 @@
     <!-- 首页头部 -->
     <header>
         <div class="location-box">
-            <van-icon name="location-o" />
+            <van-icon size=".4rem" name="location-o" />
             <span>{{l_city}}</span>
         </div>
         <div class="searchBox">
@@ -33,40 +33,43 @@ export default {
 <style lang="stylus" scoped>
 header
     background-color #f20c59
-    height .183333rem
+    // height .183333rem
+    height 44px
     display flex
     .location-box
-        padding-left .041667rem
+        padding-left 10px
         color #ffffff
         display flex
         flex-direction column
         justify-content center
         align-items center
         span 
-            font-size .054167rem
+            font-size 13px
     .searchBox
         border-radius: 1.33333rem;
         padding-left .041667rem
         flex 1
-        margin-top .029167rem
-        margin-left .041667rem
-        margin-right .041667rem
-        height .125rem
-        line-height .125rem
+        margin-top 7px
+        margin-left 10px
+        margin-right 10px
+        height 30px
+        line-height 30px
+        font-size 14px
         display flex
         align-items center
         background-color #ffffff
         .search-find 
-            width: .0625rem
-            height: .0625rem;
-            margin-right .0125rem
+            width: 15px
+            height: 15px
+            margin-right 3px
+            margin-left 10px
             display block
         .searchText
             color #919599
     .login-btn
-        line-height .183333rem
-        padding-right .041667rem
+        line-height 44px
+        padding-right 10px
         color #ffffff
-        font-size .054167rem
+        font-size 13px
 
 </style>

@@ -30,10 +30,14 @@ export default {
 .my-swipe 
     .swipe-item
         overflow hidden
-        padding: 0 .041667rem
+        // padding: 0 .041667rem
+        padding 0 10px
     .swipe-img
         margin 0 auto
-        border-radius .0625rem
-        width 1.479167rem
-        height .541667rem
+        // border-radius .0625rem
+        border-radius 10px
+        // width 1.479167rem
+        // height .541667rem
+        width 355px
+        height 130px
 </style>

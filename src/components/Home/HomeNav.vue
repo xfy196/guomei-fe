@@ -7,7 +7,7 @@
         </van-tabs>
         <div class="category">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMA7fOC11I4Ecy1PfWfi21oZTAiCOcL1HjnAAAAdElEQVQ4y+WTyQ6AIBBDQVZxX/r/vypGzCQKmbPYSw+8NKTpiC/LajmykAawRp8lXupUgs43G90joyZBCvCCSxLBbKJauaFfWKgFpItuZKbLu6cGQLjgDPVM2vNJ9Kd6xe+JljmVG6eN61LjdC3lJLq7/+oAXBYRruLDsRwAAAAASUVORK5CYII=" class="icon">
-            <span>分类</span>
+            <span class="c-text">分类</span>
 
         </div>
     </nav>
@@ -45,17 +45,26 @@ export default {
 nav 
     position relative
     .category
-        height .183333rem
+        // height .183333rem
+        height 44px
         background-color #f20c59
-        line-height .183333rem
+        // line-height .183333rem
+        line-height 44px
         color #fff 
         display flex
         position absolute
         align-items center
         right 0
         top 0
-        padding-right .0125rem
+        // padding-right .0125rem
+        padding-right 5px
+        .c-text
+          font-size 14px
+          color #ffffff
         .icon
-            width .083333rem
-            height .083333rem
+          width 18px
+          height 18px
+            // width .083333rem
+            // height .083333rem
+            
 </style>
