@@ -1,12 +1,20 @@
 <template>
-  <div>
-    hello world
-  </div>
+   <Fouse></Fouse>
 </template>
 
 <script>
+  import Fouse from './views/PhonShop'
+
+
 export default {
-  
+  data() {
+    return {
+      intheaters: []
+    }
+  },
+   components: {
+    Fouse
+  },
 }
 </script>
 
