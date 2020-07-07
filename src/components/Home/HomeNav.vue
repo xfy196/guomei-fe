@@ -1,18 +1,20 @@
 <template>
-  <nav>
-    <van-tabs @change="handleChange" color="#ffffff" background="#f20c59">
-      <van-tab title-style="color:#fff" v-for="(item, index) in navlist" :title="item" :key="index">
-        <slot name="Swipe"></slot>
-      </van-tab>
-    </van-tabs>
-    <div class="category">
-      <img
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMA7fOC11I4Ecy1PfWfi21oZTAiCOcL1HjnAAAAdElEQVQ4y+WTyQ6AIBBDQVZxX/r/vypGzCQKmbPYSw+8NKTpiC/LajmykAawRp8lXupUgs43G90joyZBCvCCSxLBbKJauaFfWKgFpItuZKbLu6cGQLjgDPVM2vNJ9Kd6xe+JljmVG6eN61LjdC3lJLq7/+oAXBYRruLDsRwAAAAASUVORK5CYII="
-        class="icon"
-      />
-      <span>分类</span>
-    </div>
-  </nav>
+    <nav>
+        <van-tabs class="tabs" @change="handleChange" :border=border background="#f20c59">
+        <van-tab title-style="color:#fff" v-for="(item, index) in navlist" :title="item" :key="index">
+          <div class="swipe-container">
+            <slot :name="navComponentLists[index]"></slot>
+          </div>
+        </van-tab>
+        </van-tabs>
+        <div class="category">
+          <img class="nv-bg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAABYBAMAAAAZ9PqaAAAAGFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWNxwqAAAACHRSTlMIBQwcEBcUAxo/uM4AAADjSURBVDjLzMyxDQMhDEBR6yY4VkBswAroFkCMEHqqrB/7OxZFclLKuOLpY8vTJzEIoMDW4nmKICCCSACB0AIhDtjk7HKYlqcjhyiuhEjNdHoqDZEUqoUAOkktFGlOSS4Den+8toqlx0AkhYo1SyNUSK4DKbYsVWRrqq4SlyWUM2v1qzjSt+aNDle91dhqH+q/6fpbvSqpYxMAYBgGgstl/5lCivBwYEJK40761/q5zOWV4Jy8Hc1t0jtMwEsswRkMwifsxrXM40Ou4BGO4R9u5i1O63tbcN53J87hhrgvbk+7tAHn5tBxntciCgAAAABJRU5ErkJggg==" alt="">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMA7fOC11I4Ecy1PfWfi21oZTAiCOcL1HjnAAAAdElEQVQ4y+WTyQ6AIBBDQVZxX/r/vypGzCQKmbPYSw+8NKTpiC/LajmykAawRp8lXupUgs43G90joyZBCvCCSxLBbKJauaFfWKgFpItuZKbLu6cGQLjgDPVM2vNJ9Kd6xe+JljmVG6eN61LjdC3lJLq7/+oAXBYRruLDsRwAAAAASUVORK5CYII=" class="icon">
+            <span class="c-text">分类</span>
+
+        </div>
+    </nav>
+
 </template>
 
 <script>
@@ -31,37 +33,47 @@ export default {
         "国美家电",
         "舒适家",
         "超市百货",
-        "家居家装"
-      ]
-    };
+        "家居家装",
+      ],
+      border: false,
+      navComponentLists : ["","", "", "Swipe"]
+    }
   },
   methods: {
-    handleChange(name, title) {
-      console.log(name, title);
-    }
-  }
+      handleChange(name, title){
+      }
+  },
 };
 </script>
 <style lang="stylus" scoped>
-nav {
-  position: relative;
+nav 
+  position relative
+  .swipe-container
+    padding .16rem 0
+  /deep/.van-tabs__wrap
+    padding-right 60px
+    /deep/.van-tabs__line
+      background-image: linear-gradient(270deg,hsla(0,0%,100%,.51),#fff);
+  .category
+      height 45px
+      background-color #f20c59
+      line-height 44px
+      color #fff 
+      display flex
+      position absolute
+      align-items center
+      right 0
+      top -1px
+      padding-right 5px
+      .nv-bg
+        width: .34667rem;
+        height: 1.17333rem;
+        display: inline-block;
+      .c-text
+        font-size 14px
+        color #ffffff
+      .icon
+        width 18px
+        height 18px
 
-  .category {
-    height: 0.183333rem;
-    background-color: #f20c59;
-    line-height: 0.183333rem;
-    color: #fff;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    right: 0;
-    top: 0;
-    padding-right: 0.0125rem;
-
-    .icon {
-      width: 0.083333rem;
-      height: 0.083333rem;
-    }
-  }
-}
 </style>

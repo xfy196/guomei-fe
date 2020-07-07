@@ -1,9 +1,10 @@
 <template>
   <van-swipe width="1.395833rem" class="my-swipe" :autoplay="3000" indicator-color="white">
-    <van-swipe-item class="swipe-item" v-for="(item, index) in swiperImgs" :key="index">
-      <img class="swipe-img" :src="item" />
-    </van-swipe-item>
-  </van-swipe>
+  <van-swipe-item class="swipe-item" v-for="(item, index) in swiperImgs" :key="index">
+        <img class="swipe-img" :src="item" />
+
+  </van-swipe-item>
+</van-swipe>
 </template>
 
 <script>
@@ -27,17 +28,13 @@ export default {
 };
 </script>
 <style lang="stylus">
-.my-swipe {
-  .swipe-item {
-    overflow: hidden;
-    padding: 0 0.041667rem;
-  }
-
-  .swipe-img {
-    margin: 0 auto;
-    border-radius: 0.0625rem;
-    width: 1.479167rem;
-    height: 0.541667rem;
-  }
-}
+.my-swipe 
+    .swipe-item
+        overflow hidden
+        padding 0 10px
+    .swipe-img
+        margin 0 auto
+        border-radius .32rem
+        width 355px
+        height 130px
 </style>

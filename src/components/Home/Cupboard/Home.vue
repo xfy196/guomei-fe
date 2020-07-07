@@ -1,16 +1,16 @@
 <template>
-  <div id="app">
+  <div>
     <HomeTop></HomeTop>
     <HomeNav>
-      <template slot="Swipe">
-        <Swipe></Swipe>
-      </template>
+        <template #Swipe>
+            <Swipe></Swipe>
+        </template>
     </HomeNav>
   </div>
 </template>
 
 <script>
-import Swipe from "@/common/Swipe";
+import Swipe from "@/Common/Swipe";
 import HomeTop from "@/Home/HomeTop";
 import HomeNav from "@/Home/HomeNav";
 export default {
@@ -21,6 +21,3 @@ export default {
   }
 };
 </script>
-
-<style>
-</style>
