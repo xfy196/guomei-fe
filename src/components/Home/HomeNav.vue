@@ -3,7 +3,10 @@
         <van-tabs class="tabs" @change="handleChange" :border=border background="#f20c59">
         <van-tab title-style="color:#fff" v-for="(item, index) in navlist" :title="item" :key="index">
           <div class="swipe-container">
-            <slot :name="navComponentLists[index]"></slot>
+            <component :is="navComponents[index]">
+
+            </component>
+
           </div>
         </van-tab>
         </van-tabs>
@@ -19,7 +22,10 @@
 
 <script>
 import Vue from "vue";
+
+
 import { Tab, Tabs } from "vant";
+import Cupboard from "@/Home/Cupboard/Home"
 Vue.use(Tab);
 Vue.use(Tabs);
 export default {
@@ -28,21 +34,25 @@ export default {
       navlist: [
         "精选",
         "手机电脑",
-        "国美电器",
+        "国美管家",
         "橱柜厨具",
-        "国美家电",
         "舒适家",
+        "国美家电",
         "超市百货",
         "家居家装",
       ],
       border: false,
-      navComponentLists : ["","", "", "Swipe"]
+      navComponents : ["", "", "", "Cupboard"]
     }
   },
   methods: {
-      handleChange(name, title){
+      handleChange(name){
+
       }
   },
+  components : {
+    Cupboard
+  }
 };
 </script>
 <style lang="stylus" scoped>

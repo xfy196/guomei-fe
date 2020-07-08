@@ -1,17 +1,22 @@
 <template>
     <div id="app">
-        <Cupboard></Cupboard>
+      <HomeTop></HomeTop>
+      <HomeNav></HomeNav>
+      <HomeTabBar></HomeTabBar>
     </div>
 </template>
 
 <script>
-import Cupboard from "@/Home/Cupboard/Home"
-
+import HomeTabBar from "@/Home/HomeTabBar";
+import HomeTop from "@/Home/HomeTop";
+import HomeNav from "@/Home/HomeNav"
 export default {
-  components : {
-    Cupboard
+  components: {
+    HomeTop,
+    HomeNav,
+    HomeTabBar,
   }
-}
+};
 </script>
 
 <style>
