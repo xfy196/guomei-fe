@@ -1,0 +1,1804 @@
+{
+    "goodsList": [
+        {
+            "type": "1",
+            "productId": "A0006554310",
+            "skuId": "pop8012685779",
+            "goodsName": "海尔（Haier）壁挂炉家用燃气地暖锅炉采暖两用天然气热水器 采暖洗浴两用(20KW（50-120平）)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1U7_5BKVT1RCvBVdK_400.jpg",
+            "skuNo": "8012685779",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80015971",
+            "shopType": "pop",
+            "shopName": "海一海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs15.gomein.net.cn/T1zyZgBvDv1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015971.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006554310-pop8012685779.html?intcmp=grec3021100-0-1_1_0a73696c20070620320125&stid=80015971",
+            "price": "4199.00",
+            "priceDesc": "¥4199.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006651437",
+            "skuId": "pop8013306016",
+            "goodsName": "【0元安装】海尔（Haier）壁挂炉 燃气壁挂锅炉 天然气采暖炉 升级板式换热器 HC1系列(采暖洗浴两用26KW（50-180平)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1bOJ5BTdv1RCvBVdK_400.jpg",
+            "skuNo": "8013306016",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80016412",
+            "shopType": "pop",
+            "shopName": "驰郑海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80016412.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006651437-pop8013306016.html?intcmp=grec3021100-0-1_2_0a73696c20070620320125&stid=80016412",
+            "price": "5499.00",
+            "priceDesc": "¥5499.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006088232",
+            "skuId": "pop8010748006",
+            "goodsName": "海尔（Haier）燃气采暖炉L1PB20-HC3(T)20/26/35KW家用采暖洗浴一体壁挂炉热水器锅炉天燃气(35KW 150-400m2)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1Gqd4BsJv1RCvBVdK_400.jpg",
+            "skuNo": "8010748006",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80011773",
+            "shopType": "pop",
+            "shopName": "优品海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs9.gomein.net.cn/T1voxvBXhT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80011773.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006088232-pop8010748006.html?intcmp=grec3021100-0-1_3_0a73696c20070620320125&stid=80011773",
+            "price": "11999.00",
+            "priceDesc": "¥11999.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006554310",
+            "skuId": "pop8012685780",
+            "goodsName": "海尔（Haier）壁挂炉家用燃气地暖锅炉采暖两用天然气热水器 采暖洗浴两用(26KW（50-180平）)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T160A5BCxT1RCvBVdK_400.jpg",
+            "skuNo": "8012685780",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80015971",
+            "shopType": "pop",
+            "shopName": "海一海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs15.gomein.net.cn/T1zyZgBvDv1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015971.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006554310-pop8012685780.html?intcmp=grec3021100-0-1_4_0a73696c20070620320125&stid=80015971",
+            "price": "4799.00",
+            "priceDesc": "¥4799.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140147024",
+            "skuId": "1130639991",
+            "goodsName": "林内(Rinnai) L1GB21-18G55 燃气采暖 壁挂炉 低噪 APP控制",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1V_JsBgWv1RCvBVdK_400.jpg",
+            "skuNo": "100542823",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A006",
+            "shopType": "pshop",
+            "shopName": "北京国美南三环店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A006.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140147024-1130639991.html?intcmp=grec3021100-0-1_5_0a73696c20070620320125&stid=A006",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "10600.00",
+            "priceDesc": "¥10600.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006617425",
+            "skuId": "pop8013046117",
+            "goodsName": "统帅（Leader）壁挂炉 家用燃气锅炉 天然气采暖炉 天然气热水器两用 海尔出品 LT1(20KW（50-120平）)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T150W5ByZT1RCvBVdK_400.jpg",
+            "skuNo": "8013046117",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80015971",
+            "shopType": "pop",
+            "shopName": "海一海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs15.gomein.net.cn/T1zyZgBvDv1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015971.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006617425-pop8013046117.html?intcmp=grec3021100-0-1_6_0a73696c20070620320125&stid=80015971",
+            "price": "4499.00",
+            "priceDesc": "¥4499.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006608998",
+            "skuId": "pop8012998402",
+            "goodsName": "海尔（Haier）壁挂炉天然气燃气采暖炉锅炉地暖暖气片热水器全屋热水洗浴采暖两用节能20KW两用舒适型适能 HT3(两用舒适型适用50-120平方米)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1bUV5BXK_1RCvBVdK_400.jpg",
+            "skuNo": "8012998402",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80016412",
+            "shopType": "pop",
+            "shopName": "驰郑海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80016412.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006608998-pop8012998402.html?intcmp=grec3021100-0-1_7_0a73696c20070620320125&stid=80016412",
+            "price": "5899.00",
+            "priceDesc": "¥5899.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140177772",
+            "skuId": "1130790870",
+            "goodsName": "A.O.史密斯壁挂炉L1PB26-Aplus",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1jmD4Byh_1RCvBVdK_400.jpg",
+            "skuNo": "100609193",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A00T",
+            "shopType": "pshop",
+            "shopName": "北京国美亦庄店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A00T.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140177772-1130790870.html?intcmp=grec3021100-0-1_8_0a73696c20070620320125&stid=A00T",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                }
+            ],
+            "price": "12258.00",
+            "priceDesc": "¥12258.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140137022",
+            "skuId": "1130658863",
+            "goodsName": "美的(Midea) L1PB26-C15 平衡式 壁挂炉 安全智护 小身材",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1phKgBvx_1RCvBVdK_400.jpg",
+            "skuNo": "100524458",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0NZ",
+            "shopType": "ashop",
+            "shopName": "北京大中长沟新零售店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0NZ.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140137022-1130658863.html?intcmp=grec3021100-0-1_9_0a73696c20070620320125&stid=A0NZ",
+            "promotionLabels": [
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "易卡分期",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "7999.00",
+            "priceDesc": "¥7999.00",
+            "promoType": "AREAPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140136906",
+            "skuId": "1130651976",
+            "goodsName": "美的(Midea) L1PB20-C15 平衡式 壁挂炉 安全智护 小身材",
+            "productImgURL": "http://gfs17.gomein.net.cn/T188VjByYj1RCvBVdK_400.jpg",
+            "skuNo": "100524459",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0H5",
+            "shopType": "pshop",
+            "shopName": "北京大中通州店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0H5.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140136906-1130651976.html?intcmp=grec3021100-0-1_10_0a73696c20070620320125&stid=A0H5",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "7999.00",
+            "priceDesc": "¥7999.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140152009",
+            "skuId": "1130639992",
+            "goodsName": "林内(Rinnai) L1GB28-24G55 燃气采暖 壁挂炉 低噪 APP控制",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1SeWbB5xv1RCvBVdK_400.jpg",
+            "skuNo": "100542658",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A01I",
+            "shopType": "pshop",
+            "shopName": "北京国美管庄环岛店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A01I.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140152009-1130639992.html?intcmp=grec3021100-0-1_11_0a73696c20070620320125&stid=A01I",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "11400.00",
+            "priceDesc": "¥11400.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006606444",
+            "skuId": "pop8012983483",
+            "goodsName": "海尔采暖炉洗浴热水器两用供地暖取暖锅炉燃气壁挂炉 天然气 家用",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1eKJ5B4VT1RCvBVdK_400.jpg",
+            "skuNo": "8012983483",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80016412",
+            "shopType": "pop",
+            "shopName": "驰郑海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80016412.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006606444-pop8012983483.html?intcmp=grec3021100-0-1_12_0a73696c20070620320125&stid=80016412",
+            "price": "4399.00",
+            "priceDesc": "¥4399.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140136906",
+            "skuId": "1130651976",
+            "goodsName": "美的(Midea) L1PB20-C15 平衡式 壁挂炉 安全智护 小身材",
+            "productImgURL": "http://gfs17.gomein.net.cn/T188VjByYj1RCvBVdK_400.jpg",
+            "skuNo": "100524459",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0HT",
+            "shopType": "pshop",
+            "shopName": "北京大中立水桥店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0HT.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140136906-1130651976.html?intcmp=grec3021100-0-1_13_0a73696c20070620320125&stid=A0HT",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "7999.00",
+            "priceDesc": "¥7999.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006651437",
+            "skuId": "pop8013306017",
+            "goodsName": "【0元安装】海尔（Haier）壁挂炉 燃气壁挂锅炉 天然气采暖炉 升级板式换热器 HC1系列(采暖洗浴两用35KW（50-330平)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1A0b5BjET1RCvBVdK_400.jpg",
+            "skuNo": "8013306017",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80016412",
+            "shopType": "pop",
+            "shopName": "驰郑海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80016412.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006651437-pop8013306017.html?intcmp=grec3021100-0-1_14_0a73696c20070620320125&stid=80016412",
+            "price": "7999.00",
+            "priceDesc": "¥7999.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140152009",
+            "skuId": "1130639992",
+            "goodsName": "林内(Rinnai) L1GB28-24G55 燃气采暖 壁挂炉 低噪 APP控制",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1SeWbB5xv1RCvBVdK_400.jpg",
+            "skuNo": "100542658",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A00S",
+            "shopType": "pshop",
+            "shopName": "北京国美清河店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A00S.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140152009-1130639992.html?intcmp=grec3021100-0-1_15_0a73696c20070620320125&stid=A00S",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "11400.00",
+            "priceDesc": "¥11400.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140136906",
+            "skuId": "1130651976",
+            "goodsName": "美的(Midea) L1PB20-C15 平衡式 壁挂炉 安全智护 小身材",
+            "productImgURL": "http://gfs17.gomein.net.cn/T188VjByYj1RCvBVdK_400.jpg",
+            "skuNo": "100524459",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A01I",
+            "shopType": "pshop",
+            "shopName": "北京国美管庄环岛店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A01I.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140136906-1130651976.html?intcmp=grec3021100-0-1_16_0a73696c20070620320125&stid=A01I",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "6999.00",
+            "priceDesc": "¥6999.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006606506",
+            "skuId": "pop8012984841",
+            "goodsName": "海尔（Haier）壁挂炉家用燃气暖气片地暖锅炉采暖两用天然气热水器 新品超薄MINI系列 轻奢金(板换式26KW（50-180平）)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1QvJ5B7LT1RCvBVdK_400.jpg",
+            "skuNo": "8012984841",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80015971",
+            "shopType": "pop",
+            "shopName": "海一海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs15.gomein.net.cn/T1zyZgBvDv1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015971.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006606506-pop8012984841.html?intcmp=grec3021100-0-1_17_0a73696c20070620320125&stid=80015971",
+            "price": "7499.00",
+            "priceDesc": "¥7499.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006609327",
+            "skuId": "pop8013002731",
+            "goodsName": "海尔（Haier)家用冷凝式节能燃气壁挂炉 L1PBD20-HN1(20KW)采暖炉供暖热水二合一地暖暖气片 锅炉",
+            "productImgURL": "http://gfs17.gomein.net.cn/T14K_5B_KT1RCvBVdK_400.jpg",
+            "skuNo": "8013002731",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80015971",
+            "shopType": "pop",
+            "shopName": "海一海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs15.gomein.net.cn/T1zyZgBvDv1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015971.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006609327-pop8013002731.html?intcmp=grec3021100-0-1_18_0a73696c20070620320125&stid=80015971",
+            "price": "7999.00",
+            "priceDesc": "¥7999.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006608497",
+            "skuId": "pop8012999903",
+            "goodsName": "贝姆（beamo）燃气壁挂炉 采暖炉天然气锅炉 家用采暖热水器两用 BM-05  一级能效 超节能(采暖洗浴两用 24KW)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1Wc_CBy_v1RCvBVdK_400.jpg",
+            "skuNo": "8012999903",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80017486",
+            "shopType": "pop",
+            "shopName": "贝姆壁挂炉官方旗舰店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs16.gomein.net.cn/T15CdyByWT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80017486.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006608497-pop8012999903.html?intcmp=grec3021100-0-1_19_0a73696c20070620320125&stid=80017486",
+            "promotionLabels": [
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "8518.00",
+            "priceDesc": "¥8518.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140152009",
+            "skuId": "1130639992",
+            "goodsName": "林内(Rinnai) L1GB28-24G55 燃气采暖 壁挂炉 低噪 APP控制",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1SeWbB5xv1RCvBVdK_400.jpg",
+            "skuNo": "100542658",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0HT",
+            "shopType": "pshop",
+            "shopName": "北京大中立水桥店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0HT.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140152009-1130639992.html?intcmp=grec3021100-0-1_20_0a73696c20070620320125&stid=A0HT",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "11400.00",
+            "priceDesc": "¥11400.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006651437",
+            "skuId": "pop8013306015",
+            "goodsName": "【0元安装】海尔（Haier）壁挂炉 燃气壁挂锅炉 天然气采暖炉 升级板式换热器 HC1系列(采暖洗浴两用20KW(50-120平)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T10OZ5B7Cv1RCvBVdK_400.jpg",
+            "skuNo": "8013306015",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80016412",
+            "shopType": "pop",
+            "shopName": "驰郑海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80016412.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006651437-pop8013306015.html?intcmp=grec3021100-0-1_21_0a73696c20070620320125&stid=80016412",
+            "price": "4899.00",
+            "priceDesc": "¥4899.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006599220",
+            "skuId": "pop8012953334",
+            "goodsName": "海尔（Haier）壁挂炉家用燃气暖气片地暖锅炉采暖两用天然气热水器 HT1系列 采暖洗浴两用-26KW（50-180平）",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1lAJ5B4YT1RCvBVdK_400.jpg",
+            "skuNo": "8012953334",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80016412",
+            "shopType": "pop",
+            "shopName": "驰郑海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80016412.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006599220-pop8012953334.html?intcmp=grec3021100-0-1_22_0a73696c20070620320125&stid=80016412",
+            "price": "4999.00",
+            "priceDesc": "¥4999.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140137022",
+            "skuId": "1130658863",
+            "goodsName": "美的(Midea) L1PB26-C15 平衡式 壁挂炉 安全智护 小身材",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1phKgBvx_1RCvBVdK_400.jpg",
+            "skuNo": "100524458",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A003",
+            "shopType": "pshop",
+            "shopName": "北京国美六里桥店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A003.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140137022-1130658863.html?intcmp=grec3021100-0-1_23_0a73696c20070620320125&stid=A003",
+            "promotionLabels": [
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "易卡分期",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "7999.00",
+            "priceDesc": "¥7999.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140023750",
+            "skuId": "1130024929",
+            "goodsName": "海尔(Haier) L1PB20-HT3(T) 双气安全监测 高抗风压 壁挂炉 3年质保 白",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1BoJvBTA_1RCvBVdK_400.jpg",
+            "skuNo": "100433962",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0NJ",
+            "shopType": "ashop",
+            "shopName": "北京大中星东新零售店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0NJ.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140023750-1130024929.html?intcmp=grec3021100-0-1_24_0a73696c20070620320125&stid=A0NJ",
+            "promotionLabels": [
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "易卡分期",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "6099.00",
+            "priceDesc": "¥6099.00",
+            "promoType": "AREAPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140136906",
+            "skuId": "1130651976",
+            "goodsName": "美的(Midea) L1PB20-C15 平衡式 壁挂炉 安全智护 小身材",
+            "productImgURL": "http://gfs17.gomein.net.cn/T188VjByYj1RCvBVdK_400.jpg",
+            "skuNo": "100524459",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A003",
+            "shopType": "pshop",
+            "shopName": "北京国美六里桥店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A003.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140136906-1130651976.html?intcmp=grec3021100-0-1_25_0a73696c20070620320125&stid=A003",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "6999.00",
+            "priceDesc": "¥6999.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140023750",
+            "skuId": "1130024929",
+            "goodsName": "海尔(Haier) L1PB20-HT3(T) 双气安全监测 高抗风压 壁挂炉 3年质保 白",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1BoJvBTA_1RCvBVdK_400.jpg",
+            "skuNo": "100433962",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A007",
+            "shopType": "pshop",
+            "shopName": "北京国美西坝河店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A007.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140023750-1130024929.html?intcmp=grec3021100-0-1_26_0a73696c20070620320125&stid=A007",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "6099.00",
+            "priceDesc": "¥6099.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140177772",
+            "skuId": "1130790870",
+            "goodsName": "A.O.史密斯壁挂炉L1PB26-Aplus",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1jmD4Byh_1RCvBVdK_400.jpg",
+            "skuNo": "100609193",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0H4",
+            "shopType": "pshop",
+            "shopName": "北京大中怀柔店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0H4.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140177772-1130790870.html?intcmp=grec3021100-0-1_27_0a73696c20070620320125&stid=A0H4",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                }
+            ],
+            "price": "12258.00",
+            "priceDesc": "¥12258.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006088232",
+            "skuId": "pop8009445585",
+            "goodsName": "海尔（Haier）燃气采暖炉L1PB20-HC3(T)20/26/35KW家用采暖洗浴一体壁挂炉热水器锅炉天燃气(20KW 50-150m2)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T15bx4BXKT1RCvBVdK_400.jpg",
+            "skuNo": "8009445585",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80011773",
+            "shopType": "pop",
+            "shopName": "优品海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs9.gomein.net.cn/T1voxvBXhT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80011773.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006088232-pop8009445585.html?intcmp=grec3021100-0-1_28_0a73696c20070620320125&stid=80011773",
+            "price": "7199.00",
+            "priceDesc": "¥7199.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140137022",
+            "skuId": "1130658863",
+            "goodsName": "美的(Midea) L1PB26-C15 平衡式 壁挂炉 安全智护 小身材",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1phKgBvx_1RCvBVdK_400.jpg",
+            "skuNo": "100524458",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0I5",
+            "shopType": "pshop",
+            "shopName": "北京大中丰台桥南店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0I5.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140137022-1130658863.html?intcmp=grec3021100-0-1_29_0a73696c20070620320125&stid=A0I5",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "9999.00",
+            "priceDesc": "¥9999.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140136906",
+            "skuId": "1130651976",
+            "goodsName": "美的(Midea) L1PB20-C15 平衡式 壁挂炉 安全智护 小身材",
+            "productImgURL": "http://gfs17.gomein.net.cn/T188VjByYj1RCvBVdK_400.jpg",
+            "skuNo": "100524459",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0I5",
+            "shopType": "pshop",
+            "shopName": "北京大中丰台桥南店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0I5.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140136906-1130651976.html?intcmp=grec3021100-0-1_30_0a73696c20070620320125&stid=A0I5",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "7999.00",
+            "priceDesc": "¥7999.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006620801",
+            "skuId": "pop8013055234",
+            "goodsName": "海尔（Haier）冷凝式壁挂炉燃气采暖炉锅炉地暖暖气片全屋热水器洗浴采暖两用 智能APP远程遥控(智联版一级节能26KW50-180平)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1c2D5BCYv1RCvBVdK_400.jpg",
+            "skuNo": "8013055234",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80016412",
+            "shopType": "pop",
+            "shopName": "驰郑海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80016412.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006620801-pop8013055234.html?intcmp=grec3021100-0-1_31_0a73696c20070620320125&stid=80016412",
+            "price": "8999.00",
+            "priceDesc": "¥8999.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140152009",
+            "skuId": "1130639992",
+            "goodsName": "林内(Rinnai) L1GB28-24G55 燃气采暖 壁挂炉 低噪 APP控制",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1SeWbB5xv1RCvBVdK_400.jpg",
+            "skuNo": "100542658",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0GX",
+            "shopType": "pshop",
+            "shopName": "北京大中刘家窑店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0GX.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140152009-1130639992.html?intcmp=grec3021100-0-1_32_0a73696c20070620320125&stid=A0GX",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "11400.00",
+            "priceDesc": "¥11400.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006614802",
+            "skuId": "pop8013034579",
+            "goodsName": "海尔（Haier）壁挂炉天然气 燃气采暖炉 锅炉地暖 暖气片热水器全屋热水洗浴采暖两用节能 HT3两用舒适型(26KW（适用50-180平方）)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1hkY5BXVT1RCvBVdK_400.jpg",
+            "skuNo": "8013034579",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80017031",
+            "shopType": "pop",
+            "shopName": "腾妙海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1wwCvB_KQ1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80017031.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006614802-pop8013034579.html?intcmp=grec3021100-0-1_33_0a73696c20070620320125&stid=80017031",
+            "price": "6599.00",
+            "priceDesc": "¥6599.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140072953",
+            "skuId": "1130573233",
+            "goodsName": "万家乐(MACRO) 壁挂炉 L1PB20-18BK3 20kw",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1UTxQB4YT1RCvBVdK_400.jpg",
+            "skuNo": "100472244",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0IF",
+            "shopType": "pshop",
+            "shopName": "北京大中密东广场店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0IF.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140072953-1130573233.html?intcmp=grec3021100-0-1_34_0a73696c20070620320125&stid=A0IF",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "6898.00",
+            "priceDesc": "¥6898.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140023750",
+            "skuId": "1130024929",
+            "goodsName": "海尔(Haier) L1PB20-HT3(T) 双气安全监测 高抗风压 壁挂炉 3年质保 白",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1BoJvBTA_1RCvBVdK_400.jpg",
+            "skuNo": "100433962",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0H8",
+            "shopType": "pshop",
+            "shopName": "北京大中旧宫店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0H8.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140023750-1130024929.html?intcmp=grec3021100-0-1_35_0a73696c20070620320125&stid=A0H8",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "6099.00",
+            "priceDesc": "¥6099.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006587566",
+            "skuId": "pop8012901510",
+            "goodsName": "海尔（Haier）壁挂炉家用燃气暖气片地暖锅炉采暖两用天然气热水器 HT1系列 采暖洗浴两用-20KW（50-120平）(采暖洗浴两用26KW（50-180平)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1F2Y5B4Cv1RCvBVdK_400.jpg",
+            "skuNo": "8012901510",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80016412",
+            "shopType": "pop",
+            "shopName": "驰郑海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80016412.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006587566-pop8012901510.html?intcmp=grec3021100-0-1_36_0a73696c20070620320125&stid=80016412",
+            "price": "4999.00",
+            "priceDesc": "¥4999.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006631759",
+            "skuId": "pop8013105204",
+            "goodsName": "海尔（Haier）壁挂炉天然气 燃气采暖炉 锅炉地暖 暖气片热水器全屋热水洗浴采暖两用节能 HT3 26KW两用舒适型",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1B7J5BgAv1RCvBVdK_400.jpg",
+            "skuNo": "8013105204",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80016412",
+            "shopType": "pop",
+            "shopName": "驰郑海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80016412.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006631759-pop8013105204.html?intcmp=grec3021100-0-1_37_0a73696c20070620320125&stid=80016412",
+            "price": "6399.00",
+            "priceDesc": "¥6399.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140023750",
+            "skuId": "1130024929",
+            "goodsName": "海尔(Haier) L1PB20-HT3(T) 双气安全监测 高抗风压 壁挂炉 3年质保 白",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1BoJvBTA_1RCvBVdK_400.jpg",
+            "skuNo": "100433962",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0H9",
+            "shopType": "pshop",
+            "shopName": "北京大中云岗店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0H9.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140023750-1130024929.html?intcmp=grec3021100-0-1_38_0a73696c20070620320125&stid=A0H9",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "6099.00",
+            "priceDesc": "¥6099.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006608497",
+            "skuId": "pop8012999904",
+            "goodsName": "贝姆（beamo）燃气壁挂炉 采暖炉天然气锅炉 家用采暖热水器两用 BM-05  一级能效 超节能(采暖洗浴两用 26KW)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1lmbCBjhT1RCvBVdK_400.jpg",
+            "skuNo": "8012999904",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80017486",
+            "shopType": "pop",
+            "shopName": "贝姆壁挂炉官方旗舰店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs16.gomein.net.cn/T15CdyByWT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80017486.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006608497-pop8012999904.html?intcmp=grec3021100-0-1_39_0a73696c20070620320125&stid=80017486",
+            "promotionLabels": [
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "8988.00",
+            "priceDesc": "¥8988.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140136906",
+            "skuId": "1130651976",
+            "goodsName": "美的(Midea) L1PB20-C15 平衡式 壁挂炉 安全智护 小身材",
+            "productImgURL": "http://gfs17.gomein.net.cn/T188VjByYj1RCvBVdK_400.jpg",
+            "skuNo": "100524459",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0IZ",
+            "shopType": "pshop",
+            "shopName": "北京大中密云鼓楼店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0IZ.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140136906-1130651976.html?intcmp=grec3021100-0-1_40_0a73696c20070620320125&stid=A0IZ",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "7999.00",
+            "priceDesc": "¥7999.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140023750",
+            "skuId": "1130024929",
+            "goodsName": "海尔(Haier) L1PB20-HT3(T) 双气安全监测 高抗风压 壁挂炉 3年质保 白",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1BoJvBTA_1RCvBVdK_400.jpg",
+            "skuNo": "100433962",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A00L",
+            "shopType": "pshop",
+            "shopName": "北京国美大兴二店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A00L.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140023750-1130024929.html?intcmp=grec3021100-0-1_41_0a73696c20070620320125&stid=A00L",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "6099.00",
+            "priceDesc": "¥6099.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006606506",
+            "skuId": "pop8012984840",
+            "goodsName": "海尔（Haier）壁挂炉家用燃气暖气片地暖锅炉采暖两用天然气热水器 新品超薄MINI系列 轻奢金(板换式20KW（50-120平）)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1BPY5B5DT1RCvBVdK_400.jpg",
+            "skuNo": "8012984840",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80015971",
+            "shopType": "pop",
+            "shopName": "海一海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs15.gomein.net.cn/T1zyZgBvDv1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015971.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006606506-pop8012984840.html?intcmp=grec3021100-0-1_42_0a73696c20070620320125&stid=80015971",
+            "price": "6999.00",
+            "priceDesc": "¥6999.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140137022",
+            "skuId": "1130658863",
+            "goodsName": "美的(Midea) L1PB26-C15 平衡式 壁挂炉 安全智护 小身材",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1phKgBvx_1RCvBVdK_400.jpg",
+            "skuNo": "100524458",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0I4",
+            "shopType": "pshop",
+            "shopName": "北京大中回龙观新店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0I4.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140137022-1130658863.html?intcmp=grec3021100-0-1_43_0a73696c20070620320125&stid=A0I4",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "9999.00",
+            "priceDesc": "¥9999.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006620801",
+            "skuId": "pop8013055233",
+            "goodsName": "海尔（Haier）冷凝式壁挂炉燃气采暖炉锅炉地暖暖气片全屋热水器洗浴采暖两用 智能APP远程遥控(智联版一级节能20KW50-120平)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1pAh5BXVT1RCvBVdK_400.jpg",
+            "skuNo": "8013055233",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80016412",
+            "shopType": "pop",
+            "shopName": "驰郑海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80016412.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006620801-pop8013055233.html?intcmp=grec3021100-0-1_44_0a73696c20070620320125&stid=80016412",
+            "price": "8599.00",
+            "priceDesc": "¥8599.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006484833",
+            "skuId": "pop8012141610",
+            "goodsName": "海尔（Haier）20/26KW 海尔壁挂炉天燃气采暖炉家用壁挂炉地暖锅炉节能 套管式(26KW（50-180平）)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1fvC5BChT1RCvBVdK_400.jpg",
+            "skuNo": "8012141610",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80015971",
+            "shopType": "pop",
+            "shopName": "海一海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs15.gomein.net.cn/T1zyZgBvDv1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015971.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006484833-pop8012141610.html?intcmp=grec3021100-0-1_45_0a73696c20070620320125&stid=80015971",
+            "price": "6399.00",
+            "priceDesc": "¥6399.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140152009",
+            "skuId": "1130639992",
+            "goodsName": "林内(Rinnai) L1GB28-24G55 燃气采暖 壁挂炉 低噪 APP控制",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1SeWbB5xv1RCvBVdK_400.jpg",
+            "skuNo": "100542658",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0HU",
+            "shopType": "pshop",
+            "shopName": "北京大中玉泉路新店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0HU.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140152009-1130639992.html?intcmp=grec3021100-0-1_46_0a73696c20070620320125&stid=A0HU",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "11400.00",
+            "priceDesc": "¥11400.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006484833",
+            "skuId": "pop8012273603",
+            "goodsName": "海尔（Haier）20/26KW 海尔壁挂炉天燃气采暖炉家用壁挂炉地暖锅炉节能 套管式(20KW（50-120平）)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1evK5B4xT1RCvBVdK_400.jpg",
+            "skuNo": "8012273603",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80015971",
+            "shopType": "pop",
+            "shopName": "海一海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs15.gomein.net.cn/T1zyZgBvDv1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015971.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006484833-pop8012273603.html?intcmp=grec3021100-0-1_47_0a73696c20070620320125&stid=80015971",
+            "price": "5899.00",
+            "priceDesc": "¥5899.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006587566",
+            "skuId": "pop8013048118",
+            "goodsName": "海尔（Haier）壁挂炉家用燃气暖气片地暖锅炉采暖两用天然气热水器 HT1系列 采暖洗浴两用-20KW（50-120平）(采暖洗浴两用20KW(50-120平)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1WJh5ByVT1RCvBVdK_400.jpg",
+            "skuNo": "8013048118",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80016412",
+            "shopType": "pop",
+            "shopName": "驰郑海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80016412.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006587566-pop8013048118.html?intcmp=grec3021100-0-1_48_0a73696c20070620320125&stid=80016412",
+            "price": "4399.00",
+            "priceDesc": "¥4399.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140137022",
+            "skuId": "1130658863",
+            "goodsName": "美的(Midea) L1PB26-C15 平衡式 壁挂炉 安全智护 小身材",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1phKgBvx_1RCvBVdK_400.jpg",
+            "skuNo": "100524458",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0IZ",
+            "shopType": "pshop",
+            "shopName": "北京大中密云鼓楼店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0IZ.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140137022-1130658863.html?intcmp=grec3021100-0-1_49_0a73696c20070620320125&stid=A0IZ",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "9999.00",
+            "priceDesc": "¥9999.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006568361",
+            "skuId": "pop8012816673",
+            "goodsName": "Haier/海尔 家用燃气壁挂炉（天然气） L1PB20-HT1(T) 生活采暖两用炉 20KW 三级防冻 低压启动(20KW 50-150m2)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1Zxd4B4hT1RCvBVdK_400.jpg",
+            "skuNo": "8012816673",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80011773",
+            "shopType": "pop",
+            "shopName": "优品海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs9.gomein.net.cn/T1voxvBXhT1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80011773.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006568361-pop8012816673.html?intcmp=grec3021100-0-1_50_0a73696c20070620320125&stid=80011773",
+            "price": "4199.00",
+            "priceDesc": "¥4199.00",
+            "promoType": "SALEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140137022",
+            "skuId": "1130658863",
+            "goodsName": "美的(Midea) L1PB26-C15 平衡式 壁挂炉 安全智护 小身材",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1phKgBvx_1RCvBVdK_400.jpg",
+            "skuNo": "100524458",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A00F",
+            "shopType": "pshop",
+            "shopName": "北京国美十里河店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A00F.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140137022-1130658863.html?intcmp=grec3021100-0-1_51_0a73696c20070620320125&stid=A00F",
+            "promotionLabels": [
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "易卡分期",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "7999.00",
+            "priceDesc": "¥7999.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140152009",
+            "skuId": "1130639992",
+            "goodsName": "林内(Rinnai) L1GB28-24G55 燃气采暖 壁挂炉 低噪 APP控制",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1SeWbB5xv1RCvBVdK_400.jpg",
+            "skuNo": "100542658",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0H5",
+            "shopType": "pshop",
+            "shopName": "北京大中通州店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0H5.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140152009-1130639992.html?intcmp=grec3021100-0-1_52_0a73696c20070620320125&stid=A0H5",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "11400.00",
+            "priceDesc": "¥11400.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140072953",
+            "skuId": "1130573233",
+            "goodsName": "万家乐(MACRO) 壁挂炉 L1PB20-18BK3 20kw",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1UTxQB4YT1RCvBVdK_400.jpg",
+            "skuNo": "100472244",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0HN",
+            "shopType": "pshop",
+            "shopName": "北京大中果园店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0HN.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140072953-1130573233.html?intcmp=grec3021100-0-1_53_0a73696c20070620320125&stid=A0HN",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "6898.00",
+            "priceDesc": "¥6898.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006622683",
+            "skuId": "pop8013063557",
+            "goodsName": "海尔（Haier）燃气采暖炉省气节能暖气片锅炉地暖壁挂炉供暖洗浴两用热水器恒温舒适(26KW（适用50-180平方）)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1JkJ5BjJT1RCvBVdK_400.jpg",
+            "skuNo": "8013063557",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80017031",
+            "shopType": "pop",
+            "shopName": "腾妙海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1wwCvB_KQ1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80017031.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006622683-pop8013063557.html?intcmp=grec3021100-0-1_54_0a73696c20070620320125&stid=80017031",
+            "price": "7499.00",
+            "priceDesc": "¥7499.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006622129",
+            "skuId": "pop8013063525",
+            "goodsName": "海尔（Haier）壁挂炉燃气采暖炉20/26KW锅炉地暖暖气片全屋热水器洗浴采暖两用节能(20KW控温版适用50-120平方)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1eEZ5Bbdv1RCvBVdK_400.jpg",
+            "skuNo": "8013063525",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80017031",
+            "shopType": "pop",
+            "shopName": "腾妙海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1wwCvB_KQ1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80017031.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006622129-pop8013063525.html?intcmp=grec3021100-0-1_55_0a73696c20070620320125&stid=80017031",
+            "price": "4399.00",
+            "priceDesc": "¥4399.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140023750",
+            "skuId": "1130024929",
+            "goodsName": "海尔(Haier) L1PB20-HT3(T) 双气安全监测 高抗风压 壁挂炉 3年质保 白",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1BoJvBTA_1RCvBVdK_400.jpg",
+            "skuNo": "100433962",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A01N",
+            "shopType": "pshop",
+            "shopName": "北京国美顺义新顺店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A01N.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140023750-1130024929.html?intcmp=grec3021100-0-1_56_0a73696c20070620320125&stid=A01N",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "6099.00",
+            "priceDesc": "¥6099.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006614742",
+            "skuId": "pop8013034415",
+            "goodsName": "海尔统帅壁挂炉燃气采暖炉20/26KW锅炉地暖暖气片全屋热水器洗浴采暖两用节能(26KW-50-180平方)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1xZb5B7bv1RCvBVdK_400.jpg",
+            "skuNo": "8013034415",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80017031",
+            "shopType": "pop",
+            "shopName": "腾妙海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1wwCvB_KQ1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80017031.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006614742-pop8013034415.html?intcmp=grec3021100-0-1_57_0a73696c20070620320125&stid=80017031",
+            "price": "4999.00",
+            "priceDesc": "¥4999.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "9140072953",
+            "skuId": "1130573233",
+            "goodsName": "万家乐(MACRO) 壁挂炉 L1PB20-18BK3 20kw",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1UTxQB4YT1RCvBVdK_400.jpg",
+            "skuNo": "100472244",
+            "isBbc": "N",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZSP",
+            "shopId": "A0GZ",
+            "shopType": "pshop",
+            "shopName": "北京大中门头沟店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0GZ.html",
+            "productDetailUrl": "http://item.gome.com.cn/9140072953-1130573233.html?intcmp=grec3021100-0-1_58_0a73696c20070620320125&stid=A0GZ",
+            "promotionLabels": [
+                {
+                    "promLabel": "节能补贴",
+                    "color": "#2AA80D"
+                },
+                {
+                    "promLabel": "券",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满赠",
+                    "color": "#f20c59"
+                },
+                {
+                    "promLabel": "满返",
+                    "color": "#f20c59"
+                }
+            ],
+            "price": "6898.00",
+            "priceDesc": "¥6898.00",
+            "promoType": "ZP01",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006614742",
+            "skuId": "pop8013034414",
+            "goodsName": "海尔统帅壁挂炉燃气采暖炉20/26KW锅炉地暖暖气片全屋热水器洗浴采暖两用节能(20KW-50-120平方)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T13kY5B4VT1RCvBVdK_400.jpg",
+            "skuNo": "8013034414",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80017031",
+            "shopType": "pop",
+            "shopName": "腾妙海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs14.gomein.net.cn/T1wwCvB_KQ1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80017031.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006614742-pop8013034414.html?intcmp=grec3021100-0-1_59_0a73696c20070620320125&stid=80017031",
+            "price": "4499.00",
+            "priceDesc": "¥4499.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        },
+        {
+            "type": "1",
+            "productId": "A0006617425",
+            "skuId": "pop8013046118",
+            "goodsName": "统帅（Leader）壁挂炉 家用燃气锅炉 天然气采暖炉 天然气热水器两用 海尔出品 LT1(26KW（50-180平）)",
+            "productImgURL": "http://gfs17.gomein.net.cn/T1K2b5BKdT1RCvBVdK_400.jpg",
+            "skuNo": "8013046118",
+            "isBbc": "Y",
+            "c3id": "cat15985612",
+            "sapSkuType": "ZBBC",
+            "shopId": "80015971",
+            "shopType": "pop",
+            "shopName": "海一海尔专卖店",
+            "shopImgUrl": null,
+            "shopLogoUrl": "http://gfs15.gomein.net.cn/T1zyZgBvDv1RCvBVdK.jpg",
+            "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015971.html",
+            "productDetailUrl": "http://item.gome.com.cn/A0006617425-pop8013046118.html?intcmp=grec3021100-0-1_60_0a73696c20070620320125&stid=80015971",
+            "price": "4599.00",
+            "priceDesc": "¥4599.00",
+            "promoType": "GOMEPRICE",
+            "promotionId": null,
+            "scheme_type_id": "0"
+        }
+    ]
+}

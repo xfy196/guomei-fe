@@ -1,0 +1,1836 @@
+{
+  "goodsList": [
+      {
+          "type": "1",
+          "productId": "9140171282",
+          "skuId": "1130773051",
+          "goodsName": "荣耀(honor) 荣耀V30 PRO 全网通 8GB+256GB 冰岛幻境",
+          "productImgURL": "http://gfs17.gomein.net.cn/T19y_CByLT1RCvBVdK_400.jpg",
+          "skuNo": "100590363",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A002",
+          "shopType": "pshop",
+          "shopName": "北京国美北太店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A002.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140171282-1130773051.html?intcmp=grec3021100-0-1_1_0a73699a20070620240058&stid=A002",
+          "promotionLabels": [
+              {
+                  "promLabel": "秒杀",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3099.00",
+          "priceDesc": "¥3099.00",
+          "promoType": "RUSHBUYPRICE",
+          "promotionId": "Q20070100006",
+          "markingPrice": "3699.00",
+          "markingPriceDesc": "¥3699.00",
+          "scheme_type_id": "1"
+      },
+      {
+          "type": "1",
+          "productId": "9140162396",
+          "skuId": "1130705344",
+          "goodsName": "Apple iPhone 11 128G 白色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ueC4BCJ_1RCvBVdK_400.jpg",
+          "skuNo": "100570609",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0IN",
+          "shopType": "pshop",
+          "shopName": "北京大中平谷府前街店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0IN.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140162396-1130705344.html?intcmp=grec3021100-0-1_2_0a73699a20070620240058&stid=A0IN",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5499.00",
+          "priceDesc": "¥5499.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140171604",
+          "skuId": "1130757161",
+          "goodsName": "华为手机Mate30(5G) 8GB+256GB 全网通 双卡双待 亮黑",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1d.KyB4Lv1RCvBVdK_400.jpg",
+          "skuNo": "100579489",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0NJ",
+          "shopType": "ashop",
+          "shopName": "北京大中星东新零售店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0NJ.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140171604-1130757161.html?intcmp=grec3021100-0-1_3_0a73699a20070620240058&stid=A0NJ",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "4999.00",
+          "priceDesc": "¥4999.00",
+          "promoType": "AREAPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140184029",
+          "skuId": "1130792138",
+          "goodsName": "荣耀（honor）荣耀30S 全网通 8GB+128GB蝶羽白",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1gNE5ByCT1RCvBVdK_400.jpg",
+          "skuNo": "100610994",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A050",
+          "shopType": "ashop",
+          "shopName": "北京国美帝园新零售店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A050.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140184029-1130792138.html?intcmp=grec3021100-0-1_4_0a73699a20070620240058&stid=A050",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2199.00",
+          "priceDesc": "¥2199.00",
+          "promoType": "AREAPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "A0006644651",
+          "skuId": "pop8013184307",
+          "goodsName": "苹果(Apple) iPhone 11 Pro Max 移动联通电信4G全网通手机(暗夜绿 全网通256GB)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1zUK4BsKT1RCvBVdK_400.jpg",
+          "skuNo": "8013184307",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80015633",
+          "shopType": "pop",
+          "shopName": "利和手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1rdLjBvKQ1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015633.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006644651-pop8013184307.html?intcmp=grec3021100-0-1_5_0a73699a20070620240058&stid=80015633",
+          "price": "8656.00",
+          "priceDesc": "¥8656.00",
+          "promoType": "SALEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140162396",
+          "skuId": "1130705348",
+          "goodsName": "Apple iPhone 11 128G 绿色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ASA4BsDT1RCvBVdK_400.jpg",
+          "skuNo": "100570611",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A05A",
+          "shopType": "ashop",
+          "shopName": "北京国美通州中达新零售店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A05A.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140162396-1130705348.html?intcmp=grec3021100-0-1_6_0a73699a20070620240058&stid=A05A",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5499.00",
+          "priceDesc": "¥5499.00",
+          "promoType": "AREAPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140162396",
+          "skuId": "1130700433",
+          "goodsName": "Apple iPhone 11 128G 黑色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1zeA4BsdT1RCvBVdK_400.jpg",
+          "skuNo": "100570610",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A00E",
+          "shopType": "pshop",
+          "shopName": "北京国美密云店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A00E.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140162396-1130700433.html?intcmp=grec3021100-0-1_7_0a73699a20070620240058&stid=A00E",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5499.00",
+          "priceDesc": "¥5499.00",
+          "promoType": "ZP01",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189369",
+          "skuId": "1130795859",
+          "goodsName": "华为 HUAWEI nova7 SE(5G) 8GB+128GB 全网通版 双卡双待 幻夜黑",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1jRZ5BXhv1RCvBVdK_400.jpg",
+          "skuNo": "100613992",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0NW",
+          "shopType": "ashop",
+          "shopName": "北京大中漷县新零售店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0NW.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189369-1130795859.html?intcmp=grec3021100-0-1_8_0a73699a20070620240058&stid=A0NW",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2399.00",
+          "priceDesc": "¥2399.00",
+          "promoType": "AREAPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189369",
+          "skuId": "1130795857",
+          "goodsName": "华为 HUAWEI nova7 SE(5G) 8GB+128GB 全网通版 双卡双待 绮境森林",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ItK5B_DT1RCvBVdK_400.jpg",
+          "skuNo": "100613671",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A00B",
+          "shopType": "pshop",
+          "shopName": "北京国美世纪金源店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A00B.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189369-1130795857.html?intcmp=grec3021100-0-1_9_0a73699a20070620240058&stid=A00B",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2199.00",
+          "priceDesc": "¥2199.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "A0006489731",
+          "skuId": "pop8012230848",
+          "goodsName": "苹果（Apple）iPhone XS Max 移动联通电信4G手机 双卡双待(银色)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1eubbBXhv1RCvBVdK_400.jpg",
+          "skuNo": "8012230848",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80015633",
+          "shopType": "pop",
+          "shopName": "利和手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1rdLjBvKQ1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015633.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006489731-pop8012230848.html?intcmp=grec3021100-0-1_10_0a73699a20070620240058&stid=80015633",
+          "price": "6866.00",
+          "priceDesc": "¥6866.00",
+          "promoType": "SALEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189367",
+          "skuId": "1130794217",
+          "goodsName": "华为 HUAWEI nova7(5G) 8GB+128GB 全网通版 双卡双待 (7号色)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1syC5B_KT1RCvBVdK_400.jpg",
+          "skuNo": "100613431",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0HB",
+          "shopType": "pshop",
+          "shopName": "北京大中大兴店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0HB.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189367-1130794217.html?intcmp=grec3021100-0-1_11_0a73699a20070620240058&stid=A0HB",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2699.00",
+          "priceDesc": "¥2699.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140180882",
+          "skuId": "1130790372",
+          "goodsName": "华为手机P40 Pro (ELS-AN00) 8GB+256GB 全网通 双卡双待 冰霜银",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1QTE4BgVT1RCvBVdK_400.jpg",
+          "skuNo": "100610908",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0H1",
+          "shopType": "pshop",
+          "shopName": "北京大中牛街店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0H1.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140180882-1130790372.html?intcmp=grec3021100-0-1_12_0a73699a20070620240058&stid=A0H1",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "6088.00",
+          "priceDesc": "¥6088.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140161114",
+          "skuId": "1130724776",
+          "goodsName": "Apple iPhone 11 Pro Max 256G 暗夜绿色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1l9Y4BXJT1RCvBVdK_400.jpg",
+          "skuNo": "100572257",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0HU",
+          "shopType": "pshop",
+          "shopName": "北京大中玉泉路新店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0HU.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140161114-1130724776.html?intcmp=grec3021100-0-1_13_0a73699a20070620240058&stid=A0HU",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "8799.00",
+          "priceDesc": "¥8799.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140171282",
+          "skuId": "1130773052",
+          "goodsName": "荣耀(honor) 荣耀V30 PRO 全网通 8GB+256GB 幻夜星河",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ythCBmVv1RCvBVdK_400.jpg",
+          "skuNo": "100589781",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0H4",
+          "shopType": "pshop",
+          "shopName": "北京大中怀柔店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0H4.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140171282-1130773052.html?intcmp=grec3021100-0-1_14_0a73699a20070620240058&stid=A0H4",
+          "promotionLabels": [
+              {
+                  "promLabel": "秒杀",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3099.00",
+          "priceDesc": "¥3099.00",
+          "promoType": "RUSHBUYPRICE",
+          "promotionId": "Q20070100005",
+          "markingPrice": "3699.00",
+          "markingPriceDesc": "¥3699.00",
+          "scheme_type_id": "1"
+      },
+      {
+          "type": "1",
+          "productId": "9140184029",
+          "skuId": "1130792138",
+          "goodsName": "荣耀（honor）荣耀30S 全网通 8GB+128GB蝶羽白",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1gNE5ByCT1RCvBVdK_400.jpg",
+          "skuNo": "100610994",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0GQ",
+          "shopType": "pshop",
+          "shopName": "北京大中马甸桥店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0GQ.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140184029-1130792138.html?intcmp=grec3021100-0-1_15_0a73699a20070620240058&stid=A0GQ",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2099.00",
+          "priceDesc": "¥2099.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "A0006609182",
+          "skuId": "pop8013348965",
+          "goodsName": "华为Mate30 手机(5G/4G版可选)(罗兰紫 官方标配)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1COhmBXbT1RCvBVdK_400.jpg",
+          "skuNo": "8013348965",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80014824",
+          "shopType": "pop",
+          "shopName": "盛仕手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1JUZsB7Wv1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80014824.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006609182-pop8013348965.html?intcmp=grec3021100-0-1_16_0a73699a20070620240058&stid=80014824",
+          "promotionLabels": [
+              {
+                  "promLabel": "券",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "4188.00",
+          "priceDesc": "¥4188.00",
+          "promoType": "GOMEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "A0006629772",
+          "skuId": "pop8013096578",
+          "goodsName": "华为 荣耀V30 Pro 5G版 手机 5G全网通(幻夜星河)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1rUhCB5DT1RCvBVdK_400.jpg",
+          "skuNo": "8013096578",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80014824",
+          "shopType": "pop",
+          "shopName": "盛仕手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1JUZsB7Wv1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80014824.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006629772-pop8013096578.html?intcmp=grec3021100-0-1_17_0a73699a20070620240058&stid=80014824",
+          "promotionLabels": [
+              {
+                  "promLabel": "券",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3088.00",
+          "priceDesc": "¥3088.00",
+          "promoType": "GOMEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140193300",
+          "skuId": "1130792497",
+          "goodsName": "华为手机P40 (ANA-AN00) 8GB+128GB 全网通 双卡双待 亮黑",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1cGK4ByV_1RCvBVdK_400.jpg",
+          "skuNo": "100610981",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0HE",
+          "shopType": "pshop",
+          "shopName": "北京大中石景山店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0HE.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140193300-1130792497.html?intcmp=grec3021100-0-1_18_0a73699a20070620240058&stid=A0HE",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3988.00",
+          "priceDesc": "¥3988.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140162396",
+          "skuId": "1130705344",
+          "goodsName": "Apple iPhone 11 128G 白色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ueC4BCJ_1RCvBVdK_400.jpg",
+          "skuNo": "100570609",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A013",
+          "shopType": "pshop",
+          "shopName": "北京国美公主坟店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A013.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140162396-1130705344.html?intcmp=grec3021100-0-1_19_0a73699a20070620240058&stid=A013",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5499.00",
+          "priceDesc": "¥5499.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140171282",
+          "skuId": "1130773051",
+          "goodsName": "荣耀(honor) 荣耀V30 PRO 全网通 8GB+256GB 冰岛幻境",
+          "productImgURL": "http://gfs17.gomein.net.cn/T19y_CByLT1RCvBVdK_400.jpg",
+          "skuNo": "100590363",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0GT",
+          "shopType": "pshop",
+          "shopName": "北京大中小营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0GT.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140171282-1130773051.html?intcmp=grec3021100-0-1_20_0a73699a20070620240058&stid=A0GT",
+          "promotionLabels": [
+              {
+                  "promLabel": "秒杀",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3099.00",
+          "priceDesc": "¥3099.00",
+          "promoType": "RUSHBUYPRICE",
+          "promotionId": "Q20070100006",
+          "markingPrice": "3699.00",
+          "markingPriceDesc": "¥3699.00",
+          "scheme_type_id": "1"
+      },
+      {
+          "type": "1",
+          "productId": "A0006609182",
+          "skuId": "pop8013001898",
+          "goodsName": "华为Mate30 手机(5G/4G版可选)(罗兰紫 官方标配)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1zRLyBvET1RCvBVdK_400.jpg",
+          "skuNo": "8013001898",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80014824",
+          "shopType": "pop",
+          "shopName": "盛仕手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1JUZsB7Wv1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80014824.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006609182-pop8013001898.html?intcmp=grec3021100-0-1_21_0a73699a20070620240058&stid=80014824",
+          "promotionLabels": [
+              {
+                  "promLabel": "券",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3188.00",
+          "priceDesc": "¥3188.00",
+          "promoType": "GOMEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140162396",
+          "skuId": "1130700433",
+          "goodsName": "Apple iPhone 11 128G 黑色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1zeA4BsdT1RCvBVdK_400.jpg",
+          "skuNo": "100570610",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A00W",
+          "shopType": "pshop",
+          "shopName": "北京国美双井二店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A00W.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140162396-1130700433.html?intcmp=grec3021100-0-1_22_0a73699a20070620240058&stid=A00W",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5499.00",
+          "priceDesc": "¥5499.00",
+          "promoType": "ZP01",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140171604",
+          "skuId": "1130757161",
+          "goodsName": "华为手机Mate30(5G) 8GB+256GB 全网通 双卡双待 亮黑",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1d.KyB4Lv1RCvBVdK_400.jpg",
+          "skuNo": "100579489",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A00I",
+          "shopType": "pshop",
+          "shopName": "北京国美平谷店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A00I.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140171604-1130757161.html?intcmp=grec3021100-0-1_23_0a73699a20070620240058&stid=A00I",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "4399.00",
+          "priceDesc": "¥4399.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140193300",
+          "skuId": "1130792497",
+          "goodsName": "华为手机P40 (ANA-AN00) 8GB+128GB 全网通 双卡双待 亮黑",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1cGK4ByV_1RCvBVdK_400.jpg",
+          "skuNo": "100610981",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A007",
+          "shopType": "pshop",
+          "shopName": "北京国美西坝河店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A007.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140193300-1130792497.html?intcmp=grec3021100-0-1_24_0a73699a20070620240058&stid=A007",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3988.00",
+          "priceDesc": "¥3988.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189369",
+          "skuId": "1130795858",
+          "goodsName": "华为 HUAWEI nova7 SE(5G) 8GB+128GB 全网通版 双卡双待 仲夏紫",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1IaY5BjWT1RCvBVdK_400.jpg",
+          "skuNo": "100613996",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A00N",
+          "shopType": "pshop",
+          "shopName": "北京国美良乡店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A00N.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189369-1130795858.html?intcmp=grec3021100-0-1_25_0a73699a20070620240058&stid=A00N",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2199.00",
+          "priceDesc": "¥2199.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140162396",
+          "skuId": "1130705348",
+          "goodsName": "Apple iPhone 11 128G 绿色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ASA4BsDT1RCvBVdK_400.jpg",
+          "skuNo": "100570611",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A00V",
+          "shopType": "pshop",
+          "shopName": "北京国美马甸鹏润店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A00V.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140162396-1130705348.html?intcmp=grec3021100-0-1_26_0a73699a20070620240058&stid=A00V",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5499.00",
+          "priceDesc": "¥5499.00",
+          "promoType": "ZP01",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140180882",
+          "skuId": "1130790372",
+          "goodsName": "华为手机P40 Pro (ELS-AN00) 8GB+256GB 全网通 双卡双待 冰霜银",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1QTE4BgVT1RCvBVdK_400.jpg",
+          "skuNo": "100610908",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0O1",
+          "shopType": "ashop",
+          "shopName": "北京大中杨宋新零售店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0O1.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140180882-1130790372.html?intcmp=grec3021100-0-1_27_0a73699a20070620240058&stid=A0O1",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "6488.00",
+          "priceDesc": "¥6488.00",
+          "promoType": "AREAPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "A0006609182",
+          "skuId": "pop8013348959",
+          "goodsName": "华为Mate30 手机(5G/4G版可选)(亮黑色 官方标配)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ScdmBvhv1RCvBVdK_400.jpg",
+          "skuNo": "8013348959",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80014824",
+          "shopType": "pop",
+          "shopName": "盛仕手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1JUZsB7Wv1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80014824.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006609182-pop8013348959.html?intcmp=grec3021100-0-1_28_0a73699a20070620240058&stid=80014824",
+          "promotionLabels": [
+              {
+                  "promLabel": "券",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3988.00",
+          "priceDesc": "¥3988.00",
+          "promoType": "GOMEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "A0006628039",
+          "skuId": "pop8013091597",
+          "goodsName": "华为nova6 手机（5G/4G）(普罗旺斯 官方标配)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ikhCB7x_1RCvBVdK_400.jpg",
+          "skuNo": "8013091597",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80014824",
+          "shopType": "pop",
+          "shopName": "盛仕手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1JUZsB7Wv1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80014824.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006628039-pop8013091597.html?intcmp=grec3021100-0-1_29_0a73699a20070620240058&stid=80014824",
+          "promotionLabels": [
+              {
+                  "promLabel": "券",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2288.00",
+          "priceDesc": "¥2288.00",
+          "promoType": "GOMEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140171604",
+          "skuId": "1130746153",
+          "goodsName": "华为手机Mate30(5G) 8GB+128GB 全网通 双卡双待 亮黑",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1CBxmBbJv1RCvBVdK_400.jpg",
+          "skuNo": "100579487",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0I7",
+          "shopType": "pshop",
+          "shopName": "北京大中昊天广场店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0I7.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140171604-1130746153.html?intcmp=grec3021100-0-1_30_0a73699a20070620240058&stid=A0I7",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3999.00",
+          "priceDesc": "¥3999.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189367",
+          "skuId": "1130794219",
+          "goodsName": "华为 HUAWEI nova7(5G) 8GB+128GB 全网通版 双卡双待 亮黑",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1IaD5BbVT1RCvBVdK_400.jpg",
+          "skuNo": "100614003",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A01N",
+          "shopType": "pshop",
+          "shopName": "北京国美顺义新顺店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A01N.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189367-1130794219.html?intcmp=grec3021100-0-1_31_0a73699a20070620240058&stid=A01N",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2699.00",
+          "priceDesc": "¥2699.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "A0006629772",
+          "skuId": "pop8013096580",
+          "goodsName": "华为 荣耀V30 Pro 5G版 手机 5G全网通(冰岛幻境)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1L6hCBCCT1RCvBVdK_400.jpg",
+          "skuNo": "8013096580",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80014824",
+          "shopType": "pop",
+          "shopName": "盛仕手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1JUZsB7Wv1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80014824.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006629772-pop8013096580.html?intcmp=grec3021100-0-1_32_0a73699a20070620240058&stid=80014824",
+          "promotionLabels": [
+              {
+                  "promLabel": "券",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3088.00",
+          "priceDesc": "¥3088.00",
+          "promoType": "GOMEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140171282",
+          "skuId": "1130773051",
+          "goodsName": "荣耀(honor) 荣耀V30 PRO 全网通 8GB+256GB 冰岛幻境",
+          "productImgURL": "http://gfs17.gomein.net.cn/T19y_CByLT1RCvBVdK_400.jpg",
+          "skuNo": "100590363",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0NF",
+          "shopType": "ashop",
+          "shopName": "北京大中东方新零售店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0NF.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140171282-1130773051.html?intcmp=grec3021100-0-1_33_0a73699a20070620240058&stid=A0NF",
+          "promotionLabels": [
+              {
+                  "promLabel": "秒杀",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3099.00",
+          "priceDesc": "¥3099.00",
+          "promoType": "RUSHBUYPRICE",
+          "promotionId": "Q20070100006",
+          "markingPrice": "3699.00",
+          "markingPriceDesc": "¥3699.00",
+          "scheme_type_id": "1"
+      },
+      {
+          "type": "1",
+          "productId": "9140162396",
+          "skuId": "1130700433",
+          "goodsName": "Apple iPhone 11 128G 黑色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1zeA4BsdT1RCvBVdK_400.jpg",
+          "skuNo": "100570610",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0I6",
+          "shopType": "pshop",
+          "shopName": "北京大中广渠路店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0I6.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140162396-1130700433.html?intcmp=grec3021100-0-1_34_0a73699a20070620240058&stid=A0I6",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5499.00",
+          "priceDesc": "¥5499.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189367",
+          "skuId": "1130794217",
+          "goodsName": "华为 HUAWEI nova7(5G) 8GB+128GB 全网通版 双卡双待 (7号色)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1syC5B_KT1RCvBVdK_400.jpg",
+          "skuNo": "100613431",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0HC",
+          "shopType": "pshop",
+          "shopName": "北京大中密云店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0HC.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189367-1130794217.html?intcmp=grec3021100-0-1_35_0a73699a20070620240058&stid=A0HC",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2699.00",
+          "priceDesc": "¥2699.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140180882",
+          "skuId": "1130790372",
+          "goodsName": "华为手机P40 Pro (ELS-AN00) 8GB+256GB 全网通 双卡双待 冰霜银",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1QTE4BgVT1RCvBVdK_400.jpg",
+          "skuNo": "100610908",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A00F",
+          "shopType": "pshop",
+          "shopName": "北京国美十里河店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A00F.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140180882-1130790372.html?intcmp=grec3021100-0-1_36_0a73699a20070620240058&stid=A00F",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5988.00",
+          "priceDesc": "¥5988.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189369",
+          "skuId": "1130795860",
+          "goodsName": "华为 HUAWEI nova7 SE(5G) 8GB+128GB 全网通版 双卡双待 银月星辉",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ZzJ5B4V_1RCvBVdK_400.jpg",
+          "skuNo": "100613998",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A01I",
+          "shopType": "pshop",
+          "shopName": "北京国美管庄环岛店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A01I.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189369-1130795860.html?intcmp=grec3021100-0-1_37_0a73699a20070620240058&stid=A01I",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2199.00",
+          "priceDesc": "¥2199.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189367",
+          "skuId": "1130794219",
+          "goodsName": "华为 HUAWEI nova7(5G) 8GB+128GB 全网通版 双卡双待 亮黑",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1IaD5BbVT1RCvBVdK_400.jpg",
+          "skuNo": "100614003",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0I4",
+          "shopType": "pshop",
+          "shopName": "北京大中回龙观新店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0I4.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189367-1130794219.html?intcmp=grec3021100-0-1_38_0a73699a20070620240058&stid=A0I4",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2699.00",
+          "priceDesc": "¥2699.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189367",
+          "skuId": "1130794219",
+          "goodsName": "华为 HUAWEI nova7(5G) 8GB+128GB 全网通版 双卡双待 亮黑",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1IaD5BbVT1RCvBVdK_400.jpg",
+          "skuNo": "100614003",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0O0",
+          "shopType": "ashop",
+          "shopName": "北京大中孙河新零售店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0O0.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189367-1130794219.html?intcmp=grec3021100-0-1_39_0a73699a20070620240058&stid=A0O0",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2999.00",
+          "priceDesc": "¥2999.00",
+          "promoType": "AREAPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189369",
+          "skuId": "1130795857",
+          "goodsName": "华为 HUAWEI nova7 SE(5G) 8GB+128GB 全网通版 双卡双待 绮境森林",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ItK5B_DT1RCvBVdK_400.jpg",
+          "skuNo": "100613671",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0I5",
+          "shopType": "pshop",
+          "shopName": "北京大中丰台桥南店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0I5.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189369-1130795857.html?intcmp=grec3021100-0-1_40_0a73699a20070620240058&stid=A0I5",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2199.00",
+          "priceDesc": "¥2199.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140162396",
+          "skuId": "1130705347",
+          "goodsName": "Apple iPhone 11 128G 紫色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ie_4BTYv1RCvBVdK_400.jpg",
+          "skuNo": "100572176",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A00G",
+          "shopType": "pshop",
+          "shopName": "北京国美安贞店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A00G.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140162396-1130705347.html?intcmp=grec3021100-0-1_41_0a73699a20070620240058&stid=A00G",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5499.00",
+          "priceDesc": "¥5499.00",
+          "promoType": "ZP01",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "A0006613427",
+          "skuId": "pop8013013705",
+          "goodsName": "Apple 苹果 iPhone 11Pro Max 手机(暗夜绿色)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T12V_yBQZT1RCvBVdK_400.jpg",
+          "skuNo": "8013013705",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80017264",
+          "shopType": "pop",
+          "shopName": "低调手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1IuDsB5__1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80017264.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006613427-pop8013013705.html?intcmp=grec3021100-0-1_42_0a73699a20070620240058&stid=80017264",
+          "promotionLabels": [
+              {
+                  "promLabel": "券",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "8188.00",
+          "priceDesc": "¥8188.00",
+          "promoType": "GOMEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140184029",
+          "skuId": "1130792138",
+          "goodsName": "荣耀（honor）荣耀30S 全网通 8GB+128GB蝶羽白",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1gNE5ByCT1RCvBVdK_400.jpg",
+          "skuNo": "100610994",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0H9",
+          "shopType": "pshop",
+          "shopName": "北京大中云岗店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0H9.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140184029-1130792138.html?intcmp=grec3021100-0-1_43_0a73699a20070620240058&stid=A0H9",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2099.00",
+          "priceDesc": "¥2099.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140162396",
+          "skuId": "1130705348",
+          "goodsName": "Apple iPhone 11 128G 绿色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ASA4BsDT1RCvBVdK_400.jpg",
+          "skuNo": "100570611",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0IF",
+          "shopType": "pshop",
+          "shopName": "北京大中密东广场店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0IF.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140162396-1130705348.html?intcmp=grec3021100-0-1_44_0a73699a20070620240058&stid=A0IF",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5499.00",
+          "priceDesc": "¥5499.00",
+          "promoType": "ZP01",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "A0006489731",
+          "skuId": "pop8012230847",
+          "goodsName": "苹果（Apple）iPhone XS Max 移动联通电信4G手机 双卡双待(银色)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1eubbBXhv1RCvBVdK_400.jpg",
+          "skuNo": "8012230847",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80015633",
+          "shopType": "pop",
+          "shopName": "利和手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1rdLjBvKQ1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015633.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006489731-pop8012230847.html?intcmp=grec3021100-0-1_45_0a73699a20070620240058&stid=80015633",
+          "price": "4896.00",
+          "priceDesc": "¥4896.00",
+          "promoType": "SALEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "A0006609182",
+          "skuId": "pop8013001891",
+          "goodsName": "华为Mate30 手机(5G/4G版可选)(亮黑色 官方标配)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1pXEyBXVT1RCvBVdK_400.jpg",
+          "skuNo": "8013001891",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80014824",
+          "shopType": "pop",
+          "shopName": "盛仕手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1JUZsB7Wv1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80014824.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006609182-pop8013001891.html?intcmp=grec3021100-0-1_46_0a73699a20070620240058&stid=80014824",
+          "promotionLabels": [
+              {
+                  "promLabel": "券",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3288.00",
+          "priceDesc": "¥3288.00",
+          "promoType": "GOMEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140162396",
+          "skuId": "1130705347",
+          "goodsName": "Apple iPhone 11 128G 紫色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ie_4BTYv1RCvBVdK_400.jpg",
+          "skuNo": "100572176",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A012",
+          "shopType": "pshop",
+          "shopName": "北京国美富贵园店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A012.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140162396-1130705347.html?intcmp=grec3021100-0-1_47_0a73699a20070620240058&stid=A012",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5499.00",
+          "priceDesc": "¥5499.00",
+          "promoType": "ZP01",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189369",
+          "skuId": "1130795860",
+          "goodsName": "华为 HUAWEI nova7 SE(5G) 8GB+128GB 全网通版 双卡双待 银月星辉",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ZzJ5B4V_1RCvBVdK_400.jpg",
+          "skuNo": "100613998",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0NY",
+          "shopType": "ashop",
+          "shopName": "北京大中石窝新零售店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0NY.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189369-1130795860.html?intcmp=grec3021100-0-1_48_0a73699a20070620240058&stid=A0NY",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2399.00",
+          "priceDesc": "¥2399.00",
+          "promoType": "AREAPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140162396",
+          "skuId": "1130705347",
+          "goodsName": "Apple iPhone 11 128G 紫色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ie_4BTYv1RCvBVdK_400.jpg",
+          "skuNo": "100572176",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0H8",
+          "shopType": "pshop",
+          "shopName": "北京大中旧宫店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0H8.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140162396-1130705347.html?intcmp=grec3021100-0-1_49_0a73699a20070620240058&stid=A0H8",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5499.00",
+          "priceDesc": "¥5499.00",
+          "promoType": "ZP01",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189369",
+          "skuId": "1130795858",
+          "goodsName": "华为 HUAWEI nova7 SE(5G) 8GB+128GB 全网通版 双卡双待 仲夏紫",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1IaY5BjWT1RCvBVdK_400.jpg",
+          "skuNo": "100613996",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0HO",
+          "shopType": "pshop",
+          "shopName": "北京大中顺义店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0HO.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189369-1130795858.html?intcmp=grec3021100-0-1_50_0a73699a20070620240058&stid=A0HO",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2199.00",
+          "priceDesc": "¥2199.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140171282",
+          "skuId": "1130773052",
+          "goodsName": "荣耀(honor) 荣耀V30 PRO 全网通 8GB+256GB 幻夜星河",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ythCBmVv1RCvBVdK_400.jpg",
+          "skuNo": "100589781",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "G001",
+          "shopType": "fshop",
+          "shopName": "国美网店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1OUE4BQbv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/G001.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140171282-1130773052.html?intcmp=grec3021100-0-1_51_0a73699a20070620240058&stid=G001",
+          "promotionLabels": [
+              {
+                  "promLabel": "秒杀",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3099.00",
+          "priceDesc": "¥3099.00",
+          "promoType": "RUSHBUYPRICE",
+          "promotionId": "Q20070100005",
+          "markingPrice": "3699.00",
+          "markingPriceDesc": "¥3699.00",
+          "scheme_type_id": "1"
+      },
+      {
+          "type": "1",
+          "productId": "9140162396",
+          "skuId": "1130705344",
+          "goodsName": "Apple iPhone 11 128G 白色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ueC4BCJ_1RCvBVdK_400.jpg",
+          "skuNo": "100570609",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A003",
+          "shopType": "pshop",
+          "shopName": "北京国美六里桥店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A003.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140162396-1130705344.html?intcmp=grec3021100-0-1_52_0a73699a20070620240058&stid=A003",
+          "promotionLabels": [
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "5499.00",
+          "priceDesc": "¥5499.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140193300",
+          "skuId": "1130792497",
+          "goodsName": "华为手机P40 (ANA-AN00) 8GB+128GB 全网通 双卡双待 亮黑",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1cGK4ByV_1RCvBVdK_400.jpg",
+          "skuNo": "100610981",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0GS",
+          "shopType": "pshop",
+          "shopName": "北京大中洋桥店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0GS.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140193300-1130792497.html?intcmp=grec3021100-0-1_53_0a73699a20070620240058&stid=A0GS",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3988.00",
+          "priceDesc": "¥3988.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "A0006609182",
+          "skuId": "pop8013352166",
+          "goodsName": "华为Mate30 手机(5G/4G版可选)(罗兰紫 官方标配)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1lUAmB_CT1RCvBVdK_400.jpg",
+          "skuNo": "8013352166",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80014824",
+          "shopType": "pop",
+          "shopName": "盛仕手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1JUZsB7Wv1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80014824.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006609182-pop8013352166.html?intcmp=grec3021100-0-1_54_0a73699a20070620240058&stid=80014824",
+          "promotionLabels": [
+              {
+                  "promLabel": "券",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "4688.00",
+          "priceDesc": "¥4688.00",
+          "promoType": "GOMEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189369",
+          "skuId": "1130795859",
+          "goodsName": "华为 HUAWEI nova7 SE(5G) 8GB+128GB 全网通版 双卡双待 幻夜黑",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1jRZ5BXhv1RCvBVdK_400.jpg",
+          "skuNo": "100613992",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0HJ",
+          "shopType": "pshop",
+          "shopName": "北京大中延庆店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0HJ.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189369-1130795859.html?intcmp=grec3021100-0-1_55_0a73699a20070620240058&stid=A0HJ",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2199.00",
+          "priceDesc": "¥2199.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140189369",
+          "skuId": "1130795857",
+          "goodsName": "华为 HUAWEI nova7 SE(5G) 8GB+128GB 全网通版 双卡双待 绮境森林",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ItK5B_DT1RCvBVdK_400.jpg",
+          "skuNo": "100613671",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0ID",
+          "shopType": "pshop",
+          "shopName": "北京大中南四环集美店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0ID.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189369-1130795857.html?intcmp=grec3021100-0-1_56_0a73699a20070620240058&stid=A0ID",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2199.00",
+          "priceDesc": "¥2199.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140171282",
+          "skuId": "1130773052",
+          "goodsName": "荣耀(honor) 荣耀V30 PRO 全网通 8GB+256GB 幻夜星河",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1ythCBmVv1RCvBVdK_400.jpg",
+          "skuNo": "100589781",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0H2",
+          "shopType": "pshop",
+          "shopName": "北京大中房山店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0H2.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140171282-1130773052.html?intcmp=grec3021100-0-1_57_0a73699a20070620240058&stid=A0H2",
+          "promotionLabels": [
+              {
+                  "promLabel": "秒杀",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "3099.00",
+          "priceDesc": "¥3099.00",
+          "promoType": "RUSHBUYPRICE",
+          "promotionId": "Q20070100005",
+          "markingPrice": "3699.00",
+          "markingPriceDesc": "¥3699.00",
+          "scheme_type_id": "1"
+      },
+      {
+          "type": "1",
+          "productId": "9140189367",
+          "skuId": "1130794217",
+          "goodsName": "华为 HUAWEI nova7(5G) 8GB+128GB 全网通版 双卡双待 (7号色)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1syC5B_KT1RCvBVdK_400.jpg",
+          "skuNo": "100613431",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0GX",
+          "shopType": "pshop",
+          "shopName": "北京大中刘家窑店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0GX.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140189367-1130794217.html?intcmp=grec3021100-0-1_58_0a73699a20070620240058&stid=A0GX",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "2699.00",
+          "priceDesc": "¥2699.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "9140161114",
+          "skuId": "1130724776",
+          "goodsName": "Apple iPhone 11 Pro Max 256G 暗夜绿色 移动联通电信4G手机",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1l9Y4BXJT1RCvBVdK_400.jpg",
+          "skuNo": "100572257",
+          "isBbc": "N",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZSP",
+          "shopId": "A0HV",
+          "shopType": "pshop",
+          "shopName": "北京大中平谷二店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/A0HV.html",
+          "productDetailUrl": "http://item.gome.com.cn/9140161114-1130724776.html?intcmp=grec3021100-0-1_59_0a73699a20070620240058&stid=A0HV",
+          "promotionLabels": [
+              {
+                  "promLabel": "满返",
+                  "color": "#f20c59"
+              },
+              {
+                  "promLabel": "易卡分期",
+                  "color": "#f20c59"
+              }
+          ],
+          "price": "8799.00",
+          "priceDesc": "¥8799.00",
+          "promoType": "ZP41",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      },
+      {
+          "type": "1",
+          "productId": "A0006570051",
+          "skuId": "pop8012953868",
+          "goodsName": "华为（HUAWEI）荣耀20pro手机 4800万全焦段AI四摄 双光学防抖 麒麟980(冰岛幻境 全网通 8GB+256GB)",
+          "productImgURL": "http://gfs17.gomein.net.cn/T1dnYXB5CT1RCvBVdK_400.jpg",
+          "skuNo": "8012953868",
+          "isBbc": "Y",
+          "c3id": "cat10000070",
+          "sapSkuType": "ZBBC",
+          "shopId": "80015633",
+          "shopType": "pop",
+          "shopName": "利和手机专营店",
+          "shopImgUrl": null,
+          "shopLogoUrl": "http://gfs14.gomein.net.cn/T1rdLjBvKQ1RCvBVdK.jpg",
+          "shopDetailUrl": "http://m.gome.com.cn/shops/home/80015633.html",
+          "productDetailUrl": "http://item.gome.com.cn/A0006570051-pop8012953868.html?intcmp=grec3021100-0-1_60_0a73699a20070620240058&stid=80015633",
+          "price": "2226.00",
+          "priceDesc": "¥2226.00",
+          "promoType": "SALEPRICE",
+          "promotionId": null,
+          "scheme_type_id": "0"
+      }
+  ]
+}

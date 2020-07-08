@@ -7,7 +7,10 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "amfe-flexible": "^2.2.1",
     "core-js": "^3.6.5",
+    "lib-flexible": "^0.3.2",
+    "postcss-pxtorem": "^5.1.1",
     "vant": "^2.9.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
@@ -27,5 +30,21 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          "Android 4.1",
+          "iOS 7.1"
+        ]
+      },
+      "postcss-pxtorem": {
+        "rootValue": 37.5,
+        "propList": [
+          "*"
+        ]
+      }
+    }
+  }
 }

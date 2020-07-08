@@ -8,7 +8,7 @@
 
 html,
 body {
-  overflow: scroll;
+  overflow: hidden;
   height: 100%;
 }
 
@@ -19,6 +19,7 @@ body {
 html {
   background-color: #fff;
   color: #212121;
+  /* font-size: 26.66667vw; */
   font-size: 64vw;
   -webkit-user-select: none;
   user-select: none;
@@ -26,9 +27,10 @@ html {
 
 body {
   margin: 0;
-  font-size: 0.14em;
+  font-size: 14px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #f6f6f6;
   font-family: PingFangSC-Regular, Hiragino Sans GB, sans-serif;
 }
 
