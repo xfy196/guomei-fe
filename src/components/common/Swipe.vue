@@ -2,7 +2,6 @@
   <van-swipe width="1.395833rem" class="my-swipe" :autoplay="3000" indicator-color="white">
   <van-swipe-item class="swipe-item" v-for="(item, index) in swiperImgs" :key="index">
         <img class="swipe-img" :src="item" />
-
   </van-swipe-item>
 </van-swipe>
 </template>
@@ -29,6 +28,7 @@ export default {
 </script>
 <style lang="stylus">
 .my-swipe 
+    padding .16rem 0 
     .swipe-item
         overflow hidden
         padding 0 10px
