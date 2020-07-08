@@ -14,19 +14,20 @@
     <!-- 九宫格 -->
 
   <div class="Gongge">
-    <van-grid :column-num="4" :border="false">
-      <van-grid-item v-for="value in icons" :key="value.id" :icon="value.iconimgs" :text="value.text" />
-    </van-grid>
+      <van-grid :column-num="4" :border="false">
+        <van-grid-item v-for="value in icons" :key="value.id" :icon="value.iconimgs" :text="value.text" />
+      </van-grid>
   </div>
   <div class="advertisement">
     <img src="http://gfs9.gomein.net.cn/wireless/T1MKL5ByJv1RCvBVdK_1065_284.png" alt="">
   </div>
-  <div class="Spike">
-    <header>
+  
+    <div class="Spike">
+      <header>
       <img src="http://gfs6.gomein.net.cn/wireless/T1SnY4B4dv1RCvBVdK_1065_150.png" alt="">
-    </header>
+      </header>
 
-  </div>
+    </div>
   </div>  
     
 </template>
@@ -121,14 +122,14 @@ Vue.use(GridItem);
       height 130px
 .Gongge
   padding 6px 0px
-  border-radius 10px
-  overflow hidden
   .van-grid
-    padding 11px 0px 0px
+    overflow hidden
+    border-radius 10px
+    margin  11px 0px 0px
     .van-grid-item__icon
       width 71px
       height 50px
-      img
+/deep/img
         width 71px
         height 50px
 .advertisement
