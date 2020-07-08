@@ -20,6 +20,7 @@
 <script>
 import Vue from "vue";
 import { Tab, Tabs } from "vant";
+import Comfortable from "@/Home/Comfortable/Comfortable"
 Vue.use(Tab);
 Vue.use(Tabs);
 export default {
@@ -36,7 +37,7 @@ export default {
         "家居家装",
       ],
       border: false,
-      navComponentLists : ["","", "", "Swipe"]
+      navComponentLists : ["","", "", "Swipe","Comfortable"]
     }
   },
   methods: {
