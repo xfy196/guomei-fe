@@ -28,6 +28,7 @@ export default {
 </script>
 <style lang="stylus">
 .my-swipe 
+    padding .16rem 0 
     .swipe-item
         overflow hidden
         padding 0 10px

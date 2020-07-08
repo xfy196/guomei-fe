@@ -2,7 +2,7 @@
     <nav>
         <van-tabs class="tabs" @change="handleChange" :border=border background="#f20c59">
         <van-tab title-style="color:#fff" v-for="(item, index) in navlist" :title="item" :key="index">
-          <div class="swipe-container">
+          <div class="container">
             <component :is="navComponents[index]">
 
             </component>
@@ -58,8 +58,6 @@ export default {
 <style lang="stylus" scoped>
 nav 
   position relative
-  .swipe-container
-    padding .16rem 0
   /deep/.van-tabs__wrap
     padding-right 60px
     /deep/.van-tabs__line
