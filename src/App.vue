@@ -6,9 +6,16 @@
 </template>
 
 <script>
-  import Fouse from './views/PhonShop'
-
+  import Fouse  from './views/PhonShop'
 export default {
+  data () {
+    return {
+      
+    }
+  },
+  components: {
+    Fouse
+  }
 }
 </script>
 
