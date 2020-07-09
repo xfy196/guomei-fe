@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <footer>
     <van-tabbar route active-color="#f20c59" inactive-color="#919599" v-model="active">
       <van-tabbar-item to="/">
         <span>首页</span>
@@ -32,7 +32,7 @@
         </template>
       </van-tabbar-item>
     </van-tabbar>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -78,5 +78,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="stylus" scoped>
+footer
+  height 50px
+  position fixed
+  bottom 0
+  width 100%
 </style>

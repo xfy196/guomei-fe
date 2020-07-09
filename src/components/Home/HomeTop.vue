@@ -35,6 +35,8 @@ header
     background-color #f20c59
     height 44px
     display flex
+    position sticky
+    top 0
     .location-box
         padding-left 10px
         color #ffffff
