@@ -1,14 +1,14 @@
 <template>
     <nav>
-        <van-tabs class="tabs" @change="handleChange" :border=border background="#f20c59">
-        <van-tab title-style="color:#fff" v-for="(item, index) in navlist" :title="item" :key="index">
-          <div class="container">
-            <component :is="navComponents[index]">
+        <van-tabs v-model="activeIndex" class="tabs" @change="handleChange" :border="false" background="#f20c59">
+          <van-tab title-style="color:#fff" v-for="(item, index) in navlist" :title="item" :key="index">
+            <div class="container">
+              <component :is="navComponents[index]">
 
-            </component>
+              </component>
 
-          </div>
-        </van-tab>
+            </div>
+          </van-tab>
         </van-tabs>
         <div class="category">
           <img class="nv-bg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAABYBAMAAAAZ9PqaAAAAGFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWNxwqAAAACHRSTlMIBQwcEBcUAxo/uM4AAADjSURBVDjLzMyxDQMhDEBR6yY4VkBswAroFkCMEHqqrB/7OxZFclLKuOLpY8vTJzEIoMDW4nmKICCCSACB0AIhDtjk7HKYlqcjhyiuhEjNdHoqDZEUqoUAOkktFGlOSS4Den+8toqlx0AkhYo1SyNUSK4DKbYsVWRrqq4SlyWUM2v1qzjSt+aNDle91dhqH+q/6fpbvSqpYxMAYBgGgstl/5lCivBwYEJK40761/q5zOWV4Jy8Hc1t0jtMwEsswRkMwifsxrXM40Ou4BGO4R9u5i1O63tbcN53J87hhrgvbk+7tAHn5tBxntciCgAAAABJRU5ErkJggg==" alt="">
@@ -41,13 +41,14 @@ export default {
         "超市百货",
         "家居家装",
       ],
-      border: false,
+      activeIndex : 0,
       navComponents : ["", "", "", "Cupboard"]
     }
   },
   methods: {
-      handleChange(name){
-
+      handleChange(index){
+        console.log(index)
+        this.activeIndex = index
       }
   },
   components : {
@@ -58,6 +59,8 @@ export default {
 <style lang="stylus" scoped>
 nav 
   position relative
+  overflow scroll
+  flex 1
   /deep/.van-tabs__wrap
     padding-right 60px
     /deep/.van-tabs__line
