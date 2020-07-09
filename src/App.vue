@@ -10,4 +10,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+#app
+  height 100%
+</style>
