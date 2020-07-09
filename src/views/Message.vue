@@ -1,6 +1,6 @@
 <template>
   <div>
-    我的
+    消息
   </div>
 </template>
 

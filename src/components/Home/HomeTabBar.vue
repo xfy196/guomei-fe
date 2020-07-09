@@ -1,7 +1,7 @@
 <template>
   <footer>
     <van-tabbar route active-color="#f20c59" inactive-color="#919599" v-model="active">
-      <van-tabbar-item to="/">
+      <van-tabbar-item to="/home">
         <span>首页</span>
         <template #icon="props">
           <img :src="props.active ? icon[0].active : icon[0].inactive" />
