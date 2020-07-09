@@ -28,6 +28,8 @@ import { Tab, Tabs } from "vant";
 import Comfortable from "@/Home/Comfortable/Comfortable"
 import Cupboard from "@/Home/Cupboard/Home"
 import Selected from "@/Home/Selected/Selected"
+import PhoneShop from "@/Home/PhoneShop/PhoneShop"
+
 Vue.use(Tab);
 Vue.use(Tabs);
 export default {
@@ -44,7 +46,7 @@ export default {
         "家居家装",
       ],
       border: false,
-      navComponents : ["Selected", "", "", "Cupboard", "Comfortable"]
+      navComponents : ["Selected", "PhoneShop", "", "Cupboard", "Comfortable"]
     }
   },
   methods: {
@@ -56,7 +58,8 @@ export default {
   components : {
     Cupboard,
     Selected,
-    Comfortable
+    Comfortable,
+    PhoneShop
   }
 };
 </script>
