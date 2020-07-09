@@ -17,22 +17,25 @@
 
 <script>
 import Vue from "vue";
-import { Col, Row, Icon, Search } from "vant";
+import { Col, Row, Icon, Search, Sticky } from "vant";
 Vue.use(Col);
 Vue.use(Row);
 Vue.use(Icon);
 Vue.use(Search);
+Vue.use(Sticky);
 export default {
   data() {
     return {
       l_city: "北京市"
     };
   }
-};
+}
 </script>
 <style lang="stylus" scoped>
+@import "~assets/stylus/theme.styl";
+
 header
-    background-color #f20c59
+    background-color $themeBgColor
     height 44px
     display flex
     position sticky
