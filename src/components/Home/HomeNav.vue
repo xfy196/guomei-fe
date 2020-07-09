@@ -3,7 +3,7 @@
         <van-tabs class="tabs" @change="handleChange" :border=border background="#f20c59">
         <van-tab title-style="color:#fff" v-for="(item, index) in navlist" :title="item" :key="index">
           <div class="container">
-            <component :is="navComponentLists[index]">
+            <component :is="navComponents[index]">
 
             </component>
 
@@ -43,7 +43,7 @@ export default {
         "家居家装",
       ],
       border: false,
-      navComponentLists : ["","", "", "Cupboard","Comfortable"]
+      navComponents : ["","", "", "Cupboard","Comfortable"]
     }
   },
   methods: {

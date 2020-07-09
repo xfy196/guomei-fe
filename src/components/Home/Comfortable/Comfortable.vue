@@ -38,7 +38,7 @@
       <div class="video-poster">
         <img src="http://gfs10.gomein.net.cn/T1yJJmB4_T1RCvBVdK.jpg" alt="" class="video-img">
         <a href="#" class="btn-play">
-          <img src="assets/comfortable/autoplay.png" alt="">
+          <img src="../../../assets/comfortable/autoplay.png" alt="">
         </a>
       </div>
       <p>
