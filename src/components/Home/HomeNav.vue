@@ -46,7 +46,7 @@ export default {
         "超市百货",
         "家居家装",
       ],
-      activeIndex : 0,
+      activeIndex : 3,
       navComponents : ["Selected", "PhoneShop", "", "Cupboard", "Comfortable"]
     }
   },

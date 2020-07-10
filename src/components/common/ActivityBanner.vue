@@ -1,6 +1,6 @@
 <template>
   <div class="activeBanner">
-      <img v-lazy="url" :src="url" alt="">
+      <img class="img" v-lazy="url" :src="url" alt="">
   </div>
 </template>
 
