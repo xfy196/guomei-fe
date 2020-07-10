@@ -1,38 +1,38 @@
 <template>
-  <div>
+  <footer>
     <van-tabbar route active-color="#f20c59" inactive-color="#919599" v-model="active">
-      <van-tabbar-item to="/">
+      <van-tabbar-item to="/home">
         <span>首页</span>
         <template #icon="props">
           <img :src="props.active ? icon[0].active : icon[0].inactive" />
         </template>
       </van-tabbar-item>
-      <van-tabbar-item icon="search">
+      <van-tabbar-item icon="search" to="/shop">
         <span>门店</span>
         <template #icon="props">
           <img :src="props.active ? icon[1].active : icon[1].inactive" />
         </template>
       </van-tabbar-item>
-      <van-tabbar-item icon="friends-o">
+      <van-tabbar-item icon="friends-o" to="/message">
         <span>消息</span>
         <template #icon="props">
           <img :src="props.active ? icon[2].active : icon[2].inactive" />
         </template>
       </van-tabbar-item>
-      <van-tabbar-item icon="setting-o">
+      <van-tabbar-item icon="setting-o" to="/cart">
         <span>购物车</span>
         <template #icon="props">
           <img :src="props.active ? icon[3].active : icon[3].inactive" />
         </template>
       </van-tabbar-item>
-      <van-tabbar-item icon="setting-o">
+      <van-tabbar-item icon="setting-o" to="/mine">
         <span>我的</span>
         <template #icon="props">
           <img :src="props.active ? icon[3].active : icon[3].inactive" />
         </template>
       </van-tabbar-item>
     </van-tabbar>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -43,7 +43,7 @@ Vue.use(TabbarItem);
 export default {
   data() {
     return {
-      active: 0,
+      active: 1,
       icon: [
         {
           active:
@@ -78,5 +78,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="stylus" scoped>
+footer
+  height 50px
+  position fixed
+  bottom 0
+  width 100%
 </style>

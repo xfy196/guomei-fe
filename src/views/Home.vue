@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="home">
       <HomeTop></HomeTop>
       <HomeNav></HomeNav>
       <HomeTabBar></HomeTabBar>
@@ -18,7 +18,9 @@ export default {
   }
 };
 </script>
-
-<style>
-
+<style lang="stylus" scoped>
+#home
+  display flex
+  flex-direction column
+  height 100%
 </style>

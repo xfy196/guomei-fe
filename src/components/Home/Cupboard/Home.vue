@@ -3,12 +3,14 @@
     <Swipe></Swipe>
     <GridShortCut></GridShortCut>
     <ActivityBanner :url="a_url"></ActivityBanner>
+    <BestSellers></BestSellers>
   </div>
 </template>
 
 <script>
 import GridShortCut from "@/Home/Cupboard/GridShortCut";
 import ActivityBanner from "@/common/ActivityBanner";
+import BestSellers from "@/Home/Cupboard/BestSellers";
 import Swipe from "@/common/Swipe";
 export default {
   data(){
@@ -20,7 +22,8 @@ export default {
   components: {
     GridShortCut,
     Swipe,
-    ActivityBanner
+    ActivityBanner,
+    BestSellers
   }
 };
 </script>
