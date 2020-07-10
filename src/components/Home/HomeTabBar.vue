@@ -81,7 +81,7 @@ export default {
 <style lang="stylus" scoped>
 footer
   height 50px
-  position fixed
-  bottom 0
-  width 100%
+  // position fixed
+  // bottom 0
+  // width 100%
 </style>

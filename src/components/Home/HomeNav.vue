@@ -1,6 +1,6 @@
 <template>
-    <nav>
-        <van-tabs :sticky="true" offset-top="1.173333rem" v-model="activeIndex" :swipeable="false" class="tabs" @change="handleChange" :border="false" background="#1d74ff">
+    <main>
+        <van-tabs v-model="activeIndex" :swipeable="false" class="tabs" @change="handleChange" :border="false" background="#1d74ff">
           <div slot="nav-right">
               <div class="category">
                 <img class="nv-bg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAABYBAMAAAAZ9PqaAAAAGFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWNxwqAAAACHRSTlMIBQwcEBcUAxo/uM4AAADjSURBVDjLzMyxDQMhDEBR6yY4VkBswAroFkCMEHqqrB/7OxZFclLKuOLpY8vTJzEIoMDW4nmKICCCSACB0AIhDtjk7HKYlqcjhyiuhEjNdHoqDZEUqoUAOkktFGlOSS4Den+8toqlx0AkhYo1SyNUSK4DKbYsVWRrqq4SlyWUM2v1qzjSt+aNDle91dhqH+q/6fpbvSqpYxMAYBgGgstl/5lCivBwYEJK40761/q5zOWV4Jy8Hc1t0jtMwEsswRkMwifsxrXM40Ou4BGO4R9u5i1O63tbcN53J87hhrgvbk+7tAHn5tBxntciCgAAAABJRU5ErkJggg==" alt="">
@@ -19,7 +19,7 @@
           </van-tab>
         </van-tabs>
       
-    </nav>
+    </main>
 
 </template>
 
@@ -67,13 +67,22 @@ export default {
 <style lang="stylus" scoped>
 @import "~assets/stylus/theme.styl";
 
-nav 
+main 
   flex 1
+  height 100%
+  overflow hidden
   .tabs
     height 44px
     line-height 44px
+    height 100%
+    display: flex;
+    flex-direction: column;
     /deep/.van-tabs__wrap
       padding-right 60px
+    /deep/.van-tabs__content
+          height 100%
+          overflow scroll
+          flex 1
       /deep/.van-tabs__line
         background-image: linear-gradient(270deg,hsla(0,0%,100%,.51),#fff);
     .category
@@ -85,7 +94,6 @@ nav
         position fixed
         align-items center
         right 0
-        // top 44px
         z-index 99
         padding-right 5px
         .nv-bg
@@ -99,11 +107,7 @@ nav
           width 18px
           height 18px
     .container
-      overflow scroll
-      height calc(100% - 1000px)
-    .tabs
-      height 44px
-      line-height 44px
+      height 100%
 
 /deep/.van-tabs__content
         .van-tab__pane

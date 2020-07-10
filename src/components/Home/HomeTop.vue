@@ -38,9 +38,6 @@ header
     background-color $themeBgColor
     height 44px
     display flex
-    position sticky
-    z-index 99
-    top 0
     .location-box
         padding-left 10px
         color #ffffff
