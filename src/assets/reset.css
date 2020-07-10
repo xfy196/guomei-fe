@@ -30,7 +30,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: #f6f6f6;
-  font-family: PingFangSC-Regular, Hiragino Sans GB, sans-serif;
+  font-family: Microsoft YaHei,Arial,Helvetica, PingFangSC-Regular, Hiragino Sans GB, sans-serif;
 }
 
 ul,
@@ -250,4 +250,7 @@ a {
   font-family: "yofont";
   src: url("/assets/icons/iconfont.woff") format("woff"),
     url("/assets/icons/iconfont.ttf") format("truetype");
+}
+ul, li{
+  list-style: none;
 }
