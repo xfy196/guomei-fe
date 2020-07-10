@@ -1,5 +1,5 @@
 <template>
-<!-- <van-pull-refresh v-model="isLoading" @refresh="onRefresh"> -->
+<van-pull-refresh v-model="isLoading" @refresh="onRefresh">
   <div>
     <Swipe></Swipe>
     <GridShortCut></GridShortCut>
@@ -10,7 +10,7 @@
     <ProductVideo></ProductVideo>
     <FromDesign></FromDesign>
   </div>
-<!-- </van-pull-refresh> -->
+</van-pull-refresh>
 </template>
 
 <script>
