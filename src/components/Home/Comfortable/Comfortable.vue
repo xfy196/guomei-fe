@@ -53,6 +53,21 @@
         <img src="http://gfs7.gomein.net.cn/wireless/T1b0YmBmCv1RCvBVdK_533_362.jpg" alt="">
       </li>
     </ul>
+    <div class="comfortable-tab">
+      <div class="tab-title">
+        <a href="#">为您推荐</a>
+        <a href="#">金牌导购</a>
+      </div>
+      <van-tabs v-model="active" class="comfortable-tabchild">
+        <van-tab title="供暖系统">
+          <ComfortableGoods></ComfortableGoods>
+        </van-tab>
+        <van-tab title="国美智能">内容 2</van-tab>
+        <van-tab title="安防系统">内容 3</van-tab>
+        <van-tab title="中央空调">内容 4</van-tab>
+        <van-tab title="全屋水家电">内容 5</van-tab>
+      </van-tabs>
+    </div>
   </div>
 </template>
 
@@ -64,9 +79,16 @@ import { Swipe, SwipeItem } from "vant";
 
 import { Icon } from 'vant';
 
+import { Tab, Tabs } from 'vant';
+
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 Vue.use(Icon);
+Vue.use(Tab);
+Vue.use(Tabs);
+
+import ComfortableGoods from '@/Home/Comfortable/ComfortableGoods.vue'
+
 export default {
   data() {
     return {
@@ -74,9 +96,13 @@ export default {
         'https://gfs7.gomein.net.cn/wireless/T120Z5B4bT1RCvBVdK_1065_390.jpg',
         'http://gfs6.gomein.net.cn/wireless/T147_5BThT1RCvBVdK_1065_390.jpg',
         'https://gfs8.gomein.net.cn/wireless/T1X0K5BCVv1RCvBVdK_1065_390.jpg'
-      ]
+      ],
+      active :0
     }
   },
+  components : {
+    ComfortableGoods
+  }
 };
 </script>
 
@@ -161,5 +187,27 @@ export default {
     li
       img 
         width 177.6px
-        height 120.6px      
+        height 120.6px 
+  .comfortable-tab 
+    .tab-title
+      display flex
+      justify-content center
+      margin 0 10px 10px
+      a
+        display inline-block
+        font-size 14px
+        width 76px
+        height 26px
+        line-height 26px
+        text-align center
+        &:first-of-type 
+          color #ffffff
+          background #fa1e8c
+          border-radius 16px
+          margin-right 6px
+        &:last-of-type
+          color #000
+    /deep/.comfortable-tabchild .van-tabs__wrap
+      padding-right 0 
+      margin 0 10px
 </style>
