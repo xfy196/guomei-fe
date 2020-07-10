@@ -31,17 +31,53 @@
       <header>
         <img src="http://gfs6.gomein.net.cn/wireless/T1SnY4B4dv1RCvBVdK_1065_150.png" alt />
       </header>
-      <Tabs></Tabs>
+      <ul>
+          <li>
+              <p>16:00</p>
+              <span>07月09日</span>
+          </li>
+          <li>
+              <p>16:00</p>
+              <span>07月09日</span>
+          </li>
+      </ul>
+        <div class="goods-multiple-wrapper">
+          <van-swipe-cell>
+              <Tabs></Tabs>
+          </van-swipe-cell>
+        </div>
     </div>
+    <!-- 品牌推荐 -->
+    <div class="brand">
+       <header>
+         <h5>品牌推荐</h5>
+      </header>
+      <section>
+        <ul class="left-t">
+          <li class="left">
+            <img src="http://gfs6.gomein.net.cn/wireless/T18NA5BjVv1RCvBVdK_425_568.png" alt="">
+          </li>
+          <li class="right">
+            <header><img src="http://gfs8.gomein.net.cn/wireless/T1E0V5BsAT1RCvBVdK_640_284.png" alt=""></header>
+            <ul class="right-r">
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+    
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import { Swipe, SwipeItem, Lazyload, Grid, GridItem } from "vant";
-
+import { Swipe, SwipeItem, Lazyload, Grid, GridItem,SwipeCell } from "vant";
 import Tabs from "@/Home/PhoneShop/common/tabs";
 
+Vue.use(SwipeCell);   
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 Vue.use(Lazyload);
@@ -116,72 +152,125 @@ export default {
 
 
 <style lang="stylus" scoped>
-.main {
+.main 
   margin: 0 10px;
   height 4176px
-}
 
-.focusPhoto {
+
+.focusPhoto 
   width: 100%;
   height: 142px;
   box-sizing: border-box;
   padding: 6px 0;
 
-  .template {
+  .template 
     overflow: hidden;
     height: 130px;
     width: 355px;
     box-sizing: border-box;
     border-radius: 10px;
 
-    img {
+    img 
       width: 355px;
       height: 130px;
-    }
-  }
-}
+    
+  
 
-.Gongge {
+
+.Gongge 
   padding: 6px 0px;
 
-  .van-grid {
+  .van-grid 
     overflow: hidden;
     border-radius: 10px;
     margin: 11px 0px 0px;
 
-    .van-grid-item__icon {
+    .van-grid-item__icon 
       width: 71px;
       height: 50px;
-    }
-  }
-}
+    
+  
 
-/deep/img {
+
+/deep/img 
   width: 71px;
   height: 50px;
-}
 
-.advertisement {
+
+.advertisement 
   height: 95px;
 
-  img {
+  img 
     width: 100%;
     height: 100%;
-  }
-}
+  
 
-.Spike {
+
+.Spike 
   height: 300px;
   box-sizing: border-box;
   margin-top: 10px;
   border-radius: 10px;
   overflow: hidden;
   background-color white 
-  header {
-    img {
+  header 
+    img 
       width: 100%;
       height: 100%;
-    }
-  }
-}
+  
+  ul
+    height 51px
+    display flex
+    li
+      flex 1
+      display flex
+      flex-direction column
+      justify-content center
+      align-items center
+      p
+        text-align center
+        font-size 17px 
+        color black
+      span 
+        font-size 11px
+        color #262c32
+        text-align center
+    .goods-multiple-wrapper
+      height 200px
+      margin 5px 0px 8px
+
+.brand
+  height 240px
+  background-color white
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  header 
+   height 50px
+   padding 0 10.5px
+   h5
+    height 50px
+    line-height 50px
+    font-size 18px
+  section
+    height 190px
+    .left-t
+      display flex
+      .left
+        width 142px
+        height 190px
+        img 
+          width 100%
+          height 100%
+      .right
+        width 213px
+        height 190px
+      header
+        width 213px
+        height 94.5px
+        img 
+          width 100%
+          height 100%  
+
 </style>

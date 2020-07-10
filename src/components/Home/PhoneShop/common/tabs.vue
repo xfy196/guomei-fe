@@ -1,38 +1,28 @@
 <template>
-  <div>
-      <ul>
-          <li>
-              <p>16:00</p>
-              <span>07月09日</span>
-          </li>
-          <li>
-              <p>16:00</p>
-              <span>07月09日</span>
-          </li>
-      </ul>
-      <div class="goods-multiple-wrapper">
-          <div class="goods-item">
-             <div class="wrap"><img src="http://gfs17.gomein.net.cn/T1PnZ4BsbT1RCvBVdK_400.jpg" alt=""></div>
+  <div class="teng">
+          <div class="goods-item" v-for="item in coming" :key="item.skuId">
+             <div class="wrap"><img :src=item.productImgURL alt=""></div>
             <div class="desc-prices">
-                  <p>vivo S6 5G全网通 8+128G 多瑙河 手机 点亮夜色点亮你</p>
-                  <p class="price-original"></p>
-                  <p class="desc">
+                  <p class="desc">{{item.goodsName}}</p>
+                  <p class="price-original">
+                      <b>{{item.markingPriceDesc}}</b>
+                  </p>
+                  <p class="price-cart">
                       <span>
-                          <small>¥</small>
-                          2398
+                          {{item.priceDesc}}
                       </span>
+                      <a href=""></a>
                   </p>
              </div>
           </div>
-
-      </div>
   </div>
+  
+  
 </template>
 
 <script>
 import Vue from 'vue'
 import axios from 'axios'
-    
 export default {
     data () {
         return {
@@ -45,6 +35,7 @@ export default {
         })
         .then((data)=>{
             this.coming=data.data.goodsList.slice(0,3);
+            console.log(this.coming);
         })
         
     }
@@ -54,28 +45,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-ul
- height 51px
+.teng
  display flex
- li
-  flex 1
-  display flex
-  flex-direction column
-  justify-content center
-  align-items center
-  p
-   text-align center
-   font-size 17px 
-   color black
-  span 
-   font-size 11px
-   color #262c32
-   text-align center
-  active
-   color #f20c59
-.goods-multiple-wrapper
- height 200px
- margin 5px 0px 8px
  .goods-item
   width 106px
   height 187px
@@ -89,10 +60,46 @@ ul
     width 98px
     height 98px
   .desc-prices
+   margin-top 8px 
    width 98px
    height 72px
-   p
+   .desc
     width 98px
     height 30px
-    font-size 12px
+    font-size 11px
+    display: -webkit-box;
+    box-sizing border-box
+    padding 0 4px
+    overflow hidden
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    text-overflow ellipsis
+   .price-original
+    height 17.5px
+    b
+     display flex
+     text-decoration line-through
+     font-weight normal
+     font-size 12px
+     color #b3b8bd
+     box-sizing border-box
+     margin 3px 0 0
+     padding 0 4px
+     
+   .price-cart
+    display flex
+    justify-content space-between
+    height 20.8px
+    span
+     font-weight 600
+     color #f20c59
+     font-size 14px
+    a
+     display inline-block
+     background-image url("../../../../assets/cart.png")
+     background-size cover
+     width 20px
+     height 20px
+
+     
 </style>
