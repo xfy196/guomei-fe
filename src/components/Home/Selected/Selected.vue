@@ -13,8 +13,12 @@
       <li><img src="http://gfs5.gomein.net.cn/wireless/T1FvJmB5Cv1RCvBVdK_533_363.png" alt=""></li>
       <li><img src="http://gfs5.gomein.net.cn/wireless/T1O9x4BvAT1RCvBVdK_533_363.png" alt=""></li>
     </ul>
-    <!-- 商品活动 -->
+    <!-- 活动商品 -->
     <ActivityGoods></ActivityGoods>
+    <!-- 商品tabs -->
+    <GoodsTabs></GoodsTabs>
+    
+
     
   </div>
 </template>
@@ -26,7 +30,9 @@ Vue.use(Swipe);
 Vue.use(SwipeItem);
 Vue.use(Lazyload);
 
-import ActivityGoods from '@/Home/Selected/ActivityGoods'
+import ActivityGoods from '@/Home/Selected/ActivityGoods';
+import GoodsTabs from '@/Home/Selected/GoodsTabs';
+
 
 export default {
   data() {
@@ -41,14 +47,14 @@ export default {
     };
   },
   components: {
-    ActivityGoods
+    ActivityGoods,
+    GoodsTabs
   },
 };
 </script>
 
 <style lang="stylus" scoped>
 #selected
-  padding-bottom 50px
   .my-swipe
     padding 6px 10px
     img 

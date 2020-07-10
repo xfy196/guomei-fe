@@ -7,25 +7,25 @@
           <img :src="props.active ? icon[0].active : icon[0].inactive" />
         </template>
       </van-tabbar-item>
-      <van-tabbar-item icon="search" to="/shop">
+      <van-tabbar-item to="/shop">
         <span>门店</span>
         <template #icon="props">
           <img :src="props.active ? icon[1].active : icon[1].inactive" />
         </template>
       </van-tabbar-item>
-      <van-tabbar-item icon="friends-o" to="/message">
+      <van-tabbar-item to="/message">
         <span>消息</span>
         <template #icon="props">
           <img :src="props.active ? icon[2].active : icon[2].inactive" />
         </template>
       </van-tabbar-item>
-      <van-tabbar-item icon="setting-o" to="/cart">
+      <van-tabbar-item to="/cart">
         <span>购物车</span>
         <template #icon="props">
           <img :src="props.active ? icon[3].active : icon[3].inactive" />
         </template>
       </van-tabbar-item>
-      <van-tabbar-item icon="setting-o" to="/mine">
+      <van-tabbar-item to="/mine">
         <span>我的</span>
         <template #icon="props">
           <img :src="props.active ? icon[3].active : icon[3].inactive" />

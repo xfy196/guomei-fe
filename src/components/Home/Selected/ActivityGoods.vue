@@ -3,7 +3,7 @@
     <div id="activity">
       <van-grid :column-num="2" class="activity-products">
         <van-grid-item class="activity-item" v-for="item in goodsList" :key="item.title">
-          <h1>{{ item.title }}</h1>
+          <h1>{{ item.title }}<span>{{ item.slogan }}</span></h1>
             <ul>
               <li v-for="good in item.goods" :key="good.img">
                 <img :src="good.img" alt="">
@@ -32,6 +32,7 @@ export default {
       goodsList: [
         {
           title: '国美秒杀',
+          slogan: '疯抢倒计时',
           goods: [
             {
               img: 'http://gfs17.gomein.net.cn/T1pNbgByYv1RCvBVdK_400.jpg',
@@ -45,6 +46,7 @@ export default {
         },
         {
           title: '国美超市',
+          slogan: '好物甄选',
           goods: [
             {
               img: 'http://gfs17.gomein.net.cn/T1EUJ5BKbv1RCvBVdK_260.jpg',
@@ -58,6 +60,7 @@ export default {
         },
         {
           title: '拼购',
+          slogan: '好物精选',
           goods: [
             {
               img: 'http://gfs17.gomein.net.cn/T1L2_mBbWT1RCvBVdK_360.jpg',
@@ -71,6 +74,7 @@ export default {
         },
         {
           title: '品牌特卖',
+          slogan: '享大牌优惠',
           goods: [
             {
               img: 'http://gfs17.gomein.net.cn/T1qsdmB4CT1RCvBVdK_260.jpg',
@@ -92,19 +96,27 @@ export default {
 #activity
   margin 10px 10px 
   background-color #fff
-  border-radius 20px
+  border-radius 15px
   .activity-products
+    border-radius 15px
     display flex
     flex-wrap wrap
     /deep/.activity-item .van-grid-item__content
+      border-radius 15px
       padding 15px 10px 0
       display flex
       flex-direction column
       align-items flex-start
       h1
+        line-height 1
         font-size 16px
         font-weight 700
         margin-bottom 10px
+        span
+          font-size 12px
+          font-weight 400
+          margin-left 6px
+          color #21daa5
       ul
         display flex
         justify-content space-around
@@ -115,6 +127,7 @@ export default {
             width 67px
             height 67px
           p 
+            line-height 1
             color #f20c59
             font-size 12px
             font-weight 700
@@ -136,7 +149,6 @@ export default {
       padding-left 5px
       font-size 12px
       span
-        display inline-block
         padding 0 2px
         font-size 12px
         color #f20c56
