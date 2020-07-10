@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "mock": "json-server ./mock/mock.js -r ./mock/routes.json -p 9000 -w"
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",
+    "axios": "^0.19.2",
     "core-js": "^3.6.5",
     "lib-flexible": "^0.3.2",
     "postcss-pxtorem": "^5.1.1",
@@ -22,6 +24,7 @@
     "@vue/cli-plugin-vuex": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
     "babel-plugin-import": "^1.13.0",
+    "json-server": "^0.16.1",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.6.11"
