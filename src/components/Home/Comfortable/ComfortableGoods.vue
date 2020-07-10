@@ -28,7 +28,7 @@ export default {
       url:'http://localhost:9000/comfortable'
     })
     .then((data)=>{
-      this.goodsList=data.data.goodsList
+      this.goodsList=data.data.goodsList.splice(0,20)
     })
   }
 }
@@ -55,13 +55,14 @@ export default {
       color #7a7f85
       margin 0 0 0 10px
       padding-bottom 5px
-    .goods-title
+    /deep/.goods-title
       -webkit-line-clamp 2
       text-overflow ellipsis
       display -webkit-box
       -webkit-box-orient vertical
       overflow hidden
       margin 0 0 0 10px
+      line-height 1
     .goods-price
       font-size 16px
       color #f20c59

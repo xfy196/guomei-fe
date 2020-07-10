@@ -59,14 +59,11 @@
         <a href="#">金牌导购</a>
       </div>
       <van-tabs v-model="active" class="comfortable-tabchild">
-        <van-tab title="供暖系统">
-          <ComfortableGoods></ComfortableGoods>
+        <van-tab v-for="(item,index) in tabList" :key="item" :title="item">
+          <component :is="comfortablelist[index]"></component>
         </van-tab>
-        <van-tab title="国美智能">内容 2</van-tab>
-        <van-tab title="安防系统">内容 3</van-tab>
-        <van-tab title="中央空调">内容 4</van-tab>
-        <van-tab title="全屋水家电">内容 5</van-tab>
       </van-tabs>
+      
     </div>
   </div>
 </template>
@@ -88,6 +85,8 @@ Vue.use(Tab);
 Vue.use(Tabs);
 
 import ComfortableGoods from '@/Home/Comfortable/ComfortableGoods.vue'
+import ComfortableGoods2 from '@/Home/Comfortable/ComfortableGoods-2.vue'
+import ComfortableGoods3 from '@/Home/Comfortable/ComfortableGoods-3.vue'
 
 export default {
   data() {
@@ -97,12 +96,16 @@ export default {
         'http://gfs6.gomein.net.cn/wireless/T147_5BThT1RCvBVdK_1065_390.jpg',
         'https://gfs8.gomein.net.cn/wireless/T1X0K5BCVv1RCvBVdK_1065_390.jpg'
       ],
-      active :0
+      active :0,
+      comfortablelist: ["ComfortableGoods","ComfortableGoods2","ComfortableGoods3","ComfortableGoods","ComfortableGoods"],
+      tabList: ['供暖系统', '国美智能', '安防系统', '中央空调', '全屋水家电', ]
     }
   },
   components : {
-    ComfortableGoods
-  }
+    ComfortableGoods,
+    ComfortableGoods2,
+    ComfortableGoods3
+  },
 };
 </script>
 
