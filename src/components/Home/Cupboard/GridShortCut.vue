@@ -2,26 +2,25 @@
   <div class="grid-bg">
         <ul class="grid-lists">
                 <li class="grid-item" v-for="(item, index) in GridLists" :key="index">
-                    <a href="#">
+                    <router-link tag="a" to="#">
 
-                        <img :src="item.img" class="grid-img" alt="">
+                        <img v-lazy="item.img" :src="item.img" class="grid-img" alt="">
                         <span class="grid-text">{{item.title}}</span>
-                    </a>
+                    </router-link>
                 </li>
 
         </ul>
-        <!-- <van-grid-item v-for="(item, index) in GridLists" :key="index" :icon="item.img" :text="item.title" /> -->
-<!--     <van-grid :column-num="3">
-  <van-grid-item v-for="value in 6" :key="value" icon="photo-o" text="文字" />
-</van-grid> -->
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import { Grid, GridItem } from "vant";
+import { Grid, GridItem, Lazyload } from "vant";
 Vue.use(Grid);
 Vue.use(GridItem);
+Vue.use(Lazyload, {
+   lazyComponent: true,
+});
 export default {
   data() {
     return {
