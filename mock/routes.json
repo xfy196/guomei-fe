@@ -1,3 +1,10 @@
 {
+<<<<<<< HEAD
     "/api/telephone": "/telephone"
+=======
+  "/api/comfortable": "/comfortable",
+  "/api/kitchen": "/kitchen",
+  "/api/life": "/life",
+  "/api/telephone": "/telephone"
+>>>>>>> master
 }
