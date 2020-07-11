@@ -4,5 +4,7 @@
   "/api/life": "/life",
   "/api/telephone": "/telephone",
   "/api/shoppingGuide": "/shoppingGuide",
-  "/api/recommend": "/recommend"
+  "/api/recommend": "/recommend",
+  "/api/area": "/area",
+  "/api/cities": "/cities"
 }
