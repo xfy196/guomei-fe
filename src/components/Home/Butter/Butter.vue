@@ -22,75 +22,38 @@
           </div>
       </div>
       <!-- 导航 -->
-     <div class="nav1">
-       <div class="nav1_l">
-         <a href="">
-           <img src="//gfs7.gomein.net.cn/wireless/T1jVJ4BbxT1RCvBVdK_227_210.png" alt="">
-         </a>
-       </div>
-       <div class="nav1_r">
-         <a href="">抽烟机清洗</a>
-         <a href="">冰箱清洗</a>
-         <a href="">空调清洗</a>
-         <a href="">微波炉清洗</a>
-       </div>
-     </div>
-     <div class="nav2">
-        <div class="nav2_l">
-          <a href="">
-            <img src="//gfs8.gomein.net.cn/wireless/T1xpV4B5x_1RCvBVdK_225_319.png" alt="">
-          </a>
-        </div>
-        <div class="nav2_r">
-          <a href="">冰箱维修</a>
-          <a href="">冰箱维修</a>
-          <a href="">冰箱维修</a>
-          <a href="">冰箱维修</a>
-          <a href="">冰箱维修</a>
-          <a href="">冰箱维修</a>
-        </div>
-     </div>
-     <div class="nav3">
-       <div class="nav3_l">
-         <a href="">
-           <img src="//gfs8.gomein.net.cn/wireless/T1m4V4BCY_1RCvBVdK_228_210.png" alt="">
-         </a>
-       </div>
-       <div class="nav3_r">
-           <a href="">冰箱回收</a>
-           <a href="">冰箱回收</a>
-           <a href="">冰箱回收</a>
-           <a href="">冰箱回收</a>
-       </div>
-     </div>
-     <div class="nav4">
-       <div class="nav4_l"> 
-         <a href="">
-         <img src="//gfs5.gomein.net.cn/wireless/T1cpb4B5A_1RCvBVdK_227_100.png" alt=""></a>
-         </div>
-         <div>
-           <a href="">有好货</a>
-           <a href="">热门</a>
-           
-         </div>
-     </div>
+    
+       <navimages></navimages>
+     
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import { Swipe, SwipeItem } from "vant";
+import { Swipe, SwipeItem, List } from "vant";
+import Nav from "Butter/Nav"
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 export default {
   data() {
+     components:navimages
     return {
       bannerimages: [
         "http://gfs8.gomein.net.cn/wireless/T1CLZmBb_T1RCvBVdK_1053_375.jpg",
         "http://gfs9.gomein.net.cn/wireless/T1fixmBjLv1RCvBVdK_1053_375.jpg",
         "http://gfs5.gomein.net.cn/wireless/T17GC5BbVT1RCvBVdK_1053_375.jpg",
         "http://gfs7.gomein.net.cn/wireless/T1LnE5BybT1RCvBVdK_1000_356.jpg"
-      ]
+      ],
+     
+        images:[
+          "//gfs5.gomein.net.cn/wireless/T1Geb5BsxT1RCvBVdK_342_288.png",
+         "//gfs6.gomein.net.cn/wireless/T1w9E5B7VT1RCvBVdK_342_288.png",
+         "//gfs9.gomein.net.cn/wireless/T1MTd5B_Kv1RCvBVdK_342_288.png",
+         "//gfs7.gomein.net.cn/wireless/T1r9h5BCWT1RCvBVdK_342_288.png",
+         "//gfs5.gomein.net.cn/wireless/T1Geb5BsxT1RCvBVdK_342_288.png",
+         "//gfs5.gomein.net.cn/wireless/T10eY5BvZv1RCvBVdK_342_288.png",
+         "//gfs5.gomein.net.cn/wireless/T10eY5BvZv1RCvBVdK_342_288.png"
+        ],
     };
   }
 };
@@ -120,7 +83,10 @@ export default {
 .nav1
   width 355px
   height 109px
-  margin 0 auto
+  margin-left .2667rem
+  margin-right .2667rem
+  margin-top .2667rem
+ 
   .nav1_l
     width 117px
     float left
@@ -132,19 +98,21 @@ export default {
     height 109px
   .nav1_r
     a 
-     display  block
-     width 114px
-     height 54px
-     float left
-     width 3.04rem
-     height 1.455rem
-     padding-left 1.0067rem
-     font-size .32rem
-     color #333
-     background-repeat no-repeat
-     background-position .29333rem .29333rem
-     borderbottom 1px solid #f2f2f2
-     background url("http://gfs9.gomein.net.cn/wireless/T1k7Y4B_Jv1RCvBVdK_84_84.png")
+      float: left;
+      width: 3.04rem;
+      height: 1.45333rem;
+      line-height: 1.41333rem;
+      padding-left: 1.06667rem;
+      font-size: .32rem;
+      color: #333;
+      background: #fff;
+      display: block;
+      background-repeat: no-repeat;
+      background-size: .74667rem;
+      background-position: .29333rem .29333rem;
+      border-bottom: 1px solid #f2f2f2;
+      background-image url("http://gfs9.gomein.net.cn/wireless/T1k7Y4B_Jv1RCvBVdK_84_84.png")
+
 
 </style>
   
