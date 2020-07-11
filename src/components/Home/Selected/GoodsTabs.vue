@@ -1,13 +1,14 @@
 <template>
   <div id="goods-tabs">
-    <van-tabbar v-model="active" active-color="#f20c59" inactive-color="#262c32" class="tabbar" @change="handleChange">
-      <van-tabbar-item v-for="item in tabList" :key="item.title" class="tabbar-item">
-        <div class="category">
-          <p class="title">{{ item.title }}</p>
-          <div class="slogan">{{ item.slogan }}</div>
-        </div>
-      </van-tabbar-item>
-    </van-tabbar>
+    <van-tabs v-model="active" title-active-color="#f10" class="tabbar" @chang="handleChange">
+      <van-tab v-for="item in tabList" :key="item.title" class="tabbar-item" title>
+        <template #title>
+            <p class="title">{{ item.title }}</p>
+            <div class="slogan">{{ item.slogan }}</div>
+        </template>
+        商品列表
+      </van-tab>
+    </van-tabs>
   </div>
 </template>
 
@@ -71,22 +72,32 @@ export default {
   border-top-left-radius 20px
   border-top-right-radius 20px
   margin-bottom 5px
+  line-height 1
   .tabbar
-    position static
-    height 56px
+    text-align center
     width max-content
-    .tabbar-item
-      text-align center
-      .category
-        padding 0 20px
-        border-right 0.3px solid #eeeeee
-        .title 
-          font-size 15px !important 
-          color #262c32
-          margin-bottom 4px
-          white-space nowrap
-        .slogan
-          font-size 12px
-          transform scale(0.9)
-          color #999
+    /deep/.van-tabs__wrap
+      padding-right 0
+      height 56px
+      /deep/.van-tabs__nav
+        .van-tab
+          .title 
+            font-size 15px !important 
+            height 15px
+            color #262c32
+            margin-bottom 3px
+            white-space nowrap
+          .slogan
+            padding 2px 4px
+            font-size 12px
+            transform scale(0.9)
+            color #999
+        .van-tab--active
+          .title 
+            color #f20c59
+            font-weight 700
+          .slogan
+            border-radius  3px
+            background-image: linear-gradient(90deg,#ff0a8d 10%,red)
+            color #fff
 </style>
