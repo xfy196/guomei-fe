@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-const telephone = require('./telephone.json')
-module.exports = function() {
-    return {
-      telephone,
-    }
-  }
-=======
 const comfortable = require('./comfortable.json')
 const kitchen = require('./kitchen.json')
 const life = require('./life.json')
@@ -19,4 +11,3 @@ module.exports = function() {
     telephone
   }
 }
->>>>>>> master
