@@ -5,7 +5,7 @@ import Shop from '../views/Shop.vue'
 import Message from '../views/Message.vue'
 import Cart from '../views/Cart.vue'
 import Mine from '../views/Mine.vue'
-
+import FoodList from '../views/FoodList'
 Vue.use(VueRouter)
 
   const routes = [
@@ -38,6 +38,11 @@ Vue.use(VueRouter)
     name: 'Mine',
     component: Mine
   },
+  {
+    path: '/FoodList',
+    name: 'FoodList',
+    component: FoodList
+  }
 ]
 
 const router = new VueRouter({

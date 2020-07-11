@@ -24,6 +24,7 @@
     "@vue/cli-plugin-vuex": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
     "babel-plugin-import": "^1.13.0",
+    "better-scroll": "^1.15.2",
     "json-server": "^0.16.1",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",

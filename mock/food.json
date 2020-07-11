@@ -1,0 +1,33 @@
+{
+    "goodsList": [
+    {
+    "type": "1",
+    "productId": "9140171282",
+    "skuId": "1130773051",
+    "goodsName": "丹麦蓝罐曲奇饼干908g 国美超市甄选",
+    "productImgURL": "http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727",
+    "skuNo": "100590363",
+    "isBbc": "N",
+    "c3id": "cat10000070",
+    "sapSkuType": "ZSP",
+    "shopId": "A002",
+    "shopType": "pshop",
+    "shopName": "北京国美北太店"
+    },{
+    "type": "1",
+    "productId": "9140171282",
+    "skuId": "1130773051",
+    "skuNo": "100590363",
+    "c3id": "cat10000070",
+    "shopId": "A002",
+    "shopType": "pshop",
+    "shopName": "北京国美北太店",
+    "shopImgUrl": null,
+    "price": "3099.00",
+    "priceDesc": "¥3099.00",
+    "markingPrice": "3699.00",
+    "markingPriceDesc": "¥3699.00",
+    "scheme_type_id": "1"
+    }
+    ]
+    }
