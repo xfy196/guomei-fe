@@ -46,7 +46,7 @@
                   <div class="gui-waterfall-container">
                     <ShopItemCart
                       v-for="item in list"
-                      :key="item.productId"
+                      :key="item.productId + String(Math.random())"
                       :item="item"
                     ></ShopItemCart>
                   </div>
@@ -71,6 +71,7 @@ Vue.use(List);
 export default {
   data() {
     return {
+      indexList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       tabTitles: ["饭盒", "夏季爆款", "厨具套装", "炒锅"],
       list: [],
       loading: false,
@@ -84,7 +85,7 @@ export default {
     this.page++;
     let _limit = this.limit;
     axios({
-      url: "http://localhost:9001/goodsList",
+      url: "/goodsList",
       params: {
         _start,
         _limit,
@@ -110,7 +111,7 @@ export default {
       this.page++;
       let _limit = this.limit;
       axios({
-        url: "http://localhost:9001/goodsList",
+        url: "/goodsList",
         params: {
           _start,
           _limit
