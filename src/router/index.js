@@ -5,6 +5,7 @@ import Shop from '../views/Shop.vue'
 import Message from '../views/Message.vue'
 import Cart from '../views/Cart.vue'
 import Mine from '../views/Mine.vue'
+import List from '@/List/List'
 
 Vue.use(VueRouter)
 
@@ -37,6 +38,11 @@ Vue.use(VueRouter)
     path: '/Mine',
     name: 'Mine',
     component: Mine
+  },
+  {
+    path: '/list',
+    name: 'list',
+    component: List
   },
 ]
 
