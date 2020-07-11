@@ -1,3 +1,11 @@
+<!-- 
+ * @description: 商品视频 
+ * @fileName: ProductVideo.vue 
+ * @author: 小小荧 
+ * @date: 2020-07-10 14:38:07
+ * @后台人员:  
+ * @version: V1.0.5 
+!-->
 <template>
   <div class="pVContainer">
       <div class="gui-video-single-wrapper">

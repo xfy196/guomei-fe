@@ -1,5 +1,5 @@
 <template>
-<!-- <van-pull-refresh v-model="isLoading" @refresh="onRefresh"> -->
+<van-pull-refresh v-model="isLoading" @refresh="onRefresh">
   <div>
     <Swipe></Swipe>
     <GridShortCut></GridShortCut>
@@ -9,8 +9,12 @@
     <HotSellers></HotSellers>
     <ProductVideo></ProductVideo>
     <FromDesign></FromDesign>
+    <GlKitch></GlKitch>
+    <BrandZone></BrandZone>
+    <OnlineRedZone></OnlineRedZone>
+    <AllBuying></AllBuying>
   </div>
-<!-- </van-pull-refresh> -->
+</van-pull-refresh>
 </template>
 
 <script>
@@ -21,6 +25,10 @@ import Swipe from "@/common/Swipe";
 import HotSellers from "@/Home/Cupboard/HotSellers";
 import ProductVideo from "@/Home/Cupboard/ProductVideo";
 import FromDesign  from "@/Home/Cupboard/FromDesign ";
+import GlKitch  from "@/Home/Cupboard/GlKitch";
+import BrandZone from "@/Home/Cupboard/BrandZone"
+import OnlineRedZone from "@/Home/Cupboard/OnlineRedZone"
+import AllBuying from "@/Home/Cupboard/AllBuying"
 import Vue from "vue";
 import {PullRefresh } from "vant"
 Vue.use(PullRefresh)
@@ -38,7 +46,11 @@ export default {
     BestSellers,
     HotSellers,
     ProductVideo,
-    FromDesign 
+    FromDesign,
+    GlKitch,
+    BrandZone,
+    OnlineRedZone,
+    AllBuying
   },
   methods: {
     onRefresh(){

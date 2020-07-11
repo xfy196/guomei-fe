@@ -5,7 +5,7 @@ import router from './router'
 import "assets/reset.css"
 import "amfe-flexible/index"
 Vue.config.productionTip = false
-import './assets/reset.css'
+import 'assets/reset.css'
 new Vue({
   router,
   render: h => h(App)
