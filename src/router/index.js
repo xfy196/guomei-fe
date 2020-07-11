@@ -6,6 +6,7 @@ import Message from '../views/Message.vue'
 import Cart from '../views/Cart.vue'
 import Mine from '../views/Mine.vue'
 import List from '@/List/List'
+import Category from 'views/Category.vue'
 
 Vue.use(VueRouter)
 
@@ -44,6 +45,11 @@ Vue.use(VueRouter)
     name: 'list',
     component: List
   },
+  {
+    path : "/categories",
+    name : "categories",
+    component : Category
+  }
 ]
 
 const router = new VueRouter({

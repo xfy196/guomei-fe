@@ -2,5 +2,7 @@
   "/api/comfortable": "/comfortable",
   "/api/kitchen": "/kitchen",
   "/api/life": "/life",
-  "/api/telephone": "/telephone"
+  "/api/telephone": "/telephone",
+  "/api/shoppingGuide": "/shoppingGuide",
+  "/api/recommend": "/recommend"
 }

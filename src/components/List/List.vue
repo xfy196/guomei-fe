@@ -17,15 +17,15 @@
     <!-- 商品 -->
     <div>
       <div class="good_list">
-        <a href></a>
-        <div>
+     
+        <div class="good_item" v-for="item in list" :key="item.c3id">
           <span class="gd_img">
-            <img src="//gfs17.gomein.net.cn/T1jjhXBKKT1RCvBVdK_260.jpg" alt />
+            <img :src="item.productImgURL" alt />
           </span>
           <div class="gd_img2">
             <h3 class="title">
               <em class="pic_l"></em>
-              Apple iPhone 11 128G 黑色 移动联通电信4G手机</h3>
+              {{item.goodsName}}</h3>
             <div class="troud">
               <p class="flex_bd">
                <i class="phnc">128GGG</i>
@@ -41,13 +41,14 @@
               </p>
             </div>
             <div class="price">
-              <div class="pricenum">￥5200</div>
+              <div class="pricenum">￥{{item.price}}</div>
             </div>
-            <span>
-              <a href class="z_dis">10000人评论</a>
+            <span class="fenqi">易卡分期</span>
+           
+              <a href class="z_dis">{{item.skuNo}}人评论</a>
               <span class="adds">北京国美公主坟店</span>
-            </span>
-            <a href>
+           
+            <a href class="check">
               <em class="showadds">该商品多家店铺在售</em>
               <i class="showadds2">查看</i>
             </a>
@@ -87,14 +88,15 @@ export default {
       option3: [{ text: "销量", value: "3" }],
       option4: [{ text: "删选", value: "4" }],
 
-      active: 2
+      active: 2,
+      list:[]
     };
   },
   created(){
      axios({
         url: '/api/telephone'
       }).then((result) => {
-        console.log(result);
+        this.list=result.data.goodsList
       })
   }
 };
@@ -103,9 +105,8 @@ export default {
 <style lang="stylus">
 
 
-body {
-  background: #ffffff;
-}
+
+
 .phnav {
   padding: 0 0.2rem;
   border-bottom: 1px solid #f3f5f7;
@@ -141,6 +142,11 @@ body {
   width: 375px;
   height: 187px;
 }
+.good_item{
+  width: 375px;
+  height: 187px;
+  background: #ffffff;
+}
 .gd_img{
         position: relative;
     float: left;
@@ -164,19 +170,18 @@ body {
 .gd_img2{
   float left
   width 239px
-  height 144px
+  height 195px
 }
 .good_list .title{
-    line-height: .36rem;
-    font-size: .28rem;
+    line-height:18px;
+    font-size: 14px;
     font-weight: 500;
     word-break: break-all;
     white-space: normal;
     word-wrap: break-word;
-    margin: .2rem .2rem 0 0;
-    
-    margin-right: .08rem!important;
-    vertical-align: -.04rem;
+    margin: 1px 1px 0 0;
+    margin-right: 4px!important;
+    vertical-align: -.2px;
 }
     
 .troud{
@@ -200,7 +205,7 @@ body {
     float left
 }
 .troud p span{
-  display: -webkit-box;
+ 
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     white-space: normal;
@@ -220,43 +225,62 @@ body {
     margin-top: 3px;
     font-size: 9px;
     color: #919599;
-    height: 1px;
-    line-height: 1px;
+    height: 10px;
+    line-height: 10px;
       display  block
      
     }
 .pricenum{
-    display: inline-block;
-    margin-right: 2.5px;
+   
+    margin-right: 2px;
     vertical-align: middle;
     font-size: 18px;
     color: #F20C59;
-    line-height: .17px;
-    margin-top 10px
+    height 34px
     
+}
+.fenqi{
+        display: inline-block;
+    box-sizing: border-box;
+    margin-right: 3px;
+    padding: 1px 1px 0 1px;
+    border: 1px solid #F20C59;
+    border-radius: 1px;
+    font-size: 9px;
+    color: #F20C59;
+    vertical-align: 1.5px;
 
 }
+ 
+
 .z_dis{
   padding-bottom: 3px;
     line-height: 1px;
     font-size 1px
     display  block
-    margin-top 10px
     color #929292;
 }
 .adds{
       font-family: PingFangSC-Regular,sans-serif;
     font-size: 1px;
     color: #929292;
-    line-height: 16px;
+   
+    height 16px
   display block;
   margin-top 5px
 }
+.check{
+  width 239px
+  height 16px
+  font-size 12px 
+  display block
+}
 .showadds{
-      font-family: PingFangSC-Regular,sans-serif;
+    font-family: PingFangSC-Regular,sans-serif;
     font-size: 1px;
     color: #929292;
     line-height: 16px;
+    height 13px
 }
 .showadds2{
      color: #262C32;
@@ -265,5 +289,6 @@ body {
     background: url('https://css.gomein.net.cn/plus/style/shop_search_list/images/list-more.4fea6581fb.png') 100% 50% no-repeat;
     background-size: 8px 8px;
     font-size: 1px;
+    height 13px
 }
 </style>
