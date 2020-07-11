@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Shop from '../views/Shop.vue'
-import Message from '../views/Message.vue'
-import Cart from '../views/Cart.vue'
-import Mine from '../views/Mine.vue'
+import Home from 'views/Home.vue'
+import Shop from 'views/Shop.vue'
+import Message from 'views/Message.vue'
+import Cart from 'views/Cart.vue'
+import Mine from 'views/Mine.vue'
+import Category from 'views/Category.vue'
 
 Vue.use(VueRouter)
 
@@ -38,6 +39,11 @@ Vue.use(VueRouter)
     name: 'Mine',
     component: Mine
   },
+  {
+    path : "/categories",
+    name : "categories",
+    component : Category
+  }
 ]
 
 const router = new VueRouter({
