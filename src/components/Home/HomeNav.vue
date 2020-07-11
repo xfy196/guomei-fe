@@ -27,6 +27,7 @@
 import Vue from "vue";
 import { Tab, Tabs } from "vant";
 import Comfortable from "@/Home/Comfortable/Comfortable"
+import Butter from "@/Home/Butter/Butter"
 import Cupboard from "@/Home/Cupboard/Home"
 import Selected from "@/Home/Selected/Selected"
 import PhoneShop from "@/Home/PhoneShop/PhoneShop"
@@ -46,8 +47,8 @@ export default {
         "超市百货",
         "家居家装",
       ],
-      activeIndex : 3,
-      navComponents : ["Selected", "PhoneShop", "", "Cupboard", "Comfortable"]
+      activeIndex : 0,
+      navComponents : ["Selected", "PhoneShop", "Butter", "Cupboard", "Comfortable"]
     }
   },
   methods: {
@@ -58,6 +59,7 @@ export default {
   },
   components : {
     Cupboard,
+    Butter,
     Selected,
     Comfortable,
     PhoneShop
