@@ -3,5 +3,6 @@
   "/api/kitchen": "/kitchen",
   "/api/life": "/life",
   "/api/telephone": "/telephone",
-  "/api/shoppingGuide": "/shoppingGuide"
+  "/api/shoppingGuide": "/shoppingGuide",
+  "/api/recommend": "/recommend"
 }
