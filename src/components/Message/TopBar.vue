@@ -19,7 +19,6 @@ Vue.use(NavBar);
 export default {
   methods: {
     onClickLeft(){
-      console.log(1)
       this.$router.back();
     }
   }

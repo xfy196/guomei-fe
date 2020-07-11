@@ -1,7 +1,7 @@
 <template>
   <div>
-    <!-- 返回功能 -->
-    <GoBack></GoBack>
+    <!-- 头部导航栏 -->
+    <TopBar></TopBar>
     <!-- 消息列表 -->
     <MessageList></MessageList>
     <!-- 导购列表 -->
@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import GoBack from '@/Message/GoBack'
+import TopBar from '@/Message/TopBar'
 import MessageList from '@/Message/MessageList'
 import GuideList from '@/Message/GuideList'
 export default {
   components: {
-    GoBack,
+    TopBar,
     MessageList,
     GuideList
   }

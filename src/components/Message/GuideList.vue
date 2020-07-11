@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="service">已服务 {{ guide.numberOfPeopleServed }} 单</div>
-        <div class="brand">所属品牌: {{ guide.goodAtBrand.join(' ').substr(0, 18) + '...' }}</div>
+        <div class="brand">所属品牌: {{ guide.goodAtBrand.join(' ') }}</div>
         <ul class="category">
           <!-- <li v-for="item in guide.goodAtCategory" :key="item">{{ item }}</li> -->
           <li>空调</li>
@@ -38,7 +38,7 @@ export default {
   },
   mounted() {
     axios({
-      url: 'http://localhost:9000/shoppingGuide'
+      url: '/api/shoppingGuide'
     })
     .then((res) => {
       this.guideList = res.data.dataInfo;
@@ -102,7 +102,7 @@ export default {
             font-size 12px
             color #c48d3a
             transform scale(0.9)
-    .service, .brand
+    .service
       width 100%
       margin-top 2px
       font-size 14px
@@ -110,6 +110,17 @@ export default {
       transform-origin 0 0
       line-height 1.1
       color #919599
+    .brand
+      width 270px
+      margin-top 2px
+      font-size 14px
+      transform scale(0.85)
+      transform-origin 0 0
+      line-height 1.1
+      color #919599
+      white-space nowrap
+      overflow hidden
+      text-overflow ellipsis
     .category
       margin-top 4px
       display flex
