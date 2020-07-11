@@ -1,3 +1,11 @@
+<!-- 
+ * @description:大家都在买板块 
+ * @fileName: AllBuying.vue 
+ * @author: 小小荧 
+ * @date: 2020-07-11 10:28:33
+ * @后台人员:  
+ * @version: V1.0.5 
+!-->
 <template>
   <div
     class="template-margin template-border-display-1"
@@ -25,13 +33,27 @@
             v-for="(item, index) in tabTitles"
             :key="index"
             :title="item"
-            >
-            <div class="listContainer">
-                <div>11</div>
-                <div>222</div>
-            </div>
-            </van-tab
           >
+            <van-list
+              v-model="loading"
+              :finished="finished"
+              finished-text="没有更多了"
+              @load="onLoad"
+              :immediate-check="false"
+            >
+              <div class="listContainer">
+                <div class="gui-waterfall-double-wrapper">
+                  <div class="gui-waterfall-container">
+                    <ShopItemCart
+                      v-for="item in list"
+                      :key="item.productId"
+                      :item="item"
+                    ></ShopItemCart>
+                  </div>
+                </div>
+              </div>
+            </van-list>
+          </van-tab>
         </van-tabs>
       </div>
     </div>
@@ -40,14 +62,77 @@
 
 <script>
 import Vue from "vue";
-import { Tabs, Tab } from "vant";
+import { Tabs, Tab, List } from "vant";
+import ShopItemCart from "@/common/shop-item-cart";
+import axios from "axios";
 Vue.use(Tab);
 Vue.use(Tabs);
+Vue.use(List);
 export default {
   data() {
     return {
       tabTitles: ["饭盒", "夏季爆款", "厨具套装", "炒锅"],
+      list: [],
+      loading: false,
+      finished: false,
+      page: 0,
+      limit: 10,
     };
+  },
+   created() {
+    let _start = this.page * 10;
+    this.page++;
+    let _limit = this.limit;
+    axios({
+      url: "http://localhost:9001/goodsList",
+      params: {
+        _start,
+        _limit,
+      },
+    })
+      .then((data) => {
+        if (data.status = 200 && data.statusText === "OK" && data.data.length > 0) {
+          this.list = data.data;
+          this.loading = true
+        } else {
+          return Promise.reject("网络开小差了");
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+  },
+  methods: {
+    onLoad() {
+      console.log("sdad")
+      let _start = this.page * 10;
+      this.page++;
+      let _limit = this.limit;
+      axios({
+        url: "http://localhost:9001/goodsList",
+        params: {
+          _start,
+          _limit
+        },
+      }).then((data) => {
+        if(data.status = 200 && data.statusText === "OK" && data.data.length>0){
+          this.loading = false
+          this.list = [
+            ...this.list,
+            ...data.data
+          ]
+        }else {
+          this.finished = true
+        }
+
+      }).catch(err => {
+        console.log(err)
+      })
+    },
+  },
+  components: {
+    ShopItemCart,
   },
 };
 </script>
@@ -71,10 +156,18 @@ export default {
     .van-tab--active
         font-weight bold
         font-size : 16px
-
-.listContainer
-    display flex
-    div
-        padding-left 10px
-        flex auto
+.gui-waterfall-container
+  margin-top: .13333rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .gui-waterfall-double-item
+    width: 4.66667rem;
+    color: #262c32;
+    background-color: #fff;
+    border-radius: .21333rem;
+    font-size: .34667rem;
+    line-height: .45333rem;
+    margin-bottom: .13333rem;
+    overflow: hidden;
 </style>
