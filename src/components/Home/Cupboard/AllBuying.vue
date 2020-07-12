@@ -59,21 +59,21 @@
 
 <script>
 import Vue from "vue";
-import { Tabs, Tab } from "vant";
+import { Tabs, Tab, List} from "vant";
 import ShopItemCart from "@/common/shop-item-cart";
 import axios from "axios";
 import waterfall from "vue-waterfall2";
 Vue.use(waterfall);
 Vue.use(Tab);
 Vue.use(Tabs);
+Vue.use(List);
 export default {
   data() {
     return {
-      indexList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       tabTitles: ["饭盒", "夏季爆款", "厨具套装", "炒锅"],
       list: [],
-      page: 0,
-      limit: 10,
+      loading: false,
+      finished: false,
       col: 2,
       componentLists: [
         "ShopItemCart",
@@ -98,7 +98,7 @@ export default {
     // this.page++;
     // let _limit = this.limit;
     axios({
-      url: "/goodsList",
+      url: "/goodsList"
     })
       .then((data) => {
         if (
@@ -113,6 +113,12 @@ export default {
       .catch((error) => {
         console.log(error);
       });
+  },
+  methods:{
+    onLoad(){
+      console.log("dasd")
+      // this.loading = false
+    }
   },
   components: {
     ShopItemCart,
