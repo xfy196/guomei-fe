@@ -29,6 +29,7 @@
                   ><img
                     class="loading-img default-bg-sm"
                     :src="item.imageUrl"
+                    v-lazy="item.imageUrl"
                     style="opacity: 1; transition: opacity 0.3s ease 0s;"
                 /></router-link>
               </div>
@@ -41,11 +42,15 @@
                   {{ d.goodsTypeName }}
                 </h3>
                 <ul class="list">
-                  <li v-for="v in d.goodsTypeList" :key="v.goodsTypeId+String(Math.random())">
+                  <li
+                    v-for="v in d.goodsTypeList"
+                    :key="v.goodsTypeId + String(Math.random())"
+                  >
                     <router-link tag="a" to="#">
                       <img
                         class="loading-img default-bg-sm"
                         :src="v.goodsTypeImgUrl"
+                        v-lazy="v.goodsTypeImgUrl"
                         style="opacity: 1; transition: opacity 0.3s ease 0s;"
                       />
                       <span class="name">{{
@@ -65,16 +70,18 @@
 
 <script>
 import Vue from "vue";
-import { Sidebar, SidebarItem } from "vant";
+import { Sidebar, SidebarItem, Lazyload } from "vant";
 import axios from "axios";
 Vue.use(Sidebar);
 Vue.use(SidebarItem);
+Vue.use(Lazyload);
 import SearchTop from "@/common/SearchTop";
 export default {
   components: {
     SearchTop,
   },
   created() {
+    this.catetories = new Array(20).fill("");
     axios({
       url: "/ajax/cateLists",
       params: {
@@ -85,8 +92,7 @@ export default {
     })
       .then((data) => {
         if ((data.status === 200 && data.statusText) === "OK") {
-          this.catetories.push(data.data);
-          console.log(this.catetories);
+          this.$set(this.catetories, this.active, data.data);
         }
       })
       .catch((err) => {
@@ -95,20 +101,19 @@ export default {
   },
   methods: {
     handleChange(index) {
-      console.log(this.fromIndex);
-      console.log(index);
       axios({
         url: "/ajax/cateLists",
         params: {
           ctl: "goods_class",
           act: "ajaxGetClassList",
-          cid: this.items[index].id
+          cid: this.items[index].id,
         },
       })
         .then((data) => {
           if ((data.status === 200 && data.statusText) === "OK") {
-            this.catetories.push(data.data);
-            console.log(this.catetories);
+            console.log(index);
+            this.$set(this.catetories, index, data.data);
+            this.active = index;
           }
         })
         .catch((err) => {
@@ -119,8 +124,6 @@ export default {
   data() {
     return {
       active: 0,
-      fromIndex: 0,
-      catetories: [],
       items: [
         {
           id: "17951827",
@@ -203,6 +206,7 @@ export default {
           text: "黄金收藏",
         },
       ],
+      catetories: [],
     };
   },
 };
