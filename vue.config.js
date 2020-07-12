@@ -8,6 +8,7 @@ module.exports = {
   },
   devServer: {
     proxy: {
+<<<<<<< HEAD
       '/ajax/cateLists': {
         target: 'https://m.gome.com.cn/index.php',
         changeOrigin: true
@@ -16,6 +17,12 @@ module.exports = {
         target : "http://localhost:9001",
         changeOrigin: true
       }
+=======
+      '/api': {
+        target: 'http://localhost:9000',
+        changeOrigin: true
+      },
+>>>>>>> master
     }
   }
 };
