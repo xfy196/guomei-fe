@@ -1,6 +1,6 @@
 <template>
    <div class="nav1">
-       <div class="nav1_l">
+       <div class="nav1_l" v-for="(item,index) in images" :key="index">
          <a href="">
            <img :src = "item" alt="">
          </a>
@@ -20,7 +20,14 @@ import Vue from "vue";
 
 export default {
      
-     
+    data() {
+      return {
+         images: [
+       
+        "//gfs5.gomein.net.cn/wireless/T10eY5BvZv1RCvBVdK_342_288.png"
+      ],
+      }
+    },
 }
 </script>
 

@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "mock": "json-server ./mock/mock.js -r ./mock/routes.json -p 9000 -w",
-    "CupboardList" : "json-server ./mock/kitchen.json -p 9001"
+    "CupboardList": "json-server ./mock/kitchen.json -p 9001"
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",

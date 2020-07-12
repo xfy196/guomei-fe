@@ -24,7 +24,9 @@
     </div>
     <!-- 导航 -->
     <!-- <component :is="images[index]"></component> -->
-    <Navs v-for="(item,index) in images" :key="index"></Navs>
+    <Navs v-for="(item,index) in images" :key="index" >
+      
+    </Navs>
     <!--图片导航 -->
     <div class="picnav">
       <div>
@@ -187,6 +189,9 @@ export default {
     width: 177px;
     float: left;
   }
+}
+.goods_p{
+
 }
 
 .picnav {
