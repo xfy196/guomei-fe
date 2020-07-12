@@ -59,6 +59,7 @@ export default {
     align-items center
     margin-right 10px
     position: relative
+    height 44px
     .moreBtn
         display flex
         align-items center

@@ -14,7 +14,7 @@ module.exports = {
       },
       "/goodsList": {
         target : "http://localhost:9001",
-        changeOrigin: true
+        changeOrigin: true,
       },
       '/api': {
         target: 'http://localhost:9000',

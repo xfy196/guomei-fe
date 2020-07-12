@@ -44,7 +44,7 @@
               >
                 <component
                   v-for="item in list"
-                  :key="item.productId + String(Math.random())"
+                  :key="item.c3id + String(Math.random())"
                   :item="item"
                   :is="componentLists[index]"
                 ></component>
@@ -98,14 +98,14 @@ export default {
     // this.page++;
     // let _limit = this.limit;
     axios({
-      url: "/goodsList"
+      url: "/api/kitchen"
     })
       .then((data) => {
         if (
           (data.status =
-            200 && data.statusText === "OK" && data.data.length > 0)
+            200 && data.statusText === "OK" && data.data.goodsList.length > 0)
         ) {
-          this.list = data.data;
+          this.list = data.data.goodsList;
         } else {
           return Promise.reject("网络开小差了");
         }
