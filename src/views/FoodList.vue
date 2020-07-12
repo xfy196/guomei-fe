@@ -1,48 +1,461 @@
 <template>
-<van-nav-bar title="标题" left-text="返回" left-arrow>
-  <template #right>
-   <van-icon name="ellipsis" size="35" color="black"/>
-  </template>
-  <template #left>
-    <van-icon name="arrow-left" size="18" color="#3d3d3d" />
-  </template>
-  <template #title>
-    <van-tabs>
-      <van-tab v-for="index in 3" :key="index">
-        <template #title> 商品 </template>
-        内容
-      </van-tab>
-    </van-tabs>
-  </template>
-</van-nav-bar>
+<div>
+  <!-- 头部未完成 -->
+  <van-sticky>
+    <van-nav-bar title="商品" left-text="返回" left-arrow>
+      <template #right>
+      <van-icon name="ellipsis" size="35" color="black"/>
+      </template>
+      <template #left>
+        <van-icon name="arrow-left" size="18" color="#3d3d3d" />
+      </template>
+    </van-nav-bar>
+  </van-sticky>
+  <!-- 图片轮播 -->
+  <div class="warrp">
+    <div class="mycontent">
+      <van-swipe @change="onChange">
+          <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt=""></van-swipe-item>
+          <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt=""></van-swipe-item>
+          <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt=""></van-swipe-item>
+          <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt=""></van-swipe-item>
+          <template #indicator>
+            <div class="custom-indicator">
+              {{ current + 1 }}/4
+            </div>
+          </template>
+      </van-swipe>
+    </div>
+  <!-- 文字 -->
+    <div class="content">
+      <div class="title">
+        <div class="lingshi">
+          <p>
+            杉城零食大礼包2000g 友女生儿童礼盒美食品超市好吃的2000g
+          </p>
+        </div>
+        <div class="share-profit">
+          <van-icon name="replay" color="#e2e2e2" />
+          <span>分享</span>
+        </div>
+      </div>
+      <div class="price_box">
+        <p class="price">
+          <span>￥</span>
+          <em>185</em>
+        </p>
+      </div>
+    </div>
+    <!-- 数量 -->
+    <div class="moudle">
+        <div class="number">
+          <label for="">数量</label>
+          <div class="coutent_box">
+            <i>-</i>
+            <input type="text" value="1">
+            <i>+</i>
+          </div>
+        </div>
+    </div>
+
+    <!-- 地址 -->
+    <div class="adress">
+      <div class="send">
+        <label for="">送至</label>
+        <div class="jiedao">
+          <van-icon name="location-o" />
+          <p>朝阳街道<span>,免运费</span></p>
+        </div>
+          <van-icon name="arrow" class="right" />
+      </div>
+      <div class="service">
+        <ul>
+          <li>
+            <van-icon name="passed"  color="#F45F91"/>
+            正品保证
+          </li>
+          <li>
+            <van-icon name="passed"  color="#F45F91"/>
+            包邮
+          </li>
+          <li>
+           <van-icon name="warning-o" color="#a2a4a6"/>
+            不支持7天无理由退货
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 评价 -->
+    <div class="eva">
+      <div class="val">
+          <p>评价(0)</p>
+          <h6>好评度: <span>100%</span><van-icon name="arrow"  /></h6>
+      </div>
+      <div class="classb">
+        <p>还没有人评价过此商品哦~</p>
+      </div>
+      <div class="evaluate_nav">
+          <ul>
+            <li><van-icon name="more-o" />全部评价(0)</li>
+            <li><van-icon name="chat-o" />购买咨询(0)</li>
+          </ul>
+      </div>
+    </div>
+    <!-- 商标 -->
+    <div class="clearfix">
+      <div class="cimg">
+        <img src="http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png" alt="">
+      </div>
+      <div class="content">
+        <div>北京大中洋桥店</div>
+        <p><van-icon name="location-o" />丰台区 </p>
+      </div>
+      <div class="guang">
+        <p>进店逛逛<van-icon name="arrow" /></p>
+      </div>
+    </div>
+    <!-- 喜欢 -->
+    <div class="guess_like">
+        <p>猜你喜欢</p>
+        <div class="swp">
+          <van-swipe class="my-swipe" :autoplay="3000" indicator-color="red" > 
+            <van-swipe-item>
+              <ul>
+                <li>
+                  <a href="">
+                    <div class="swpimg">
+                      <img src="http://gfs17.gomein.net.cn/T1yUY5Bjhv1RCvBVdK_400.jpg" alt="">
+                    </div>
+                      <p>口水娃零食1100g肉类豆干薯片 零食大礼包 国美超市甄选</p>
+                      <span>38.90</span>
+
+                    
+                  </a>
+                </li>
+              </ul>
+            </van-swipe-item>
+          </van-swipe>
+        </div>
+    </div>
+  </div>
+</div>
 </template>
 
 <script>
 
 import Vue from 'vue';
-import { NavBar,Icon, Tab, Tabs  } from 'vant';
+import { NavBar,Icon,Tab,Tabs,Sticky,Swipe,SwipeItem} from 'vant';
 Vue.use(NavBar);
 Vue.use(Icon);
 Vue.use(Tab);
 Vue.use(Tabs);
-
+Vue.use(Sticky);
+Vue.use(Swipe);
+Vue.use(SwipeItem);
 export default {
-
+  data () {
+    return {
+      current: 0,
+    }
+  },
+  methods:{
+     onChange(index) {
+      this.current = index;
+    },
+  },
+  
 }
 </script>
 
 <style lang="stylus" scoped>
-.app
-  position relative
 .van-nav-bar
+  position relative
+  z-z-index 9999
+  top 0
   border-bottom: 1px solid #ddd;
-  /deep/.van-tabs__wrap
-    width 172.6px
-    height 50px
-    margin-top 20px
-    font-weight normal
-    .van-tab__text
-      font-size 14px
-      color black
+  .van-nav-bar__left
+    position absolute
+    left 0
+  .van-nav-bar__right
+    position absolute
+    right 0
+.warrp
+  height 7163px
+  background-color white
+  .mycontent
+    width 300px
+    height 300px
+    margin 0 37.5px 
+    .van-swipe
+      height 300px
+      img 
+        width 100%
+        height 100%
+    .custom-indicator
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      padding: 2px 5px;
+      font-size: 12px;
+      background: rgba(0, 0, 0, 0.1)
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .content
+    display flex
+    flex-direction column
+    height 91
+    box-sizing border-box
+    padding 10px 8px 12px 10px
+    .title
+      display flex
+      justify-content space-between
+      .lingshi
+        height 40px
+        box-sizing border-box
+        padding 0 13px 0 0
+        p
+          font-size 16px
+    .share-profit
+      float right 
+      display flex
+      flex-direction column
+      border-left: 1px solid #e6e6e6
+      width 48px
+      height 39px
+      padding 0 0 0 7px
+      .van-icon
+        text-align center
+        font-size 18px
+      span 
+        width 40px
+        height 13px
+        margin-top 5px
+        text-align center
+        font-size 13px
+    .price_box
+      height 32px
+      margin-top 10px
+      .price
+        height 32px
+        color #f20c59
+        font-weight 600
+        span 
+          font-size 17px
+        em
+          font-size 24px
+          font-weight 600
+  .moudle
+    border-bottom 10px solid  #F2F2F2 
+    border-top 10px solid  #F2F2F2 
+    height 65px
+    box-sizing  border-box
+    padding 0 10px
+    .number
+      display flex
+      align-items center
+      label
+        display inline-block
+        width 26px
+        height 18px
+        font-size 13px
+        color  #a2a4a6
+      .coutent_box
+        margin-left 10px
+        i 
+          color  #a2a4a6
+          display inline-block
+          width 26px
+          height 26px
+          font-size 18px
+          text-align center
+          border: 1px solid #bebebe;
+        input 
+          width 50px
+          height 26px 
+          color  black
+          font-size 20px
+          font-weight normal
+          text-align center
+          border none 
+          border-top: 1px solid #bebebe;
+          border-bottom: 1px solid #bebebe;
+  .adress
+    height 78px
+    padding 12px 0 0
+    box-sizing border-box
+    .send
+      display flex
+      height 30px
+      padding 0px 10px 10px
+      box-sizing border-box
+      position relative
+      label
+        display inline-block
+        position absolute
+        width 26px
+        height 18px
+        font-size 13px
+        color  #a2a4a6
+      .jiedao
+        width 309px
+        height 20px
+        display flex
+        margin-left 40px
+        i 
+          font-size 13px
+          line-height 20px
+        p 
+          font-size 13px
+        span 
+          color #F20c59
+      .right
+        margin-left 0px
+        font-size 17px
+        float  right 
+        color #BABCBD
+    .service
+      height 36px
+      background-color #FAFAFA
+      ul
+        display flex
+        box-sizing border-box
+        padding 10px
+        li
+          padding 0 0 0 10px
+          font-size 11px   
+          color #a2a4a6
+  .eva
 
+    height 130px
+    border-top 10px solid #F2F2F2;
+    .val
+      height  46px
+      padding 15px 0
+      margin  0 12px
+      box-sizing border-box
+      p
+        display inline
+        font-size 13px
+        height 13px
+        float left
+      h6
+        display inline
+        font-size 13px
+        font-weight normal
+        float right
+        color #8A8F94
+        span 
+          color #F32A6D
+    .classb
+      display flex
+      height 30px
+      padding 0px 10px 10px
+      box-sizing border-box
+      position relative
+      font-size 13px
+    .evaluate_nav
+      border-top 1px solid #e6e6e6;
+      height  46px
+      padding 9.5px 0
+      box-sizing border-box
+      ul
+        height 26px
+        display flex
+        li
+          width 188px
+          border-right  1px solid #e6e6e6;
+          height 26px
+          font-size 13px
+          text-align center
+          line-height 26px
+  .clearfix
+    border-top 10px solid #F2F2F2;
+    height 87px
+    font-size 14px
+    margin 10px 0 0 
+    padding 15px 10px 
+    display flex
+    .cimg
+      width 40px
+      height 40px
+      img 
+        width 100%
+        height 100%
+    .content
+      width 240px
+      height 47px
+      padding 0 0 0 10px
+      p
+        width  200px
+        height 27px
+        font-size 12px
+        box-sizing border-box
+        padding 7px 0 0 12.5px
+        color #6E7379
+    .guang
+      height 14px
+      font-size 13px
+      padding 0 9px 0 0
+      color #A8ACAF
+  .guess_like
+    border-top 10px solid #F2F2F2;
+    height 406px
+    p
+      height 35px
+      font-size 13px
+      padding 0 0 0 10px
+      line-height 35px
+    .swp
+      .my-swipe .van-swipe-item 
+        color: #fff;
+        font-size: 20px;
+        height 347px
+        background-color: withe;
+      .van-swipe-item
+        ul
+          height 347px
+          li
+            width 118px
+            height 173px
+            padding 0 0 12px 17px
+            font-size 10px
+            a
+              color black
+              width 101px
+              height 161px
+              .swpimg
+                width 101px
+                height  101px
+                margin-bottom 5px
+                img 
+                  width 100%
+                  height 100%
+              p
+                width 101px
+                height 25px
+                padding 0
+                color #919599
+                font-size 12px
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+                line-height 1
+                overflow: hidden;
+              span 
+                width 101
+                height 25.8px
+                font-size 13px
+                padding 5px 0 8px
+                box-sizing border-box
+                font-weight  700
 </style>
