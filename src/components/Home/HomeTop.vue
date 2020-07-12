@@ -5,7 +5,7 @@
             <van-icon size=".4rem" name="location-o" />
             <span>{{l_city}}</span>
         </div>
-        <div class="searchBox">
+        <div class="searchBox" @click="goSearch">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAQlBMVEUAAAC2traZmZmampqZmZmbm5uampqZmZmampqZmZmampqZmZmampqampqampqampqbm5uZmZmdnZ2ampqampqZmZk1NLL/AAAAFXRSTlMABebNNhgP3Ejq1NC2mHxmUh4T+WWB9YuQAAAAtElEQVQoz62TRxbDIAxEgwQGTHOb+181C8UtD8MiYSXxNU+g8vrTUS4xrcTJqQoshP1Q+Q6YGQhZG2V0DgDPN6o97HR4k4XXV61HHC7+EOFPvWLEezYVwcdNgRXtRW9R9lDCkffMD/rIHUKlDAFOjIRcwRlJDIauYA0Wg2Aq2IDEWKEqWGHtqDu5Oy/v/LtTtXbNmx2zQ7PfGJfGtLhR+NOsGeFPkyr8ac6Fb63FWLbht816Axg6C5ms05fBAAAAAElFTkSuQmCC" class="search-find">
             <span class="searchText">国美10亿焕新计划</span>
         </div>
@@ -32,6 +32,9 @@ export default {
   methods: {
       goLocation(){
           this.$router.push('/location')
+      },
+      goSearch(){
+          this.$router.push('/search')
       }
   },
 }

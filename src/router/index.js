@@ -10,6 +10,7 @@ import Location from 'views/Location.vue'
 import Address from 'views/Address.vue'
 import AddNewAddress from 'views/AddNewAddress.vue'
 import SelectCity from 'views/SelectCity.vue'
+import Search from 'views/Search.vue'
 
 Vue.use(VueRouter)
 
@@ -67,6 +68,11 @@ Vue.use(VueRouter)
     path : "/selectCity",
     name : "selectCity",
     component : SelectCity,
+  },
+  {
+    path : "/search",
+    name : "search",
+    component : Search,
   },
 ]
 

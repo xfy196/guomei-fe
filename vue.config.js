@@ -8,7 +8,7 @@ module.exports = {
   },
   devServer: {
     proxy: {
-      '/ajax/cateLists': {
+      '/search': {
         target: 'https://m.gome.com.cn/index.php',
         changeOrigin: true
       },
