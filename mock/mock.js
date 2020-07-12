@@ -6,6 +6,7 @@ const shoppingGuide = require('./shoppingGuide.json')
 const recommend = require('./recommend.json')
 const area = require('./area.json')
 const cities = require('./cities.json')
+const housekeeping = require('./housekeeping.json')
 
 module.exports = function() {
   return {
@@ -16,6 +17,7 @@ module.exports = function() {
     shoppingGuide,
     recommend,
     area,
-    cities
+    cities,
+    housekeeping
   }
 }

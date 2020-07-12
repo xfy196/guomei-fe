@@ -6,5 +6,6 @@
   "/api/shoppingGuide": "/shoppingGuide",
   "/api/recommend": "/recommend",
   "/api/area": "/area",
-  "/api/cities": "/cities"
+  "/api/cities": "/cities",
+  "/api/housekeeping": "/housekeeping"
 }
