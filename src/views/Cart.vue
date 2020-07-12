@@ -5,7 +5,7 @@
     <!-- 购物车数据 -->
     <CartList></CartList>
     <!-- 推荐商品 -->
-    <!-- <RecommendGoods></RecommendGoods> -->
+    <RecommendGoods></RecommendGoods>
   </div>
 </template>
 
@@ -18,7 +18,8 @@ export default {
     TopBar,
     CartList,
     RecommendGoods
-  }
+  },
+
 }
 </script>
 

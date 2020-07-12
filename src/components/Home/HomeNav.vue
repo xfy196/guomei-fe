@@ -51,6 +51,10 @@ export default {
       navComponents : ["Selected", "PhoneShop", "Butter", "Cupboard", "Comfortable"]
     }
   },
+  mounted(){
+    document.querySelector(".van-tabs__wrap").style.paddingRight="1.6rem";
+    
+  },
   methods: {
       handleChange(index){
         console.log(index)
@@ -82,8 +86,6 @@ main
     height 100%
     display: flex;
     flex-direction: column;
-    /deep/.van-tabs__wrap
-      padding-right 60px
     /deep/.van-tabs__content
           height 100%
           overflow scroll

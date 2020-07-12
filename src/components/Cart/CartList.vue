@@ -1,50 +1,33 @@
 <template>
-  <div>
-    <div id="cart-list">
-      <div class="shop-info">
-        <van-checkbox v-model="allChecked" checked-color="#DE345C" icon-size="18">
-          <div class="shop-name">
-            <img src="http://gfs13.gomein.net.cn/T1aIETByh_1RCvBVdK.png" alt="">
-            <p>北京大中小营店</p>
-          </div>
-        </van-checkbox>
-      </div>
-      <div class="goods-list">
-        <div class="goods-item" v-for="goods in cartData" :key="goods.name">
-          <div class="box"><van-checkbox v-model="checked" checked-color="#DE345C" icon-size="15"></van-checkbox></div>
-          <div class="goods-info">
-            <p class="photo">
-              <img :src="goods.imgUrl" alt="">
-            </p>
-            <div class="goods-detail">
-              <div class="title"><span>国美超市</span>{{ goods.name }}</div>
-              <div class="price-calculate">
-                <div class="price">￥<span>{{ goods.price }}</span></div>
-                <van-stepper v-model="count" integer button-size="0.5rem"/>
-              </div>
-              <div class="operate">
-                <ul>
-                  <li>移入收藏</li>
-                  <li>删除</li>
-                </ul>
-              </div>
+  <div id="cart-list">
+    <div class="shop-info">
+      <van-checkbox v-model="allChecked" checked-color="#DE345C" icon-size="18">
+        <div class="shop-name">
+          <img src="http://gfs13.gomein.net.cn/T1aIETByh_1RCvBVdK.png" alt="">
+          <p>北京大中小营店</p>
+        </div>
+      </van-checkbox>
+    </div>
+    <div class="goods-list">
+      <div class="goods-item" v-for="goods in cartData" :key="goods.name">
+        <div class="box"><van-checkbox v-model="checked" checked-color="#DE345C" icon-size="15"></van-checkbox></div>
+        <div class="goods-info">
+          <p class="photo">
+            <img :src="goods.imgUrl" alt="">
+          </p>
+          <div class="goods-detail">
+            <div class="title"><span>国美超市</span>{{ goods.name }}</div>
+            <div class="price-calculate">
+              <div class="price">￥<span>{{ goods.price }}</span></div>
+              <van-stepper v-model="count" integer button-size="0.5rem"/>
+            </div>
+            <div class="operate">
+              <ul>
+                <li>移入收藏</li>
+                <li>删除</li>
+              </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="recommend-goods">
-      <van-divider
-        :style="{ color: '#f20c59', borderColor: '#f20c59', padding: '0 16px' }"
-      >
-        <div class="recommend-title">
-          <van-icon name="thumb-circle" size="0.6rem"/>
-          <p>为您推荐</p>
-        </div>
-      </van-divider>
-      <div class="good-list">
-        <div class="goods-item">
-          
         </div>
       </div>
     </div>
@@ -59,7 +42,7 @@ Vue.use(CheckboxGroup);
 Vue.use(Stepper);
 Vue.use(Divider);
 
-import axios from 'axios';
+
 
 export default {
   data() {
@@ -83,17 +66,7 @@ export default {
           shopName: '北京大中小营店',
         },
       ],
-      recommendData: []
     }
-  },
-  mounted() {
-    axios({
-      url: '/api/recommend'
-    })
-    .then((res) => {
-      this.recommendData = res.data.goodsList;
-      console.log(this.recommendData)
-    })
   },
 }
 </script>
@@ -169,11 +142,5 @@ export default {
                   border-right 0.5px solid #919599
                 }
 
-.recommend-goods
-  .recommend-title
-    display flex
-    align-items center
-    p   
-      font-size 18px
-      margin-left 6px
+
 </style>

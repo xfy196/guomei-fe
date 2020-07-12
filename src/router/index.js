@@ -7,6 +7,10 @@ import Cart from '../views/Cart.vue'
 import Mine from '../views/Mine.vue'
 import List from '@/List/List'
 import Category from 'views/Category.vue'
+import Location from 'views/Location.vue'
+import Address from 'views/Address.vue'
+import AddNewAddress from 'views/AddNewAddress.vue'
+import SelectCity from 'views/SelectCity.vue'
 
 Vue.use(VueRouter)
 
@@ -17,27 +21,27 @@ Vue.use(VueRouter)
   },
   {
     path: '/home',
-    name: 'Home',
+    name: 'home',
     component: Home
   },
   {
-    path: '/Shop',
-    name: 'Shop',
+    path: '/shop',
+    name: 'shop',
     component: Shop
   },
   {
-    path: '/Message',
-    name: 'Message',
+    path: '/message',
+    name: 'message',
     component: Message
   },
   {
-    path: '/Cart',
-    name: 'Cart',
+    path: '/cart',
+    name: 'cart',
     component: Cart
   },
   {
-    path: '/Mine',
-    name: 'Mine',
+    path: '/mine',
+    name: 'mine',
     component: Mine
   },
   {
@@ -49,7 +53,27 @@ Vue.use(VueRouter)
     path : "/categories",
     name : "categories",
     component : Category
-  }
+  },
+  {
+    path : "/location",
+    name : "location",
+    component : Location
+  },
+  {
+    path : "/address",
+    name : "address",
+    component : Address,
+  },
+  {
+    path : "/addNewAddress",
+    name : "addNewAddress",
+    component : AddNewAddress,
+  },
+  {
+    path : "/selectCity",
+    name : "selectCity",
+    component : SelectCity,
+  },
 ]
 
 const router = new VueRouter({
