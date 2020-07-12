@@ -16,8 +16,7 @@
     </div>
     <!-- 商品 -->
     <div>
-      <div class="good_list">
-     
+      <div class="good_list"> 
         <div class="good_item" v-for="item in list" :key="item.c3id">
           <span class="gd_img">
             <img :src="item.productImgURL" alt />
@@ -86,7 +85,7 @@ export default {
         { text: "销量排序", value: "c" }
       ],
       option3: [{ text: "销量", value: "3" }],
-      option4: [{ text: "删选", value: "4" }],
+      option4: [{ text: "筛选", value: "4" }],
 
       active: 2,
       list:[]

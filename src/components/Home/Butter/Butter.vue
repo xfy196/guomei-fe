@@ -1,3 +1,4 @@
+
 <template>
   <div class="Butter">
     <button @click="goList">去列表页</button>
@@ -10,7 +11,7 @@
     </van-swipe>
     <!--   tupian -->
 
-    <div class="content">
+    <div class="contentBox">
       <div class="content-1">
         <a href>
           <img src="//gfs5.gomein.net.cn/wireless/T1mfd4BXbv1RCvBVdK_352_200.png" alt />
@@ -23,7 +24,7 @@
       </div>
     </div>
     <!-- 导航 -->
-    <!-- <component :is="images[index]"></component> -->
+  
     <Navs v-for="(item,index) in images" :key="index" >
       
     </Navs>
@@ -58,13 +59,22 @@
     <div>
       <van-tabs>
         <van-tab v-for="index in items" :title="index" :key="index">
-          <goods1>22</goods1>
+            <waterfall
+             :col='2'   
+             :data="lists"
+              >
+              <!-- <div class="goods_list" > -->
+             <shop v-for="(item,index)  in lists" :item="item" :key= "index"  >
+            </shop>
+              <!-- </div> -->
+              
+          </waterfall>
         </van-tab>
       </van-tabs>
     </div>
     <!-- 商品内容 -->
-    <div>
-      
+    <!-- <div>
+      <div class="goods_num">
       <section class="gui-waterfall-double-goods-item gui-waterfall-double-item">
         <a
           href=""
@@ -99,30 +109,32 @@
           </div>
         </a>
         <div class="goods-other">
-          <div class="goods-tag-list"></div>
+          
           <p class="price-cart">
             <span class="price">
               <small>¥</small>
               <big>149</big>
               <span></span>
             </span>
-            <!---->
+           
           </p>
-          <!---->
         </div>
       </section>
-    </div>
+      </div>
+    </div> -->
+ 
   </div>
 </template>
 
 <script>
 import Vue from "vue";
 import { Swipe, SwipeItem, List, Tab, Tabs } from "vant";
+import waterfall  from "vue-waterfall2"
 import Navs from "@/Home/Butter/Nav";
-
+import Shop from "@/common/shop-item-cart.vue"
+import axios from 'axios'
 import { Lazyload } from "vant";
 
-Vue.use(Lazyload);
 Vue.use(Lazyload, {
   lazyComponent: true
 });
@@ -133,6 +145,7 @@ Vue.use(SwipeItem);
 export default {
   data() {
     return {
+      lists:[],
       bannerimages: [
         "http://gfs8.gomein.net.cn/wireless/T1CLZmBb_T1RCvBVdK_1053_375.jpg",
         "http://gfs9.gomein.net.cn/wireless/T1fixmBjLv1RCvBVdK_1053_375.jpg",
@@ -153,12 +166,25 @@ export default {
       items: ["服务精选", "清洗服务", "维修服务", "保洁服务", "家居保养"]
     };
   },
-  components: { Navs },
+  components: { Navs, Shop },
   methods: {
     goList(){
       this.$router.push('/list');
     }
   },
+  created(){
+     axios({
+        url: '/api/kitchen'
+      }).then((result) => {
+        console.log(result)
+        // this.lists=result.data.goodsList;
+        this.lists = [
+          ...this.lists,
+          ...result.data.goodsList
+        ]
+        console.log(this.lists)
+      })
+  }
 };
 </script>
 
@@ -176,20 +202,26 @@ export default {
   }
 }
 
-.content {
+.contentBox {
   width: 355px;
   height: 110px;
   margin: 0 auto;
-
+}
   img {
     width: 100%;
+    
   }
 
-  .content-1, .content-2 {
+  .content-1, {
     width: 177px;
     float: left;
+    
   }
-}
+  .content-2  {
+    width: 177px;
+    float: left;
+    padding-left: 5px;
+  }
 .goods_p{
 
 }
@@ -257,89 +289,10 @@ export default {
       color: #f20c59;
     }
   }
-.item-link
-    width: inherit;
-    display: block;
-    border-radius: .21333rem .21333rem 0 0;
-    overflow: hidden;
-    width 175px
-    height 254px
-    .gome-bg 
-      background-repeat: no-repeat;
-      background-size: 2.66667rem;
-      background-position: 50%;
-      img 
-         width 100%
-    .store-info 
-        margin: 0 .26667rem;
-        height 37px
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        border-bottom: .02667rem dashed #dcddde;
-        img 
-          width: .42667rem;
-          height: .42667rem;
-          border-radius: 50%;
-          display block
-        span 
-          display: inline-block;
-          font-size: .34667rem;
-          color: #7a7f85;
-          margin-left: .10667rem;
-          width: 90%;
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-    .goods-info 
-        min-height: .90667rem;
-        overflow: hidden;
-        .desc 
-          font-size: .34667rem;
-          color: #262c32;
-          line-height: .45333rem;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          line-clamp: 2;
-          -webkit-line-clamp: 2;
-          word-break: break-all;
-          -ms-word-break: break-all;
-          word-wrap: break-word;
-          .goods-tag-bg 
-              display: inline-block;
-              line-height: .32rem;
-              color: #fff;
-              padding: .02667rem;
-              background: -webkit-gradient(linear,left top,right top,from(#fa1e8c),to(#f20c59));
-              background: linear-gradient(90deg,#fa1e8c,#f20c59);
-              border-radius: .05333rem;
-  .goods-other 
-     margin: 5 .26667rem .32rem;
-     .price-cart
-        color: #f20c59;
-        font-weight: 700;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        -webkit-justify-content: space-between;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center 
-        font-weight: bold;
-        font-size: 0.42667rem;
-                 
-
-
   
-
-
-
-
+// .goods_list{
+//   width 175px
+//   margin-top 10px
+// }
 </style>
   
