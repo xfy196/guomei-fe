@@ -1,7 +1,7 @@
 <template>
     <!-- 首页头部 -->
     <header>
-        <div class="location-box">
+        <div class="location-box" @click="goLocation">
             <van-icon size=".4rem" name="location-o" />
             <span>{{l_city}}</span>
         </div>
@@ -28,7 +28,12 @@ export default {
     return {
       l_city: "北京市"
     };
-  }
+  },
+  methods: {
+      goLocation(){
+          this.$router.push('/location')
+      }
+  },
 }
 </script>
 <style lang="stylus" scoped>
