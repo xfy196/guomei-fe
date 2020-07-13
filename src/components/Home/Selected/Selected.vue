@@ -56,6 +56,8 @@ export default {
 <style lang="stylus" scoped>
 #selected
   .my-swipe
+    background url('http://gfs8.gomein.net.cn/wireless/T1DSb5BXJ_1RCvBVdK_1125_426.png') no-repeat left top
+    background-size 100% auto
     padding 6px 10px
     img 
       width 355px

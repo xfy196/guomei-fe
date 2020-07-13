@@ -13,7 +13,7 @@
       <template #left-icon>
         <div class="location-city" @click="goChooseCity">
           <van-icon name="location-o" />
-          <span>北京市</span>
+          <span>{{ locationCity }}市</span>
         </div>
       </template>
     </van-search>
@@ -48,6 +48,11 @@ export default {
     },
     goChooseCity(){
       this.$router.push('/selectCity')
+    }
+  },
+  computed: {
+    locationCity() {
+      return this.$store.state.locationCity;
     }
   },
 }

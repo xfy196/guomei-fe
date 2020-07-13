@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="selectCity">
     <!-- 顶部导航栏 -->
     <TopBar></TopBar>
     <!-- 城市选择栏 -->
@@ -15,10 +15,10 @@ export default {
     TopBar,
     IndexBar
   }
-
 }
 </script>
 
 <style lang="stylus" scoped>
-
+#selectCity
+  height 100%
 </style>
