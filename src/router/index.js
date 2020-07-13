@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from 'views/Home.vue'
-import Shop from 'views/Shop.vue'
-import Message from 'views/Message.vue'
-import Cart from 'views/Cart.vue'
-import Mine from 'views/Mine.vue'
+import Home from '../views/Home.vue'
+import Shop from '../views/Shop.vue'
+import Message from '../views/Message.vue'
+import Cart from '../views/Cart.vue'
+import Mine from '../views/Mine.vue'
+import List from '@/List/List'
 import Category from 'views/Category.vue'
 import Location from 'views/Location.vue'
 import Address from 'views/Address.vue'
@@ -43,6 +44,11 @@ Vue.use(VueRouter)
     path: '/mine',
     name: 'mine',
     component: Mine
+  },
+  {
+    path: '/list',
+    name: 'list',
+    component: List
   },
   {
     path : "/categories",
