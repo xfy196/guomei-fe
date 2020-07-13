@@ -1,7 +1,6 @@
 
 <template>
   <div class="Butter">
-    <button @click="goList">去列表页</button>
     <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
       <van-swipe-item class="van-swipe-item" v-for="(item,index) in bannerimages" :key="index">
         <a href>
@@ -168,9 +167,7 @@ export default {
   },
   components: { Navs, Shop },
   methods: {
-    goList(){
-      this.$router.push('/list');
-    }
+    
   },
   created(){
      axios({

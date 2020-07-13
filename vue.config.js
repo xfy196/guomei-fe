@@ -8,13 +8,13 @@ module.exports = {
   },
   devServer: {
     proxy: {
-      '/search': {
+      '/ajax/cateLists': {
         target: 'https://m.gome.com.cn/index.php',
         changeOrigin: true
       },
-      "/goodsList": {
-        target : "http://localhost:9001",
-        changeOrigin: true,
+      '/search': {
+        target: 'https://m.gome.com.cn/index.php',
+        changeOrigin: true
       },
       '/api': {
         target: 'http://localhost:9000',
