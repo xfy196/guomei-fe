@@ -1,184 +1,281 @@
 <template>
 <div>
   <!-- 头部未完成 -->
-  <van-sticky>
-    <van-nav-bar title="商品" left-text="返回" left-arrow>
-      <template #right>
-      <van-icon name="ellipsis" size="35" color="black"/>
-      </template>
-      <template #left>
-        <van-icon name="arrow-left" size="18" color="#3d3d3d" />
-      </template>
-    </van-nav-bar>
-  </van-sticky>
+  <nav>
+    <div class="toolbar">
+      <span class="moer_left"><van-icon name="arrow-left" /></span>
+      <ul>
+        <li v-for="(item,index) in list" 
+            :key="item.id" 
+            :class="item.show ? 'active' : ''" 
+            @click="handClick(index)">{{item.shor}}</li>
+      </ul>
+      <span class="more_right"><van-icon name="ellipsis" /></span>
+    </div>
+  </nav>
   <!-- 图片轮播 -->
-  <div class="warrp">
-    <div class="mycontent">
-      <van-swipe @change="onChange">
-          <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt=""></van-swipe-item>
-          <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt=""></van-swipe-item>
-          <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt=""></van-swipe-item>
-          <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt=""></van-swipe-item>
-          <template #indicator>
-            <div class="custom-indicator">
-              {{ current + 1 }}/4
-            </div>
-          </template>
-      </van-swipe>
-    </div>
-  <!-- 文字 -->
-    <div class="content">
-      <div class="title">
-        <div class="lingshi">
-          <p>
-            杉城零食大礼包2000g 友女生儿童礼盒美食品超市好吃的2000g
-          </p>
-        </div>
-        <div class="share-profit">
-          <van-icon name="replay" color="#e2e2e2" />
-          <span>分享</span>
-        </div>
-      </div>
-      <div class="price_box">
-        <p class="price">
-          <span>￥</span>
-          <em>185</em>
-        </p>
-      </div>
-    </div>
-    <!-- 数量 -->
-    <div class="moudle">
-        <div class="number">
-          <label for="">数量</label>
-          <div class="coutent_box">
-            <i>-</i>
-            <input type="text" value="1">
-            <i>+</i>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="warrp">
+          <div class="mycontent">
+              <van-swipe @change="onChange">
+                  <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt="">
+                  </van-swipe-item>
+                  <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt="">
+                  </van-swipe-item>
+                  <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt="">
+                  </van-swipe-item>
+                  <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt="">
+                  </van-swipe-item>
+                  <template #indicator>
+                      <div class="custom-indicator">
+                          {{ current + 1 }}/4
+                      </div>
+                  </template>
+              </van-swipe>
           </div>
-        </div>
-    </div>
+          <!-- 文字 -->
+          <div class="content">
+              <div class="title">
+                  <div class="lingshi">
+                      <p>
+                          杉城零食大礼包2000g 友女生儿童礼盒美食品超市好吃的2000g
+                      </p>
+                  </div>
+                  <div class="share-profit">
+                      <van-icon name="replay" color="#e2e2e2" />
+                      <span>分享</span>
+                  </div>
+              </div>
+              <div class="price_box">
+                  <p class="price">
+                      <span>￥</span>
+                      <em>185</em>
+                  </p>
+              </div>
+          </div>
+          <!-- 数量 -->
+          <div class="moudle">
+              <div class="number">
+                  <label for="">数量</label>
+                  <div class="coutent_box">
+                      <i>-</i>
+                      <input type="text" value="1">
+                      <i>+</i>
+                  </div>
+              </div>
+          </div>
 
-    <!-- 地址 -->
-    <div class="adress">
-      <div class="send">
-        <label for="">送至</label>
-        <div class="jiedao">
-          <van-icon name="location-o" />
-          <p>朝阳街道<span>,免运费</span></p>
-        </div>
-          <van-icon name="arrow" class="right" />
-      </div>
-      <div class="service">
-        <ul>
-          <li>
-            <van-icon name="passed"  color="#F45F91"/>
-            正品保证
-          </li>
-          <li>
-            <van-icon name="passed"  color="#F45F91"/>
-            包邮
-          </li>
-          <li>
-           <van-icon name="warning-o" color="#a2a4a6"/>
-            不支持7天无理由退货
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- 评价 -->
-    <div class="eva">
-      <div class="val">
-          <p>评价(0)</p>
-          <h6>好评度: <span>100%</span><van-icon name="arrow"  /></h6>
-      </div>
-      <div class="classb">
-        <p>还没有人评价过此商品哦~</p>
-      </div>
-      <div class="evaluate_nav">
-          <ul>
-            <li><van-icon name="more-o" />全部评价(0)</li>
-            <li><van-icon name="chat-o" />购买咨询(0)</li>
-          </ul>
-      </div>
-    </div>
-    <!-- 商标 -->
-    <div class="clearfix">
-      <div class="cimg">
-        <img src="http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png" alt="">
-      </div>
-      <div class="content">
-        <div>北京大中洋桥店</div>
-        <p><van-icon name="location-o" />丰台区 </p>
-      </div>
-      <div class="guang">
-        <p>进店逛逛<van-icon name="arrow" /></p>
-      </div>
-    </div>
-    <!-- 喜欢 -->
-    <div class="guess_like">
-        <p>猜你喜欢</p>
-        <div class="swp">
-          <van-swipe class="my-swipe" :autoplay="3000" indicator-color="red" > 
-            <van-swipe-item>
-              <ul>
-                <li>
-                  <a href="">
-                    <div class="swpimg">
-                      <img src="http://gfs17.gomein.net.cn/T1yUY5Bjhv1RCvBVdK_400.jpg" alt="">
-                    </div>
-                      <p>口水娃零食1100g肉类豆干薯片 零食大礼包 国美超市甄选</p>
-                      <span>38.90</span>
+          <!-- 地址 -->
+          <div class="adress">
+              <div class="send">
+                  <label for="">送至</label>
+                  <div class="jiedao">
+                      <van-icon name="location-o" />
+                      <p>朝阳街道<span>,免运费</span></p>
+                  </div>
+                  <van-icon name="arrow" class="right" />
+              </div>
+              <div class="service">
+                  <ul>
+                      <li>
+                          <van-icon name="passed" color="#F45F91" />
+                          正品保证
+                      </li>
+                      <li>
+                          <van-icon name="passed" color="#F45F91" />
+                          包邮
+                      </li>
+                      <li>
+                          <van-icon name="warning-o" color="#a2a4a6" />
+                          不支持7天无理由退货
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <!-- 评价 -->
+          <div class="eva">
+              <div class="val">
+                  <p>评价(0)</p>
+                  <h6>好评度: <span>100%</span>
+                      <van-icon name="arrow" />
+                  </h6>
+              </div>
+              <div class="classb">
+                  <p>还没有人评价过此商品哦~</p>
+              </div>
+              <div class="evaluate_nav">
+                  <ul>
+                      <li>
+                          <van-icon name="more-o" />全部评价(0)</li>
+                      <li>
+                          <van-icon name="chat-o" />购买咨询(0)</li>
+                  </ul>
+              </div>
+          </div>
+          <!-- 商标 -->
+          <div class="clearfix">
+              <div class="cimg">
+                  <img src="http://gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png" alt="">
+              </div>
+              <div class="content">
+                  <div>北京大中洋桥店</div>
+                  <p>
+                      <van-icon name="location-o" />丰台区 </p>
+              </div>
+              <div class="guang">
+                  <p>进店逛逛
+                      <van-icon name="arrow" />
+                  </p>
+              </div>
+          </div>
+          <!-- 喜欢 -->
+          <div class="guess_like">
+              <p>猜你喜欢</p>
+              <div class="swp">
+                  <van-swipe class="my-swipe" :autoplay="3000" indicator-color="red">
+                      <van-swipe-item>
+                          <ul>
+                              <li>
+                                  <a href="">
+                                      <div class="swpimg">
+                                          <img src="http://gfs17.gomein.net.cn/T1yUY5Bjhv1RCvBVdK_400.jpg" alt="">
+                                      </div>
+                                      <p>口水娃零食1100g肉类豆干薯片 零食大礼包 国美超市甄选</p>
+                                      <span>38.90</span>
 
-                    
-                  </a>
-                </li>
-              </ul>
-            </van-swipe-item>
-          </van-swipe>
-        </div>
+
+                                  </a>
+                              </li>
+                          </ul>
+                      </van-swipe-item>
+                  </van-swipe>
+              </div>
+          </div>
+
+      <div class="swiper-slide">slider2</div>
+      <div class="swiper-slide">slider3</div>
     </div>
+      </div>
   </div>
+
+<van-goods-action>
+    <van-goods-action-icon icon="chat-o" text="客服" dot />
+    <van-goods-action-icon icon="cart-o" text="购物车" badge="5" />
+    <van-goods-action-icon icon="shop-o" text="店铺" badge="12" />
+    <van-goods-action-button type="warning" text="加入购物车" />
+    <van-goods-action-button type="danger" text="立即购买" />
+</van-goods-action>
+</div>
 </div>
 </template>
 
 <script>
-
 import Vue from 'vue';
-import { NavBar,Icon,Tab,Tabs,Sticky,Swipe,SwipeItem} from 'vant';
+import {Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
+import { NavBar,Icon,Tab,Tabs,Sticky, GoodsAction, GoodsActionIcon, GoodsActionButton} from 'vant';
+import "swiper/swiper-bundle.css"
 Vue.use(NavBar);
 Vue.use(Icon);
 Vue.use(Tab);
 Vue.use(Tabs);
 Vue.use(Sticky);
-Vue.use(Swipe);
-Vue.use(SwipeItem);
+Vue.use(GoodsAction);
+Vue.use(GoodsActionButton);
+Vue.use(GoodsActionIcon);
 export default {
+  directives: {
+    swiper: directive
+  },
+  components: {
+    Swiper,
+    SwiperSlide
+  },
   data () {
     return {
       current: 0,
+      list:[
+        {
+        shor:"商品",show:true,id:'1'
+      },
+      {
+        shor:"详情",show:false,id:'2'
+      },
+      {
+        shor:"评价",show:false,id:'3'
+      },
+      
+      ],
+      mySwiper : null,
     }
   },
+    mounted(){
+      this.mySwiper = new Swiper('.swiper-container',{
+        })
+    },
   methods:{
-     onChange(index) {
+    onChange(index) {
       this.current = index;
     },
+    handClick(index){
+      console.log(index)
+      this.list[index].show = true
+      this.mySwiper.slideTo(index);
+    }
   },
   
 }
 </script>
 
 <style lang="stylus" scoped>
-.van-nav-bar
-  position relative
-  z-z-index 9999
-  top 0
-  border-bottom: 1px solid #ddd;
-  .van-nav-bar__left
+nav 
+  width 100%
+  border-bottom  1px solid #e6e6e6;
+  position fixed
+  z-index 5
+  background-color white
+  .toolbar
+    overflow hidden
+    display flex
+    height 45px
+    justify-content space-between
+    .moer_left
+
+      width 35px
+      height 46px
+      line-height 46px
+      margin-left  10px
+      font-size 17px
+      margin-top 4px
+    ul
+      overflow hidden
+      display flex
+      li
+        width 57.5px
+        height 46.5px
+        font-size 17px
+        line-height 46.5px
+        text-align center
+    .more_right
+      width 22px
+      height 44px
+      line-height 44px
+      margin-top 5px 
+      margin-right 30px
+      font-size 30px
+.swiper-container
+  width 100%
+  height 9629px
+  position absolute
+  top 45px
+  .swiper-wrapper
+    overflow scroll
     position absolute
-    left 0
-  .van-nav-bar__right
-    position absolute
-    right 0
+    top 45
+    height 9629px
+.van-goods-action
+  z-index 9999
 .warrp
   height 7163px
   background-color white
