@@ -1,15 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from 'views/Home.vue'
-import Shop from 'views/Shop.vue'
-import Message from 'views/Message.vue'
-import Cart from 'views/Cart.vue'
-import Mine from 'views/Mine.vue'
+import Home from '../views/Home.vue'
+import Shop from '../views/Shop.vue'
+import Message from '../views/Message.vue'
+import Cart from '../views/Cart.vue'
+import Mine from '../views/Mine.vue'
+import List from '@/List/List'
 import Category from 'views/Category.vue'
 import Location from 'views/Location.vue'
 import Address from 'views/Address.vue'
 import AddNewAddress from 'views/AddNewAddress.vue'
 import SelectCity from 'views/SelectCity.vue'
+import Search from 'views/Search.vue'
 
 Vue.use(VueRouter)
 
@@ -44,6 +46,11 @@ Vue.use(VueRouter)
     component: Mine
   },
   {
+    path: '/list',
+    name: 'list',
+    component: List
+  },
+  {
     path : "/categories",
     name : "categories",
     component : Category
@@ -67,6 +74,11 @@ Vue.use(VueRouter)
     path : "/selectCity",
     name : "selectCity",
     component : SelectCity,
+  },
+  {
+    path : "/search",
+    name : "search",
+    component : Search,
   },
 ]
 

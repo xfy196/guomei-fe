@@ -3,6 +3,7 @@
     <van-search
       v-model="value"
       show-action
+      shape="round"
       placeholder="请您输入收货地址"
       @search="onSearch"
     >

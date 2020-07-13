@@ -1,12 +1,27 @@
 <template>
   <div id="goods-tabs">
     <van-tabs v-model="active" title-active-color="#f10" class="tabbar" @chang="handleChange">
-      <van-tab v-for="item in tabList" :key="item.title" class="tabbar-item" title>
+      <van-tab v-for="(item, index) in tabList" :key="item.title" class="tabbar-item" title>
         <template #title>
             <p class="title">{{ item.title }}</p>
             <div class="slogan">{{ item.slogan }}</div>
         </template>
-        商品列表
+        <div class="gui-waterfall-container">
+          <waterfall
+            :width="itemWidth"
+            :col="col"
+            :data="goodsList"
+            :isTransition="true"
+            :gutterWidth="gutterWidth"
+          >
+            <component
+              v-for="item in goodsList"
+              :key="item.productId + Math.random()"
+              :item="item"
+              :is="componentLists[index]"
+            ></component>
+          </waterfall>
+        </div>
       </van-tab>
     </van-tabs>
   </div>
@@ -15,6 +30,10 @@
 <script>
 import Vue from 'vue';
 import { Tabbar, TabbarItem } from 'vant';
+import ShopItemCart from "@/common/shop-item-cart";
+import axios from "axios";
+import waterfall from "vue-waterfall2";
+Vue.use(waterfall);
 Vue.use(Tabbar);
 Vue.use(TabbarItem);
 
@@ -53,14 +72,46 @@ export default {
           title: "居家好物",
           slogan: "幸福感爆棚"
         },
-      ]
+      ],
+      goodsList: [],
+      col: 2,
+      componentLists: [
+        "ShopItemCart",
+        "ShopItemCart",
+        "ShopItemCart",
+        "ShopItemCart",
+        "ShopItemCart",
+        "ShopItemCart",
+      ],
     }
+  },
+  computed: {
+    // 瀑布流宽度
+    itemWidth() {
+      return 350 * 0.5 * (document.documentElement.clientWidth / 375);
+    },
+    // 瀑布流间距
+    gutterWidth() {
+      return 16 * 0.5 * (document.documentElement.clientWidth / 375);
+    },
   },
   methods: {
     handleChange(index){
       console.log(index);
-    }
-  }
+    },
+  },
+  created(){
+    axios({
+      url: '/api/recommend'
+    })
+      .then((res) => {
+        this.goodsList = res.data.goodsList;
+        console.log(res.data.goodsList)
+      })
+  },
+  components: {
+    ShopItemCart,
+  },
 }
 </script>
 
@@ -74,9 +125,10 @@ export default {
   margin-bottom 5px
   line-height 1
   .tabbar
-    text-align center
+    width 100% !important
     width max-content
     /deep/.van-tabs__wrap
+      text-align center
       padding-right 0
       height 56px
       /deep/.van-tabs__nav
