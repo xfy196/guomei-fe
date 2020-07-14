@@ -15,6 +15,10 @@ export default {
     HomeTop,
     HomeNav,
     HomeTabBar,
+  },
+  created(){
+    let city = window.localStorage.getItem('locationCity');
+    this.$store.commit('changeCity', city);
   }
 };
 </script>
