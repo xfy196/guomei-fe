@@ -25,52 +25,16 @@
 
       </a>
     </div>
-    <div class="shop-status">
-      <van-grid :border="false">
-        <van-grid-item icon="balance-pay" text="待付款" />
-        <van-grid-item icon="logistics" text="待收货" />
-        <van-grid-item icon="flower-o" text="待评价" />
-        <van-grid-item icon="refund-o" text="退款/售后" />
-      </van-grid>
-      <div class="all-order">
-        <b></b>
-        <img class="order-img" src="//app.gomein.net.cn/plus/images/ucenter/dingdan.png?v=2017092001">
-        <span>全部订单</span>
-        <i>查看电子发票</i>
+    <MineShop :shop="shopStatus"></MineShop>
+    <MineShop :shop="aboutMoney" class="about-money"></MineShop>
+    <MineVip></MineVip>
+
+    <div class="mine-share">
+      <h3>我的分享活动</h3>
+      <div class="made-group">
+        <span>拼团</span>
+        <a href="#">好友拼单享优惠</a>
       </div>
-    </div>
-    <div class="about-money">
-      <van-grid :border="false">
-        <van-grid-item icon="gold-coin-o" text="国美币" />
-        <van-grid-item icon="discount" text="优惠券" />
-        <van-grid-item icon="points" text="美豆" />
-        <van-grid-item icon="credit-pay" text="交通卡" />
-      </van-grid>
-      <div class="my-wallet">
-        <b></b>
-        <img class="wallet-img" src="http://app.gomein.net.cn/plus/images/ucenter/qianbao.png?v=2017092001">
-        <span>我的钱包</span> 
-      </div>
-    </div>
-    <div class="vip-center">
-      <van-grid :border="true" :column-num="4">
-        <van-grid-item>
-          <van-image src="http://app.gomein.net.cn/plus/images/ucenter/huiyuanbu.png?v=2017092001" />
-          <span>会员俱乐部</span>
-        </van-grid-item>
-        <van-grid-item>
-          <van-image src="http://app.gomein.net.cn/plus/images/openMembershipCard/viphuiyuanka.png?v=2017092000" />
-          <span>我的会员卡</span>
-        </van-grid-item>
-        <van-grid-item>
-          <van-image src="http://app.gomein.net.cn/plus/images/ucenter/shoucang.png?v=2017092001" />
-          <span>我的收藏</span>
-        </van-grid-item>
-        <van-grid-item>
-          <van-image src="http://app.gomein.net.cn/plus/images/ucenter/fapiaozhushou.png" />
-          <span>发票助手</span>
-        </van-grid-item>
-      </van-grid>
     </div>
   </div>
 </template>
@@ -80,11 +44,73 @@ import Vue from 'vue';
 import { NavBar } from 'vant';
 import { Grid, GridItem } from 'vant';
 
+import MineShop from '@/Mine/MineShop'
+import MineVip from '@/Mine/MineVip'
+
 Vue.use(NavBar);
 Vue.use(Grid);
 Vue.use(GridItem);
 export default {
-
+  data() {
+    return {
+      shopStatus : 
+        {
+          shopDatas:[
+            {
+              icon : 'balance-pay',
+              text : '待付款'
+            },
+            {
+              icon : 'logistics',
+              text : '待收货'
+            },
+            {
+              icon : 'flower-o',
+              text : '待评价'
+            },
+            {
+              icon : 'refund-o',
+              text : '退款/售后'
+            },
+          ],
+          shopOrder : {
+            img : '//app.gomein.net.cn/plus/images/ucenter/dingdan.png?v=2017092001',
+            span : '全部订单',
+            i : '查看电子发票'
+          }
+        },
+      aboutMoney :
+        {
+          shopDatas:[
+            {
+              icon : 'gold-coin-o',
+              text : '国美币'
+            },
+            {
+              icon : 'discount',
+              text : '优惠券'
+            },
+            {
+              icon : 'points',
+              text : '美豆'
+            },
+            {
+              icon : 'credit-pay',
+              text : '交通卡'
+            },
+          ],
+          shopOrder : {
+            img : 'http://app.gomein.net.cn/plus/images/ucenter/qianbao.png?v=2017092001',
+            span : '我的钱包',
+            i : ''
+          }
+        }
+    }
+  },
+  components : {
+    MineShop,
+    MineVip
+  }
 }
 </script>
 
@@ -144,79 +170,35 @@ export default {
       height 19px
       background url(https://css.gomein.net.cn/plus/style/ucenter/css/messageIcon.e66ecc9715.png) no-repeat
       background-size contain
-  .shop-status
-    display flex
-    margin-bottom 11.5px
+  
+  /deep/.about-money
     .van-grid
-      height 96px
-      .van-grid-item
-        width 75px
-        color #666
+      height 86px
     .all-order
-      box-sizing border-box
-      width 75px
-      height 96px  
+      height 86px
+
+  .mine-share
+    padding 0 15px
+    background #fff
+    h3
+      font-weight 500
+      font-size 15px
+      color #262c32
+      padding 12px 0
+    .made-group
       display flex
-      flex-direction column
-      align-items center
-      padding 17.5px 0
-      background #fcfcfc
-      b
-        background url(http://app.gomein.net.cn/plus/images/ucenter/jiantou.png?v=2017092001) no-repeat
-        width 9px
-        height 9px
-        display inline-block
-        position absolute
-        z-index 888
-        width: 40px;
-        height: 40px;
-        top: 300px;
-        left: 293px;
-      .order-img 
-        width 24.5px
-        height 24.5px
+      justify-content space-between
+      line-height 35px
+      padding 10px 0 24px
       span 
-        font-size 13px
-        color #666
-        margin-top 5px
-      i 
-        font-size 10px
-        color #999
-        margin-top -2px
-  .about-money
-    margin-bottom 11.5px
-    display flex
-    position relative
-    .van-grid
-      height 83px
-      .van-grid-item
-        width 75px
-        color #666
-    .my-wallet
-      box-sizing border-box
-      width 75px
-      height 86px  
-      display flex
-      flex-direction column
-      align-items center
-      padding 17.5px 0
-      background #fcfcfc
-      b
-        background url(http://app.gomein.net.cn/plus/images/ucenter/jiantou.png?v=2017092001) no-repeat
-        width 9px
-        height 9px
-        display inline-block
-        position absolute
-        z-index 888
-        width: 40px;
-        height: 40px;
-        top: 20px;
-        left: 293px;
-      .wallet-img 
-        width 24.5px
-        height 24.5px
-      span 
-        font-size 13px
-        color #666
-        margin-top 5px  
+        height 35px
+        font-size 14px
+        padding-left 45px
+        background url(https://css.gomein.net.cn/plus/style/ucenter/css/pt_icon.7c787bc110.png) no-repeat
+        background-size 35px 35px 
+      a
+        font-size 12px
+        color #999  
+        padding-right 10px
+    
 </style>
