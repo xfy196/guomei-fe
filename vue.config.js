@@ -5,5 +5,21 @@ module.exports = {
       .set("@", path.resolve(__dirname, "./src/components/"))
       .set("assets", path.resolve(__dirname, "./src/assets/"))
       .set("views", path.resolve(__dirname, "./src/views/"));
+  },
+  devServer: {
+    proxy: {
+      '/ajax/cateLists': {
+        target: 'https://m.gome.com.cn/index.php',
+        changeOrigin: true
+      },
+      '/search': {
+        target: 'https://m.gome.com.cn/index.php',
+        changeOrigin: true
+      },
+      '/api': {
+        target: 'http://localhost:9000',
+        changeOrigin: true
+      },
+    }
   }
 };

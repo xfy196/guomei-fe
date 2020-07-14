@@ -1,8 +1,8 @@
 <template>
     <main>
-        <van-tabs v-model="activeIndex" :swipeable="false" class="tabs" @change="handleChange" :border="false" background="#1d74ff">
+        <van-tabs v-model="activeIndex" :swipeable="false" class="tabs" @change="handleChange" :border="false" background="#f20c59">
           <div slot="nav-right">
-              <div class="category">
+              <div @click="handleClick" class="category">
                 <img class="nv-bg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAABYBAMAAAAZ9PqaAAAAGFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWNxwqAAAACHRSTlMIBQwcEBcUAxo/uM4AAADjSURBVDjLzMyxDQMhDEBR6yY4VkBswAroFkCMEHqqrB/7OxZFclLKuOLpY8vTJzEIoMDW4nmKICCCSACB0AIhDtjk7HKYlqcjhyiuhEjNdHoqDZEUqoUAOkktFGlOSS4Den+8toqlx0AkhYo1SyNUSK4DKbYsVWRrqq4SlyWUM2v1qzjSt+aNDle91dhqH+q/6fpbvSqpYxMAYBgGgstl/5lCivBwYEJK40761/q5zOWV4Jy8Hc1t0jtMwEsswRkMwifsxrXM40Ou4BGO4R9u5i1O63tbcN53J87hhrgvbk+7tAHn5tBxntciCgAAAABJRU5ErkJggg==" alt="">
                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMA7fOC11I4Ecy1PfWfi21oZTAiCOcL1HjnAAAAdElEQVQ4y+WTyQ6AIBBDQVZxX/r/vypGzCQKmbPYSw+8NKTpiC/LajmykAawRp8lXupUgs43G90joyZBCvCCSxLBbKJauaFfWKgFpItuZKbLu6cGQLjgDPVM2vNJ9Kd6xe+JljmVG6eN61LjdC3lJLq7/+oAXBYRruLDsRwAAAAASUVORK5CYII=" class="icon">
                   <span class="c-text">分类</span>
@@ -51,10 +51,17 @@ export default {
       navComponents : ["Selected", "PhoneShop", "Butter", "Cupboard", "Comfortable"]
     }
   },
+  mounted(){
+    document.querySelector(".van-tabs__wrap").style.paddingRight="1.6rem";
+    
+  },
   methods: {
       handleChange(index){
         console.log(index)
         this.activeIndex = index
+      },
+      handleClick(){
+        this.$router.push("/categories")
       }
   },
   components : {
@@ -79,8 +86,6 @@ main
     height 100%
     display: flex;
     flex-direction: column;
-    /deep/.van-tabs__wrap
-      padding-right 60px
     /deep/.van-tabs__content
           height 100%
           overflow scroll

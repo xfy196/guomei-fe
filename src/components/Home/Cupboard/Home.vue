@@ -6,7 +6,6 @@
     <ActivityBanner :url="a_url"></ActivityBanner>
     <BestSellers></BestSellers>
     <HotSellers></HotSellers>
-    <HotSellers></HotSellers>
     <ProductVideo></ProductVideo>
     <FromDesign></FromDesign>
     <GlKitch></GlKitch>
