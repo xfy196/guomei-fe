@@ -34,7 +34,6 @@ export default {
     })
     .then((res) => {
       this.recommendData = res.data.goodsList;
-      console.log(this.recommendData)
     })
   },
 }

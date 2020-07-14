@@ -7,52 +7,73 @@
  * @version: V1.0.5 
 !-->
 <template>
-    <!---->
-    <section class="gui-waterfall-double-goods-item gui-waterfall-double-item">
-      <router-link :to="item.shopDetailUrl" tag="a" class="item-link"
-        ><div class="gome-bg goods-img">
-          <img
-            v-lazy="item.productImgURL"
-          />
-        </div>
-        <div class="store-info">
-          <img v-lazy="item.shopLogoUrl"/>
-          <span class="name">{{item.shopName}}</span>
-        </div>
-        <div class="goods-info">
-          <p class="desc">
-            <span class="goods-tag-bg"><span>{{item.type==="1" ?  "自营" : "私营"}}</span></span>
-            <span class="text"
-              >{{item.goodsName}}</span
-            >
-          </p>
-        </div></router-link
-      >
-      <div class="goods-other">
-        <div class="goods-tag-list">
-          <span v-if="item.scheme_type_id === '1'" style="color: rgb(242, 12, 86); border-color: rgb(242, 12, 86);">秒杀</span>
-        </div>
-        <p class="price-cart">
-          <span class="price"
-            ><small>¥</small> <big>118</big> <span></span
-          ></span>
-          <span class="cart"></span>
-        </p>
-        <p v-if="item.markingPrice" class="price-original">¥119</p>
-        <!---->
+  <!---->
+  <section class="gui-waterfall-double-goods-item gui-waterfall-double-item">
+    <router-link :to="item.shopDetailUrl" tag="a" class="item-link"
+      ><div class="gome-bg goods-img">
+        <img v-lazy="item.productImgURL" />
       </div>
-    </section>
+      <div class="store-info">
+        <img v-lazy="item.shopLogoUrl" />
+        <span class="name">{{ item.shopName }}</span>
+      </div>
+      <div class="goods-info">
+        <p class="desc">
+          <span class="goods-tag-bg"
+            ><span>{{ item.type === "1" ? "自营" : "私营" }}</span></span
+          >
+          <span class="text">{{ item.goodsName }}</span>
+        </p>
+      </div></router-link
+    >
+    <div class="goods-other">
+      <div class="goods-tag-list">
+        <span
+          v-if="item.scheme_type_id === '1'"
+          style="color: rgb(242, 12, 86); border-color: rgb(242, 12, 86);"
+          >秒杀</span
+        >
+      </div>
+      <p class="price-cart">
+        <span class="price"><small>¥</small> <big>{{item.price}}</big> <span></span></span>
+        <span class="cart" @click="addCart(item)"></span>
+      </p>
+      <p v-if="item.markingPrice" class="price-original">{{item.markingPriceDesc}}</p>
+      <!---->
+    </div>
+  </section>
 </template>
 
 <script>
-import Vue from "vue"
-import {Lazyload} from "vant"
+import Vue from "vue";
+import { Lazyload,Toast } from "vant";
 
 Vue.use(Lazyload, {
-   lazyComponent: true,
-})
+  lazyComponent: true,
+});
+Vue.use(Toast);
 export default {
-  props : ["item"]
+  props: ["item"],
+  methods: {
+    addCart(good) {
+      // 拿到id之后我们需要到state中找到对应的数据然后放入到购物车的state中
+      this.$store
+        .dispatch("cart/addCart", good)
+        .then(() => {
+          //如果执行到这一步就说明添加购物车成功，加入提示信息
+          Toast({
+            message: '加入购物车成功',
+            forbidClick: true,
+          });
+        })
+        .catch(() => {
+            Toast({
+              message: '加入购物车失败',
+              forbidClick: true,
+            });
+        });
+    },
+  },
 };
 </script>
 <style lang="stylus">
@@ -127,7 +148,7 @@ export default {
     flex-wrap: nowrap;
     justify-content: flex-start;
     height: .4rem;
-    span 
+    span
       display: inline-block;
       border-width: .5px;
       border-style: solid;

@@ -179,7 +179,6 @@ export default {
           ...this.lists,
           ...result.data.goodsList
         ]
-        console.log(this.lists)
       })
   }
 };
