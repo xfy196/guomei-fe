@@ -18,7 +18,7 @@ Vue.use(NavBar);
 export default {
   methods: {
     onClickLeft(){
-      this.$router.back('/location');
+      this.$router.push('/location');
     }
   }
 }

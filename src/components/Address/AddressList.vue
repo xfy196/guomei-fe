@@ -10,7 +10,7 @@
         <div class="info">
           <div class="contact-info">
             <p class="name">{{ address.name }}</p>
-            <span class="tel">{{ address.tel }}</span>
+            <span class="tel">{{ address.tel.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2') }}</span>
           </div>
           <div class="address-detail">{{ address.province }}{{ address.city }}{{ address.county }}{{ address.addressDetail }}</div>
           <div class="operate">
@@ -83,7 +83,7 @@ export default {
         font-size 13px
         color #888888
       .operate
-        margin-top 26px
+        margin-top 20px
         display flex
         justify-content flex-end
         font-size 12px
