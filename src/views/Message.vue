@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="message">
     <!-- 头部导航栏 -->
     <TopBar></TopBar>
     <!-- 消息列表 -->
@@ -23,5 +23,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+#message
+  height 100%
+  overflow scroll
 </style>
