@@ -3,7 +3,7 @@
     <header>
         <div class="location-box" @click="goLocation">
             <van-icon size=".4rem" name="location-o" />
-            <span>{{l_city}}</span>
+            <span>{{locationCity}}市</span>
         </div>
         <div class="searchBox" @click="goSearch">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAQlBMVEUAAAC2traZmZmampqZmZmbm5uampqZmZmampqZmZmampqZmZmampqampqampqampqbm5uZmZmdnZ2ampqampqZmZk1NLL/AAAAFXRSTlMABebNNhgP3Ejq1NC2mHxmUh4T+WWB9YuQAAAAtElEQVQoz62TRxbDIAxEgwQGTHOb+181C8UtD8MiYSXxNU+g8vrTUS4xrcTJqQoshP1Q+Q6YGQhZG2V0DgDPN6o97HR4k4XXV61HHC7+EOFPvWLEezYVwcdNgRXtRW9R9lDCkffMD/rIHUKlDAFOjIRcwRlJDIauYA0Wg2Aq2IDEWKEqWGHtqDu5Oy/v/LtTtXbNmx2zQ7PfGJfGtLhR+NOsGeFPkyr8ac6Fb63FWLbht816Axg6C5ms05fBAAAAAElFTkSuQmCC" class="search-find">
@@ -26,15 +26,20 @@ Vue.use(Sticky);
 export default {
   data() {
     return {
-      l_city: "北京市"
+      
     };
   },
   methods: {
       goLocation(){
-          this.$router.push('/location')
+        this.$router.push('/location')
       },
       goSearch(){
-          this.$router.push('/search')
+        this.$router.push('/search')
+      }
+  },
+  computed: {
+      locationCity() {
+        return this.$store.state.locationCity;
       }
   },
 }

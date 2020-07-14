@@ -106,7 +106,6 @@ export default {
     })
       .then((res) => {
         this.goodsList = res.data.goodsList;
-        console.log(res.data.goodsList)
       })
   },
   components: {

@@ -19,7 +19,7 @@ Vue.use(NavBar);
 export default {
   methods: {
     onClickLeft() {
-      this.$router.back();
+      this.$router.push("/");
     },
     onClickRight() {
       this.$router.push('/address')
