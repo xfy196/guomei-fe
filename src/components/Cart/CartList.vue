@@ -197,10 +197,13 @@ export default {
 
 <style lang="stylus" scoped>
 #cart-list
-  padding 10px
+  padding 0 10px 10px
   height 100%
   .shop-info
     padding-left 10px
+    height 1.066667rem
+    display flex
+    align-items center
     .shop-name
       display flex
       align-items center
@@ -211,7 +214,7 @@ export default {
         color #333333
         font-weight 600
   .goods-list
-    margin-top 5px
+
     .goods-item
       display flex
       align-items center
