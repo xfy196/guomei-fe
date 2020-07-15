@@ -14,7 +14,7 @@
       </div>
 
       <div class="h-cnt flex-cell">
-        <div class="flex-box"><h2 class="h-tit">购物车</h2> <div class="h-add flex-box"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAe1BMVEUAAABbYGZaYWaPj49aYGZaYGdaYGZbY2liaG5cYmhla2taYGZeY2peZmdaYWdbYmdfZWleZmpaYWZaYGZbYWZaYGdbYmldY2lbYGdaYGZaYGZcYGdaYGZbYmdbY2daYmdbYWddYmhbYWZbYWdcYmlbYGdbYWZeY2haYGblsueVAAAAKHRSTlMA9vsD8bqlIw5YCtsmH5huGRXp39S/OivEta2clGZDiGBBzHlOx4wx+m5QvAAAAStJREFUKM91kdt6gjAQhJOQE0EBQQRE8dh23v8JS+J+BLSdC8LkX2aXhM3aFirjPFPFlr2rHARIYijX7FBB6NQ4Z1ItUB1WTEDNaUZBLGhZIU+iTXJUMTmHIkZUIZ/nFMKE9dI0l5BuhNgSLKD9kkoAkKl/1ygI9vAbhkOPowY3vhA9wQze61efPMQYZAQlbCjZeLMJ2xaSIIejknnbgROswzcNnt480UzPFnuCR5zDzPVmSq3DnGccCZ6h/J934EpxdEmISQlaidb3OQHAyYVUbhnpRCF2HC01+o4HL3FjC93Ad9E9kLnobI3H8hruGKIbcF9dUstxZfPwvGUrXcEP1FAgXQCauHqdrcSFvSvpUZchQrNPuS/sd1PRD/tLu72nUR+0Y//Trl/5X56vF89A3GwrAAAAAElFTkSuQmCC" class="h-add-icon"> <span>北京市</span></div></div>
+        <div class="flex-box"><h2 class="h-tit">购物车</h2> <div class="h-add flex-box"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAe1BMVEUAAABbYGZaYWaPj49aYGZaYGdaYGZbY2liaG5cYmhla2taYGZeY2peZmdaYWdbYmdfZWleZmpaYWZaYGZbYWZaYGdbYmldY2lbYGdaYGZaYGZcYGdaYGZbYmdbY2daYmdbYWddYmhbYWZbYWdcYmlbYGdbYWZeY2haYGblsueVAAAAKHRSTlMA9vsD8bqlIw5YCtsmH5huGRXp39S/OivEta2clGZDiGBBzHlOx4wx+m5QvAAAAStJREFUKM91kdt6gjAQhJOQE0EBQQRE8dh23v8JS+J+BLSdC8LkX2aXhM3aFirjPFPFlr2rHARIYijX7FBB6NQ4Z1ItUB1WTEDNaUZBLGhZIU+iTXJUMTmHIkZUIZ/nFMKE9dI0l5BuhNgSLKD9kkoAkKl/1ygI9vAbhkOPowY3vhA9wQze61efPMQYZAQlbCjZeLMJ2xaSIIejknnbgROswzcNnt480UzPFnuCR5zDzPVmSq3DnGccCZ6h/J934EpxdEmISQlaidb3OQHAyYVUbhnpRCF2HC01+o4HL3FjC93Ad9E9kLnobI3H8hruGKIbcF9dUstxZfPwvGUrXcEP1FAgXQCauHqdrcSFvSvpUZchQrNPuS/sd1PRD/tLu72nUR+0Y//Trl/5X56vF89A3GwrAAAAAElFTkSuQmCC" class="h-add-icon"> <span>{{getNowCity}}</span></div></div>
       </div>
       <div class="r-box">
         <div class="h-edit">编辑</div>
@@ -27,6 +27,7 @@
 <script>
 import Vue from "vue";
 import { Icon } from "vant";
+import {mapGetters} from "vuex"
 import SearchMenu from "@/common/SearchMenu"
 Vue.use(Icon);
 export default {
@@ -37,6 +38,11 @@ export default {
   },
   methods: {
 
+  },
+  computed: {
+    ...mapGetters({
+      getNowCity: "getNowCity"
+    })
   },
   components: {
     SearchMenu

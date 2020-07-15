@@ -12,12 +12,13 @@
       v-show="Object.keys(this.carts).length > 0 ? true : false"
       id="cart-list"
     >
-      <div class="groupList" v-for="(val, key, index) in carts" :key="index">
+      <div class="groupList" v-for="(val, key, index) in carts" :key="index + Math.random()">
         <div class="shop-info">
           <van-checkbox
-            v-model="allChecked"
+            v-model="val.allChecked"
             checked-color="#DE345C"
             icon-size="19"
+            @click="handleAllChecked(key)"
           >
             <div class="shop-name">
               <img :src="val[0].shopLogoUrl" alt="" />
@@ -33,6 +34,7 @@
                   v-model="good.checked"
                   checked-color="#DE345C"
                   icon-size="19"
+                  @click="handleCheck(good.productId)"
                 ></van-checkbox>
               </div>
               <div class="goods-info">
@@ -49,7 +51,7 @@
                       ￥<span>{{good.price}}</span>
                     </div>
                     <van-stepper
-                      v-model="good.totoalNum"
+                      v-model="good.totalNum"
                       integer
                       button-size="0.5rem"
                       min="1"
@@ -104,7 +106,6 @@ export default {
     return {
       count: 1,
       allChecked: true,
-      checked: true,
       cartData: [
         {
           name: "丹麦蓝罐曲奇饼干908g 国美超市甄选",
@@ -178,13 +179,17 @@ export default {
       carts: "cart/getCarts"
     }),
   },
-  mounted() {
-  },
   methods:{
     hanldeNumChange(value, detail){
       // 拿到修改后的数值之后呢我们去重新dispatch购物车的重新计算数据
         this.$store.dispatch("cart/updateCartNum", {num : value, id : detail.name}).then(() => {
       })
+    },
+    handleCheck(id){
+      this.$store.dispatch("cart/updateCheck",id);
+    },
+    handleAllChecked(name){
+      this.$store.dispatch("cart/updateGroupAllChecked", name);
     }
   }
 };

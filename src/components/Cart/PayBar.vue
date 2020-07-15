@@ -1,5 +1,5 @@
 <template>
-  <div class="pay-bar" v-show="totalNum > 0  ? true : false">
+  <div class="pay-bar" v-show="Object.keys(carts).length > 0 ? true : false">
     <div class="option-box">
       <van-checkbox
         v-model="isAllCheck"
@@ -10,12 +10,15 @@
     </div>
     <div class="r_pay">
       <div class="total-price-box">
-        <p class="total-price">合计:<strong>¥{{totalPrice===0 ? totalPrice+".00" : totalPrice}}</strong></p>
+        <p class="total-price">
+          合计:<strong>¥{{ !totalPrice ? "0.00" : totalPrice }}</strong>
+        </p>
         <!---->
       </div>
       <div class="button-box">
         <a :class="!isAllCheck ? 'nopay' : ''" class="btn default red go-pay"
-          >去结算(<strong>{{totalNum}}</strong>)</a
+          >去结算(<strong>{{ isAllCheck ? totalNum : 0 }}</strong
+          >)</a
         >
       </div>
     </div>
@@ -24,25 +27,32 @@
 
 <script>
 import Vue from "vue";
-import {mapGetters} from "vuex"
+import { mapGetters } from "vuex";
 import { Checkbox } from "vant";
 Vue.use(Checkbox);
 export default {
   data() {
     return {
-      checked: false,
-      isAllCheck : true
+      // isAllCheck : true
     };
   },
-  computed:{
+  computed: {
     ...mapGetters({
-        totalPrice: "cart/totalPrice",
-        totalNum : "cart/getTotalNum"
+      totalPrice: "cart/totalPrice",
+      totalNum: "cart/getTotalNum",
+      carts: "cart/getCarts",
     }),
+    isAllCheck : {
+      get(){
+        return this.$store.state.cart.carts.every(item => {
+          return item.checked;
+        })
+      },
+      set(checked){
+        this.$store.dispatch("cart/updateAllChecked", checked);
+      }
+    },
   },
-  mounted(){
-    console.log(this.totalNum)
-  }
 };
 </script>
 
@@ -70,12 +80,12 @@ export default {
       align-items center
       .total-price
         color #333
-        strong 
+        strong
           color #f20c59
           font-size 18px
           margin 0 8px 4px
       .button-box
-      
+
         a
           display block
           color #ffffff
@@ -92,5 +102,4 @@ export default {
         .nopay
           background: #d7d8d9;
           color #ffffff
-
 </style>

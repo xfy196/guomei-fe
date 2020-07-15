@@ -2,7 +2,7 @@ import _, { startCase } from "lodash"
 export default {
     state: () => {
         return {
-            carts: []
+            carts: [],
         }
     },
     mutations: {
@@ -20,12 +20,35 @@ export default {
                 state.carts.push(good);
             }
         },
-        updateCartNum(state, {num, id}){
+        updateCartNum(state, { num, id }) {
             // 先去找到id对应的商品
             let index = state.carts.findIndex(item => item.productId === id);
             let product = state.carts[index];
             product.totalNum = num;
             this._vm.$set(state.carts, index, product)
+        },
+        updateCheck(state, id) {
+            let index = state.carts.findIndex(item => item.productId === id);
+            let product = state.carts[index];
+            this._vm.$set(state.carts, index, product);
+        },
+        updateAllChecked(state, checked) {
+            state.carts.map(item => {
+                return item.checked = checked
+            })
+            state.carts = [
+                ...state.carts
+            ]
+        },
+        updateGroupAllChecked(state, name) {
+            state.carts.map(item => {
+                if (item.shopName === name) {
+                    item.checked = !item.checked;
+                }
+            });
+            state.carts = [
+                ...state.carts
+            ]
         }
     },
     actions: {
@@ -33,26 +56,55 @@ export default {
         addCart({ commit }, good) {
             commit("addCart", good);
         },
-        updateCartNum({commit}, {num, id}){
-            commit("updateCartNum", {num, id});
+        updateCartNum({ commit }, { num, id }) {
+            commit("updateCartNum", { num, id });
+        },
+        updateCheck({ commit }, id) {
+            commit("updateCheck", id);
+        },
+        updateAllChecked({ commit }, checked) {
+            commit("updateAllChecked", checked);
+        },
+        updateGroupAllChecked({ commit }, name) {
+            commit("updateGroupAllChecked", name)
         }
     },
     getters: {
         // 计算总价
         totalPrice(state) {
-            return state.carts.reduce((value, item) => {
-                return value + item.totalNum * parseFloat(item.price);
-            }, 0)
+            let totalPrice = 0;
+            state.carts.forEach(item => {
+                if (item.checked) {
+                    totalPrice += item.totalNum * parseFloat(item.price);
+                }
+            });
+            return totalPrice
         },
-        getCarts(state){
+        getCarts(state) {
             // 在这里进行对购物车数据的分组计算
-            return  _.groupBy(state.carts, "shopName");
+            let data = _.groupBy(state.carts, "shopName");
+            let allChecked = false
+            Object.keys(data).forEach(key => {
+                data[key].allChecked = data[key].every(item => {
+                    return item.checked;
+                })
+            })
+            return data
         },
-        getTotalNum(state){
-            return state.carts.reduce((value, item) => {
-                return value + item.totalNum;
-            }, 0) 
+        getTotalNum(state) {
+            let totalNum = 0;
+            state.carts.forEach(item => {
+                if (item.checked) {
+                    totalNum += item.totalNum;
+                }
+            })
+            return totalNum;
         },
+        getIsAllCheck(state) {
+            return state.carts.every(item => {
+                return item.checked
+            })
+        }
     },
     namespaced: true
 }

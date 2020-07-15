@@ -16,6 +16,11 @@ export default new Vuex.Store({
   actions: {
 
   },
+  getters: {
+    getNowCity(state){
+      return state.locationCity;
+    }
+  },
   modules: {
     cart,
     good
