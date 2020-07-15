@@ -34,25 +34,22 @@
             :key="index"
             :title="item"
           >
-            <van-list
-              v-model="loading"
-              :finished="finished"
-              finished-text="没有更多了"
-              @load="onLoad"
-              :immediate-check="false"
-            >
-              <div class="listContainer">
-                <div class="gui-waterfall-double-wrapper">
-                  <div class="gui-waterfall-container">
-                    <ShopItemCart
-                      v-for="item in list"
-                      :key="item.productId"
-                      :item="item"
-                    ></ShopItemCart>
-                  </div>
-                </div>
-              </div>
-            </van-list>
+            <div class="gui-waterfall-container">
+              <waterfall
+                :width="itemWidth"
+                :col="col"
+                :data="list"
+                :isTransition="true"
+                :gutterWidth="gutterWidth"
+              >
+                <component
+                  v-for="item in list"
+                  :key="item.c3id + String(Math.random())"
+                  :item="item"
+                  :is="componentLists[index]"
+                ></component>
+              </waterfall>
+            </div>
           </van-tab>
         </van-tabs>
       </div>
@@ -62,9 +59,11 @@
 
 <script>
 import Vue from "vue";
-import { Tabs, Tab, List } from "vant";
+import { Tabs, Tab, List} from "vant";
 import ShopItemCart from "@/common/shop-item-cart";
 import axios from "axios";
+import waterfall from "vue-waterfall2";
+Vue.use(waterfall);
 Vue.use(Tab);
 Vue.use(Tabs);
 Vue.use(List);
@@ -75,25 +74,38 @@ export default {
       list: [],
       loading: false,
       finished: false,
-      page: 0,
-      limit: 10,
+      col: 2,
+      componentLists: [
+        "ShopItemCart",
+        "ShopItemCart",
+        "ShopItemCart",
+        "ShopItemCart",
+      ],
     };
   },
-   created() {
-    let _start = this.page * 10;
-    this.page++;
-    let _limit = this.limit;
+  computed: {
+    // 用于计算瀑布流的图片宽度的
+    itemWidth() {
+      return 350 * 0.5 * (document.documentElement.clientWidth / 375);
+    },
+    // 计算瀑布流图片间距
+    gutterWidth() {
+      return 16 * 0.5 * (document.documentElement.clientWidth / 375);
+    },
+  },
+  created() {
+    // let _start = this.page * 10;
+    // this.page++;
+    // let _limit = this.limit;
     axios({
-      url: "http://localhost:9001/goodsList",
-      params: {
-        _start,
-        _limit,
-      },
+      url: "/api/kitchen"
     })
       .then((data) => {
-        if (data.status = 200 && data.statusText === "OK" && data.data.length > 0) {
-          this.list = data.data;
-          this.loading = true
+        if (
+          (data.status =
+            200 && data.statusText === "OK" && data.data.goodsList.length > 0)
+        ) {
+          this.list = data.data.goodsList;
         } else {
           return Promise.reject("网络开小差了");
         }
@@ -101,35 +113,12 @@ export default {
       .catch((error) => {
         console.log(error);
       });
-
   },
-  methods: {
-    onLoad() {
-      console.log("sdad")
-      let _start = this.page * 10;
-      this.page++;
-      let _limit = this.limit;
-      axios({
-        url: "http://localhost:9001/goodsList",
-        params: {
-          _start,
-          _limit
-        },
-      }).then((data) => {
-        if(data.status = 200 && data.statusText === "OK" && data.data.length>0){
-          this.loading = false
-          this.list = [
-            ...this.list,
-            ...data.data
-          ]
-        }else {
-          this.finished = true
-        }
-
-      }).catch(err => {
-        console.log(err)
-      })
-    },
+  methods:{
+    onLoad(){
+      console.log("dasd")
+      // this.loading = false
+    }
   },
   components: {
     ShopItemCart,
@@ -150,12 +139,12 @@ export default {
             min-height: 1.33333rem;
 
 .van-tabs__wrap
-    padding-right 0 !important
+    padding-right 0
     .van-tabs__line
         background-image: linear-gradient(90deg,#ff0a8d 10%,red);
     .van-tab--active
         font-weight bold
-        font-size : 16px
+        font-size : 15px
 .gui-waterfall-container
   margin-top: .13333rem;
   display: flex;
@@ -170,4 +159,6 @@ export default {
     line-height: .45333rem;
     margin-bottom: .13333rem;
     overflow: hidden;
+.vue-waterfall
+    margin-left 8px
 </style>

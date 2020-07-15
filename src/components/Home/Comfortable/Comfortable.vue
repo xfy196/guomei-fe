@@ -119,9 +119,11 @@ export default {
         margin 0px 10.1px
         height 130px
         width 355px
-        border-radius 5.12px
+        border-radius 10px
 
   .comfortable-header
+    border-top-left-radius 15px
+    border-top-right-radius 15px
     background #fff
     margin 0px 10.5px
     display flex
@@ -153,12 +155,18 @@ export default {
       display flex
       width 100%
       width 355px
-      
       flex-wrap wrap
       li
         width 50%
+        &:nth-of-type(5)
+          .contents-img
+            border-bottom-left-radius 15px
+        &:nth-of-type(6)
+          .contents-img
+            border-bottom-right-radius 15px
         .contents-img
           width 100%
+          
   .comfortable-video
     display flex
     justify-content center
@@ -169,6 +177,8 @@ export default {
       .video-img 
         width 355.2px
         height 196px
+        border-top-left-radius 15px
+        border-top-right-radius 15px
       .btn-play
         
         img 
@@ -178,7 +188,9 @@ export default {
           top 40%
           left 44%
     p
-      padding 12px 0 15px 12px
+      border-bottom-left-radius 15px
+      border-bottom-right-radius 15px
+      padding-left 8px
       font-size 15px  
       background #fff
       width 355.2px
@@ -191,6 +203,7 @@ export default {
       img 
         width 177.6px
         height 120.6px 
+        border-radius 15px
   .comfortable-tab 
     .tab-title
       display flex
@@ -213,4 +226,5 @@ export default {
     /deep/.comfortable-tabchild .van-tabs__wrap
       padding-right 0 
       margin 0 10px
+      border-radius 10px
 </style>

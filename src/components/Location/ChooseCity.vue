@@ -3,6 +3,7 @@
     <van-search
       v-model="value"
       show-action
+      shape="round"
       placeholder="请您输入收货地址"
       @search="onSearch"
     >
@@ -12,7 +13,7 @@
       <template #left-icon>
         <div class="location-city" @click="goChooseCity">
           <van-icon name="location-o" />
-          <span>北京市</span>
+          <span>{{ locationCity }}市</span>
         </div>
       </template>
     </van-search>
@@ -46,7 +47,12 @@ export default {
       console.log('搜索功能')
     },
     goChooseCity(){
-      this.$router.push('/selectCity')
+      this.$router.push('/selectCity');
+    }
+  },
+  computed: {
+    locationCity() {
+      return this.$store.state.locationCity;
     }
   },
 }

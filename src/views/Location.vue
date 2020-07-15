@@ -18,7 +18,7 @@ export default {
     TopBar,
     ChooseCity,
     AddressList
-  }
+  },
 }
 </script>
 
