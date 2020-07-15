@@ -78,7 +78,7 @@ export default {
                     totalPrice += item.totalNum * parseFloat(item.price);
                 }
             });
-            return totalPrice
+            return totalPrice.toFixed(2);
         },
         getCarts(state) {
             // 在这里进行对购物车数据的分组计算
