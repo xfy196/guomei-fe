@@ -90,14 +90,14 @@ export default {
           display block
           color #ffffff
           width: 100px;
-          height: 50px;
-          line-height: 50px;
+          height: 1.333333rem;
+          line-height: 1.333333rem;
           font-size: .32rem;
           border-radius: 0;
           padding: 0;
-          font-size 18px
+          font-size 16px
           background: linear-gradient(90deg,#fa1e8c,#fc1e56);
-          min-width 1.8rem
+          min-width 2.8rem
           text-align center
         .nopay
           background: #d7d8d9;
