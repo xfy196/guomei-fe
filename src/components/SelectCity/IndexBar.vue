@@ -37,6 +37,7 @@ export default {
   },
   methods: {
     selectCity(value) {
+      window.localStorage.setItem('locationCity', value);
       this.$store.commit('changeCity', value);
       this.$router.push('/location');
     }

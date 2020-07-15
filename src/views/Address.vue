@@ -3,10 +3,7 @@
     <!-- 顶部导航栏 -->
     <TopBar></TopBar>
     <!-- 地址列表 -->
-    <div class="no-address">
-      <img src="../assets/noMessage.png" alt="">
-      <p>您还没有收货地址</p>
-    </div>
+    <AddressList></AddressList>
     <!-- 底部新增地址 -->
     <footer class="add-address" @click="goAddNewAddress">新增地址</footer>
   </div>
@@ -14,9 +11,12 @@
 
 <script>
 import TopBar from '@/Address/TopBar'
+import AddressList from '@/Address/AddressList'
+ 
 export default {
   components: {
-    TopBar
+    TopBar,
+    AddressList
   },
   methods: {
     goAddNewAddress(){

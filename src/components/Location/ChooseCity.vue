@@ -47,7 +47,7 @@ export default {
       console.log('搜索功能')
     },
     goChooseCity(){
-      this.$router.push('/selectCity')
+      this.$router.push('/selectCity');
     }
   },
   computed: {

@@ -1,12 +1,16 @@
 <template>
   <div>
-    我的
+    <MineTop></MineTop>
   </div>
 </template>
 
 <script>
-export default {
+import MineTop from '@/Mine/MineTop'
 
+export default {
+  components : {
+    MineTop
+  }
 }
 </script>
 

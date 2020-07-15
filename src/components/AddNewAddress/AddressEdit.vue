@@ -6,7 +6,6 @@
       columns-placeholder="['请选择', '请选择', '请选择']"
       :area-columns-placeholder="['请选择', '请选择', '请选择']"
       @save="onSave"
-      @delete="onDelete"
     />
   </div>
 </template>
@@ -26,11 +25,8 @@ export default {
   },
   methods: {
     onSave(value) {
-      console.log('保存地址');
-      console.log(value);
-    },
-    onDelete() {
-      console.log('删除地址');
+      window.localStorage.setItem('address', JSON.stringify(value));
+      this.$router.push('/address');
     },
   },
   created() {
