@@ -35,7 +35,8 @@
         >
       </div>
       <p class="price-cart">
-        <span class="price"><small>¥</small> <big>{{item.price}}</big> <span></span></span>
+        <span class="price" v-if="item.price"><small>¥</small> <big>{{item.price}}</big> <span></span></span>
+        <span class="price" v-else><span>暂无价格</span></span>
         <span class="cart" @click="addCart(item)"></span>
       </p>
       <p v-if="item.markingPrice" class="price-original">{{item.markingPriceDesc}}</p>
