@@ -15,8 +15,8 @@
   </nav>
   <!-- 图片轮播 -->
   <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
+    <swiper class="swiper-wrapper" ref="mySwiper" :options="swiperOptions">
+      <swiper class="swiper-slide">
         <div class="warrp">
           <div class="mycontent">
               <van-swipe @change="onChange">
@@ -153,12 +153,12 @@
                   </van-swipe>
               </div>
           </div>
+        </div>
+      </swiper>
 
-      <div class="swiper-slide">slider2</div>
-      <div class="swiper-slide">slider3</div>
-    </div>
-      </div>
-  </div>
+      <swiper class="swiper-slide">slider2</swiper>
+      <swiper class="swiper-slide">slider3</swiper>
+    </swiper>
 
 <van-goods-action>
     <van-goods-action-icon icon="chat-o" text="客服" dot />
@@ -207,12 +207,15 @@ export default {
       },
       
       ],
-      mySwiper : null,
     }
   },
+  computed: {
+      swiper() {
+        return this.$refs.mySwiper.$swiper
+      }
+    },
     mounted(){
-      this.mySwiper = new Swiper('.swiper-container',{
-        })
+        this.swiper.slideTo(3, 1000, false)
     },
   methods:{
     onChange(index) {
@@ -266,18 +269,14 @@ nav
       font-size 30px
 .swiper-container
   width 100%
-  height 9629px
+  height 6866px
   position absolute
   top 45px
-  .swiper-wrapper
-    overflow scroll
-    position absolute
-    top 45
-    height 9629px
+  overflow scroll
 .van-goods-action
   z-index 9999
 .warrp
-  height 7163px
+  height 9866px
   background-color white
   .mycontent
     width 300px
@@ -309,7 +308,7 @@ nav
   .content
     display flex
     flex-direction column
-    height 91
+    height 91px
     box-sizing border-box
     padding 10px 8px 12px 10px
     .title

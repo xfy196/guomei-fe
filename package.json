@@ -5,12 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-<<<<<<< HEAD
-    "mock": "json-server ./mock/mock.js -r ./mock/routes.json -p 9000 -w",
-    "CupboardList": "json-server ./mock/kitchen.json -p 9001"
-=======
     "mock": "json-server ./mock/mock.js -r ./mock/routes.json -p 9000 -w"
->>>>>>> master
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",

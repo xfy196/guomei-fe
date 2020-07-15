@@ -22,6 +22,7 @@
 
 <script>
 import Vue from 'vue'
+import waterfall from 'vue-waterfall2'
 export default {
     props:["url"],
     data () {

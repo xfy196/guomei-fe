@@ -171,11 +171,8 @@
       <header>
         <img src="http://gfs6.gomein.net.cn/wireless/T1UF_4B7WT1RCvBVdK_1125_150.png" alt="">
       </header>
+      <CartList :items="newlist"></CartList>
     </div>
-    <router-link :to="{name:'FoodList'}">
-       <button>点击跳转</button>
-    </router-link>
-   
   </div>
 </template>
 
@@ -185,7 +182,9 @@ import { Swipe, SwipeItem, Lazyload, Grid, GridItem,SwipeCell, Tab, Tabs  } from
 import MyTabs from "@/Home/PhoneShop/common/tabs";
 import MytoTabs from "@/Home/PhoneShop/common/brand";
 import axios from 'axios'
-import BScroll from 'better-scroll'
+import waterfall from 'vue-waterfall2'
+import CartList from "@/Home/PhoneShop/common/cartlist";
+Vue.use(waterfall)
 Vue.use(SwipeCell);   
 Vue.use(Swipe);
 Vue.use(SwipeItem);
@@ -200,6 +199,7 @@ export default {
     return {
       coming:[],
       mores:[],
+      newlist:[],
       activeName: 'a',
       images: [
         "http://gfs7.gomein.net.cn/wireless/T1w7D5Bvxv1RCvBVdK_1069_390.png",
@@ -261,15 +261,18 @@ export default {
   },
   components: {
     MyTabs,
-    MytoTabs
+    MytoTabs,
+    CartList
   },
  async mounted(){
    await axios({
             url:'http://localhost:9000/telephone'
         })
         .then((data)=>{
+            this.newlist=data.data.goodsList
             this.coming=data.data.goodsList.slice(0,3);
             this.mores=data.data.goodsList.slice(0,10);
+            console.log(this.newlist )
         })
   },
 };
@@ -279,7 +282,6 @@ export default {
 <style lang="stylus" scoped>
 .part 
   margin: 0 10px;
-  height 4176px
 .focusPhoto 
   width: 100%;
   height: 142px;
@@ -441,7 +443,7 @@ export default {
       font-size 14px
       color #5a6066
 .allBuy
-  height 300px
+  overflow scroll
   margin-top 10px 
   header
     height 50px

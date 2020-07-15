@@ -11,12 +11,9 @@ import Location from 'views/Location.vue'
 import Address from 'views/Address.vue'
 import AddNewAddress from 'views/AddNewAddress.vue'
 import SelectCity from 'views/SelectCity.vue'
-<<<<<<< HEAD
 import FoodList from 'views/FoodList.vue'
-=======
 import Search from 'views/Search.vue'
 
->>>>>>> master
 Vue.use(VueRouter)
 
   const routes = [
@@ -50,15 +47,9 @@ Vue.use(VueRouter)
     component: Mine
   },
   {
-<<<<<<< HEAD
     path: '/FoodList',
     name: 'FoodList',
-    component: FoodList
-=======
-    path: '/list',
-    name: 'list',
-    component: List
->>>>>>> master
+    component: FoodList,
   },
   {
     path : "/categories",
