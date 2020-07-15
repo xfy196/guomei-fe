@@ -10,7 +10,6 @@ export default new Vuex.Store({
   mutations: {
     changeCity(state, city) {
       state.locationCity = city;
-      console.log(state.locationCity);
     }
   },
   actions: {

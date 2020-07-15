@@ -15,6 +15,11 @@ export default {
     HomeTop,
     HomeNav,
     HomeTabBar,
+  },
+  created(){
+    let city = window.localStorage.getItem('locationCity');
+    city = city || "北京";
+    this.$store.commit('changeCity', city);
   }
 };
 </script>

@@ -42,7 +42,6 @@ export default {
     })
     .then((res) => {
       this.guideList = res.data.dataInfo;
-      console.log(this.guideList)
     })
   },
 }
@@ -78,7 +77,8 @@ export default {
             font-size 17px
             font-weight 600
             line-height 1
-            text-indent 10px
+            width 60px
+            text-align center
             margin-bottom 5px
           h3 
             font-size 12px
