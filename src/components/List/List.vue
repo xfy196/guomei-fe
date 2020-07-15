@@ -1,6 +1,7 @@
 <template>
   <div class="tel_box">
     <div class="good_container">
+      <SearchTop></SearchTop>
       <div class="good_list">
         <van-dropdown-menu active-color="red">
           <van-dropdown-item v-model="value1" :options="option1" />
@@ -25,7 +26,7 @@
               <span class="gd_img">
                 <img :src="item.productImgURL" alt />
               </span>
-              <div class="gd_img2">
+              <div class="gd_img2 border-bottom" >
                 <h3 class="title">
                   <em class="pic_l"></em>
                   {{item.goodsName}}
@@ -56,7 +57,9 @@
                   <em class="showadds">该商品多家店铺在售</em>
                   <i class="showadds2">查看</i>
                 </a>
+                
               </div>
+              
             </div>
           </van-list>
         </van-pull-refresh>
@@ -69,6 +72,7 @@
 import Vue from "vue";
 import axios from "axios";
 import { DropdownMenu, DropdownItem, Sticky, Lazyload, List } from "vant";
+import SearchTop from "@/common/SearchTop"
 import { Tab, Tabs } from "vant";
 Vue.use(Tab);
 Vue.use(Tabs);
@@ -81,6 +85,9 @@ Vue.use(Lazyload, {
   lazyComponent: true
 });
 export default {
+  components: {
+    SearchTop
+  },
   data() {
     return {
       value1: 0,
@@ -170,8 +177,8 @@ export default {
   justify-content: center;
   -webkit-justify-content: center;
   width: 24%;
-  height: 0.52rem;
-  line-height: 0.52rem;
+  height: 25px;
+  line-height: 25px;
   text-align: center;
   background: #f3f5f7;
   color: #999;
@@ -179,7 +186,7 @@ export default {
   border-radius: 0.04rem;
   padding: 0 0.04rem;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .good_list {
@@ -195,13 +202,15 @@ export default {
 
 .good_item {
   width: 375px;
-  height: 187px;
+  height: 181px;
   background: #ffffff;
+ 
+  padding-top 8px
 }
 
 .gd_img {
   float: left;
-  margin-top: 5px;
+  
   margin-right: 11px;
   background-color: #fff;
   width: 125px;
@@ -221,8 +230,9 @@ export default {
 
 .gd_img2 {
   float: left;
-  width: 239px;
-  height: 195px;
+  width: 234px;
+  height: 100%;
+  padding-right 5px
 }
 
 .good_list .title {
@@ -232,18 +242,19 @@ export default {
   word-break: break-all;
   white-space: normal;
   word-wrap: break-word;
-  margin: 1px 1px 0 0;
-  margin-right: 4px !important;
+  margin: 0px 1px 0 0;
+
   vertical-align: -0.2px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  font-weight bolder
 }
 
 .troud {
-  margin-top: 11px;
+  margin-top: 5px;
   white-space: nowrap;
   overflow: hidden;
   width: 225px;
@@ -296,10 +307,11 @@ export default {
 }
 
 .fenqi {
-  width: 47px;
+  width: 50px;
   display: block;
   font-size: 11px;
   line-height: 11px;
+  text-align center
   color: #7A7F85;
   box-sizing: border-box;
   margin-right: 3px;
@@ -317,7 +329,7 @@ export default {
   font-size: 1px;
   display: block;
   color: #929292;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .adds {
@@ -326,7 +338,7 @@ export default {
   color: #929292;
   height: 16px;
   display: block;
-  margin-top: 5px;
+  
 }
 
 .check {
@@ -352,5 +364,8 @@ export default {
   background-size: 8px 8px;
   font-size: 1px;
   height: 13px;
+}
+.borderbottom::before{
+  
 }
 </style>
