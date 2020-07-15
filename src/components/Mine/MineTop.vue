@@ -199,6 +199,8 @@ export default {
       a
         font-size 12px
         color #999  
-        padding-right 10px
+        padding-right 15px
+        background url(http://app.gomein.net.cn/plus/images/ucenter/jiantou.png?v=2017092001) no-repeat center right 
+        background-size 13px 13px
     
 </style>
