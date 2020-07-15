@@ -48,7 +48,9 @@
                 <div class="price">
                   <div class="pricenum">￥{{item.price}}</div>
                 </div>
-                <span class="fenqi">易卡分期</span>
+               <div class="cnt">
+                  <span class="fenqi">易卡分期</span>
+               </div>
 
                 <a href class="z_dis">{{item.skuNo}}人评论</a>
                 <span class="adds">北京国美公主坟店</span>
@@ -86,7 +88,7 @@ Vue.use(Lazyload, {
 });
 export default {
   components: {
-    SearchTop
+  SearchTop
   },
   data() {
     return {
@@ -302,41 +304,43 @@ export default {
 
 .price {
   margin-right: 2px;
-  font-size: 18px;
+  padding-top .373333rem
+  font-size: .426667rem
   color: #F20C59;
 }
 
+.cnt {
+  height .586667rem
+}
 .fenqi {
-  width: 50px;
-  display: block;
-  font-size: 11px;
-  line-height: 11px;
-  text-align center
+  vertical-align top
+  display: inline-block;
+  font-size: .533333rem
+  transform scale(.5)
+  transform-origin left center
+  line-height: .32rem;
   color: #7A7F85;
   box-sizing: border-box;
   margin-right: 3px;
-  padding: 1px 1px 0 1px;
+  padding: .16rem .053333rem
   border: 1px solid #F20C59;
-  border-radius: 1px;
-  font-size: 9px;
+  border-radius: 2px;
   color: #F20C59;
-  vertical-align: 1.5px;
   overflow: hidden;
 }
 
 .z_dis {
-  padding-bottom: 3px;
+  
   font-size: 1px;
   display: block;
   color: #929292;
-  margin-top: 4px;
+  
 }
 
 .adds {
   font-family: PingFangSC-Regular, sans-serif;
   font-size: 1px;
   color: #929292;
-  height: 16px;
   display: block;
   
 }
