@@ -22,8 +22,10 @@ export default {
         },
         updateCartNum(state, {num, id}){
             // 先去找到id对应的商品
-            let product = state.carts.find(item => item.productId === id);
+            let index = state.carts.findIndex(item => item.productId === id);
+            let product = state.carts[index];
             product.totalNum = num;
+            this._vm.$set(state.carts, index, product)
         }
     },
     actions: {
