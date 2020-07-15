@@ -170,8 +170,8 @@ export default {
   justify-content: center;
   -webkit-justify-content: center;
   width: 24%;
-  height: 0.52rem;
-  line-height: 0.52rem;
+  height: 25px;
+  line-height: 25px;
   text-align: center;
   background: #f3f5f7;
   color: #999;
@@ -179,7 +179,7 @@ export default {
   border-radius: 0.04rem;
   padding: 0 0.04rem;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .good_list {
@@ -240,6 +240,7 @@ export default {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  font-weight bolder
 }
 
 .troud {
@@ -296,10 +297,11 @@ export default {
 }
 
 .fenqi {
-  width: 47px;
+  width: 50px;
   display: block;
   font-size: 11px;
   line-height: 11px;
+  text-align center
   color: #7A7F85;
   box-sizing: border-box;
   margin-right: 3px;
@@ -326,7 +328,7 @@ export default {
   color: #929292;
   height: 16px;
   display: block;
-  margin-top: 5px;
+  
 }
 
 .check {
