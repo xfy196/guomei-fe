@@ -57,16 +57,10 @@
     <!-- 路由导航 -->
     <div>
       <van-tabs>
-        <van-tab v-for="index in items" :title="index" :key="index">
-            <waterfall
-             :col='2'   
-             :data="lists"
-              >
-              <!-- <div class="goods_list" > -->
-             <shop v-for="(item,index)  in lists" :item="item" :key= "index"  >
+        <van-tab v-for="index in items" :title= "index" :key= "index" width= "50%" >
+            <waterfall :data= "lists"  col = "2"  :gutterWidth= "gutterWidths" :width="itemWidth" >
+             <shop v-for="(item,index)  in lists" :item="item" :key= "index" class="goods_list">
             </shop>
-              <!-- </div> -->
-              
           </waterfall>
         </van-tab>
       </van-tabs>
@@ -134,6 +128,7 @@ import Shop from "@/common/shop-item-cart.vue"
 import axios from 'axios'
 import { Lazyload } from "vant";
 
+
 Vue.use(Lazyload, {
   lazyComponent: true
 });
@@ -165,6 +160,7 @@ export default {
       items: ["服务精选", "清洗服务", "维修服务", "保洁服务", "家居保养"]
     };
   },
+  
   components: { Navs, Shop },
   methods: {
     
@@ -181,8 +177,17 @@ export default {
         ]
         console.log(this.lists)
       })
-  }
+  },
+   computed:{
+	      itemWidth(){  
+	            return (350*0.5*(document.documentElement.clientWidth/375))  
+	      },
+	      gutterWidths(){
+	            return (16*0.5*(document.documentElement.clientWidth/370))
+	      }
+   }
 };
+
 </script>
 
 <style lang="stylus" scoped>
@@ -287,9 +292,19 @@ export default {
     }
   }
   
-// .goods_list{
-//   width 175px
-//   margin-top 10px
-// }
+.goods_list{
+ background-color:#fff;
+ margin-top:1px;
+     width: 4.66667rem;
+    color: #262c32;
+    background-color: #fff;
+    border-radius: .21333rem;
+    font-size: .34667rem;
+    line-height: .45333rem;
+    margin-bottom: .13333rem;
+    overflow: hidden;
+
+}
+
 </style>
   
