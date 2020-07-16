@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "mock": "json-server ./mock/mock.js -r ./mock/routes.json -p 9000 -w",
-    "telphoneList": "json-server ./mock/telephone.json -p 9001"
+    "telphoneList": "json-server ./mock/telephone.json -p 9001",
+    "kitchenList": "json-server ./mock/telephone.json -p 9002"
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",

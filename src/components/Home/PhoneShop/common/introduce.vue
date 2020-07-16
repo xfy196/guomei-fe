@@ -1,8 +1,8 @@
 <template>
   <div>
-      <van-tabs v-model="active">
-  <van-tab v-for="index in 2" :key="index">
-    <template #title> <van-icon name="more-o" />选项 </template>
+      <van-tabs >
+  <van-tab v-for="(item,index) in list" :key="index">
+    <template #title>{{item.url}} </template>
     内容 {{ index }}
   </van-tab>
 </van-tabs>
@@ -16,10 +16,7 @@ export default {
             list:[
                 {url:"商品介绍"},
                 {url:"规格参数"},
-                {url:""},
-                {url:""},
-                {url:""},
-                {url:""}
+                {url:"包装售后"},
             ]
         }
     }

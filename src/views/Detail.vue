@@ -60,23 +60,22 @@
               <div class="number">
                   <label for="">数量</label>
                   <div class="coutent_box">
-                      <i>-</i>
-                      <input type="text" value="1">
-                      <i>+</i>
+                      <van-stepper v-model="number" theme="round" button-size="22" disable-input max="10"/>
                   </div>
               </div>
           </div>
 
           <!-- 地址 -->
           <div class="adress">
-              <div class="send">
+              <van-cell class="send" is-link @click="showPopup" close-on-popstate >
                   <label for="">送至</label>
                   <div class="jiedao">
                       <van-icon name="location-o" />
                       <p>朝阳街道<span>,免运费</span></p>
                   </div>
                   <van-icon name="arrow" class="right" />
-              </div>
+                  <van-popup v-model="show" position="right" :style="{ height: '100%',width:'50%'}" />
+              </van-cell>
               <div class="service">
                   <ul>
                       <li>
@@ -155,7 +154,7 @@
 <script>
 import Vue from 'vue';
 import {Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
-import { NavBar,Icon,Tab,Tabs,Sticky, GoodsAction, GoodsActionIcon, GoodsActionButton} from 'vant';
+import { NavBar,Icon,Tab,Tabs,Sticky, GoodsAction, GoodsActionIcon, GoodsActionButton,Stepper,Popup  } from 'vant';
 import "swiper/swiper-bundle.css"
 import Lillter from "@/Home/PhoneShop/common/litterlist"
 import Introduce from "@/Home/PhoneShop/common/introduce"
@@ -179,9 +178,12 @@ export default {
   },
   data () {
     return {
-      number:2,
+      newlist:[],
+      show: false,
+      number:1,
       selectIndex:0,
       current: 0,
+      id:this.$route.query,
       list:[
         {
         shor:"商品",show:true,id:'1'
@@ -201,10 +203,25 @@ export default {
         return this.$refs.mySwiper.$swiper
       }
     },
-    mounted(){
-        this.swiper.slideTo(0, 1000, false)
-    },
+  async  mounted(){
+      this.swiper.slideTo(0, 1000, false)
+       await axios({
+            url:'http://localhost:9000/kitchen'
+        })
+         .then((data)=>{
+            let datas = data.data.goodsList
+            this.newlist = datas.find(datas=>{
+              return datas.productId === this.id
+            })
+         })
+  },
   methods:{
+      showPop(){
+           this.show=false;
+      },
+     showPopup() {
+      this.show = true;
+    },
     onChange(index) {
       this.current = index;
     },
@@ -332,10 +349,10 @@ nav
         font-size 13px
     .price_box
       height 32px
-      margin-top 10px
       .price
         height 32px
         color #f20c59
+        padding 10px 0 0 0
         font-weight 600
         span 
           font-size 17px
@@ -348,6 +365,8 @@ nav
     height 65px
     box-sizing  border-box
     padding 0 10px
+    display flex
+    align-items center
     .number
       display flex
       align-items center
