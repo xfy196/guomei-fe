@@ -1,35 +1,46 @@
 <template>
   <div class="tel_box">
+   
     <div class="good_container">
-      <SearchTop></SearchTop>
+       <SearchTop></SearchTop>
+    <van-dropdown-menu active-color="red">
+      <van-dropdown-item v-model="value1" :options="option1" />
+      <van-dropdown-item v-model="value2" :options="option2" />
+      <van-dropdown-item v-model="value3" :options="option3" />
+      <van-dropdown-item v-model="value4" :options="option4" />
+     
+    </van-dropdown-menu>
+       <van-sticky>
+        <div class="phnav">
+          <ul>
+            <li class="phnav_1">国美经营</li>
+            <li class="phnav_2">团购商品</li>
+            <li class="phnav_3">屏幕尺寸</li>
+            <li class="phnav_4">机身内存</li>
+          </ul>
+        </div>
+      </van-sticky>
       <div class="good_list">
-        <van-dropdown-menu active-color="red">
-          <van-dropdown-item v-model="value1" :options="option1" />
-          <van-dropdown-item v-model="value2" :options="option2" />
-          <van-dropdown-item v-model="value3" :options="option3" />
-          <van-dropdown-item v-model="value4" :options="option4" />
-        </van-dropdown-menu>
-        <van-sticky>
-          <div class="phnav">
-            <ul>
-              <li class="phnav_1">国美经营</li>
-              <li class="phnav_2">团购商品</li>
-              <li class="phnav_3">屏幕尺寸</li>
-              <li class="phnav_4">机身内存</li>
-            </ul>
-          </div>
-        </van-sticky>
         <van-pull-refresh v-model="refreshing" @refresh="onRefresh">
-          <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="onLoad">
+          <van-list
+            v-model="loading"
+            :finished="finished"
+            finished-text="没有更多了"
+            @load="onLoad"
+          >
             <!-- 商品 -->
-            <div class="good_item" v-for="item in list" :key="item.productId + '' +Math.random()">
+            <div
+              class="good_item"
+              v-for="item in list"
+              :key="item.productId + '' + Math.random()"
+            >
               <span class="gd_img">
                 <img :src="item.productImgURL" alt />
               </span>
-              <div class="gd_img2 border-bottom" >
+              <div class="gd_img2 border-bottom">
                 <h3 class="title">
                   <em class="pic_l"></em>
-                  {{item.goodsName}}
+                  {{ item.goodsName }}
                 </h3>
                 <div class="troud">
                   <p class="flex_bd">
@@ -46,20 +57,19 @@
                   </p>
                 </div>
                 <div class="price">
-                  <div class="pricenum">￥{{item.price}}</div>
+                  <div class="pricenum">￥{{ item.price }}</div>
                 </div>
-                <span class="fenqi">易卡分期</span>
+                <div class="cnt">
+                  <span class="fenqi">易卡分期</span>
+                </div>
 
                 <a href class="z_dis">{{item.skuNo}}人评论</a>
                 <span class="adds">北京国美公主坟店</span>
-
                 <a href class="check">
                   <em class="showadds">该商品多家店铺在售</em>
                   <i class="showadds2">查看</i>
                 </a>
-                
               </div>
-              
             </div>
           </van-list>
         </van-pull-refresh>
@@ -72,7 +82,7 @@
 import Vue from "vue";
 import axios from "axios";
 import { DropdownMenu, DropdownItem, Sticky, Lazyload, List } from "vant";
-import SearchTop from "@/common/SearchTop"
+import SearchTop from "@/common/SearchTop";
 import { Tab, Tabs } from "vant";
 Vue.use(Tab);
 Vue.use(Tabs);
@@ -82,7 +92,7 @@ Vue.use(Sticky);
 Vue.use(Lazyload);
 Vue.use(List);
 Vue.use(Lazyload, {
-  lazyComponent: true
+  lazyComponent: true,
 });
 export default {
   components: {
@@ -97,12 +107,12 @@ export default {
       option1: [
         { text: "综合", value: 0 },
         { text: "评论从高到低", value: 1 },
-        { text: "评论从低到高", value: 2 }
+        { text: "评论从低到高", value: 2 },
       ],
       option2: [
         { text: "价格", value: "a" },
         { text: "价格从高到低", value: "b" },
-        { text: "价格从低到高", value: "c" }
+        { text: "价格从低到高", value: "c" },
       ],
       option3: [{ text: "销量", value: "3" }],
       option4: [{ text: "筛选", value: "4" }],
@@ -111,50 +121,51 @@ export default {
       list: [],
       loading: false,
       finished: false,
-      refreshing: false
+      refreshing: false,
     };
   },
   created() {
     axios({
       url: "/api/telephone"
     }).then(result => {
-      this.list = result.data.goodsList.slice(1,10)
-       
+      this.list = result.data.goodsList.slice(1, 10);
     });
   },
   methods: {
     onLoad() {
+      console.log(this.loading);
       setTimeout(() => {
         if (this.refreshing) {
           this.refreshing = false;
         }
         for (let i = 0; i <= 10; i += 10) {
           this.list.push(...this.list.slice(1, 11));
-          console.log(this.list);
+
         }
         this.loading = false;
-        if (this.list.length >= 100) {
+        if (this.list.length >= 50) {
           this.finished = true;
         }
       }, 1000);
-     
-    
     },
     onRefresh() {
       this.finished = false;
-      for (let i = 0; i < 10; i+=10) {
+      for (let i = 0; i < 10; i += 10) {
         this.list.unshift(...this.list.slice(1, 11));
       }
       this.loading = true;
       this.onLoad();
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="stylus">
 .tel_box {
   height: 100%;
+  display flex
+  flex-direction column
+  flex 1
 }
 
 .phnav {
@@ -191,26 +202,27 @@ export default {
 
 .good_list {
   width: 375px;
-  overflow: scroll;
   height: 100%;
 }
 
 .good_container {
   overflow: hidden;
   height: 100%;
+   overflow: scroll;
+   display flex
+   flex-direction column
 }
 
 .good_item {
   width: 375px;
   height: 181px;
   background: #ffffff;
- 
-  padding-top 8px
+  display: flex;
+  flex-direction: row;
+  padding-top: 8px;
 }
 
 .gd_img {
-  float: left;
-  
   margin-right: 11px;
   background-color: #fff;
   width: 125px;
@@ -222,17 +234,11 @@ export default {
   height: 100%;
 }
 
-.pic_l {
-  margin-right: 2px !important;
-  vertical-align: -1px;
-  width: 11px;
-}
-
 .gd_img2 {
-  float: left;
+  display: flex;
   width: 234px;
-  height: 100%;
-  padding-right 5px
+  padding-right: 5px;
+  flex-direction: column;
 }
 
 .good_list .title {
@@ -243,32 +249,27 @@ export default {
   white-space: normal;
   word-wrap: break-word;
   margin: 0px 1px 0 0;
-
   vertical-align: -0.2px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-weight bolder
+  font-weight: bolder;
 }
 
 .troud {
-  margin-top: 5px;
+  margin-top: 3px;
   white-space: nowrap;
   overflow: hidden;
   width: 225px;
-  height: 27px;
 }
 
 .troud p {
-  position: relative;
   display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0 5px;
   text-align: center;
   overflow: hidden;
-  width: auto;
   line-height: 1;
   width: 73px;
   height: 27px;
@@ -302,43 +303,43 @@ export default {
 
 .price {
   margin-right: 2px;
-  font-size: 18px;
+  padding-top: 0.373333rem;
+  font-size: 0.426667rem;
   color: #F20C59;
 }
 
+.cnt {
+  height: 0.586667rem;
+}
+
 .fenqi {
-  width: 50px;
-  display: block;
-  font-size: 11px;
-  line-height: 11px;
-  text-align center
+  vertical-align: top;
+  display: inline-block;
+  font-size: 0.533333rem;
+  transform: scale(0.5);
+  transform-origin: left center;
+  line-height: 0.32rem;
   color: #7A7F85;
   box-sizing: border-box;
   margin-right: 3px;
-  padding: 1px 1px 0 1px;
+  padding: 0.16rem 0.053333rem;
   border: 1px solid #F20C59;
-  border-radius: 1px;
-  font-size: 9px;
+  border-radius: 2px;
   color: #F20C59;
-  vertical-align: 1.5px;
   overflow: hidden;
 }
 
 .z_dis {
-  padding-bottom: 3px;
   font-size: 1px;
   display: block;
   color: #929292;
-  margin-top: 4px;
 }
 
 .adds {
   font-family: PingFangSC-Regular, sans-serif;
   font-size: 1px;
   color: #929292;
-  height: 16px;
   display: block;
-  
 }
 
 .check {
@@ -365,7 +366,7 @@ export default {
   font-size: 1px;
   height: 13px;
 }
-.borderbottom::before{
-  
+
+.borderbottom::before {
 }
 </style>

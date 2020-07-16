@@ -2,6 +2,7 @@ const comfortable = require('./comfortable.json')
 const kitchen = require('./kitchen.json')
 const life = require('./life.json')
 const telephone = require('./telephone.json')
+const food = require('./food.json')
 const shoppingGuide = require('./shoppingGuide.json')
 const recommend = require('./recommend.json')
 const area = require('./area.json')
@@ -14,6 +15,7 @@ module.exports = function() {
     kitchen,
     life,
     telephone,
+    food,
     shoppingGuide,
     recommend,
     area,

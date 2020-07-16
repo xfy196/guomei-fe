@@ -16,8 +16,8 @@
         <!---->
       </div>
       <div class="button-box">
-        <a :class="!isAllCheck ? 'nopay' : ''" class="btn default red go-pay"
-          >去结算(<strong>{{ isAllCheck ? totalNum : 0 }}</strong
+        <a :class="!isAllCheck && totalNum ===0  ? 'nopay' : ''" class="btn default red go-pay"
+          >去结算(<strong>{{ !isAllCheck && totalNum === 0 ? 0 : totalNum }}</strong
           >)</a
         >
       </div>
@@ -33,7 +33,6 @@ Vue.use(Checkbox);
 export default {
   data() {
     return {
-      // isAllCheck : true
     };
   },
   computed: {
@@ -42,15 +41,21 @@ export default {
       totalNum: "cart/getTotalNum",
       carts: "cart/getCarts",
     }),
-    isAllCheck : {
-      get(){
-        return this.$store.state.cart.carts.every(item => {
-          return item.checked;
-        })
+    modifyState: {
+      get() {
+        this.$parent.$children[0].$data;
       },
-      set(checked){
+      set() {},
+    },
+    isAllCheck: {
+      get() {
+        return this.$store.state.cart.carts.every((item) => {
+          return item.checked;
+        });
+      },
+      set(checked) {
         this.$store.dispatch("cart/updateAllChecked", checked);
-      }
+      },
     },
   },
 };
@@ -90,14 +95,14 @@ export default {
           display block
           color #ffffff
           width: 100px;
-          height: 50px;
-          line-height: 50px;
+          height: 1.333333rem;
+          line-height: 1.333333rem;
           font-size: .32rem;
           border-radius: 0;
           padding: 0;
-          font-size 18px
+          font-size 16px
           background: linear-gradient(90deg,#fa1e8c,#fc1e56);
-          min-width 1.8rem
+          min-width 2.8rem
           text-align center
         .nopay
           background: #d7d8d9;

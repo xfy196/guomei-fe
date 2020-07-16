@@ -1,6 +1,6 @@
 <template>
   <div class="teng">
-          <div class="goods-item" v-for="item in coming" :key="item.skuId">
+          <div class="goods-item" v-for="item in url" :key="item.skuId">
              <div class="wrap"><img :src=item.productImgURL alt=""></div>
             <div class="desc-prices">
                   <p class="desc">{{item.goodsName}}</p>
@@ -22,30 +22,18 @@
 
 <script>
 import Vue from 'vue'
-import axios from 'axios'
 export default {
+    props:["url"],
     data () {
         return {
-            coming:{}
         }
     },
-    mounted(){
-        axios({
-            url:'http://localhost:9000/telephone'
-        })
-        .then((data)=>{
-            this.coming=data.data.goodsList.slice(0,3);
-            console.log(this.coming);
-        })
-        
-    }
-
-
 }
 </script>
 
 <style lang="stylus" scoped>
 .teng
+ width 400px
  display flex
  .goods-item
   width 106px
@@ -60,6 +48,7 @@ export default {
     width 98px
     height 98px
   .desc-prices
+   line-height 1.5
    margin-top 8px 
    width 98px
    height 72px

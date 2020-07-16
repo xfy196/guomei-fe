@@ -20,6 +20,10 @@ module.exports = {
         target: 'http://localhost:9000',
         changeOrigin: true
       },
+      "/ajax/telphone": {
+        target: 'http://localhost:9001',
+        changeOrigin: true
+      }
     }
   }
 };

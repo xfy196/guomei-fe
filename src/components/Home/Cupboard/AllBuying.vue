@@ -44,7 +44,7 @@
               >
                 <component
                   v-for="item in list"
-                  :key="item.c3id + String(Math.random())"
+                  :key="item.prodcutId"
                   :item="item"
                   :is="componentLists[index]"
                 ></component>
@@ -116,12 +116,6 @@ export default {
       .catch((error) => {
         console.log(error);
       });
-  },
-  methods:{
-    onLoad(){
-      console.log("dasd")
-      // this.loading = false
-    }
   },
   components: {
     ShopItemCart,

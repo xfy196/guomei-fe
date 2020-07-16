@@ -23,22 +23,22 @@ export default {
     return {
       moreLists: [
         {
-          href: "",
+          href: "/",
           iconClass: "icon-1",
           name: "首页",
         },
         {
-          href: "",
+          href: "/categories",
           iconClass: "icon-2",
           name: "分类",
         },
         {
-          href: "",
+          href: "/cart",
           iconClass: "icon-3",
           name: "购物车",
         },
         {
-          href: "",
+          href: "/mine",
           iconClass: "icon-4",
           name: "我的",
         },

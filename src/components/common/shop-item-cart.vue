@@ -9,7 +9,7 @@
 <template>
   <!---->
   <section class="gui-waterfall-double-goods-item gui-waterfall-double-item">
-    <router-link :to="item.shopDetailUrl" tag="a" class="item-link"
+    <router-link :to="{path: '/detail', query: {id : item.productId}}" tag="a" class="item-link"
       ><div class="gome-bg goods-img">
         <img v-lazy="item.productImgURL" />
       </div>
