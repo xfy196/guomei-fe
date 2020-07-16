@@ -29,6 +29,9 @@ export default {
             list:[
                 {url:"http://gfs17.gomein.net.cn/T1bOY5B5bv1RCvBVdK_400.jpg"},
                 {url:"http://gfs17.gomein.net.cn/T1cmK5Bv_v1RCvBVdK_400.jpg"},
+                {url:"http://gfs17.gomein.net.cn/T1yUY5Bjhv1RCvBVdK_400.jpg"},
+                {url:"http://gfs17.gomein.net.cn/T1bOY5B5bv1RCvBVdK_400.jpg"},
+                {url:"http://gfs17.gomein.net.cn/T1cmK5Bv_v1RCvBVdK_400.jpg"},
                 {url:"http://gfs17.gomein.net.cn/T1yUY5Bjhv1RCvBVdK_400.jpg"}
             ]
         }

@@ -134,6 +134,7 @@
           <div class="guess_like">
             <Lillter></Lillter>
           </div>
+            <Introduce></Introduce>
         </div>
       </swiper>
       <swiper class="swiper-slide">slider2</swiper>
@@ -157,6 +158,7 @@ import {Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import { NavBar,Icon,Tab,Tabs,Sticky, GoodsAction, GoodsActionIcon, GoodsActionButton} from 'vant';
 import "swiper/swiper-bundle.css"
 import Lillter from "@/Home/PhoneShop/common/litterlist"
+import Introduce from "@/Home/PhoneShop/common/introduce"
 Vue.use(NavBar);
 Vue.use(Icon);
 Vue.use(Tab);
@@ -172,7 +174,8 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
-    Lillter
+    Lillter,
+    Introduce
   },
   data () {
     return {
@@ -490,7 +493,6 @@ nav
     .guang
       height 14px
       font-size 13px
-      padding 0 9px 0 0
       color #A8ACAF
 
 .van-goods-action
