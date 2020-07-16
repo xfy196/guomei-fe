@@ -209,7 +209,6 @@ export default {
     },
   async  mounted(){
       let {productId, shopId} = this.$route.query;
-      console.log(productId, shopId)
       this.swiper.slideTo(0, 1000, false)
        await axios({
             url:'http://localhost:8080/ajax/kitchen/goodsList',
@@ -218,7 +217,6 @@ export default {
             }
         })
          .then((data)=>{
-           console.log(data);
             this.newlist = data
             // let datas = data.data.goodsList
             // this.newlist = datas.find(datas=>{
