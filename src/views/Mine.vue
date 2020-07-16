@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="mine">
     <MineTop></MineTop>
   </div>
 </template>
@@ -15,5 +15,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+#mine
+  height 100%
 </style>
