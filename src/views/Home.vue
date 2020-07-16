@@ -3,6 +3,7 @@
       <HomeTop></HomeTop>
       <HomeNav></HomeNav>
       <GotoTop></GotoTop>
+      <CartBag></CartBag>
       <HomeTabBar></HomeTabBar>
     </div>
 </template>
@@ -12,12 +13,14 @@ import HomeTabBar from "@/Home/HomeTabBar";
 import HomeTop from "@/Home/HomeTop";
 import HomeNav from "@/Home/HomeNav"
 import GotoTop from "@/common/GotoTop"
+import CartBag from "@/common/CartBag"
 export default {
   components: {
     HomeTop,
     HomeNav,
     HomeTabBar,
-    GotoTop
+    GotoTop,
+    CartBag
   },
   created(){
     let city = window.localStorage.getItem('locationCity');
