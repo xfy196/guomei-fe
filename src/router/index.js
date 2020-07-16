@@ -12,6 +12,7 @@ import Address from 'views/Address.vue'
 import AddNewAddress from 'views/AddNewAddress.vue'
 import SelectCity from 'views/SelectCity.vue'
 import Search from 'views/Search.vue'
+import Login from '@/Login/login'
 
 Vue.use(VueRouter)
 
@@ -49,6 +50,11 @@ Vue.use(VueRouter)
     path: '/list',
     name: 'list',
     component: List
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
   },
   {
     path : "/categories",
