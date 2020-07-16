@@ -65,12 +65,11 @@ export default {
       this.$router.back();
     },
     login() {
-      console.log(this.username, this.password);
       if(this.username === 'admin' && this.password === 'admin'){
         window.localStorage.setItem('userInfo', JSON.stringify({
           username: this.username
         }));
-        this.$router.push('/home');
+        this.$router.back();
       }else{
         Toast('用户名或密码错误');
       }
