@@ -33,7 +33,6 @@ Vue.use(Checkbox);
 export default {
   data() {
     return {
-      // isAllCheck : true
     };
   },
   computed: {

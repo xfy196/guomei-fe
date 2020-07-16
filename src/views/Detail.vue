@@ -183,7 +183,7 @@ export default {
       number:1,
       selectIndex:0,
       current: 0,
-      id:this.$route.query,
+      id:this.$route.query.id,
       list:[
         {
         shor:"商品",show:true,id:'1'
