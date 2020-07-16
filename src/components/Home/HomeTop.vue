@@ -10,7 +10,7 @@
             <span class="searchText">国美10亿焕新计划</span>
         </div>
         <div class="login-btn">
-            <span class="login-text">登录</span>
+            <span class="login-text" @click="goLogin">登录</span>
         </div>
     </header>
 </template>
@@ -35,6 +35,9 @@ export default {
       },
       goSearch(){
         this.$router.push('/search')
+      },
+      goLogin() {
+        this.$router.push('/login')
       }
   },
   computed: {
