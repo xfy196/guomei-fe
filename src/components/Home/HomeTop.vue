@@ -11,7 +11,7 @@
         </div>
         <div class="login-btn">
             <span class="login-text" @click="goLogin" v-if="!isLogin">登录</span>
-            <van-icon name="friends-o" size="0.7rem" color="#ffffff" v-else/>
+            <van-icon name="friends-o" size="0.7rem" color="#ffffff" @click="goMine" v-else/>
         </div>
     </header>
 </template>
@@ -39,7 +39,10 @@ export default {
       },
       goLogin() {
         this.$router.push('/login')
-      }
+      },
+      goMine() {
+        this.$router.push('/mine')
+      },
   },
   computed: {
       locationCity() {

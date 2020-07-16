@@ -69,7 +69,7 @@ export default {
         window.localStorage.setItem('userInfo', JSON.stringify({
           username: this.username
         }));
-        this.$router.back();
+        this.$router.push('/home');
       }else{
         Toast('用户名或密码错误');
       }

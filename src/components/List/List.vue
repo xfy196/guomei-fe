@@ -125,7 +125,6 @@ export default {
         _limit: this.limit
       }
     }).then(result => {
-      console.log(result);
       this.list = [...result.data];
     });
   },

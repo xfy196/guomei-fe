@@ -110,7 +110,6 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  console.log(to.matched.some(res => res.meta.requireAuth));
   if(to.matched.some(res => res.meta.requireAuth)){
     if(window.localStorage.getItem('userInfo')){
       next()

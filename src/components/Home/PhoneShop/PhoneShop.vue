@@ -276,7 +276,6 @@ export default {
             this.newlist=data.data.goodsList
             this.coming=data.data.goodsList.slice(0,3);
             this.mores=data.data.goodsList.slice(0,10);
-            console.log(this.newlist )
         })
   },
 };

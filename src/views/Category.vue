@@ -92,7 +92,6 @@ export default {
     })
       .then((data) => {
         if ((data.status === 200 && data.statusText) === "OK") {
-          console.log(data);
           this.$set(this.catetories, this.active, data.data);
         }
       })
