@@ -154,6 +154,7 @@
 <script>
 import Vue from 'vue';
 import {Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
+import axios from "axios"
 import { NavBar,Icon,Tab,Tabs,Sticky, GoodsAction, GoodsActionIcon, GoodsActionButton,Stepper,Popup  } from 'vant';
 import "swiper/swiper-bundle.css"
 import Lillter from "@/Home/PhoneShop/common/litterlist"
@@ -183,7 +184,6 @@ export default {
       number:1,
       selectIndex:0,
       current: 0,
-      id:this.$route.query.id,
       list:[
         {
         shor:"商品",show:true,id:'1'
@@ -204,15 +204,22 @@ export default {
       }
     },
   async  mounted(){
+      let {id} = this.$route.query;
+      console.log(id)
       this.swiper.slideTo(0, 1000, false)
        await axios({
-            url:'http://localhost:9000/kitchen'
+            url:'http://localhost:8080/ajax/kitchen/goodsList',
+            params : {
+              productId: id
+            }
         })
          .then((data)=>{
-            let datas = data.data.goodsList
-            this.newlist = datas.find(datas=>{
-              return datas.productId === this.id
-            })
+           console.log(data);
+            this.newlist = data
+            // let datas = data.data.goodsList
+            // this.newlist = datas.find(datas=>{
+            //   return datas.productId === this.id
+            // })
          })
   },
   methods:{
