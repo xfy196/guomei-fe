@@ -3,7 +3,7 @@
   <!-- 头部未完成 -->
   <nav>
     <div class="toolbar">
-      <span class="moer_left"><van-icon name="arrow-left" /></span>
+      <span class="moer_left" @click="$router.go(-1)"><van-icon name="arrow-left" /></span>
       <ul>
         <li v-for="(item,index) in list" 
             :key="item.id" 
@@ -143,9 +143,9 @@
 </div>
         <van-goods-action>
             <van-goods-action-icon icon="chat-o" text="客服" dot />
-            <van-goods-action-icon icon="cart-o" text="购物车" :badge="number" />
+            <van-goods-action-icon icon="cart-o" text="购物车" :badge="totalNum" />
             <van-goods-action-icon icon="shop-o" text="店铺" dot />
-            <van-goods-action-button type="warning" text="加入购物车" />
+            <van-goods-action-button @click="handleAddCart(item)" type="warning" text="加入购物车" />
             <van-goods-action-button type="danger" text="立即购买" />
         </van-goods-action>
 </div>
@@ -159,6 +159,7 @@ import { NavBar,Icon,Tab,Tabs,Sticky, GoodsAction, GoodsActionIcon, GoodsActionB
 import "swiper/swiper-bundle.css"
 import Lillter from "@/Home/PhoneShop/common/litterlist"
 import Introduce from "@/Home/PhoneShop/common/introduce"
+import {mapGetters} from "vuex"
 Vue.use(NavBar);
 Vue.use(Icon);
 Vue.use(Tab);
@@ -201,7 +202,10 @@ export default {
   computed: {
       swiper() {
         return this.$refs.mySwiper.$swiper
-      }
+      },
+      ...mapGetters({
+        totalNum : "cart/getTotalNum"
+      })
     },
   async  mounted(){
       let {productId, shopId} = this.$route.query;
@@ -235,6 +239,9 @@ export default {
     handClick(index){
       this.selectIndex = index;
       this.swiper.slideTo(index);
+    },
+    handleAddCart(item){
+      this.$store.dispatch("addCart", item);
     }
   },
   
