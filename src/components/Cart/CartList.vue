@@ -176,8 +176,8 @@ export default {
   },
   computed: {
     ...mapGetters({
-      carts: "cart/getCarts"
-    }),
+      carts: "cart/getCarts",
+    })
   },
   methods:{
     hanldeNumChange(value, detail){

@@ -53,7 +53,7 @@ export default {
         deleteCar(state,id){
             let index = state.carts.findIndex(item => item.productId === id);
             state.carts.splice(index, 1);
-        }
+        },
     },
     actions: {
         // 这里我们需要将添加购物车的操作放入商品的store中需要在商品中找到这个数据然后把它添加到carts中去
@@ -74,7 +74,7 @@ export default {
         },
         deleteCar({commit}, id){
             commit("deleteCar", id);
-        }
+        },
     },
     getters: {
         // 计算总价
@@ -111,7 +111,7 @@ export default {
             return state.carts.every(item => {
                 return item.checked
             })
-        }
+        },
     },
     namespaced: true
 }

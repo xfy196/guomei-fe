@@ -16,8 +16,8 @@
         <!---->
       </div>
       <div class="button-box">
-        <a :class="!isAllCheck ? 'nopay' : ''" class="btn default red go-pay"
-          >去结算(<strong>{{ isAllCheck ? totalNum : 0 }}</strong
+        <a :class="!isAllCheck && totalNum ===0  ? 'nopay' : ''" class="btn default red go-pay"
+          >去结算(<strong>{{ !isAllCheck && totalNum === 0 ? 0 : totalNum }}</strong
           >)</a
         >
       </div>
@@ -42,15 +42,21 @@ export default {
       totalNum: "cart/getTotalNum",
       carts: "cart/getCarts",
     }),
-    isAllCheck : {
-      get(){
-        return this.$store.state.cart.carts.every(item => {
-          return item.checked;
-        })
+    modifyState: {
+      get() {
+        this.$parent.$children[0].$data;
       },
-      set(checked){
+      set() {},
+    },
+    isAllCheck: {
+      get() {
+        return this.$store.state.cart.carts.every((item) => {
+          return item.checked;
+        });
+      },
+      set(checked) {
         this.$store.dispatch("cart/updateAllChecked", checked);
-      }
+      },
     },
   },
 };
