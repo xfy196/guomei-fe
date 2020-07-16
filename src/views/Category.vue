@@ -46,7 +46,7 @@
                     v-for="v in d.goodsTypeList"
                     :key="v.goodsTypeId + String(Math.random())"
                   >
-                    <router-link tag="a" :data-id="v.goodsTypeId" :to="{path: '/list', query: {productId : v.goodsTypeId, shopId: v.shopId}}">
+                    <router-link tag="a" :data-id="v.goodsTypeId" :to="{path: '/list', query: {productId : v.goodsTypeId}}">
                       <img
                         class="loading-img default-bg-sm"
                         :src="v.goodsTypeImgUrl"
