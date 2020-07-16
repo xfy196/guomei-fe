@@ -32,7 +32,6 @@ export default {
   },
   created(){
     this.gridData = this.shop
-    console.log(this.shop)
   }
 }
 </script>

@@ -97,7 +97,6 @@ export default {
   },
   methods: {
     handleChange(index){
-      console.log(index);
     },
   },
   created(){

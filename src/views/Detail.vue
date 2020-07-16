@@ -3,7 +3,7 @@
   <!-- 头部未完成 -->
   <nav>
     <div class="toolbar">
-      <span class="moer_left"><van-icon name="arrow-left" /></span>
+      <span class="moer_left" @click="$router.go(-1)"><van-icon name="arrow-left" /></span>
       <ul>
         <li v-for="(item,index) in list" 
             :key="item.id" 
@@ -60,23 +60,22 @@
               <div class="number">
                   <label for="">数量</label>
                   <div class="coutent_box">
-                      <i>-</i>
-                      <input type="text" value="1">
-                      <i>+</i>
+                      <van-stepper v-model="number" theme="round" button-size="22" disable-input max="10"/>
                   </div>
               </div>
           </div>
 
           <!-- 地址 -->
           <div class="adress">
-              <div class="send">
+              <van-cell class="send" is-link @click="showPopup" close-on-popstate >
                   <label for="">送至</label>
                   <div class="jiedao">
                       <van-icon name="location-o" />
                       <p>朝阳街道<span>,免运费</span></p>
                   </div>
                   <van-icon name="arrow" class="right" />
-              </div>
+                  <van-popup v-model="show" position="right" :style="{ height: '100%',width:'50%'}" />
+              </van-cell>
               <div class="service">
                   <ul>
                       <li>
@@ -134,6 +133,7 @@
           <div class="guess_like">
             <Lillter></Lillter>
           </div>
+            <Introduce></Introduce>
         </div>
       </swiper>
       <swiper class="swiper-slide">slider2</swiper>
@@ -143,9 +143,9 @@
 </div>
         <van-goods-action>
             <van-goods-action-icon icon="chat-o" text="客服" dot />
-            <van-goods-action-icon icon="cart-o" text="购物车" :badge="number" />
+            <van-goods-action-icon icon="cart-o" text="购物车" :badge="totalNum" />
             <van-goods-action-icon icon="shop-o" text="店铺" dot />
-            <van-goods-action-button type="warning" text="加入购物车" />
+            <van-goods-action-button @click="handleAddCart(item)" type="warning" text="加入购物车" />
             <van-goods-action-button type="danger" text="立即购买" />
         </van-goods-action>
 </div>
@@ -154,9 +154,12 @@
 <script>
 import Vue from 'vue';
 import {Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
-import { NavBar,Icon,Tab,Tabs,Sticky, GoodsAction, GoodsActionIcon, GoodsActionButton} from 'vant';
+import axios from "axios"
+import { NavBar,Icon,Tab,Tabs,Sticky, GoodsAction, GoodsActionIcon, GoodsActionButton,Stepper,Popup  } from 'vant';
 import "swiper/swiper-bundle.css"
 import Lillter from "@/Home/PhoneShop/common/litterlist"
+import Introduce from "@/Home/PhoneShop/common/introduce"
+import {mapGetters} from "vuex"
 Vue.use(NavBar);
 Vue.use(Icon);
 Vue.use(Tab);
@@ -172,11 +175,14 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
-    Lillter
+    Lillter,
+    Introduce
   },
   data () {
     return {
-      number:2,
+      newlist:[],
+      show: false,
+      number:1,
       selectIndex:0,
       current: 0,
       list:[
@@ -196,18 +202,44 @@ export default {
   computed: {
       swiper() {
         return this.$refs.mySwiper.$swiper
-      }
+      },
+      ...mapGetters({
+        totalNum : "cart/getTotalNum"
+      })
     },
-    mounted(){
-        this.swiper.slideTo(0, 1000, false)
-    },
+  async  mounted(){
+      let {productId, shopId} = this.$route.query;
+      this.swiper.slideTo(0, 1000, false)
+       await axios({
+            url:'http://localhost:8080/ajax/kitchen/goodsList',
+            params : {
+              productId: id
+            }
+        })
+         .then((data)=>{
+            this.newlist = data
+            // let datas = data.data.goodsList
+            // this.newlist = datas.find(datas=>{
+            //   return datas.productId === this.id
+            // })
+         })
+  },
   methods:{
+      showPop(){
+           this.show=false;
+      },
+     showPopup() {
+      this.show = true;
+    },
     onChange(index) {
       this.current = index;
     },
     handClick(index){
       this.selectIndex = index;
       this.swiper.slideTo(index);
+    },
+    handleAddCart(item){
+      this.$store.dispatch("addCart", item);
     }
   },
   
@@ -329,10 +361,10 @@ nav
         font-size 13px
     .price_box
       height 32px
-      margin-top 10px
       .price
         height 32px
         color #f20c59
+        padding 10px 0 0 0
         font-weight 600
         span 
           font-size 17px
@@ -345,6 +377,8 @@ nav
     height 65px
     box-sizing  border-box
     padding 0 10px
+    display flex
+    align-items center
     .number
       display flex
       align-items center
@@ -490,7 +524,6 @@ nav
     .guang
       height 14px
       font-size 13px
-      padding 0 9px 0 0
       color #A8ACAF
 
 .van-goods-action
