@@ -16,6 +16,7 @@
     "postcss-pxtorem": "^5.1.1",
     "vant": "^2.9.0",
     "vue": "^2.6.11",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-router": "^3.2.0",
     "vue-waterfall2": "^1.9.6",
     "vuex": "^3.4.0",
@@ -27,9 +28,11 @@
     "@vue/cli-plugin-vuex": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
     "babel-plugin-import": "^1.13.0",
+    "better-scroll": "^1.15.2",
     "json-server": "^0.16.1",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
+    "swiper": "^6.0.2",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
