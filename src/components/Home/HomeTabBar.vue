@@ -92,7 +92,6 @@ export default {
 <style lang="stylus" scoped>
 footer
   height 50px
-  // position fixed
-  // bottom 0
-  // width 100%
+/deep/.van-info
+  background-color  #f20c59
 </style>
