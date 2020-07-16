@@ -19,12 +19,7 @@
             </p>
         </div>
       </div>
-      <a class="gift" href="#">
-        
-      </a>
-      <a href="#" class="message-btn">
-        <van-icon name="medal-o" />
-      </a>
+      <a class="gift" href="#"></a>
     </div>
     <MineShop :shop="shopStatus"></MineShop>
     <MineShop :shop="aboutMoney" class="about-money"></MineShop>
@@ -144,13 +139,14 @@ export default {
 
 <style lang="stylus" scoped>
 .mine-top
-  overflow scroll 
+  overflow-y scroll 
   height 100%
+  width 100%
   .mine-header
     position absolute
     top 0
     left 0
-    width 375px
+    width 100%
     height 44px
     .van-nav-bar
       color #333
@@ -165,8 +161,8 @@ export default {
         .h-right
           margin-right 0px
   .user-show
+    width 100%
     margin-top 44px
-    width 375px
     height 122px
     background url(https://css.gomein.net.cn/plus/style/ucenter/css/userBg.47888ca02e.png) center no-repeat
     background-size 100%
@@ -190,22 +186,13 @@ export default {
           margin-left 20px
     .gift
       position absolute
-      top 4px
-      right 48px
+      top 6px
+      right 12px
       
       display inline-block
       width 35px
       height 28.5px
       background url(https://css.gomein.net.cn/plus/style/ucenter/css/gift.b5b6719101.gif) no-repeat
-      background-size contain
-    .message-btn
-      position absolute
-      display inline-block
-      top 7px
-      right 15px
-      width 20.5px
-      height 19px
-      
       background-size contain
       .van-icon 
         color #fff
