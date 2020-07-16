@@ -8,19 +8,28 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   plugins: [persistedState({storage: window.sessionStorage})],
   state: {
-    locationCity: '北京'
+    locationCity: '北京',
+    isGoTop : true
   },
   mutations: {
     changeCity(state, city) {
       state.locationCity = city;
+    },
+    modifyGoTop(state, payLoad){
+      state.isGoTop = payLoad;
     }
   },
   actions: {
-
+    modifyGoTop({commit}, payLoad){
+      commit("modifyGoTop", payLoad);
+    }
   },
   getters: {
     getNowCity(state){
       return state.locationCity;
+    },
+    getGoTop(state){
+      return state.isGoTop
     }
   },
   modules: {

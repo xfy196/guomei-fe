@@ -10,7 +10,7 @@
             </div>
           </div>
           <van-tab title-style="color:#fff;" v-for="(item, index) in navlist" :title="item" :key="index + Math.random()">
-            <div class="container">
+            <div @scroll="handleScroll" class="container">
               <component :is="navComponents[index]">
 
               </component>
@@ -57,12 +57,20 @@ export default {
   methods: {
       handleChange(index){
         this.activeIndex = index;
-        document.querySelector(".van-tabs__content").scrollTo({
+        document.querySelector(".container").scrollTo({
           top: 0,
         })
       },
       handleClick(){
         this.$router.push("/categories")
+      },
+      handleScroll(e){
+        if(e.target.scrollTop > 200){
+          this.$store.dispatch("modifyGoTop", true)
+        }else {
+          this.$store.dispatch("modifyGoTop", false)
+
+        }
       }
   },
   components : {
@@ -89,7 +97,7 @@ main
     flex-direction: column;
     /deep/.van-tabs__content
           height 100%
-          overflow scroll
+          overflow hidden
           flex 1
       /deep/.van-tabs__line
         background-image: linear-gradient(270deg,hsla(0,0%,100%,.51),#fff);
@@ -115,6 +123,7 @@ main
           width 18px
           height 18px
     .container
+      overflow scroll
       height 100%
 
 /deep/.van-tabs__content
