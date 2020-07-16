@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="container">
     <SearchTop></SearchTop>
     <div class="catetoryContainer">
       <van-sidebar
@@ -46,7 +46,7 @@
                     v-for="v in d.goodsTypeList"
                     :key="v.goodsTypeId + String(Math.random())"
                   >
-                    <router-link tag="a" :data-id="v.goodsTypeId" :to="{path: '/list', query: {id : v.goodsTypeId}}">
+                    <router-link tag="a" :data-id="v.goodsTypeId" :to="{path: '/list', query: {productId : v.goodsTypeId}}">
                       <img
                         class="loading-img default-bg-sm"
                         :src="v.goodsTypeImgUrl"
@@ -213,7 +213,7 @@ export default {
 </script>
 
 <style lang="stylus">
-.content
+.container
   height 100%
   display flex
   flex-direction column
@@ -291,4 +291,7 @@ export default {
     width: 100%;
     height: 86px;
     max-height: 86px
+.van-sidebar-item
+  &:before
+    height 100%
 </style>

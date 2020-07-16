@@ -14,7 +14,8 @@
         </a>
         <div class="login-reg">
             <p>
-                <a href="#" id="userReg">{{isLogin ? '显示用户名' : '登录/注册'}}</a>
+                <a href="javascript:void(0)" id="userReg" v-if="!isLogin" @click="goLogin">登录/注册</a>
+                <a href="javascript:void(0)" id="userReg" v-else>{{ username }}</a>
             </p>
         </div>
       </div>
@@ -61,7 +62,8 @@ Vue.use(GridItem);
 export default {
   data() {
     return {
-      isLogin: true,
+      isLogin: false,
+      username: '',
       shopStatus : 
         {
           shopDatas:[
@@ -116,18 +118,27 @@ export default {
         }
     }
   },
+  methods: {
+    onClickBack() {
+      this.$router.back()
+    },
+    goLogin() {
+      this.$router.push('/login');
+    }
+  },
   components : {
     MineShop,
     MineVip,
     SearchMenu,
     RecommendGoods
   },
-  methods: {
-    onClickBack() {
-      this.$router.back()
-    },
-    
-  },
+  created() {
+    let user = window.localStorage.getItem('userInfo')
+    if(user){
+      this.isLogin = true;
+      this.username = JSON.parse(user).username;
+    }
+  }
 }
 </script>
 
