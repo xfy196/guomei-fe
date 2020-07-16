@@ -1,24 +1,26 @@
 <template>
   <div class="tel_box">
+   
     <div class="good_container">
-      <SearchTop></SearchTop>
+       <SearchTop></SearchTop>
+    <van-dropdown-menu active-color="red">
+      <van-dropdown-item v-model="value1" :options="option1" />
+      <van-dropdown-item v-model="value2" :options="option2" />
+      <van-dropdown-item v-model="value3" :options="option3" />
+      <van-dropdown-item v-model="value4" :options="option4" />
+     
+    </van-dropdown-menu>
+       <van-sticky>
+        <div class="phnav">
+          <ul>
+            <li class="phnav_1">国美经营</li>
+            <li class="phnav_2">团购商品</li>
+            <li class="phnav_3">屏幕尺寸</li>
+            <li class="phnav_4">机身内存</li>
+          </ul>
+        </div>
+      </van-sticky>
       <div class="good_list">
-        <van-dropdown-menu active-color="red">
-          <van-dropdown-item v-model="value1" :options="option1" />
-          <van-dropdown-item v-model="value2" :options="option2" />
-          <van-dropdown-item v-model="value3" :options="option3" />
-          <van-dropdown-item v-model="value4" :options="option4" />
-        </van-dropdown-menu>
-        <van-sticky>
-          <div class="phnav">
-            <ul>
-              <li class="phnav_1">国美经营</li>
-              <li class="phnav_2">团购商品</li>
-              <li class="phnav_3">屏幕尺寸</li>
-              <li class="phnav_4">机身内存</li>
-            </ul>
-          </div>
-        </van-sticky>
         <van-pull-refresh v-model="refreshing" @refresh="onRefresh">
           <van-list
             v-model="loading"
@@ -35,7 +37,7 @@
               <span class="gd_img">
                 <img :src="item.productImgURL" alt />
               </span>
-              <div class="gd_img2 border-bottom" >
+              <div class="gd_img2 border-bottom">
                 <h3 class="title">
                   <em class="pic_l"></em>
                   {{ item.goodsName }}
@@ -58,17 +60,16 @@
                   <div class="pricenum">￥{{ item.price }}</div>
                 </div>
                 <div class="cnt">
-                  <span class="fenqi border">易卡分期</span>
+                  <span class="fenqi">易卡分期</span>
                 </div>
-                <a href class="z_dis">{{ item.skuNo }}人评论</a>
+
+                <a href class="z_dis">{{item.skuNo}}人评论</a>
                 <span class="adds">北京国美公主坟店</span>
                 <a href class="check">
                   <em class="showadds">该商品多家店铺在售</em>
                   <i class="showadds2">查看</i>
                 </a>
-                
               </div>
-              
             </div>
           </van-list>
         </van-pull-refresh>
@@ -81,7 +82,7 @@
 import Vue from "vue";
 import axios from "axios";
 import { DropdownMenu, DropdownItem, Sticky, Lazyload, List } from "vant";
-import SearchTop from "@/common/SearchTop"
+import SearchTop from "@/common/SearchTop";
 import { Tab, Tabs } from "vant";
 Vue.use(Tab);
 Vue.use(Tabs);
@@ -125,23 +126,24 @@ export default {
   },
   created() {
     axios({
-      url: "/api/telephone",
-    }).then((result) => {
+      url: "/api/telephone"
+    }).then(result => {
       this.list = result.data.goodsList.slice(1, 10);
     });
   },
   methods: {
     onLoad() {
+      console.log(this.loading);
       setTimeout(() => {
         if (this.refreshing) {
           this.refreshing = false;
         }
         for (let i = 0; i <= 10; i += 10) {
           this.list.push(...this.list.slice(1, 11));
-          console.log(this.list);
+
         }
         this.loading = false;
-        if (this.list.length >= 100) {
+        if (this.list.length >= 50) {
           this.finished = true;
         }
       }, 1000);
@@ -161,6 +163,9 @@ export default {
 <style lang="stylus">
 .tel_box {
   height: 100%;
+  display flex
+  flex-direction column
+  flex 1
 }
 
 .phnav {
@@ -197,26 +202,27 @@ export default {
 
 .good_list {
   width: 375px;
-  overflow: scroll;
   height: 100%;
 }
 
 .good_container {
   overflow: hidden;
   height: 100%;
+   overflow: scroll;
+   display flex
+   flex-direction column
 }
 
 .good_item {
   width: 375px;
   height: 181px;
   background: #ffffff;
- 
-  padding-top 8px
+  display: flex;
+  flex-direction: row;
+  padding-top: 8px;
 }
 
 .gd_img {
-  float: left;
-  
   margin-right: 11px;
   background-color: #fff;
   width: 125px;
@@ -228,17 +234,11 @@ export default {
   height: 100%;
 }
 
-.pic_l {
-  margin-right: 2px !important;
-  vertical-align: -1px;
-  width: 11px;
-}
-
 .gd_img2 {
-  float: left;
+  display: flex;
   width: 234px;
-  height: 100%;
-  padding-right 5px
+  padding-right: 5px;
+  flex-direction: column;
 }
 
 .good_list .title {
@@ -249,32 +249,27 @@ export default {
   white-space: normal;
   word-wrap: break-word;
   margin: 0px 1px 0 0;
-
   vertical-align: -0.2px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-weight bolder
+  font-weight: bolder;
 }
 
 .troud {
-  margin-top: 5px;
+  margin-top: 3px;
   white-space: nowrap;
   overflow: hidden;
   width: 225px;
-  height: 27px;
 }
 
 .troud p {
-  position: relative;
   display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0 5px;
   text-align: center;
   overflow: hidden;
-  width: auto;
   line-height: 1;
   width: 73px;
   height: 27px;
@@ -308,25 +303,26 @@ export default {
 
 .price {
   margin-right: 2px;
-  padding-top .373333rem
-  font-size: .426667rem
+  padding-top: 0.373333rem;
+  font-size: 0.426667rem;
   color: #F20C59;
 }
 
 .cnt {
-  height .586667rem
+  height: 0.586667rem;
 }
+
 .fenqi {
-  vertical-align top
+  vertical-align: top;
   display: inline-block;
-  font-size: .533333rem
-  transform scale(.5)
-  transform-origin left center
-  line-height: .32rem;
+  font-size: 0.533333rem;
+  transform: scale(0.5);
+  transform-origin: left center;
+  line-height: 0.32rem;
   color: #7A7F85;
   box-sizing: border-box;
   margin-right: 3px;
-  padding: .16rem .053333rem
+  padding: 0.16rem 0.053333rem;
   border: 1px solid #F20C59;
   border-radius: 2px;
   color: #F20C59;
@@ -343,7 +339,6 @@ export default {
   font-family: PingFangSC-Regular, sans-serif;
   font-size: 1px;
   color: #929292;
-  height: 16px;
   display: block;
 }
 
@@ -370,5 +365,8 @@ export default {
   background-size: 8px 8px;
   font-size: 1px;
   height: 13px;
+}
+
+.borderbottom::before {
 }
 </style>

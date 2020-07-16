@@ -13,10 +13,11 @@ import AddNewAddress from 'views/AddNewAddress.vue'
 import SelectCity from 'views/SelectCity.vue'
 import Detail from 'views/Detail.vue'
 import Search from 'views/Search.vue'
+import Login from 'views/Login.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     redirect: '/home',
@@ -47,6 +48,11 @@ Vue.use(VueRouter)
     component: Mine
   },
   {
+    path: '/login',
+    name: 'login',
+    component: Login
+  },
+  {
     path : "/categories",
     name : "categories",
     component : Category
@@ -57,14 +63,14 @@ Vue.use(VueRouter)
     component : List
   },
   {
-    path : "/location",
-    name : "location",
-    component : Location
-  },
-  {
     path: '/detail',
     name: 'detail',
     component: Detail,
+  },
+  {
+    path : "/location",
+    name : "location",
+    component : Location
   },
   {
     path : "/address",
