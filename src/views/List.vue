@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="listContainer">
     <List></List>
   </div>
 </template>
@@ -15,5 +15,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+.listContainer
+  height 100%
 </style>
