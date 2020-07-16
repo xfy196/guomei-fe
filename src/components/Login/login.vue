@@ -11,7 +11,7 @@
              <div class="count-login">
                  <div class="user">
                 <div class="phnumber">
-                    <input type="text" name="" id="" placeholder="请输入手机号"  >
+                    <input type="text" name="" id="" placeholder="请输入手机号">
                     <span class="botline"></span>
                 </div>
                 </div>
