@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="login">
     <Login></Login>
   </div>
 </template>
@@ -15,5 +15,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+#login
+  height 100%
 </style>
