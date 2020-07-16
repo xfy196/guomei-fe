@@ -19,16 +19,25 @@
           </div>
         </van-sticky>
         <van-pull-refresh v-model="refreshing" @refresh="onRefresh">
-          <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="onLoad">
+          <van-list
+            v-model="loading"
+            :finished="finished"
+            finished-text="没有更多了"
+            @load="onLoad"
+          >
             <!-- 商品 -->
-            <div class="good_item" v-for="item in list" :key="item.productId + '' +Math.random()">
+            <div
+              class="good_item"
+              v-for="item in list"
+              :key="item.productId + '' + Math.random()"
+            >
               <span class="gd_img">
                 <img :src="item.productImgURL" alt />
               </span>
               <div class="gd_img2">
                 <h3 class="title">
                   <em class="pic_l"></em>
-                  {{item.goodsName}}
+                  {{ item.goodsName }}
                 </h3>
                 <div class="troud">
                   <p class="flex_bd">
@@ -45,13 +54,13 @@
                   </p>
                 </div>
                 <div class="price">
-                  <div class="pricenum">￥{{item.price}}</div>
+                  <div class="pricenum">￥{{ item.price }}</div>
                 </div>
-                <span class="fenqi">易卡分期</span>
-
-                <a href class="z_dis">{{item.skuNo}}人评论</a>
+                <div class="cnt">
+                  <span class="fenqi border">易卡分期</span>
+                </div>
+                <a href class="z_dis">{{ item.skuNo }}人评论</a>
                 <span class="adds">北京国美公主坟店</span>
-
                 <a href class="check">
                   <em class="showadds">该商品多家店铺在售</em>
                   <i class="showadds2">查看</i>
@@ -78,7 +87,7 @@ Vue.use(Sticky);
 Vue.use(Lazyload);
 Vue.use(List);
 Vue.use(Lazyload, {
-  lazyComponent: true
+  lazyComponent: true,
 });
 export default {
   data() {
@@ -90,12 +99,12 @@ export default {
       option1: [
         { text: "综合", value: 0 },
         { text: "评论从高到低", value: 1 },
-        { text: "评论从低到高", value: 2 }
+        { text: "评论从低到高", value: 2 },
       ],
       option2: [
         { text: "价格", value: "a" },
         { text: "价格从高到低", value: "b" },
-        { text: "价格从低到高", value: "c" }
+        { text: "价格从低到高", value: "c" },
       ],
       option3: [{ text: "销量", value: "3" }],
       option4: [{ text: "筛选", value: "4" }],
@@ -104,15 +113,14 @@ export default {
       list: [],
       loading: false,
       finished: false,
-      refreshing: false
+      refreshing: false,
     };
   },
   created() {
     axios({
-      url: "/api/telephone"
-    }).then(result => {
-      this.list = result.data.goodsList.slice(1,10)
-       
+      url: "/api/telephone",
+    }).then((result) => {
+      this.list = result.data.goodsList.slice(1, 10);
     });
   },
   methods: {
@@ -130,18 +138,16 @@ export default {
           this.finished = true;
         }
       }, 1000);
-     
-    
     },
     onRefresh() {
       this.finished = false;
-      for (let i = 0; i < 10; i+=10) {
+      for (let i = 0; i < 10; i += 10) {
         this.list.unshift(...this.list.slice(1, 11));
       }
       this.loading = true;
       this.onLoad();
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -291,33 +297,35 @@ export default {
 
 .price {
   margin-right: 2px;
-  font-size: 18px;
+  padding-top .373333rem
+  font-size: .426667rem
   color: #F20C59;
 }
 
+.cnt {
+  height .586667rem
+}
 .fenqi {
-  width: 47px;
-  display: block;
-  font-size: 11px;
-  line-height: 11px;
+  vertical-align top
+  display: inline-block;
+  font-size: .533333rem
+  transform scale(.5)
+  transform-origin left center
+  line-height: .32rem;
   color: #7A7F85;
   box-sizing: border-box;
   margin-right: 3px;
-  padding: 1px 1px 0 1px;
+  padding: .16rem .053333rem
   border: 1px solid #F20C59;
-  border-radius: 1px;
-  font-size: 9px;
+  border-radius: 2px;
   color: #F20C59;
-  vertical-align: 1.5px;
   overflow: hidden;
 }
 
 .z_dis {
-  padding-bottom: 3px;
   font-size: 1px;
   display: block;
   color: #929292;
-  margin-top: 8px;
 }
 
 .adds {
@@ -326,7 +334,6 @@ export default {
   color: #929292;
   height: 16px;
   display: block;
-  margin-top: 5px;
 }
 
 .check {

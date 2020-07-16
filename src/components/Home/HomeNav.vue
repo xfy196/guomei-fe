@@ -9,7 +9,7 @@
 
             </div>
           </div>
-          <van-tab title-style="color:#fff;" v-for="(item, index) in navlist" :title="item" :key="index">
+          <van-tab title-style="color:#fff;" v-for="(item, index) in navlist" :title="item" :key="index + Math.random()">
             <div class="container">
               <component :is="navComponents[index]">
 
@@ -53,12 +53,13 @@ export default {
   },
   mounted(){
     document.querySelector(".van-tabs__wrap").style.paddingRight="1.6rem";
-    
   },
   methods: {
       handleChange(index){
-        console.log(index)
-        this.activeIndex = index
+        this.activeIndex = index;
+        document.querySelector(".van-tabs__content").scrollTo({
+          top: 0,
+        })
       },
       handleClick(){
         this.$router.push("/categories")
