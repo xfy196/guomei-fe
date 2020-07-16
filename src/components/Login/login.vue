@@ -8,15 +8,16 @@
     </div>
     <!-- 登录表单 -->
     <form action="javascript:void(0)" class="login-form">
-      <input type="text" name="username" id="username" placeholder="请输入手机号">
-      <input type="text" name="password" id="password" placeholder="请输入密码">
+      <input type="text" name="username" id="username" placeholder="请输入手机号" class="inputContent" autocomplete="off">
+      <input type="text" name="password" id="password" placeholder="请输入密码" class="inputContent" autocomplete="off">
       <div class="agreement">
-        <van-checkbox v-model="checked" shape="square">复选框</van-checkbox>
+        <input type="checkbox" name="" id="check-box">
         <span>未注册手机验证后自动注册,我已阅读并同意</span>
         <a href="javascript:void(0)">《国美平台服务协议》</a>
         <a href="javascript:void(0)">《国美平台隐私政策》</a>
         <a href="javascript:void(0)">《美付宝服务协议》</a>
       </div>
+      <div class="submit">登录</div>
     </form>
     <!-- 登录选择项 -->
     <div class="options">
@@ -62,14 +63,16 @@ export default {
 
 <style lang="stylus" scoped>
 #login-page
+  position relative
   height 100%
   background-color #ffffff
-  padding 0 30px
+  padding 3px 30px 0
   .back-btn
     position absolute
     top 10px
     left  10px
   .logo
+    margin-bottom 20px
     text-align center
     img 
       width 220px
@@ -77,6 +80,58 @@ export default {
   .login-form
     display flex
     flex-direction column
-    input 
+    .inputContent 
+      margin-top 4px
       border none
+      border-bottom 0.5px solid #EBECED
+      height 42px
+      padding 10px 0
+      font-size 16px
+      &::-webkit-input-placeholder
+        color #CACCCF
+    .agreement
+      margin-top 18px
+      font-size 12px
+      color #919599
+      #check-box
+        width 10px
+        height 10px
+        margin-right 4px     
+      a
+        color #78bee9
+    .submit
+      height 44px
+      margin-top 12px
+      color #fff
+      background -webkit-linear-gradient(left,#FF94CB 0,#FF80AA 100%)
+      border-radius 44px
+      text-align center
+      line-height 44px
+      font-size 16px
+
+  .options 
+    display flex
+    justify-content space-between
+    margin-top 10px
+    p   
+      font-size 14px
+      color #5A6066
+      line-height 40px
+  .login-type
+    width calc(100% - 60px)
+    position absolute
+    bottom 0
+    padding-bottom 30px
+    p 
+      text-align center
+      font-size 12px
+      color #b3b8bd
+      margin-bottom 10px
+    ul
+      display flex
+      justify-content space-around
+      li
+        img 
+          width 36px
+          height 36px
 </style>
