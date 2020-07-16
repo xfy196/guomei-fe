@@ -66,7 +66,7 @@
             <div class="operate">
               <ul>
                 <li>移入收藏</li>
-                <li>删除</li>
+                <li @click="deleteCar(good.productId)">删除</li>
               </ul>
             </div>
           </div>
@@ -94,7 +94,7 @@
 
 <script>
 import Vue from "vue";
-import { Checkbox, CheckboxGroup, Stepper, Divider } from "vant";
+import { Checkbox, CheckboxGroup, Stepper, Divider,Toast } from "vant";
 import { mapGetters, mapState } from "vuex";
 Vue.use(Checkbox);
 Vue.use(CheckboxGroup);
@@ -190,6 +190,16 @@ export default {
     },
     handleAllChecked(name){
       this.$store.dispatch("cart/updateGroupAllChecked", name);
+    },
+    deleteCar(id){
+      // 拿到id之后向store中dispatch
+      this.$store.dispatch("cart/deleteCar", id).then(() => {
+        Toast({
+          message : "删除成功",
+          duration : 1000,
+          forbidClick: false
+        })
+      })
     }
   }
 };

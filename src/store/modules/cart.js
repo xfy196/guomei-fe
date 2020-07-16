@@ -49,6 +49,10 @@ export default {
             state.carts = [
                 ...state.carts
             ]
+        },
+        deleteCar(state,id){
+            let index = state.carts.findIndex(item => item.productId === id);
+            state.carts.splice(index, 1);
         }
     },
     actions: {
@@ -67,6 +71,9 @@ export default {
         },
         updateGroupAllChecked({ commit }, name) {
             commit("updateGroupAllChecked", name)
+        },
+        deleteCar({commit}, id){
+            commit("deleteCar", id);
         }
     },
     getters: {
