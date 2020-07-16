@@ -16,7 +16,7 @@
           >
             <component
               v-for="item in goodsList"
-              :key="item.productId + Math.random()"
+              :key="item.productId"
               :item="item"
               :is="componentLists[index]"
             ></component>
