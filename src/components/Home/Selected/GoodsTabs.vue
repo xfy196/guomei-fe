@@ -15,8 +15,8 @@
             :gutterWidth="gutterWidth"
           >
             <component
-              v-for="item in goodsList"
-              :key="item.productId + Math.random()"
+              v-for="(item,key) in goodsList"
+              :key="item.productId + key"
               :item="item"
               :is="componentLists[index]"
             ></component>
@@ -88,7 +88,7 @@ export default {
   computed: {
     // 瀑布流宽度
     itemWidth() {
-      return 350 * 0.5 * (document.documentElement.clientWidth / 375);
+      return 351 * 0.5 * (document.documentElement.clientWidth / 375);
     },
     // 瀑布流间距
     gutterWidth() {
