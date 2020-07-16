@@ -171,7 +171,7 @@ export default {
 .phnav {
   padding: 3px 5px;
   border-bottom: 1px solid #f3f5f7;
-  margin-bottom: 0.2rem;
+  margin-bottom:1px;
   background: #ffffff;
   overflow: hidden;
 }
@@ -193,9 +193,9 @@ export default {
   text-align: center;
   background: #f3f5f7;
   color: #999;
-  margin: 0.2rem 1% 0.2rem 0;
-  border-radius: 0.04rem;
-  padding: 0 0.04rem;
+ 
+  border-radius: 1px;
+ 
   box-sizing: border-box;
   font-size: 12px;
 }
@@ -303,26 +303,26 @@ export default {
 
 .price {
   margin-right: 2px;
-  padding-top: 0.373333rem;
-  font-size: 0.426667rem;
+  padding-top: 8px;
+  font-size: 16px;
   color: #F20C59;
 }
 
 .cnt {
-  height: 0.586667rem;
+  height: 18px;
 }
 
 .fenqi {
   vertical-align: top;
   display: inline-block;
-  font-size: 0.533333rem;
+  font-size: 18px;
   transform: scale(0.5);
   transform-origin: left center;
-  line-height: 0.32rem;
+  line-height: 10px;
   color: #7A7F85;
   box-sizing: border-box;
   margin-right: 3px;
-  padding: 0.16rem 0.053333rem;
+  padding: 4px 6px;
   border: 1px solid #F20C59;
   border-radius: 2px;
   color: #F20C59;
