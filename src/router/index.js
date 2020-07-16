@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Shop from '../views/Shop.vue'
-import Message from '../views/Message.vue'
-import Cart from '../views/Cart.vue'
-import Mine from '../views/Mine.vue'
-import List from '@/List/List'
+import Home from 'views/Home.vue'
+import Shop from 'views/Shop.vue'
+import Message from 'views/Message.vue'
+import Cart from 'views/Cart.vue'
+import Mine from 'views/Mine.vue'
+import List from 'views/List.vue'
 import Category from 'views/Category.vue'
 import Location from 'views/Location.vue'
 import Address from 'views/Address.vue'
@@ -47,19 +47,24 @@ Vue.use(VueRouter)
     component: Mine
   },
   {
-    path: '/detail',
-    name: 'detail',
-    component: Detail,
-  },
-  {
     path : "/categories",
     name : "categories",
     component : Category
   },
   {
+    path : "/list",
+    name : "list",
+    component : List
+  },
+  {
     path : "/location",
     name : "location",
     component : Location
+  },
+  {
+    path: '/detail',
+    name: 'detail',
+    component: Detail,
   },
   {
     path : "/address",
@@ -84,7 +89,7 @@ Vue.use(VueRouter)
 ]
 
 const router = new VueRouter({
-  mode: 'hash',
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
