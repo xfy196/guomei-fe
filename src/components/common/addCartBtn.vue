@@ -18,7 +18,8 @@ export default {
           //如果执行到这一步就说明添加购物车成功，加入提示信息
           Toast({
             message: "加入购物车成功",
-            forbidClick: true,
+            forbidClick: false,
+            duration: 1500
           });
         })
         .catch(() => {

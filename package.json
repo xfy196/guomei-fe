@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "mock": "json-server ./mock/mock.js -r ./mock/routes.json -p 9000 -w"
+    "mock": "json-server ./mock/mock.js -r ./mock/routes.json -p 9000 -w",
+    "telphoneList": "json-server ./mock/telephone.json -p 9001"
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",
@@ -32,7 +33,7 @@
     "json-server": "^0.16.1",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
-    "swiper": "^6.0.2",
+    "swiper": "^6.0.4",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
