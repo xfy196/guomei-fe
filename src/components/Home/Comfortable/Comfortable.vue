@@ -2,55 +2,77 @@
   <div class="comfortable">
     <van-swipe class="my-swipe" :autoplay="2000" indicator-color="white">
       <van-swipe-item class="van-swipe-item" v-for="(item,index) in swiperImages" :key="index">
-        <img :src="item" class="img-item">
+        <img :src="item" class="img-item" />
       </van-swipe-item>
     </van-swipe>
     <div class="comfortable-header">
       <p class="p-header">智能舒适家</p>
       <a href="#" class="a-header">
         <span class="span-header">查看更多</span>
-        <van-icon name="arrow" size="15" color="#333" class="icon-header"/>
+        <van-icon name="arrow" size="15" color="#333" class="icon-header" />
       </a>
     </div>
     <div class="comfortable-contents">
       <ul class="contents-list">
         <li>
-          <img src="http://gfs5.gomein.net.cn/wireless/T1kgJ4BgJv1RCvBVdK_533_354.png" alt="" class="contents-img">
+          <img
+            src="http://gfs5.gomein.net.cn/wireless/T1kgJ4BgJv1RCvBVdK_533_354.png"
+            alt
+            class="contents-img"
+          />
         </li>
         <li>
-          <img src="http://gfs8.gomein.net.cn/wireless/T11nE4BsWv1RCvBVdK_533_354.png" alt="" class="contents-img">
+          <img
+            src="http://gfs8.gomein.net.cn/wireless/T11nE4BsWv1RCvBVdK_533_354.png"
+            alt
+            class="contents-img"
+          />
         </li>
         <li>
-          <img src="http://gfs7.gomein.net.cn/wireless/T1Cnh4B7hv1RCvBVdK_533_354.png" alt="" class="contents-img">
+          <img
+            src="http://gfs7.gomein.net.cn/wireless/T1Cnh4B7hv1RCvBVdK_533_354.png"
+            alt
+            class="contents-img"
+          />
         </li>
         <li>
-          <img src="http://gfs7.gomein.net.cn/wireless/T1X9V4BThT1RCvBVdK_533_354.png" alt="" class="contents-img">
+          <img
+            src="http://gfs7.gomein.net.cn/wireless/T1X9V4BThT1RCvBVdK_533_354.png"
+            alt
+            class="contents-img"
+          />
         </li>
         <li>
-          <img src="http://gfs7.gomein.net.cn/wireless/T1WnD4B4Vv1RCvBVdK_533_372.png" alt="" class="contents-img">
+          <img
+            src="http://gfs7.gomein.net.cn/wireless/T1WnD4B4Vv1RCvBVdK_533_372.png"
+            alt
+            class="contents-img"
+          />
         </li>
         <li>
-          <img src="http://gfs9.gomein.net.cn/wireless/T1EMb4BmbT1RCvBVdK_533_372.png" alt="" class="contents-img">
+          <img
+            src="http://gfs9.gomein.net.cn/wireless/T1EMb4BmbT1RCvBVdK_533_372.png"
+            alt
+            class="contents-img"
+          />
         </li>
       </ul>
     </div>
     <div class="comfortable-video">
       <div class="video-poster">
-        <img src="http://gfs10.gomein.net.cn/T1yJJmB4_T1RCvBVdK.jpg" alt="" class="video-img">
+        <img src="http://gfs10.gomein.net.cn/T1yJJmB4_T1RCvBVdK.jpg" alt class="video-img" />
         <a href="#" class="btn-play">
-          <img src="../../../assets/comfortable/autoplay.png" alt="">
+          <img src="../../../assets/comfortable/autoplay.png" alt />
         </a>
       </div>
-      <p>
-        舒适 健康 智能 环保
-      </p>
+      <p>舒适 健康 智能 环保</p>
     </div>
     <ul class="comfortable-class">
       <li>
-        <img src="http://gfs7.gomein.net.cn/wireless/T1b0hmBjJv1RCvBVdK_533_362.jpg" alt="">
+        <img src="http://gfs7.gomein.net.cn/wireless/T1b0hmBjJv1RCvBVdK_533_362.jpg" alt />
       </li>
       <li>
-        <img src="http://gfs7.gomein.net.cn/wireless/T1b0YmBmCv1RCvBVdK_533_362.jpg" alt="">
+        <img src="http://gfs7.gomein.net.cn/wireless/T1b0YmBmCv1RCvBVdK_533_362.jpg" alt />
       </li>
     </ul>
     <div class="comfortable-tab">
@@ -60,10 +82,16 @@
       </div>
       <van-tabs v-model="active" class="comfortable-tabchild">
         <van-tab v-for="(item,index) in tabList" :key="item" :title="item">
-          <component :is="comfortablelist[index]"></component>
+          <waterfall :col="col" :width="itemWidth" :gutterWidth="gutterWidth" :data="goodsList">
+            <component 
+              v-for="(item,key) in goodsList"
+              :key="item.productId  + key"
+              :item ="item"
+              :is="comfortablelist[index]"
+              class="goods-item"></component>
+          </waterfall>
         </van-tab>
       </van-tabs>
-      
     </div>
   </div>
 </template>
@@ -78,15 +106,21 @@ import { Icon } from 'vant';
 
 import { Tab, Tabs } from 'vant';
 
+import waterfall from 'vue-waterfall2'
+
+import axios from 'axios'
+
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 Vue.use(Icon);
 Vue.use(Tab);
 Vue.use(Tabs);
 
-import ComfortableGoods from '@/Home/Comfortable/ComfortableGoods.vue'
-import ComfortableGoods2 from '@/Home/Comfortable/ComfortableGoods-2.vue'
-import ComfortableGoods3 from '@/Home/Comfortable/ComfortableGoods-3.vue'
+Vue.use(waterfall)
+
+// import ComfortableGoods from '@/Home/Comfortable/ComfortableGoods.vue'
+
+import ComfortableGoods from '@/common/shop-item-cart'
 
 export default {
   data() {
@@ -97,134 +131,206 @@ export default {
         'https://gfs8.gomein.net.cn/wireless/T1X0K5BCVv1RCvBVdK_1065_390.jpg'
       ],
       active :0,
-      comfortablelist: ["ComfortableGoods","ComfortableGoods2","ComfortableGoods3","ComfortableGoods","ComfortableGoods"],
-      tabList: ['供暖系统', '国美智能', '安防系统', '中央空调', '全屋水家电', ]
+      comfortablelist: ["ComfortableGoods","ComfortableGoods","ComfortableGoods","ComfortableGoods","ComfortableGoods"],
+      tabList: ['供暖系统', '国美智能', '安防系统', '中央空调', '全屋水家电', ],
+      col : 2,
+      goodsList: []
+    }
+  },
+  computed: {
+    itemWidth(){  
+      return (350*0.5*(document.documentElement.clientWidth/375)) 
+    },
+    gutterWidth(){
+      return (16*0.5*(document.documentElement.clientWidth/375))
     }
   },
   components : {
     ComfortableGoods,
-    ComfortableGoods2,
-    ComfortableGoods3
   },
+  mounted() {
+    axios({
+      url: "http://localhost:9000/comfortable"
+    }).then(data => {
+      this.goodsList = data.data.goodsList.slice(0, 20);
+    });
+  }
 };
 </script>
 
 <style lang="stylus" scoped>
-.comfortable
+.comfortable {
+  .my-swipe {
+    margin-bottom: 16px;
 
-  .my-swipe
-    margin-bottom 16px
-    .van-swipe-item
-      .img-item 
-        margin 0px 10.1px
-        height 130px
-        width 355px
-        border-radius 10px
+    .van-swipe-item {
+      .img-item {
+        margin: 0px 10.1px;
+        height: 130px;
+        width: 355px;
+        border-radius: 10px;
+      }
+    }
+  }
 
-  .comfortable-header
-    border-top-left-radius 15px
-    border-top-right-radius 15px
-    background #fff
-    margin 0px 10.5px
-    display flex
-    justify-content space-between
-    align-items center
-    height 50px
-    width 355px
-    padding 6px 10.5px 
-    .p-header
-      font-size 18px
-      color: #262c32
-      letter-spacing: 0
-      font-weight: 700
-      line-height 1
-    .a-header
-      display flex 
-      align-items center
-      .span-header
-        font-size 14px
-        color: #919599
-        display: inline-block
-      .icon-header
-        display inline-block
+  .comfortable-header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: #fff;
+    margin: 0px 10.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 355px;
+    padding: 6px 10.5px;
 
-  .comfortable-contents
-    display flex
-    justify-content center
-    .contents-list
-      display flex
-      width 100%
-      width 355px
-      flex-wrap wrap
-      li
-        width 50%
-        &:nth-of-type(5)
-          .contents-img
-            border-bottom-left-radius 15px
-        &:nth-of-type(6)
-          .contents-img
-            border-bottom-right-radius 15px
-        .contents-img
-          width 100%
-          
-  .comfortable-video
-    display flex
-    justify-content center
-    flex-direction column
-    .video-poster
-      padding 10px 10px 0 10px
-      position relative
-      .video-img 
-        width 355.2px
-        height 196px
-        border-top-left-radius 15px
-        border-top-right-radius 15px
-      .btn-play
-        
-        img 
-          width 50px
-          height 50px
-          position absolute
-          top 40%
-          left 44%
-    p
-      border-bottom-left-radius 15px
-      border-bottom-right-radius 15px
-      padding-left 8px
-      font-size 15px  
-      background #fff
-      width 355.2px
-      align-self center
-  .comfortable-class
-    display flex
-    justify-content center 
-    padding 10px
-    li
-      img 
-        width 177.6px
-        height 120.6px 
-        border-radius 15px
-  .comfortable-tab 
-    .tab-title
-      display flex
-      justify-content center
-      margin 0 10px 10px
-      a
-        display inline-block
-        font-size 14px
-        width 76px
-        height 26px
-        line-height 26px
-        text-align center
-        &:first-of-type 
-          color #ffffff
-          background #fa1e8c
-          border-radius 16px
-          margin-right 6px
-        &:last-of-type
-          color #000
-    /deep/.comfortable-tabchild .van-tabs__wrap
-      padding-right 0 
-      margin 0 10px
-      border-radius 10px
+    .p-header {
+      font-size: 18px;
+      color: #262c32;
+      letter-spacing: 0;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .a-header {
+      display: flex;
+      align-items: center;
+
+      .span-header {
+        font-size: 14px;
+        color: #919599;
+        display: inline-block;
+      }
+
+      .icon-header {
+        display: inline-block;
+      }
+    }
+  }
+
+  .comfortable-contents {
+    display: flex;
+    justify-content: center;
+
+    .contents-list {
+      display: flex;
+      width: 100%;
+      width: 355px;
+      flex-wrap: wrap;
+
+      li {
+        width: 50%;
+
+        &:nth-of-type(5) {
+          .contents-img {
+            border-bottom-left-radius: 15px;
+          }
+        }
+
+        &:nth-of-type(6) {
+          .contents-img {
+            border-bottom-right-radius: 15px;
+          }
+        }
+
+        .contents-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .comfortable-video {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .video-poster {
+      padding: 10px 10px 0 10px;
+      position: relative;
+
+      .video-img {
+        width: 355.2px;
+        height: 196px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+
+      .btn-play {
+        img {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          top: 40%;
+          left: 44%;
+        }
+      }
+    }
+
+    p {
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      padding-left: 8px;
+      font-size: 15px;
+      background: #fff;
+      width: 355.2px;
+      align-self: center;
+    }
+  }
+
+  .comfortable-class {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    li {
+      img {
+        width: 177.6px;
+        height: 120.6px;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .comfortable-tab {
+    .tab-title {
+      display: flex;
+      justify-content: center;
+      margin: 0 10px 10px;
+
+      a {
+        display: inline-block;
+        font-size: 14px;
+        width: 76px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+
+        &:first-of-type {
+          color: #ffffff;
+          background: #fa1e8c;
+          border-radius: 16px;
+          margin-right: 6px;
+        }
+
+        &:last-of-type {
+          color: #000;
+        }
+      }
+    }
+    .vue-waterfall-column {
+      .goods-item {
+        background #fff
+        border-radius 5px 
+      }
+    }
+      
+    /deep/.comfortable-tabchild .van-tabs__wrap {
+      padding-right: 0;
+      margin: 0 10px 10px 10px;
+      border-radius: 10px;
+    }
+  }
+}
 </style>
