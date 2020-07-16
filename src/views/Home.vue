@@ -3,7 +3,6 @@
       <HomeTop></HomeTop>
       <HomeNav></HomeNav>
       <GotoTop></GotoTop>
-      <CartBag></CartBag>
       <HomeTabBar></HomeTabBar>
     </div>
 </template>
