@@ -1,7 +1,7 @@
 <template>
   <div class="mine-top">
     <header class="mine-header">
-      <van-nav-bar title="我的国美" left-arrow>
+      <van-nav-bar title="我的国美" left-arrow @click-left="onClickBack">
         <template #right>
           <van-icon name="weapp-nav" size="22" color="#333"/>
         </template>
@@ -110,7 +110,12 @@ export default {
   components : {
     MineShop,
     MineVip
-  }
+  },
+  methods: {
+    onClickBack() {
+      this.$router.back()
+    }
+  },
 }
 </script>
 
@@ -199,6 +204,8 @@ export default {
       a
         font-size 12px
         color #999  
-        padding-right 10px
+        padding-right 15px
+        background url(http://app.gomein.net.cn/plus/images/ucenter/jiantou.png?v=2017092001) no-repeat center right 
+        background-size 13px 13px
     
 </style>

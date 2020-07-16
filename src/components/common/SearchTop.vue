@@ -2,16 +2,7 @@
   <div>
     <header class="header border-bottom">
       <!-- 左中右结构 -->
-      <div class="h-left">
-        <a @click="$router.go(-1)" class="h-back" id="goback">
-          <van-icon
-            class="left-arrow"
-            size=".7rem"
-            name="arrow-left"
-            color="#626262"
-          />
-        </a>
-      </div>
+      <leftArraw></leftArraw>
 
       <div class="h-cnt flex-cell">
         <!-- 搜索模块 -->
@@ -39,18 +30,12 @@
 import Vue from "vue";
 import { Icon } from "vant";
 import SearchMenu from "@/common/SearchMenu"
+import leftArraw from "@/common/leftArrow"
 Vue.use(Icon);
 export default {
-  data() {
-    return {
-    
-    };
-  },
-  methods: {
-
-  },
   components: {
-    SearchMenu
+    SearchMenu,
+    leftArraw
   }
 };
 </script>
@@ -65,15 +50,6 @@ export default {
     height 44px
     display flex
     border-color #cccccc
-    .h-back
-        margin-left 12px
-        font-size 16px
-        display inline-block
-        color #666
-        height 44px
-        line-height 1
-        display flex
-        align-items center
     .h-cnt
         margin-left 15px
         margin-right 18px

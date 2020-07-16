@@ -5,20 +5,23 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "mock": "json-server ./mock/mock.js -r ./mock/routes.json -p 9000 -w"
+    "mock": "json-server ./mock/mock.js -r ./mock/routes.json -p 9000 -w",
+    "telphoneList": "json-server ./mock/telephone.json -p 9001"
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
     "lib-flexible": "^0.3.2",
+    "lodash": "^4.17.19",
     "postcss-pxtorem": "^5.1.1",
     "vant": "^2.9.0",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.1",
     "vue-router": "^3.2.0",
     "vue-waterfall2": "^1.9.6",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "vuex-persistedstate": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
@@ -30,7 +33,7 @@
     "json-server": "^0.16.1",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
-    "swiper": "^6.0.2",
+    "swiper": "^6.0.4",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [

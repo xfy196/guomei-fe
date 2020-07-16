@@ -42,12 +42,15 @@ export default {
   .nav1_l
     width 117px
     float left
+ 
     img
       width 100%
+      height 109px
   .nav1_r
     width 233px
     float left
     height 109px
+    margin-left 5px
   .nav1_r
     a 
       float: left;

@@ -46,7 +46,7 @@
                     v-for="v in d.goodsTypeList"
                     :key="v.goodsTypeId + String(Math.random())"
                   >
-                    <router-link tag="a" to="#">
+                    <router-link tag="a" :data-id="v.goodsTypeId" :to="{path: '/list', query: {id : v.goodsTypeId}}">
                       <img
                         class="loading-img default-bg-sm"
                         :src="v.goodsTypeImgUrl"
@@ -92,6 +92,7 @@ export default {
     })
       .then((data) => {
         if ((data.status === 200 && data.statusText) === "OK") {
+          console.log(data);
           this.$set(this.catetories, this.active, data.data);
         }
       })
@@ -111,7 +112,6 @@ export default {
       })
         .then((data) => {
           if ((data.status === 200 && data.statusText) === "OK") {
-            console.log(index);
             this.$set(this.catetories, index, data.data);
             this.active = index;
           }

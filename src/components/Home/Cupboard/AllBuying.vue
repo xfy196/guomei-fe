@@ -44,7 +44,7 @@
               >
                 <component
                   v-for="item in list"
-                  :key="item.c3id + String(Math.random())"
+                  :key="item.prodcutId"
                   :item="item"
                   :is="componentLists[index]"
                 ></component>
@@ -63,6 +63,7 @@ import { Tabs, Tab, List} from "vant";
 import ShopItemCart from "@/common/shop-item-cart";
 import axios from "axios";
 import waterfall from "vue-waterfall2";
+import {mapActions} from "vuex"
 Vue.use(waterfall);
 Vue.use(Tab);
 Vue.use(Tabs);
@@ -106,6 +107,8 @@ export default {
             200 && data.statusText === "OK" && data.data.goodsList.length > 0)
         ) {
           this.list = data.data.goodsList;
+          // 将后端的数据放入到state之中
+          this.$store.dispatch("good/setList", this.list);
         } else {
           return Promise.reject("网络开小差了");
         }
@@ -113,12 +116,6 @@ export default {
       .catch((error) => {
         console.log(error);
       });
-  },
-  methods:{
-    onLoad(){
-      console.log("dasd")
-      // this.loading = false
-    }
   },
   components: {
     ShopItemCart,
