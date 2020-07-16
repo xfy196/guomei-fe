@@ -8,16 +8,16 @@
     </div>
     <!-- 登录表单 -->
     <form action="javascript:void(0)" class="login-form">
-      <input type="text" name="username" id="username" placeholder="请输入手机号" class="inputContent" autocomplete="off">
-      <input type="text" name="password" id="password" placeholder="请输入密码" class="inputContent" autocomplete="off">
+      <input type="text" name="username" id="username" placeholder="请输入用户名" class="inputContent" autocomplete="off" v-model="username">
+      <input type="password" name="password" id="password" placeholder="请输入密码" class="inputContent" autocomplete="off" v-model="password">
       <div class="agreement">
-        <input type="checkbox" name="" id="check-box">
+        <input type="checkbox" name="" id="check-box" checked>
         <span>未注册手机验证后自动注册,我已阅读并同意</span>
         <a href="javascript:void(0)">《国美平台服务协议》</a>
         <a href="javascript:void(0)">《国美平台隐私政策》</a>
         <a href="javascript:void(0)">《美付宝服务协议》</a>
       </div>
-      <div class="submit">登录</div>
+      <div class="submit" @click="login">登录</div>
     </form>
     <!-- 登录选择项 -->
     <div class="options">
@@ -47,15 +47,33 @@
 
 <script>
 import Vue from 'vue';
-import { Icon, Checkbox, CheckboxGroup } from 'vant';
+import { Icon, Checkbox, CheckboxGroup, Toast } from 'vant';
 Vue.use(Icon);
 Vue.use(Checkbox);
 Vue.use(CheckboxGroup);
+Vue.use(Toast);
 
 export default {
+  data() {
+    return {
+      username: '',
+      password: ''
+    }
+  },
   methods: {
     goBack() {
       this.$router.back();
+    },
+    login() {
+      console.log(this.username, this.password);
+      if(this.username === 'admin' && this.password === 'admin'){
+        window.localStorage.setItem('userInfo', JSON.stringify({
+          username: this.username
+        }));
+        this.$router.push('/home');
+      }else{
+        Toast('用户名或密码错误');
+      }
     }
   },
 }

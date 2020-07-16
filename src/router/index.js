@@ -35,7 +35,10 @@ const routes = [
   {
     path: '/message',
     name: 'message',
-    component: Message
+    component: Message,
+    meta: {
+      requireAuth: true
+    }
   },
   {
     path: '/cart',
@@ -98,6 +101,21 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  console.log(to.matched.some(res => res.meta.requireAuth));
+  if(to.matched.some(res => res.meta.requireAuth)){
+    if(window.localStorage.getItem('userInfo')){
+      next()
+    } else {
+      next({
+        path: '/login'
+      })
+    }
+  } else {
+    next()
+  }
 })
 
 export default router
