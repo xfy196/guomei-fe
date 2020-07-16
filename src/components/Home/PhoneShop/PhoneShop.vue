@@ -1,172 +1,176 @@
 <template>
-  <div class="part">
-    <!-- swper 轮播 -->
-    <div class="focusPhoto">
-      <div class="template">
-        <van-swipe :autoplay="3000">
-          <van-swipe-item v-for="(image, index) in images" :key="index">
-            <img v-lazy="image" />
-          </van-swipe-item>
-        </van-swipe>
-      </div>
-    </div>
-    <!-- 九宫格 -->
-    <div class="Gongge">
-      <van-grid :column-num="4" :border="false">
-        <van-grid-item
-          v-for="value in icons"
-          :key="value.id"
-          :icon="value.iconimgs"
-          :text="value.text"
-        />
-      </van-grid>
-    </div>
-    <!-- 广告 -->
-    <div class="advertisement">
-      <img src="http://gfs9.gomein.net.cn/wireless/T1MKL5ByJv1RCvBVdK_1065_284.png" alt />
-    </div>
-    <!-- 秒杀 -->
-    <div class="Spike">
-      <header>
-        <img src="http://gfs6.gomein.net.cn/wireless/T1SnY4B4dv1RCvBVdK_1065_150.png" alt />
-      </header>
-      <van-tabs>
-        <van-tab>
-          <template #title>
-            <div>
-                <p>16:00</p>
-            </div>
-          </template>
-          <div class="goods-multiple-wrapper">
-            <MyTabs :url="coming"></MyTabs>
-          </div>
-        </van-tab>
-        <van-tab>
-          <template #title>
-            <div>
-                <p>15:00</p>
-            </div>
-          </template>
-          <div class="goods-multiple-wrapper">
-            <MyTabs :url="coming"></MyTabs>
-          </div>
-        </van-tab>
-      </van-tabs>
-    </div>
-    <!-- 品牌推荐 -->
-    <div class="brand">
-       <header>
-         <h5>品牌推荐</h5>
-      </header>
-      <section>
-        <ul class="left-t">
-          <li class="left">
-            <img src="http://gfs6.gomein.net.cn/wireless/T18NA5BjVv1RCvBVdK_425_568.png" alt="">
-          </li>
-          <li class="right">
-            <header><img src="http://gfs8.gomein.net.cn/wireless/T1E0V5BsAT1RCvBVdK_640_284.png" alt=""></header>
-            <ul class="right-r">
-              <li><img src="http://gfs8.gomein.net.cn/wireless/T1nwJ5BTbT1RCvBVdK_320_284.png" alt=""></li>
-              <li><img src="http://gfs5.gomein.net.cn/wireless/T14P_5B7Jv1RCvBVdK_320_284.png" alt=""></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <!--换新推荐  -->
-    <div class="renew">
-       <header>
-         <router-link :to="{name:'food'}">
-            <h5>换新推荐</h5>
-         </router-link>
-         <p>查看更多<span>></span></p>
-      </header>
-        <div class="scroll">
-            <MytoTabs :url="mores"></MytoTabs>
+  <div >
+    <div class="part">
+              <!-- swper 轮播 -->
+      <div class="focusPhoto">
+        <div class="template">
+          <van-swipe :autoplay="3000">
+            <van-swipe-item v-for="(image, index) in images" :key="index">
+              <img v-lazy="image" />
+            </van-swipe-item>
+          </van-swipe>
         </div>
-    </div>
-    <!-- 二次广告 -->
-        <div class="brand">
-       <header>
-         <h5>国美好店</h5>
-      </header>
-      <section>
-        <ul class="left-t">
-          <li class="left">
-            <img src="http://gfs6.gomein.net.cn/wireless/T18NA5BjVv1RCvBVdK_425_568.png" alt="">
-          </li>
-          <li class="right">
-            <header><img src="http://gfs8.gomein.net.cn/wireless/T1E0V5BsAT1RCvBVdK_640_284.png" alt=""></header>
-            <ul class="right-r">
-              <li><img src="http://gfs7.gomein.net.cn/wireless/T1XTE5BvdT1RCvBVdK_532_362.png" alt=""></li>
-              <li><img src="http://gfs9.gomein.net.cn/wireless/T1eOV5BsJT1RCvBVdK_533_362.png" alt=""></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <!-- 滚动标签 -->
-    <div class="brand selling">
-         <header>
-          <h5>热卖榜单</h5>
+      </div>
+      <!-- 九宫格 -->
+      <div class="Gongge">
+        <van-grid :column-num="4" :border="false">
+          <van-grid-item
+            v-for="value in icons"
+            :key="value.id"
+            :icon="value.iconimgs"
+            :text="value.text"
+          />
+        </van-grid>
+      </div>
+      <!-- 广告 -->
+      <div class="advertisement">
+        <img src="http://gfs9.gomein.net.cn/wireless/T1MKL5ByJv1RCvBVdK_1065_284.png" alt />
+      </div>
+      <!-- 秒杀 -->
+      <div class="Spike">
+        <header>
+          <img src="http://gfs6.gomein.net.cn/wireless/T1SnY4B4dv1RCvBVdK_1065_150.png" alt />
         </header>
-      <div class="wrapper">
-         <van-tabs>
+        <van-tabs>
           <van-tab>
-              <template #title>
-                  <li>电脑办公</li>
-                </template>
-               <div class="scroll">
-                <MytoTabs MytoTabs :url="mores"></MytoTabs>
+            <template #title>
+              <div>
+                  <p>16:00</p>
               </div>
+            </template>
+            <div class="goods-multiple-wrapper">
+              <MyTabs :url="coming"></MyTabs>
+            </div>
           </van-tab>
-           <van-tab>
-              <template #title>
-                  <li>智能数码</li>
-                </template>
-               <div class="scroll">
-                <MytoTabs MytoTabs :url="mores"></MytoTabs>
+          <van-tab>
+            <template #title>
+              <div>
+                  <p>15:00</p>
               </div>
-          </van-tab>
-           <van-tab>
-              <template #title>
-                  <li>销售榜</li>
-                </template>
-               <div class="scroll">
-                <MytoTabs MytoTabs :url="mores"></MytoTabs>
-              </div>
-          </van-tab>
-           <van-tab>
-              <template #title>
-                  <li>收藏榜</li>
-                </template>
-               <div class="scroll">
-                <MytoTabs MytoTabs :url="mores"></MytoTabs>
-              </div>
-          </van-tab>
-           <van-tab>
-              <template #title>
-                  <li>好评榜</li>
-                </template>
-               <div class="scroll">
-                <MytoTabs MytoTabs :url="mores"></MytoTabs>
-              </div>
-          </van-tab>
-           <van-tab>
-              <template #title>
-                  <li>手机通讯</li>
-                </template>
-               <div class="scroll">
-                <MytoTabs MytoTabs :url="mores"></MytoTabs>
-              </div>
+            </template>
+            <div class="goods-multiple-wrapper">
+              <MyTabs :url="coming"></MyTabs>
+            </div>
           </van-tab>
         </van-tabs>
+      </div>
+      <!-- 品牌推荐 -->
+      <div class="brand">
+          <header>
+            <h5>品牌推荐</h5>
+        </header>
+        <section>
+          <ul class="left-t">
+            <li class="left">
+              <img src="http://gfs6.gomein.net.cn/wireless/T18NA5BjVv1RCvBVdK_425_568.png" alt="">
+            </li>
+            <li class="right">
+              <header><img src="http://gfs8.gomein.net.cn/wireless/T1E0V5BsAT1RCvBVdK_640_284.png" alt=""></header>
+              <ul class="right-r">
+                <li><img src="http://gfs8.gomein.net.cn/wireless/T1nwJ5BTbT1RCvBVdK_320_284.png" alt=""></li>
+                <li><img src="http://gfs5.gomein.net.cn/wireless/T14P_5B7Jv1RCvBVdK_320_284.png" alt=""></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <!--换新推荐  -->
+      <div class="renew">
+          <header>
+            <router-link :to="{name:'food'}">
+              <h5>换新推荐</h5>
+            </router-link>
+            <p>查看更多<span>></span></p>
+        </header>
+          <div class="scroll">
+              <MytoTabs :url="mores"></MytoTabs>
+          </div>
+      </div>
+      <!-- 二次广告 -->
+          <div class="brand">
+          <header>
+            <h5>国美好店</h5>
+        </header>
+        <section>
+          <ul class="left-t">
+            <li class="left">
+              <img src="http://gfs6.gomein.net.cn/wireless/T18NA5BjVv1RCvBVdK_425_568.png" alt="">
+            </li>
+            <li class="right">
+              <header><img src="http://gfs8.gomein.net.cn/wireless/T1E0V5BsAT1RCvBVdK_640_284.png" alt=""></header>
+              <ul class="right-r">
+                <li><img src="http://gfs7.gomein.net.cn/wireless/T1XTE5BvdT1RCvBVdK_532_362.png" alt=""></li>
+                <li><img src="http://gfs9.gomein.net.cn/wireless/T1eOV5BsJT1RCvBVdK_533_362.png" alt=""></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <!-- 滚动标签 -->
+      <div class="brand selling">
+            <header>
+            <h5>热卖榜单</h5>
+          </header>
+        <div class="wrapper">
+            <van-tabs>
+            <van-tab>
+                <template #title>
+                    <li>电脑办公</li>
+                  </template>
+                  <div class="scroll">
+                  <MytoTabs MytoTabs :url="mores"></MytoTabs>
+                </div>
+            </van-tab>
+              <van-tab>
+                <template #title>
+                    <li>智能数码</li>
+                  </template>
+                  <div class="scroll">
+                  <MytoTabs MytoTabs :url="mores"></MytoTabs>
+                </div>
+            </van-tab>
+              <van-tab>
+                <template #title>
+                    <li>销售榜</li>
+                  </template>
+                  <div class="scroll">
+                  <MytoTabs MytoTabs :url="mores"></MytoTabs>
+                </div>
+            </van-tab>
+              <van-tab>
+                <template #title>
+                    <li>收藏榜</li>
+                  </template>
+                  <div class="scroll">
+                  <MytoTabs MytoTabs :url="mores"></MytoTabs>
+                </div>
+            </van-tab>
+              <van-tab>
+                <template #title>
+                    <li>好评榜</li>
+                  </template>
+                  <div class="scroll">
+                  <MytoTabs MytoTabs :url="mores"></MytoTabs>
+                </div>
+            </van-tab>
+              <van-tab>
+                <template #title>
+                    <li>手机通讯</li>
+                  </template>
+                  <div class="scroll">
+                  <MytoTabs MytoTabs :url="mores"></MytoTabs>
+                </div>
+            </van-tab>
+          </van-tabs>
 
-      <div class="more-w">
-        <span>查看完整榜单</span>
+        <div class="more-w">
+          <span>查看完整榜单</span>
+        </div>
+        </div>
       </div>
-      </div>
+
     </div>
+
     <div class="allBuy">
       <header>
         <img src="http://gfs6.gomein.net.cn/wireless/T1UF_4B7WT1RCvBVdK_1125_150.png" alt="">
@@ -298,29 +302,19 @@ export default {
     img 
       width: 355px;
       height: 130px;
-    
-  
-
 
 .Gongge 
   padding: 6px 0px;
 
   .van-grid 
+    box-sizing border-box
     overflow: hidden;
     border-radius: 10px;
-    margin: 11px 0px 0px;
-
-    .van-grid-item__icon 
-      width: 71px;
-      height: 50px;
-    
-  
-
-
-/deep/img 
-  width: 71px;
-  height: 50px;
-
+   /deep/.van-grid-item__content
+      padding 10px 0 0 0
+   /deep/.van-icon__image
+      width 67px
+      height 47px
 .advertisement 
   height: 95px;
   img 
@@ -450,5 +444,4 @@ export default {
     img 
       width 100%
       height 100%
-
 </style>

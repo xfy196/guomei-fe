@@ -42,5 +42,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+.gui-waterfall-double-item
+    background-color white
+    line-height 0
+    font-size 12px
 </style>

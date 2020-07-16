@@ -11,7 +11,7 @@ import Location from 'views/Location.vue'
 import Address from 'views/Address.vue'
 import AddNewAddress from 'views/AddNewAddress.vue'
 import SelectCity from 'views/SelectCity.vue'
-import FoodList from 'views/FoodList.vue'
+import Detail from 'views/Detail.vue'
 import Search from 'views/Search.vue'
 
 Vue.use(VueRouter)
@@ -47,9 +47,9 @@ Vue.use(VueRouter)
     component: Mine
   },
   {
-    path: '/FoodList',
-    name: 'FoodList',
-    component: FoodList,
+    path: '/detail',
+    name: 'detail',
+    component: Detail,
   },
   {
     path : "/categories",

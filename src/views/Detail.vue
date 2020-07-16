@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="foodlist">
   <!-- 头部未完成 -->
   <nav>
     <div class="toolbar">
@@ -7,7 +7,7 @@
       <ul>
         <li v-for="(item,index) in list" 
             :key="item.id" 
-            :class="item.show ? 'active' : ''" 
+            :class="{active:selectIndex === index}" 
             @click="handClick(index)">{{item.shor}}</li>
       </ul>
       <span class="more_right"><van-icon name="ellipsis" /></span>
@@ -15,7 +15,7 @@
   </nav>
   <!-- 图片轮播 -->
   <div class="swiper-container">
-    <swiper class="swiper-wrapper" ref="mySwiper" :options="swiperOptions">
+    <swiper class="swiper-wrapper" ref="mySwiper">
       <swiper class="swiper-slide">
         <div class="warrp">
           <div class="mycontent">
@@ -132,42 +132,22 @@
           </div>
           <!-- 喜欢 -->
           <div class="guess_like">
-              <p>猜你喜欢</p>
-              <div class="swp">
-                  <van-swipe class="my-swipe" :autoplay="3000" indicator-color="red">
-                      <van-swipe-item>
-                          <ul>
-                              <li>
-                                  <a href="">
-                                      <div class="swpimg">
-                                          <img src="http://gfs17.gomein.net.cn/T1yUY5Bjhv1RCvBVdK_400.jpg" alt="">
-                                      </div>
-                                      <p>口水娃零食1100g肉类豆干薯片 零食大礼包 国美超市甄选</p>
-                                      <span>38.90</span>
-
-
-                                  </a>
-                              </li>
-                          </ul>
-                      </van-swipe-item>
-                  </van-swipe>
-              </div>
+            <Lillter></Lillter>
           </div>
         </div>
       </swiper>
-
       <swiper class="swiper-slide">slider2</swiper>
       <swiper class="swiper-slide">slider3</swiper>
     </swiper>
 
-<van-goods-action>
-    <van-goods-action-icon icon="chat-o" text="客服" dot />
-    <van-goods-action-icon icon="cart-o" text="购物车" badge="5" />
-    <van-goods-action-icon icon="shop-o" text="店铺" badge="12" />
-    <van-goods-action-button type="warning" text="加入购物车" />
-    <van-goods-action-button type="danger" text="立即购买" />
-</van-goods-action>
 </div>
+        <van-goods-action>
+            <van-goods-action-icon icon="chat-o" text="客服" dot />
+            <van-goods-action-icon icon="cart-o" text="购物车" :badge="number" />
+            <van-goods-action-icon icon="shop-o" text="店铺" dot />
+            <van-goods-action-button type="warning" text="加入购物车" />
+            <van-goods-action-button type="danger" text="立即购买" />
+        </van-goods-action>
 </div>
 </template>
 
@@ -176,6 +156,7 @@ import Vue from 'vue';
 import {Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import { NavBar,Icon,Tab,Tabs,Sticky, GoodsAction, GoodsActionIcon, GoodsActionButton} from 'vant';
 import "swiper/swiper-bundle.css"
+import Lillter from "@/Home/PhoneShop/common/litterlist"
 Vue.use(NavBar);
 Vue.use(Icon);
 Vue.use(Tab);
@@ -190,10 +171,13 @@ export default {
   },
   components: {
     Swiper,
-    SwiperSlide
+    SwiperSlide,
+    Lillter
   },
   data () {
     return {
+      number:2,
+      selectIndex:0,
       current: 0,
       list:[
         {
@@ -215,16 +199,15 @@ export default {
       }
     },
     mounted(){
-        this.swiper.slideTo(3, 1000, false)
+        this.swiper.slideTo(0, 1000, false)
     },
   methods:{
     onChange(index) {
       this.current = index;
     },
     handClick(index){
-      console.log(index)
-      this.list[index].show = true
-      this.mySwiper.slideTo(index);
+      this.selectIndex = index;
+      this.swiper.slideTo(index);
     }
   },
   
@@ -232,10 +215,19 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.active
+  font-size: 1.7rem;
+  color: #F20C59;
+  box-sizing: border-box;
+  border-bottom: 4px solid #F20C59;
+
+.foodlist
+  display flex
+  height 100%
+  flex-direction:column
 nav 
   width 100%
   border-bottom  1px solid #e6e6e6;
-  position fixed
   z-index 5
   background-color white
   .toolbar
@@ -269,14 +261,12 @@ nav
       font-size 30px
 .swiper-container
   width 100%
-  height 6866px
-  position absolute
-  top 45px
+  height 100%
+  overflow hidden
+.warrp            
+  flex 1                      
+  height 100%
   overflow scroll
-.van-goods-action
-  z-index 9999
-.warrp
-  height 9866px
   background-color white
   .mycontent
     width 300px
@@ -502,56 +492,8 @@ nav
       font-size 13px
       padding 0 9px 0 0
       color #A8ACAF
-  .guess_like
-    border-top 10px solid #F2F2F2;
-    height 406px
-    p
-      height 35px
-      font-size 13px
-      padding 0 0 0 10px
-      line-height 35px
-    .swp
-      .my-swipe .van-swipe-item 
-        color: #fff;
-        font-size: 20px;
-        height 347px
-        background-color: withe;
-      .van-swipe-item
-        ul
-          height 347px
-          li
-            width 118px
-            height 173px
-            padding 0 0 12px 17px
-            font-size 10px
-            a
-              color black
-              width 101px
-              height 161px
-              .swpimg
-                width 101px
-                height  101px
-                margin-bottom 5px
-                img 
-                  width 100%
-                  height 100%
-              p
-                width 101px
-                height 25px
-                padding 0
-                color #919599
-                font-size 12px
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 2;
-                text-overflow: ellipsis;
-                line-height 1
-                overflow: hidden;
-              span 
-                width 101
-                height 25.8px
-                font-size 13px
-                padding 5px 0 8px
-                box-sizing border-box
-                font-weight  700
+
+.van-goods-action
+  z-index 9999
+  position static
 </style>

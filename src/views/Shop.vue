@@ -1,15 +1,21 @@
 <template>
   <div id="shop">
-      <div>门店</div>
+      
+
+    <Store></Store>
+
       <HomeTabBar></HomeTabBar>
     </div>
 </template>
 
 <script>
 import HomeTabBar from '@/Home/HomeTabBar'
+import Store from '@/Home/PhoneShop/common/stores'
+
 export default {
   components: {
-    HomeTabBar
+    HomeTabBar,
+    Store
   }
 }
 </script>
