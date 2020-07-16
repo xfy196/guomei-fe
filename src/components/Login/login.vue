@@ -76,7 +76,9 @@ export default {
 
 </script>
    
-<style>
+<style lang="stylus" scoped>
+
+
 
 .login-q{
     height: 100%;
