@@ -1,7 +1,7 @@
 <template>
   <div class="mine-top">
     <header class="mine-header">
-      <van-nav-bar title="我的国美" left-arrow>
+      <van-nav-bar title="我的国美" left-arrow @click-left="onClickBack">
         <template #right>
           <van-icon name="weapp-nav" size="22" color="#333"/>
         </template>
@@ -110,7 +110,12 @@ export default {
   components : {
     MineShop,
     MineVip
-  }
+  },
+  methods: {
+    onClickBack() {
+      this.$router.back()
+    }
+  },
 }
 </script>
 
