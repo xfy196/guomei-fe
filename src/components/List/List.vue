@@ -206,13 +206,12 @@ export default {
   width: 375px;
   height: 181px;
   background: #ffffff;
- 
+  display flex
+  flex-direction row
   padding-top 8px
 }
 
 .gd_img {
-  float: left;
-  
   margin-right: 11px;
   background-color: #fff;
   width: 125px;
@@ -224,17 +223,12 @@ export default {
   height: 100%;
 }
 
-.pic_l {
-  margin-right: 2px !important;
-  vertical-align: -1px;
-  width: 11px;
-}
 
 .gd_img2 {
-  float: left;
+  display flex
   width: 234px;
-  height: 100%;
   padding-right 5px
+  flex-direction column
 }
 
 .good_list .title {
@@ -256,21 +250,21 @@ export default {
 }
 
 .troud {
-  margin-top: 5px;
+  margin-top: 3px;
   white-space: nowrap;
   overflow: hidden;
   width: 225px;
-  height: 27px;
+ 
 }
 
 .troud p {
-  position: relative;
+  
   display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding:  0 5px;
+ 
   text-align: center;
   overflow: hidden;
-  width: auto;
+ 
   line-height: 1;
   width: 73px;
   height: 27px;

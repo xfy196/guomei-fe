@@ -58,7 +58,7 @@
     <div>
       <van-tabs>
         <van-tab v-for="index in items" :title= "index" :key= "index" width= "50%" >
-            <waterfall :data= "lists"  col = "2"  :gutterWidth= "gutterWidths" :width="itemWidth" >
+            <waterfall :data= "lists"   :gutterWidth= "gutterWidths" :width="itemWidth" >
              <shop v-for="(item,index)  in lists" :item="item" :key= "index" class="goods_list">
             </shop>
           </waterfall>
@@ -169,13 +169,13 @@ export default {
      axios({
         url: '/api/kitchen'
       }).then((result) => {
-        console.log(result)
+       
         // this.lists=result.data.goodsList;
         this.lists = [
           ...this.lists,
           ...result.data.goodsList
         ]
-        console.log(this.lists)
+        
       })
   },
    computed:{
