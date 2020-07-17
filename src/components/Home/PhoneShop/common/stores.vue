@@ -79,6 +79,7 @@ export default {
                 line-height 25px
                 font-size 14px
                 outline: none;
+                
             span 
                 display inline-block
                 height 14px

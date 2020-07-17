@@ -268,14 +268,12 @@ export default {
     MytoTabs,
     CartList
   },
- async mounted(){
-   await axios({
+  created (){
+      axios({
             url:'http://localhost:9000/telephone'
         })
         .then((data)=>{
             this.newlist=data.data.goodsList
-            this.coming=data.data.goodsList.slice(0,3);
-            this.mores=data.data.goodsList.slice(0,10);
             console.log(this.newlist )
         })
   },
