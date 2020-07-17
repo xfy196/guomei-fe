@@ -14,6 +14,7 @@ import SelectCity from 'views/SelectCity.vue'
 import Detail from 'views/Detail.vue'
 import Search from 'views/Search.vue'
 import Login from 'views/Login.vue'
+import NotFound from "views/404.vue"
 
 Vue.use(VueRouter)
 
@@ -35,7 +36,10 @@ const routes = [
   {
     path: '/message',
     name: 'message',
-    component: Message
+    component: Message,
+    meta: {
+      requireAuth: true
+    }
   },
   {
     path: '/cart',
@@ -92,12 +96,31 @@ const routes = [
     name : "search",
     component : Search,
   },
+  {
+    path : "/*",
+    name : 404,
+    component : NotFound
+  }
 ]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  if(to.matched.some(res => res.meta.requireAuth)){
+    if(window.localStorage.getItem('userInfo')){
+      next()
+    } else {
+      next({
+        path: '/login'
+      })
+    }
+  } else {
+    next()
+  }
 })
 
 export default router

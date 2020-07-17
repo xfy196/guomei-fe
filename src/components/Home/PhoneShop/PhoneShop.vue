@@ -274,7 +274,8 @@ export default {
         })
         .then((data)=>{
             this.newlist=data.data.goodsList
-            console.log(this.newlist )
+            this.coming=data.data.goodsList.slice(0,3);
+            this.mores=data.data.goodsList.slice(0,10);
         })
   },
 };

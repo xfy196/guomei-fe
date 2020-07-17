@@ -1,16 +1,14 @@
 <template>
   <div class="tel_box">
-   
     <div class="good_container">
-       <SearchTop></SearchTop>
-    <van-dropdown-menu active-color="red">
-      <van-dropdown-item v-model="value1" :options="option1" />
-      <van-dropdown-item v-model="value2" :options="option2" />
-      <van-dropdown-item v-model="value3" :options="option3" />
-      <van-dropdown-item v-model="value4" :options="option4" />
-     
-    </van-dropdown-menu>
-       <van-sticky>
+      <SearchTop></SearchTop>
+      <van-dropdown-menu active-color="red">
+        <van-dropdown-item v-model="value1" :options="option1" />
+        <van-dropdown-item v-model="value2" :options="option2" />
+        <van-dropdown-item v-model="value3" :options="option3" />
+        <van-dropdown-item v-model="value4" :options="option4" />
+      </van-dropdown-menu>
+      <van-sticky>
         <div class="phnav">
           <ul>
             <li class="phnav_1">国美经营</li>
@@ -22,18 +20,9 @@
       </van-sticky>
       <div class="good_list">
         <van-pull-refresh v-model="refreshing" @refresh="onRefresh">
-          <van-list
-            v-model="loading"
-            :finished="finished"
-            finished-text="没有更多了"
-            @load="onLoad"
-          >
+          <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="onLoad">
             <!-- 商品 -->
-            <div
-              class="good_item"
-              v-for="item in list"
-              :key="item.productId + '' + Math.random()"
-            >
+            <div class="good_item" v-for="item in list" :key="item.productId + '' + Math.random()">
               <span class="gd_img">
                 <img :src="item.productImgURL" alt />
               </span>
@@ -92,7 +81,7 @@ Vue.use(Sticky);
 Vue.use(Lazyload);
 Vue.use(List);
 Vue.use(Lazyload, {
-  lazyComponent: true,
+  lazyComponent: true
 });
 export default {
   components: {
@@ -107,12 +96,12 @@ export default {
       option1: [
         { text: "综合", value: 0 },
         { text: "评论从高到低", value: 1 },
-        { text: "评论从低到高", value: 2 },
+        { text: "评论从低到高", value: 2 }
       ],
       option2: [
         { text: "价格", value: "a" },
         { text: "价格从高到低", value: "b" },
-        { text: "价格从低到高", value: "c" },
+        { text: "价格从低到高", value: "c" }
       ],
       option3: [{ text: "销量", value: "3" }],
       option4: [{ text: "筛选", value: "4" }],
@@ -122,95 +111,103 @@ export default {
       loading: false,
       finished: false,
       refreshing: false,
+      start: 0,
+      limit: 10
     };
   },
   created() {
+    let { id } = this.$route.query;
     axios({
-      url: "/api/telephone"
+      url: "/ajax/telphone/goodsList",
+      params: {
+        c3id: id,
+        _start: this.start,
+        _limit: this.limit
+      }
     }).then(result => {
-      this.list = result.data.goodsList.slice(1, 10);
+      this.list = [...result.data];
     });
   },
   methods: {
     onLoad() {
-      console.log(this.loading);
-      setTimeout(() => {
-        if (this.refreshing) {
-          this.refreshing = false;
+      let { id } = this.$route.query;
+      this.start += 10;
+      axios({
+        url: "/ajax/telphone/goodsList",
+        params: {
+          c3id: id,
+          _start: this.start,
+          _limit: this.limit
         }
-        for (let i = 0; i <= 10; i += 10) {
-          this.list.push(...this.list.slice(1, 11));
-
-        }
-        this.loading = false;
-        if (this.list.length >= 50) {
+      }).then(result => {
+        if (result.data.length === 0) {
           this.finished = true;
+        } else {
+          this.loading = false;
+          this.list = [...this.list, ...result.data];
         }
-      }, 1000);
+      });
     },
     onRefresh() {
-      this.finished = false;
-      for (let i = 0; i < 10; i += 10) {
-        this.list.unshift(...this.list.slice(1, 11));
-      }
-      this.loading = true;
-      this.onLoad();
-    },
-  },
+      let { id } = this.$route.query;
+
+      axios({
+        url: "/ajax/telphone/goodsList",
+        params: {
+          c3id: id,
+          _start: Math.floor(Math.random() * 20),
+          _limit: 1
+        }
+      }).then(result => {
+        this.refreshing = false;
+        this.list = [...result.data, ...this.list];
+      });
+    }
+  }
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scope="">
 .tel_box {
   height: 100%;
-  display flex
-  flex-direction column
-  flex 1
 }
 
 .phnav {
-  padding: 3px 5px;
+  padding: 8px 3px;
   border-bottom: 1px solid #f3f5f7;
-  margin-bottom: 0.2rem;
   background: #ffffff;
   overflow: hidden;
 }
 
+.phnav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .phnav li {
   width: 166px;
-  float: left;
   position: relative;
-  display: -webkit-box;
-  display: flex;
   -webkit-box-pack: center;
   -moz-box-pack: center;
   box-pack: center;
-  justify-content: center;
-  -webkit-justify-content: center;
+  justify-content: space-around;
   width: 24%;
   height: 25px;
   line-height: 25px;
   text-align: center;
   background: #f3f5f7;
   color: #999;
-  margin: 0.2rem 1% 0.2rem 0;
-  border-radius: 0.04rem;
-  padding: 0 0.04rem;
+  border-radius: 1px;
   box-sizing: border-box;
   font-size: 12px;
 }
 
-.good_list {
-  width: 375px;
-  height: 100%;
-}
-
 .good_container {
-  overflow: hidden;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-   overflow: scroll;
-   display flex
-   flex-direction column
 }
 
 .good_item {
@@ -239,6 +236,11 @@ export default {
   width: 234px;
   padding-right: 5px;
   flex-direction: column;
+}
+
+.good_list {
+  flex: 1;
+  height: 100%;
 }
 
 .good_list .title {
@@ -303,26 +305,26 @@ export default {
 
 .price {
   margin-right: 2px;
-  padding-top: 0.373333rem;
-  font-size: 0.426667rem;
+  padding-top: 5px;
+  font-size: 16px;
   color: #F20C59;
 }
 
 .cnt {
-  height: 0.586667rem;
+  height: 18px;
 }
 
 .fenqi {
   vertical-align: top;
   display: inline-block;
-  font-size: 0.533333rem;
+  font-size: 18px;
   transform: scale(0.5);
   transform-origin: left center;
-  line-height: 0.32rem;
+  line-height: 10px;
   color: #7A7F85;
   box-sizing: border-box;
   margin-right: 3px;
-  padding: 0.16rem 0.053333rem;
+  padding: 4px 6px;
   border: 1px solid #F20C59;
   border-radius: 2px;
   color: #F20C59;

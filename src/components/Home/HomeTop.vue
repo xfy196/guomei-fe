@@ -10,7 +10,8 @@
             <span class="searchText">国美10亿焕新计划</span>
         </div>
         <div class="login-btn">
-            <span class="login-text" @click="goLogin">登录</span>
+            <span class="login-text" @click="goLogin" v-if="!isLogin">登录</span>
+            <van-icon name="friends-o" size="0.7rem" color="#ffffff" @click="goMine" v-else/>
         </div>
     </header>
 </template>
@@ -26,7 +27,7 @@ Vue.use(Sticky);
 export default {
   data() {
     return {
-      
+      isLogin: false
     };
   },
   methods: {
@@ -38,13 +39,22 @@ export default {
       },
       goLogin() {
         this.$router.push('/login')
-      }
+      },
+      goMine() {
+        this.$router.push('/mine')
+      },
   },
   computed: {
       locationCity() {
         return this.$store.state.locationCity;
       }
   },
+  created() {
+    let user = window.localStorage.getItem('userInfo')
+    if(user){
+      this.isLogin = true;
+    }
+  }
 }
 </script>
 <style lang="stylus" scoped>
@@ -89,4 +99,7 @@ header
         padding-right 10px
         color #ffffff
         font-size 13px
+        display flex
+        justify-content center
+        align-items center
 </style>
