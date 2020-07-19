@@ -6,7 +6,7 @@ import good from "./modules/good"
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  plugins: [persistedState({storage: window.sessionStorage})],
+  plugins: [persistedState({storage: window.sessionStorage, paths: ["cart.carts"]})],
   state: {
     locationCity: '北京',
     isGoTop : true,
