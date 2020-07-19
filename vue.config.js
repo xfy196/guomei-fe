@@ -20,8 +20,8 @@ module.exports = {
         target: 'http://localhost:9000',
         changeOrigin: true
       },
-      "/ajax/kitchen" : {
-        target : 'http://localhost:9002',
+      "/ajax/kitchen": {
+        target: 'http://localhost:9002',
         changeOrigin: true
       },
       "/ajax/telphone": {

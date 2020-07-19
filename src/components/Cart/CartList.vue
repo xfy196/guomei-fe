@@ -14,15 +14,21 @@
     >
       <div class="groupList" v-for="(val, key, index) in carts" :key="index + Math.random()">
         <div class="shop-info">
-          <van-checkbox
+          <van-checkbox v-show="modifyState"
             v-model="val.allChecked"
             checked-color="#DE345C"
             icon-size="19"
             @click="handleAllChecked(key)"
-          >
+          />
+            <van-checkbox v-show="!modifyState"
+            v-model="val.allModifyState"
+            checked-color="#DE345C"
+            icon-size="19"
+            @click="handleAllMofidyChecked(key)"
+          />
             <div class="shop-name">
               <img :src="val[0].shopLogoUrl" alt="" />
-              <p>{{ key }}</p>
+              <p :class="!modifyState ? 'no-bg' : ''">{{ key }}</p>
             </div>
           </van-checkbox>
         </div>
@@ -30,11 +36,17 @@
           <div class="goods-item" v-for="good in val" :key="good.productId">
             <div class="item-top">
               <div class="box">
-                <van-checkbox
+                <van-checkbox v-show="modifyState"
                   v-model="good.checked"
                   checked-color="#DE345C"
                   icon-size="19"
                   @click="handleCheck(good.productId)"
+                ></van-checkbox>
+                <van-checkbox v-show="!modifyState"
+                  v-model="good.modifyState"
+                  checked-color="#DE345C"
+                  icon-size="19"
+                  @click="handleMofidyChecked(good.productId)"
                 ></van-checkbox>
               </div>
               <div class="goods-info">
@@ -106,78 +118,19 @@ export default {
     return {
       count: 1,
       allChecked: true,
-      cartData: [
-        {
-          name: "丹麦蓝罐曲奇饼干908g 国美超市甄选",
-          imgUrl: "http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_250.jpg?v=2",
-          price: 109.9,
-          count: 1,
-          shopName: "北京大中小营店",
-          checked: false,
-        },
-        {
-          name: "希诺大功率电子驱鼠器802 国美超市甄选",
-          imgUrl: "http://gfs17.gomein.net.cn/T14ed5ByJT1RCvBVdK_250.jpg?v=2",
-          price: 451.9,
-          count: 1,
-          shopName: "北京大中小营店",
-          checked: false,
-        },
-        {
-          name: "希诺大功率电子驱鼠器802 国美超市甄选",
-          imgUrl: "http://gfs17.gomein.net.cn/T14ed5ByJT1RCvBVdK_250.jpg?v=2",
-          price: 451.9,
-          count: 1,
-          shopName: "北京大中小营店",
-          checked: false,
-        },
-        {
-          name: "希诺大功率电子驱鼠器802 国美超市甄选",
-          imgUrl: "http://gfs17.gomein.net.cn/T14ed5ByJT1RCvBVdK_250.jpg?v=2",
-          price: 451.9,
-          count: 1,
-          shopName: "北京大中小营店",
-          checked: false,
-        },
-        {
-          name: "希诺大功率电子驱鼠器802 国美超市甄选",
-          imgUrl: "http://gfs17.gomein.net.cn/T14ed5ByJT1RCvBVdK_250.jpg?v=2",
-          price: 451.9,
-          count: 1,
-          shopName: "北京大中小营店",
-          checked: false,
-        },
-        {
-          name: "希诺大功率电子驱鼠器802 国美超市甄选",
-          imgUrl: "http://gfs17.gomein.net.cn/T14ed5ByJT1RCvBVdK_250.jpg?v=2",
-          price: 451.9,
-          count: 1,
-          shopName: "北京大中小营店",
-          checked: false,
-        },
-        {
-          name: "希诺大功率电子驱鼠器802 国美超市甄选",
-          imgUrl: "http://gfs17.gomein.net.cn/T14ed5ByJT1RCvBVdK_250.jpg?v=2",
-          price: 451.9,
-          count: 1,
-          shopName: "北京大中小营店",
-          checked: false,
-        },
-        {
-          name: "希诺大功率电子驱鼠器802 国美超市甄选",
-          imgUrl: "http://gfs17.gomein.net.cn/T14ed5ByJT1RCvBVdK_250.jpg?v=2",
-          price: 451.9,
-          count: 1,
-          shopName: "北京大中小营店",
-          checked: false,
-        },
-      ],
     };
   },
   computed: {
     ...mapGetters({
       carts: "cart/getCarts",
-    })
+    }),
+      modifyState: {
+        get(){
+          return this.$store.getters["cart/getModifyState"]
+        },
+        set(checked){
+        }
+      }
   },
   methods:{
     hanldeNumChange(value, detail){
@@ -200,6 +153,12 @@ export default {
           forbidClick: false
         })
       })
+    },
+    handleAllMofidyChecked(name){
+      this.$store.dispatch("cart/updateGroupAllModifyChecked", name);
+    },
+    handleMofidyChecked(id){
+      this.$store.dispatch("cart/updateModifyChecked", id);
     }
   }
 };
@@ -219,10 +178,15 @@ export default {
       align-items center
       img
         height 17px
+      .no-bg
+        background none 
       p
         font-size 14px
         color #333333
         font-weight 600
+        padding-right: .30rem;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAaCAYAAABsONZfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMGJjODRkNC1kOTcxLTk2NGYtYWU4MS0wY2VjYzA0MjQzZjYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0VBRDE2NDlDQ0E0MTFFNkIxQ0NFREE2RDE5QjJDNDYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0VBRDE2NDhDQ0E0MTFFNkIxQ0NFREE2RDE5QjJDNDYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozOTVmZWRiYS1jZGE5LTRhN2YtOTZiZi0yOTBlMjg4Y2Y5ZjMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpjZThiYzViMi0zYTg0LTExZTUtYjg2Yy1kN2UwMDQ0ZmYyMGMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6u+ysDAAABbklEQVR42pyUuUqDURBG4/8jiBGLoKLYKO64ND6DjVjYKLg8hY+kiGBlo5VWYqWVhRg0iWiQRM1CTFyIQc8HU08uBk7mcjMnc/+Zm8Rjg/07qZ7kEKQr9Y/fRMArgjdYgGW+oCNEilWBOArT0Em1bFuJpB8TJ2CGdYu9R1fSG0lNE6dglnWDvWdXMvGb5DtVg3nWZfaKrmTiJ8kZVYM51gX2Sq5kYoPkB1Wzik/sVV3JxHeS8yaqYo69miuZWCW5aKKac69TuJKJJZIrJmoct3ruuN0gSXrRCHRMjYT1TRxybTQzkpvW1fEo8Y9XkMRFXiQsgVq/FwUIasIK1GE3U3itRW2EScIqfKkCQtk9HsIIYQ1asI9QdJ8JYZiwYZ8fIOTdRiAMELb0g4RDhJzbPYQUYRu64Qgh7bYcodcExWOEa3dOCEkTVOkM4dIdLkIXcRP0LBcI5yE3Yh3UrSs4Db1GfaDzn1Al6M/yT4ABAMApogoqvjzoAAAAAElFTkSuQmCC') 100% no-repeat;
+        background-size: .15rem .28rem;
   .goods-list
 
     .goods-item
@@ -313,4 +277,7 @@ export default {
     padding: 0 .4rem;
     background: linear-gradient(90deg,#fa1e8c,#fc1e56)
     color #ffffff
+.shop-name
+  margin-left 10px
+
 </style>
