@@ -13,14 +13,17 @@
       <span class="more_right"><van-icon name="ellipsis" /></span>
     </div>
   </nav>
+
+
+  
   <!-- 图片轮播 -->
   <div class="swiper-container">
     <swiper class="swiper-wrapper" ref="mySwiper">
       <swiper class="swiper-slide">
         <div class="warrp">
           <div class="mycontent">
-              <van-swipe @change="onChange">
-                  <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt="">
+              <van-swipe @change="onChange" :stop-propagation=true>
+                  <van-swipe-item><img :src=newlist.productImgURL alt="">
                   </van-swipe-item>
                   <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt="">
                   </van-swipe-item>
@@ -40,7 +43,7 @@
               <div class="title">
                   <div class="lingshi">
                       <p>
-                          杉城零食大礼包2000g 友女生儿童礼盒美食品超市好吃的2000g
+                        {{newlist.goodsName}}
                       </p>
                   </div>
                   <div class="share-profit">
@@ -50,8 +53,8 @@
               </div>
               <div class="price_box">
                   <p class="price">
-                      <span>￥</span>
-                      <em>185</em>
+                      <span>¥</span>
+                      <em>{{newlist.price}}</em>
                   </p>
               </div>
           </div>
@@ -67,14 +70,13 @@
 
           <!-- 地址 -->
           <div class="adress">
-              <van-cell class="send" is-link @click="showPopup" close-on-popstate >
+              <van-cell class="send" is-link @click="showPopup" >
                   <label for="">送至</label>
                   <div class="jiedao">
                       <van-icon name="location-o" />
                       <p>朝阳街道<span>,免运费</span></p>
                   </div>
                   <van-icon name="arrow" class="right" />
-                  <van-popup v-model="show" position="right" :style="{ height: '100%',width:'50%'}" />
               </van-cell>
               <div class="service">
                   <ul>
@@ -93,6 +95,8 @@
                   </ul>
               </div>
           </div>
+            <van-popup v-model="show" position="right" :style="{ height: '100%',width:'50%'}" />
+
           <!-- 评价 -->
           <div class="eva">
               <div class="val">
@@ -207,21 +211,21 @@ export default {
         totalNum : "cart/getTotalNum"
       })
     },
-  async  mounted(){
+    mounted(){
       let {productId, shopId} = this.$route.query;
       this.swiper.slideTo(0, 1000, false)
-       await axios({
+        axios({
             url:'http://localhost:8080/ajax/kitchen/goodsList',
             params : {
-              productId: id
+              productId: productId,
+              shopId:shopId
             }
         })
          .then((data)=>{
-            this.newlist = data
-            // let datas = data.data.goodsList
-            // this.newlist = datas.find(datas=>{
-            //   return datas.productId === this.id
-            // })
+          //  TODO 接口数据格式问题 联调会出现问题
+            this.newlist = data.data[0]
+             console.log(this)
+            console.log(this.newlist)
          })
   },
   methods:{
@@ -240,7 +244,7 @@ export default {
     },
     handleAddCart(item){
       this.$store.dispatch("addCart", item);
-    }
+    },
   },
   
 }
