@@ -26,6 +26,7 @@
                 </div>
                     <div class="shopowner-info">
                         <dt>
+                           <img src="https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3250612455,3172817037&fm=26&gp=0.jpg" alt="">
                         </dt>
                         <dd>
                             <div class="name-flag">
@@ -103,7 +104,14 @@
             <div class="template-corner3">
                 <header>品牌推荐</header>
                 <ul>
-                    <li><img src="http://gfs7.gomein.net.cn/wireless/T1GvW4B4Ev1RCvBVdK_345_501.jpg" alt=""></li>
+                    <li>
+                      
+                        
+                        
+                        <div class="wudi">
+                            <img src="http://gfs17.gomein.net.cn/T1s.d5BjhT1RCvBVdK_400.jpg" alt="">
+                        </div>    
+                    </li>
                     <li><img src="http://gfs5.gomein.net.cn/wireless/T1jeh4BmDT1RCvBVdK_345_501.jpg" alt=""></li>
                     <li><img src="http://gfs6.gomein.net.cn/wireless/T1LvY5BK_v1RCvBVdK_345_501.jpg" alt=""></li>
                 </ul>
@@ -111,59 +119,14 @@
 
             </div>
 
-
-            <div>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
+            <div class="gui-good-things-guide-tabs">
+                <ul>
+                    <li style="color:white;margin-right:10px; background-color:#fa1e8c ">精品推荐</li>
+                    <li>金牌导购</li>
+                </ul>
+            </div>
+            <div class="allbuy">
+                <CartList :items="newlist"></CartList>
             </div>
         </div>
     </div>
@@ -176,6 +139,7 @@ import MyTabs from "@/Home/PhoneShop/common/tabs";
 import { Icon,Swipe, SwipeItem,Tab, Tabs  } from 'vant';
 import MytoTabs from "@/Home/PhoneShop/common/brand";
 import axios from 'axios'
+import CartList from "@/Home/PhoneShop/common/cartlist";
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 Vue.use(Icon);
@@ -186,6 +150,7 @@ export default {
         return {
         coming:[],
         mores:[],
+        newlist:[],
         images: [
             "http://gfs7.gomein.net.cn/wireless/T1w7D5Bvxv1RCvBVdK_1069_390.png",
             "http://gfs8.gomein.net.cn/wireless/T1A0V5BmxT1RCvBVdK_1063_390.jpg",
@@ -196,14 +161,15 @@ export default {
     },
     components:{
         MyTabs,
-        MytoTabs
+        MytoTabs,
+        CartList
     },
     created (){
       axios({
             url:'http://localhost:9000/telephone'
         })
         .then((data)=>{
-            // this.newlist=data.data.goodsList
+            this.newlist=data.data.goodsList
             this.coming=data.data.goodsList.slice(3,6);
             this.mores=data.data.goodsList.slice(10,20);
             console.log(this.coming)
@@ -321,7 +287,9 @@ foo =
             height 54px
             border-radius 50%
             background-color red
-            background-image url ("")
+            overflow hidden
+            img 
+                {foo}
         dd
             display flex
             flex-direction column
@@ -452,6 +420,7 @@ foo =
         height 50px
         line-height 50px
         font-weight 600
+        
     ul
         display flex
         justify-content space-between
@@ -460,6 +429,43 @@ foo =
             height 167px
             overflow hidden
             border-radius 10px
+            display flex
+            justify-content center
+            align-items center
+            background-image url("http://gfs7.gomein.net.cn/wireless/T1GvW4B4Ev1RCvBVdK_345_501.jpg")
+            background-size cover
             img 
                 {foo}
+            .wudi
+                width 80px
+                height 80px
+                border-radius 50px
+                overflow hidden
+                img 
+                    {foo}
+.gui-good-things-guide-tabs
+    height 42px
+    margin 10px 0
+    background-color white
+    ul
+        height 42px
+        display flex
+        justify-content center
+        align-items center
+       
+        li
+            width 76px
+            height 26px
+            font-size 14px
+            text-align center
+            line-height 26px
+            border-radius 25px
+.allbuy
+  overflow scroll
+  margin-top 10px 
+  header
+    height 50px
+    img 
+      width 100%
+      height 100%
 </style>
