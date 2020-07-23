@@ -26,7 +26,7 @@ export default {
   }
 };
 </script>
-<style lang="stylus" scoped>
+<style lang="stylus">
 .my-swipe 
     padding .16rem 0 
     .swipe-item
