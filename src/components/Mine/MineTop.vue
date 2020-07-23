@@ -9,7 +9,7 @@
     </header>
     <div class="user-show">
       <div class="user-infor">
-        <a href="#" class="user-head">
+        <a href="/information" class="user-head">
             <img id="user-img" src="http://js.gomein.net.cn/plus/plus-public//images/public/shopdefault.jpg">
         </a>
         <div class="login-reg">
