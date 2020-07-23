@@ -123,8 +123,6 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
-.template-margin
-    margin-top .26667rem
     .gui-templet-tag-goods-list
         min-height 10.66667rem
         .template-header
@@ -134,7 +132,6 @@ export default {
             background-color: #fff;
             padding: 0 .28rem;
             min-height: 1.33333rem;
-
 .van-tabs__wrap
     padding-right 0
     .van-tabs__line
@@ -147,15 +144,22 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+</style>
+// 首页商品板块展示商品的都会需要这一段css
+<style lang="stylus">
+.template-margin
+    margin-top .26667rem
   .gui-waterfall-double-item
-    width: 4.66667rem;
-    color: #262c32;
-    background-color: #fff;
-    border-radius: .21333rem;
-    font-size: .34667rem;
-    line-height: .45333rem;
-    margin-bottom: .13333rem;
-    overflow: hidden;
+      width: 4.66667rem;
+      color: #262c32;
+      background-color: #fff;
+      border-radius: .21333rem;
+      font-size: .34667rem;
+      line-height: .45333rem;
+      margin-bottom: .13333rem;
+      overflow: hidden;
+
 .vue-waterfall
-    margin-left 8px
+    margin-left: 8px
+
 </style>

@@ -65,56 +65,7 @@
         </van-tab>
       </van-tabs>
     </div>
-    <!-- 商品内容 -->
-    <!-- <div>
-      <div class="goods_num">
-      <section class="gui-waterfall-double-goods-item gui-waterfall-double-item">
-        <a
-          href=""
-          table-id="tag1"
-          scheme-type-id="0"
-          scheme-id="1130808761"
-          data-code="23783076-0"
-          class="item-link"
-        >
-          <div class="gome-bg goods-img">
-            <img
-              data-src="//gfs17.gomein.net.cn/T1i9YmBjVv1RCvBVdK_260.jpg"
-              src="//gfs17.gomein.net.cn/T1i9YmBjVv1RCvBVdK_260.jpg"
-              lazy="loaded"
-            />
-          </div>
-          <div class="store-info">
-            <img
-              data-src="//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png"
-              src="//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png"
-              lazy="loaded"
-            />
-            <span class="name">北京国美北太店</span>
-          </div>
-          <div class="goods-info">
-            <p class="desc">
-              <span class="goods-tag-bg">
-                <span>自营</span>
-              </span>
-              <span class="text">国美管家空调加氟 家庭空调加氟服务 1.5P及以下 全国上门服务</span>
-            </p>
-          </div>
-        </a>
-        <div class="goods-other">
-          
-          <p class="price-cart">
-            <span class="price">
-              <small>¥</small>
-              <big>149</big>
-              <span></span>
-            </span>
-           
-          </p>
-        </div>
-      </section>
-      </div>
-    </div> -->
+  
  
   </div>
 </template>
@@ -193,7 +144,6 @@ export default {
 .my-swipe {
   width: 355px;
   height: 139px;
-  // margin 0.2667rem
   border-radius: 0.32rem;
   margin: 0 auto;
 

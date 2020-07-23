@@ -151,7 +151,6 @@ export default {
             background-image: linear-gradient(90deg,#ff0a8d 10%,red)
             color #fff
     /deep/.van-tabs__content
-      padding 0 8px
       .gui-waterfall-double-goods-item
         margin 5px 0 10px
         background-color #ffffff

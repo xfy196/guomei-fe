@@ -177,7 +177,7 @@
 </div>
         <van-goods-action>
             <van-goods-action-icon icon="chat-o" text="客服" dot />
-            <van-goods-action-icon icon="cart-o" text="购物车" :badge="totalNum" />
+            <van-goods-action-icon icon="cart-o" to="/cart" text="购物车" :badge="totalNum" />
             <van-goods-action-icon icon="shop-o" text="店铺" dot />
             <van-goods-action-button @click="handleAddCart(newlist)" type="warning" text="加入购物车" />
             <van-goods-action-button type="danger" text="立即购买" />
@@ -250,7 +250,7 @@ export default {
       let {productId, shopId} = this.$route.query;
       this.swiper.slideTo(0, 1000, false)
         axios({
-            url:'http://localhost:8080/ajax/kitchen/goodsList',
+            url:'/ajax/kitchen/goodsList',
             params : {
               productId: productId,
               shopId:shopId
@@ -285,7 +285,7 @@ export default {
       item.color=this.moren_name
       item.totalNum = this.number
 
-      this.$store.dispatch("addCart", item);
+      this.$store.dispatch("cart/addCart", item);
 
     },
 

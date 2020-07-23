@@ -26,7 +26,7 @@ export default {
   }
 };
 </script>
-<style lang="stylus" scoped>
+<style lang="stylus">
 .my-swipe 
     padding .16rem 0 
     .swipe-item
@@ -37,4 +37,6 @@ export default {
         border-radius .32rem
         width 355px
         height 130px
+    img 
+      border-radius 0.32rem
 </style>

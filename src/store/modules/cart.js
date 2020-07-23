@@ -17,7 +17,7 @@ export default {
             let item = state.carts.find(item => item.productId === good.productId)
             // 如果存在需要总数++
             if (item) {
-
+                console.log(item)
                 item.totalNum = item.totalNum || item.totalNum++;
             } else {
                 good.totalNum = 1;
@@ -45,6 +45,9 @@ export default {
             state.carts.map(item => {
                 return item.checked = checked
             })
+            state.carts = [
+                ...state.carts
+            ]
         },
         updateGroupAllChecked(state, name) {
             state.carts.map(item => {
@@ -52,6 +55,9 @@ export default {
                     return item.checked = !item.checked;
                 }
             });
+            state.carts = [
+                ...state.carts
+            ]
         },
         /**
          * 删除单个商品
