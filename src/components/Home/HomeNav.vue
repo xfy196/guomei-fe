@@ -60,7 +60,6 @@ export default {
         "超市百货",
         "家居家装",
       ],
-      activeIndex: 0,
       navComponents: [
         "Selected",
         "PhoneShop",
@@ -76,9 +75,18 @@ export default {
   mounted() {
     document.querySelector(".van-tabs__wrap").style.paddingRight = "1.6rem";
   },
+  computed: {
+    activeIndex : {
+      get(){
+        return this.$store.state.activeIndex;
+      },
+      set(index){
+        this.$store.state.activeIndex = index;
+      }
+    }
+  },
   methods: {
     handleChange(index) {
-      this.activeIndex = index;
       document.querySelector(".container").scrollTo({
         top: 0,
       });

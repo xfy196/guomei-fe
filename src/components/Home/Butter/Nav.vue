@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .nav1
   width 355px
   height 109px

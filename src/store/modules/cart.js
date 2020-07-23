@@ -18,7 +18,7 @@ export default {
             // 如果存在需要总数++
             if (item) {
 
-                item.totalNum++;
+                item.totalNum = item.totalNum || item.totalNum++;
             } else {
                 good.totalNum = 1;
                 good.checked = true;

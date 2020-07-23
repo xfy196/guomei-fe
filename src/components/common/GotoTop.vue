@@ -25,7 +25,7 @@ export default {
   },
 };
 </script>
-<style lang="stylus">
+<style lang="stylus" scoped>
 .goto-top
     width 1.06667rem
     height 1.06667rem

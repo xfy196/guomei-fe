@@ -18,7 +18,7 @@
             </div>
           </header>
           <div class="swiper-wrapper">
-              <van-swipe :autoplay="3000" indicator-color="white">
+              <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
                 <van-swipe-item v-for="(image, index) in images" :key="index">
                     <img v-lazy="image" />
                 </van-swipe-item>
@@ -46,7 +46,7 @@ export default {
     }
 }
 </script>
-<style lang="stylus">
+<style lang="stylus" scoped>
 .GlobalKitchenContainer
     margin-top .26667rem
     header 
@@ -66,10 +66,12 @@ export default {
     width 355px
     height 236px
     margin 0 auto
-    img
-        margin 0 auto
-        border-radius .32rem
-        overflow hidden
-        width 355px
-        height 236px
+    .my-swipe
+        width 100%
+        img
+            margin 0 auto
+            border-radius .32rem
+            overflow hidden
+            width 355px
+            height 236px
 </style>

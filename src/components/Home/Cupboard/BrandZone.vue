@@ -58,7 +58,7 @@
 export default {
 };
 </script>
-<style lang="stylus">
+<style lang="stylus" scoped>
 .page-component-content
     margin-left .26667rem
     margin-right .26667rem

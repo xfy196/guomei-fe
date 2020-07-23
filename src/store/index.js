@@ -6,11 +6,12 @@ import good from "./modules/good"
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  plugins: [persistedState({storage: window.sessionStorage, paths: ["cart.carts"]})],
+  plugins: [persistedState({storage: window.sessionStorage, paths: ["cart.carts","activeIndex"]})],
   state: {
     locationCity: '北京',
     isGoTop : true,
-    shippingAddress : "北京市"
+    shippingAddress : "北京市",
+    activeIndex : 0
   },
   mutations: {
     changeCity(state, city) {
