@@ -172,7 +172,6 @@ export default {
             this.newlist=data.data.goodsList
             this.coming=data.data.goodsList.slice(3,6);
             this.mores=data.data.goodsList.slice(10,20);
-            console.log(this.coming)
         })
   },
 }
@@ -460,7 +459,7 @@ foo =
             text-align center
             line-height 26px
             border-radius 25px
-.allbuy
+.allfbuy
   overflow scroll
   margin-top 10px 
   header

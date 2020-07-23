@@ -48,7 +48,6 @@ export default {
       })
         .then((res) => {
           let result = res.data.replace(/href="(.*?)"/g, 'href="javascript:void(0)"')
-          console.log(result)
           this.contentHTML = result;
         })
     }

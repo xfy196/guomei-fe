@@ -185,7 +185,6 @@ export default {
             })
             Object.keys(data).forEach(key => {
                 data[key].allModifyState = data[key].every(item => {
-                    console.log(item)
                     return item.modifyState
                 })
 

@@ -5,4 +5,3 @@ function changeObjectProperty(o) {
 }
 var CSSer = new Object();
 changeObjectProperty(CSSer);
-console.log(CSSer.siteUrl);

@@ -259,8 +259,6 @@ export default {
          .then((data)=>{
           //  TODO 接口数据格式问题 联调会出现问题
             this.newlist = data.data[0]
-             console.log(this)
-            console.log(this.newlist)
          })
   },
   methods:{
