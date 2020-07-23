@@ -18,7 +18,7 @@ export default {
   },
 };
 </script>
-<style lang="stylus">
+<style lang="stylus" scoped>
 #newNav-shopCart
     position fixed
     right .4rem

@@ -33,7 +33,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 
 .cart
      width: .74667rem;

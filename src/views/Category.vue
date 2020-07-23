@@ -211,7 +211,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .container
   height 100%
   display flex

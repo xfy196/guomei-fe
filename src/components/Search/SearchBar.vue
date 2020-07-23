@@ -48,6 +48,7 @@ export default {
       })
         .then((res) => {
           let result = res.data.replace(/href="(.*?)"/g, 'href="javascript:void(0)"')
+          console.log(result)
           this.contentHTML = result;
         })
     }
@@ -56,11 +57,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
-</style>
-
-<style lang="stylus">
-.search-result
+/deep/.search-result
   background-color #fff
   li  
     display flex
