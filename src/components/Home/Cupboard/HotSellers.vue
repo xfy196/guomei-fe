@@ -74,4 +74,6 @@ export default {
         overflow hidden
         width 355px
         height 236px
+    .van-swipe
+        width 100%
 </style>

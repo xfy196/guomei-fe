@@ -146,6 +146,8 @@ main
     .container
       overflow scroll
       height 100%
+      .van-pull-refresh
+        overflow auto
 
 /deep/.van-tabs__content
         .van-tab__pane
