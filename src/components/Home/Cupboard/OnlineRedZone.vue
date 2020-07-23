@@ -70,7 +70,7 @@ export default {
     }
 };
 </script>
-<style lang="stylus">
+<style lang="stylus" scoped>
 .template-margin
     margin-top .26667rem
     .gui-image-single-wrapper
