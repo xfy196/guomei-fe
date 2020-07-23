@@ -9,7 +9,7 @@
     </header>
     <div class="user-show">
       <div class="user-infor">
-        <a href="/information" class="user-head">
+        <a class="user-head" @click="goInformation">
             <img id="user-img" src="http://js.gomein.net.cn/plus/plus-public//images/public/shopdefault.jpg">
         </a>
         <div class="login-reg">
@@ -119,6 +119,14 @@ export default {
     },
     goLogin() {
       this.$router.push('/login');
+    },
+    goInformation(){
+      let res = window.localStorage.getItem('userInfo');
+      if(res){
+        this.$router.push('/information')
+      }else{
+        this.$router.push('/login');
+      }
     }
   },
   components : {
