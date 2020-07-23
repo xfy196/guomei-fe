@@ -1,9 +1,6 @@
 <template>
   <div id="shop">
-      
-
-    <Store></Store>
-
+      <Store></Store>
       <HomeTabBar></HomeTabBar>
     </div>
 </template>
@@ -21,5 +18,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+#shop
+  height 100%
 </style>
