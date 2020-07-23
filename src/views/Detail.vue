@@ -13,14 +13,17 @@
       <span class="more_right"><van-icon name="ellipsis" /></span>
     </div>
   </nav>
+
+
+  
   <!-- 图片轮播 -->
   <div class="swiper-container">
     <swiper class="swiper-wrapper" ref="mySwiper">
       <swiper class="swiper-slide">
         <div class="warrp">
           <div class="mycontent">
-              <van-swipe @change="onChange">
-                  <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt="">
+              <van-swipe @change="onChange" :stop-propagation=true>
+                  <van-swipe-item><img :src=newlist.productImgURL alt="">
                   </van-swipe-item>
                   <van-swipe-item><img src="http://gfs17.gomein.net.cn/T1EoJ5BCAT1RCvBVdK_400.jpg?v=20170727" alt="">
                   </van-swipe-item>
@@ -40,7 +43,7 @@
               <div class="title">
                   <div class="lingshi">
                       <p>
-                          杉城零食大礼包2000g 友女生儿童礼盒美食品超市好吃的2000g
+                        {{newlist.goodsName}}
                       </p>
                   </div>
                   <div class="share-profit">
@@ -50,31 +53,60 @@
               </div>
               <div class="price_box">
                   <p class="price">
-                      <span>￥</span>
-                      <em>185</em>
+                      <span>¥</span>
+                      <em>{{newlist.price}}</em>
                   </p>
               </div>
           </div>
           <!-- 数量 -->
           <div class="moudle">
+          <van-cell is-link @click="showPopups">
               <div class="number">
                   <label for="">数量</label>
-                  <div class="coutent_box">
+                  <div    class="coutent_box">
                       <van-stepper v-model="number" theme="round" button-size="22" disable-input max="10"/>
                   </div>
               </div>
+          </van-cell>
           </div>
+          <van-popup v-model="shows" position="right" :style="{ height: '100%',width:'85%' }">
+            <div class="product_info">
+              <div class="img_box">
+                <img src="http://gfs17.gomein.net.cn/T1a7_5B4Dv1RCvBVdK_160.jpg?v=20170727" alt="">
+              </div>
+              <div class="info_box">
+                  <p>{{newlist.priceDesc}}</p>
+                  <span>有货</span>
+              </div>
+            </div>
+            <div class="formatAttr">
+                <h4>颜色</h4>
+              <ul>
+                <li 
+                v-for="(items,index) in colorlist" :key="index" @click="xiabiao(index)"
+                :class="biao === index ? 'default-active' : 'default' "
+                
+                
+                 >{{items}}</li>
+              </ul>
 
+            </div>
+            <div class="format_size">
+              <p>数量（限购10件）</p>
+               <div    class="coutent_box">
+                      <van-stepper v-model="number" theme="round" button-size="22" disable-input max="10"/>
+                  </div>
+            </div>
+          </van-popup>
           <!-- 地址 -->
           <div class="adress">
-              <van-cell class="send" is-link @click="showPopup" close-on-popstate >
+              <van-cell class="send" is-link @click="showPopup" >
                   <label for="">送至</label>
                   <div class="jiedao">
                       <van-icon name="location-o" />
                       <p>朝阳街道<span>,免运费</span></p>
                   </div>
                   <van-icon name="arrow" class="right" />
-                  <van-popup v-model="show" position="right" :style="{ height: '100%',width:'50%'}" />
               </van-cell>
               <div class="service">
                   <ul>
@@ -93,6 +125,8 @@
                   </ul>
               </div>
           </div>
+            <van-popup v-model="show" position="right" :style="{ height: '100%',width:'50%'}" />
+
           <!-- 评价 -->
           <div class="eva">
               <div class="val">
@@ -145,9 +179,10 @@
             <van-goods-action-icon icon="chat-o" text="客服" dot />
             <van-goods-action-icon icon="cart-o" text="购物车" :badge="totalNum" />
             <van-goods-action-icon icon="shop-o" text="店铺" dot />
-            <van-goods-action-button @click="handleAddCart(item)" type="warning" text="加入购物车" />
+            <van-goods-action-button @click="handleAddCart(newlist)" type="warning" text="加入购物车" />
             <van-goods-action-button type="danger" text="立即购买" />
         </van-goods-action>
+        
 </div>
 </template>
 
@@ -180,8 +215,12 @@ export default {
   },
   data () {
     return {
+      biao:0,
+      colorlist:['红','黄','蓝','绿','青'],
       newlist:[],
       show: false,
+      moren_name:'',
+      shows:false,
       number:1,
       selectIndex:0,
       current: 0,
@@ -207,29 +246,34 @@ export default {
         totalNum : "cart/getTotalNum"
       })
     },
-  async  mounted(){
+    mounted(){
       let {productId, shopId} = this.$route.query;
       this.swiper.slideTo(0, 1000, false)
-       await axios({
+        axios({
             url:'http://localhost:8080/ajax/kitchen/goodsList',
             params : {
-              productId: id
+              productId: productId,
+              shopId:shopId
             }
         })
          .then((data)=>{
-            this.newlist = data
-            // let datas = data.data.goodsList
-            // this.newlist = datas.find(datas=>{
-            //   return datas.productId === this.id
-            // })
+          //  TODO 接口数据格式问题 联调会出现问题
+            this.newlist = data.data[0]
+             console.log(this)
+            console.log(this.newlist)
          })
   },
   methods:{
-      showPop(){
-           this.show=false;
-      },
+    xiabiao(iendx){
+      this.biao = iendx
+      this.moren_name=this.colorlist[iendx]
+    },
+
      showPopup() {
       this.show = true;
+    },
+     showPopups(){
+      this.shows=true;
     },
     onChange(index) {
       this.current = index;
@@ -239,14 +283,23 @@ export default {
       this.swiper.slideTo(index);
     },
     handleAddCart(item){
+
+      item.color=this.moren_name
+      item.totalNum = this.number
+
       this.$store.dispatch("addCart", item);
-    }
+
+    },
+
   },
-  
 }
 </script>
 
 <style lang="stylus" scoped>
+.default-active
+    border 1px solid #F20C59
+    color #F20C59
+    background #FFF5F7
 .active
   font-size: 1.7rem;
   color: #F20C59;
@@ -529,4 +582,64 @@ nav
 .van-goods-action
   z-index 9999
   position static
+
+foo =
+  width 100%
+  height 100%
+.product_info
+  height 81px
+  box-sizing border-box
+  padding 5px 10px
+  display flex
+  border-bottom: 1px solid #e6e6e6;
+  .img_box
+    border: 1px solid #e6e6e6;
+    width 70px
+    height 70px
+    img 
+      {foo}
+
+  .info_box
+    width 225.7px
+    height 70px
+    padding 20px 0 0 10px
+    color #F20C59
+    p
+      height 16px
+      font-size 16px
+    span 
+      font-size 13px
+.formatAttr
+  margin  0 0 5px 10px 
+  padding 15px 0 0 10px
+  ul
+    margin  0 0 5px 10px 
+    padding 15px 0 0 10px
+    display flex
+  h4
+    height 12.8px
+    font-size 13px
+    margin  0 0 12px
+    font-weight normal
+  li
+    width 70px
+    height  26.8px
+    font-size 12px
+    margin  0 10px 10px 0
+    padding  0 10px
+    line-height 26.8px
+    text-align center
+    border: 1px solid #e6e6e6
+    border-radius  25px
+    background: #f3f5f7; 
+.format_size
+  display flex
+  justify-content space-between
+  height 36px
+  margin 0 0 10px 10px 
+  padding 10px 90px 0px 10px
+  border-bottom: 1px solid #e6e6e6;
+  p
+    line-height 20px
+    font-size 13px
 </style>
