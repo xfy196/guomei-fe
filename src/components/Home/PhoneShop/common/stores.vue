@@ -468,4 +468,12 @@ foo =
     img 
       width 100%
       height 100%
+  /deep/.van-tabs__content
+    padding 0 8px
+    .gui-waterfall-double-goods-item
+      margin 5px 0 10px
+      background-color #ffffff
+      padding 5px 0
+      border-radius 10px
+
 </style>

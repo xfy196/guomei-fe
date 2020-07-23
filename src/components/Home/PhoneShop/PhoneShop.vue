@@ -281,7 +281,6 @@ export default {
 };
 </script> 
 
-
 <style lang="stylus" scoped>
 .part 
   margin: 0 10px;
