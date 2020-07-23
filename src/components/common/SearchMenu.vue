@@ -53,7 +53,7 @@ export default {
   },
 };
 </script>
-<style lang="stylus">
+<style lang="stylus" scoped>
 .h-right
     display flex
     align-items center

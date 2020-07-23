@@ -85,7 +85,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .pay-bar
     position relative
     bottom 0

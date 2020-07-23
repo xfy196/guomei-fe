@@ -16,7 +16,7 @@
 export default {};
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .h-back
     margin-left 12px
     font-size 16px

@@ -59,7 +59,7 @@ export default {
 
 </style>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .search-result
   background-color #fff
   li  
