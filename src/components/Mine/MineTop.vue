@@ -115,7 +115,7 @@ export default {
   },
   methods: {
     onClickBack() {
-      this.$router.back()
+      this.$router.push('/home')
     },
     goLogin() {
       this.$router.push('/login');
