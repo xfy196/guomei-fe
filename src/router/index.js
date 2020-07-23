@@ -15,6 +15,7 @@ import Detail from 'views/Detail.vue'
 import Search from 'views/Search.vue'
 import Login from 'views/Login.vue'
 import NotFound from "views/404.vue"
+import Information from 'views/Information.vue'
 
 Vue.use(VueRouter)
 
@@ -97,10 +98,16 @@ const routes = [
     component : Search,
   },
   {
+    path : "/information",
+    name : "information",
+    component : Information
+  },
+  {
     path : "/*",
     name : 404,
     component : NotFound
-  }
+  },
+ 
 ]
 
 const router = new VueRouter({
