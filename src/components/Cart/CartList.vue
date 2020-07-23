@@ -19,18 +19,17 @@
             checked-color="#DE345C"
             icon-size="19"
             @click="handleAllChecked(key)"
-          />
+          ></van-checkbox>
             <van-checkbox v-show="!modifyState"
             v-model="val.allModifyState"
             checked-color="#DE345C"
             icon-size="19"
             @click="handleAllMofidyChecked(key)"
-          />
+          ></van-checkbox>
             <div class="shop-name">
               <img :src="val[0].shopLogoUrl" alt="" />
               <p :class="!modifyState ? 'no-bg' : ''">{{ key }}</p>
             </div>
-          </van-checkbox>
         </div>
         <div class="goods-list">
           <div class="goods-item" v-for="good in val" :key="good.productId">

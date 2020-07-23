@@ -77,7 +77,7 @@
       <!--换新推荐  -->
       <div class="renew">
           <header>
-            <router-link :to="{name:'food'}">
+            <router-link :to="{name:'food'}" tag="a">
               <h5>换新推荐</h5>
             </router-link>
             <p>查看更多<span>></span></p>

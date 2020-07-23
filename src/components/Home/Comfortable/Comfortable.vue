@@ -148,9 +148,9 @@ export default {
   components : {
     ComfortableGoods,
   },
-  mounted() {
+  created() {
     axios({
-      url: "http://localhost:9000/comfortable"
+      url: "/api/comfortable"
     }).then(data => {
       this.goodsList = data.data.goodsList.slice(0, 20);
     });
