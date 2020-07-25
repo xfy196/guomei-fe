@@ -14,13 +14,14 @@ export default {
                 state.modifyState = true
             }
             // 首先判断这个数据在state是否已经存在 如果存在我们直接把他的总数++ 不然总数为1
-            let item = state.carts.find(item => item.productId === good.productId)
+            let index = state.carts.findIndex(item => item.productId === good.productId)
+            let item = state.carts[index];
             // 如果存在需要总数++
             if (item) {
-                console.log(item)
-                item.totalNum = item.totalNum || item.totalNum++;
+                item.totalNum = good.totalNum || item.totalNum++;
+                state.carts.splice(index, 1, item);
             } else {
-                good.totalNum = 1;
+                good.totalNum = good.totalNum || 1;
                 good.checked = true;
                 good.modifyState = false
                 state.carts.push(good);

@@ -64,7 +64,7 @@
               <div class="number">
                   <label for="">数量</label>
                   <div    class="coutent_box">
-                      <van-stepper v-model="number" theme="round" button-size="22" disable-input max="10"/>
+                      <!-- <van-stepper v-model="number" theme="round" button-size="22" disable-input max="10"/> -->
                   </div>
               </div>
           </van-cell>
@@ -281,8 +281,8 @@ export default {
       this.swiper.slideTo(index);
     },
     handleAddCart(item){
-
       item.color=this.moren_name
+      console.log(this.number)
       item.totalNum = this.number
 
       this.$store.dispatch("cart/addCart", item);
