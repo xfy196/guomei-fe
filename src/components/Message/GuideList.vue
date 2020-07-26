@@ -9,7 +9,7 @@
             <p>{{ guide.salesAssistantName }}</p>
             <h3>{{ guide.grade }}</h3>
           </div>
-          <div class="right">
+          <div class="right" @click="goChat(guide.salesAssistantName)">
             <img src="../../assets/connect.png" alt="">
             <p>咨询</p>
           </div>
@@ -34,6 +34,16 @@ export default {
   data() {
     return {
       guideList: []
+    }
+  },
+  methods: {
+    goChat(name) {
+      this.$router.push({
+        path: '/chat',
+        query: {
+          guideName: name
+        }
+      })
     }
   },
   mounted() {
