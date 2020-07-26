@@ -143,8 +143,4 @@ export default {
         border-radius 10px
         margin-right 6px
 
-
-
-
-
 </style>

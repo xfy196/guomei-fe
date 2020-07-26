@@ -3,10 +3,11 @@ import Vuex from 'vuex'
 import persistedState from 'vuex-persistedstate'
 import cart from "./modules/cart"
 import good from "./modules/good"
+import message from './modules/message'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  plugins: [persistedState({storage: window.sessionStorage, paths: ["cart.carts","activeIndex"]})],
+  plugins: [persistedState({storage: window.sessionStorage, paths: ["cart.carts","activeIndex","message.msgList"]})],
   state: {
     locationCity: '北京',
     isGoTop : true,
@@ -45,6 +46,7 @@ export default new Vuex.Store({
   },
   modules: {
     cart,
-    good
+    good,
+    message
   }
 })
