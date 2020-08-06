@@ -7,7 +7,6 @@ module.exports = {
       .set("assets", path.resolve(__dirname, "./src/assets/"))
       .set("views", path.resolve(__dirname, "./src/views/"));
   },
-  publicPath: './',
   devServer: {
     proxy: {
       '/ajax/cateLists': {
