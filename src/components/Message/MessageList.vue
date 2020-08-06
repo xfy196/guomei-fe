@@ -38,7 +38,6 @@ export default {
   },
   mounted(){
     this.hasMsg = this.$store.state.message.msgList.length === 0 ? false : true
-    console.log(!!this.$store.state.message.msgList)
   }
 }
 </script>
