@@ -270,7 +270,7 @@ export default {
   },
   created (){
       axios({
-            url:'http://localhost:9000/telephone'
+            url:'/api/telephone'
         })
         .then((data)=>{
             this.newlist=data.data.goodsList
