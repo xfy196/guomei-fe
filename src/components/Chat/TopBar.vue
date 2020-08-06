@@ -1,7 +1,7 @@
 <template>
   <div>
     <van-nav-bar
-      title="消息列表"
+      :title="guideName"
       left-arrow
       @click-left="onClickLeft"
       fixed
@@ -16,11 +16,19 @@ import { NavBar } from 'vant';
 Vue.use(NavBar);
 
 export default {
+  data() {
+    return {
+      guideName: ''
+    }
+  },
   methods: {
     onClickLeft(){
-      this.$router.push('/home');
+      this.$router.push('/message');
     }
-  }
+  },
+  mounted() {
+    this.guideName = this.$route.query.guideName;
+  },
 }
 </script>
 

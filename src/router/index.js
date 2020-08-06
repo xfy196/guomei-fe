@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from 'views/Home.vue'
 import Shop from 'views/Shop.vue'
 import Message from 'views/Message.vue'
+import Chat from 'views/Chat.vue'
 import Cart from 'views/Cart.vue'
 import Mine from 'views/Mine.vue'
 import List from 'views/List.vue'
@@ -38,6 +39,14 @@ const routes = [
     path: '/message',
     name: 'message',
     component: Message,
+    meta: {
+      requireAuth: true
+    }
+  },
+  {
+    path: '/chat',
+    name: 'chat',
+    component: Chat,
     meta: {
       requireAuth: true
     }
