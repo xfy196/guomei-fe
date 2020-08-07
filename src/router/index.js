@@ -18,6 +18,9 @@ import Login from 'views/Login.vue'
 import NotFound from "views/404.vue"
 import Information from 'views/Information.vue'
 
+import VueSocketIO from 'vue-socket.io'
+import SocketIO from 'socket.io-client';
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -49,6 +52,13 @@ const routes = [
     component: Chat,
     meta: {
       requireAuth: true
+    },
+    beforeEnter: (to, from, next) => {
+      Vue.use(new VueSocketIO({
+        debug: true,
+        connection: SocketIO('http://localhost:4004'),
+      }))
+      next();
     }
   },
   {
